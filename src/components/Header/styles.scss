@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+
+header {
+  position: sticky;
+  background-color: $color1;
+  top: 0;
+  box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
+  z-index: 2;
+
+  nav {
+    height: 90px;
+
+    .logo {
+      display: inline-block; /* flexbox fix for ie10 */
+      margin-left: 40px;
+      
+      img {
+        height: 50px;
+      }
+    }
+  }
+}

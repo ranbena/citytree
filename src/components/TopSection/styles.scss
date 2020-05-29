@@ -1,0 +1,10 @@
+@import '../../scss/variables';
+
+.topSection {
+  padding: 100px 0;
+
+  iframe {
+    background-color: $color4;
+    border-radius: 6px;
+  }
+}

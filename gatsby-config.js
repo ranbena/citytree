@@ -1,5 +1,13 @@
 module.exports = {
-  // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
-  // don't need to define it here (just if you need to change the options)
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: ['Assistant:400,600,700'],
+        display: 'swap',
+        subset: 'hebrew',
+      },
+    },
+  ],
 };

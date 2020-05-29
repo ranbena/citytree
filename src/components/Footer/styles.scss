@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+
+footer {
+  background-color: $color1;
+  padding: 30px 0;
+  color: $color3;
+  
+  a {
+    color: $color3;
+
+    &:hover {
+      color: rgba($color3, 0.75);
+    }
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  #info {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .link {
+    padding-right: 17px;
+  }
+}
