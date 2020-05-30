@@ -1,8 +1,8 @@
-/* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { MdLink } from 'react-icons/md';
 import logo from '../../images/logo.png';
+import { phone, email } from '../../constants';
 import './styles.scss';
 
 export const Footer: React.FC<{}> = () => (
@@ -20,8 +20,8 @@ export const Footer: React.FC<{}> = () => (
         <div id="info">
           אנחנו כאן לשירותך
           <br />
-          <a href="tel:+97235254196">03-5254196</a> |{' '}
-          <a href="mailto:tree@citytree.net">tree@citytree.net</a>
+          <a href={`tel:${phone}`}>{phone}</a> |{' '}
+          <a href={`mailto:${email}`}>{email}</a>
         </div>
       </div>
     </Container>

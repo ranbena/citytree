@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import { NavItems } from './constants';
 import logo from '../../images/logo.png';
 import './styles.scss';
 
@@ -13,15 +14,11 @@ export const Header: React.FC<{}> = () => (
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="ml-auto">
-            <a href="#vision" className="nav-link">
-              החזון של עץבעיר
-            </a>
-            <a href="#shop" className="nav-link">
-              החנות הקטנה שלנו
-            </a>
-            <a href="#contact" className="nav-link">
-              צרו קשר
-            </a>
+            {NavItems.map(({ title, link }) => (
+              <Nav.Link href={link} key={title}>
+                {title}
+              </Nav.Link>
+            ))}
           </Nav>
           <Button variant="outline-secondary" href="#donate">
             תרמו לעץ

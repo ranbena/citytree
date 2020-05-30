@@ -1,0 +1,101 @@
+@import '../../scss/variables';
+@import '../../scss/bootstrap-overrides';
+
+.donateSection {
+  background-color: $color8;
+  padding: 70px 0;
+
+  .btn-patreon {
+    text-align: center;
+
+    a {
+      background-color: $patreonColor;
+      border-color: $patreonColor;
+      display: inline-block;
+      border-radius: 2px;
+
+      img {
+        width: 183px;
+        position: relative;
+        top: -1px;
+      }
+
+      &:hover {
+        background-color: darken($patreonColor, 7%); 
+      }
+
+      &:active {
+        background-color: darken($patreonColor, 15%) !important;
+        border-color: $patreonColor !important;
+      }
+    }
+  }
+
+  .txt-patreon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    margin: 30px 0 20px;
+  }
+
+  .buttons {
+    text-align: center;
+    margin-top: 50px;
+
+    a {
+      display: inline-flex;
+      margin: 0 5px;
+      padding: 5px 15px;
+      max-width: 40%;
+      height: 40px;
+      border-color: rgba(0,0,0, 0.15);
+      align-items: center;
+
+      img {
+        max-height: 30px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .box {
+    margin-bottom: 30px;
+    min-height: 382px;
+
+    &.subscribe {
+      background-color: $color5;
+      padding: 20px;
+    }
+  }
+
+  .fc-form {
+    .fc_container {
+      padding: 0 !important;
+      min-height: auto;
+      width: 100%;
+    }
+
+    .fc_header {
+      font-family: $font-family-base;
+      color: white;
+    }
+
+    .fc_form p {
+      padding: 0 20px;
+      margin-bottom: $headings-margin-bottom;
+      font-size: $h2-font-size;
+
+      span {
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+
+    .fc_base, .fc-button-row {
+      margin-bottom: 0 !important;
+    }
+
+  }
+}

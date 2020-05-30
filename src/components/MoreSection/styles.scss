@@ -14,6 +14,33 @@
     }
   }
   .tab-pane {
-    height: 1000px;
+    background-color: $color6;
+    padding: 70px 0;
+
+    .tab-content {
+      min-height: 500px; // for "coming soon" items
+    }
+  }
+
+  .visitSection {
+    display: flex;
+    margin: 0 -10px;
+
+    & > * {
+      margin: 0 10px;
+      flex: 1;
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+  }
+
+  .aboutUsSection {
+    margin : -70px 0;
+    padding: 70px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 70%;
   }
 }

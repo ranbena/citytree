@@ -9,4 +9,48 @@ body {
 
 p {
   font-size: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.box {
+  background: white;
+  border-radius: 5px;
+  padding: 30px 50px;
+
+  p {
+    color: $color9;
+
+    a {
+      color: $color9;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.transparent-box {
+    background-color: rgba(white, 0.3);
+
+    p {
+      color: $color2;
+    }
+  }
+}
+
+// allow to scroll into view under the fixed header
+.anchor {
+  padding-top: $header-height;
+  margin-top: -$header-height;
+}
+
+.wrapper-col {
+  padding-left: 0;
+  padding-right: 0;
+
+  & > * {
+    display: inline-block;
+  }
 }
