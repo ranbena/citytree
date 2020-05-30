@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/citytree', // for gh-pages
   plugins: [
     'gatsby-plugin-sass',
     {
