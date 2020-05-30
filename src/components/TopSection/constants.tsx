@@ -25,6 +25,6 @@ export const text = (
     </p>
   </>
 );
-// export const youtubeId = '81snpPninKg';
+export const youtubeId = undefined;
 
 export const imageUrl = image;

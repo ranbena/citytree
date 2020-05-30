@@ -8,7 +8,7 @@ import {
   TopSection,
   MoreSection,
   DonateSection,
-  Shop,
+  // Shop,
   OurStory,
   OurVision,
 } from '../components';
@@ -19,7 +19,7 @@ const Home: React.FC<PageProps> = () => (
     <TopSection />
     <MoreSection />
     <DonateSection />
-    <Shop />
+    {/* <Shop /> */}
     <OurStory />
     <OurVision />
     <Footer />

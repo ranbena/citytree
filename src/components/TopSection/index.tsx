@@ -7,7 +7,7 @@ export const TopSection: React.FC<{}> = () => (
   <section className="topSection">
     <Container>
       <Row className="flex-row-reverse">
-        <Col md={7}>
+        <Col lg={7}>
           {youtubeId && (
             <iframe
               className="bg2 full-video"
@@ -19,11 +19,9 @@ export const TopSection: React.FC<{}> = () => (
               frameBorder="0"
             />
           )}
-          {imageUrl && (
-            <img src={imageUrl} alt="Thank you" width="100%" height="350" />
-          )}
+          {imageUrl && <img src={imageUrl} alt="Thank you" width="100%" />}
         </Col>
-        <Col md={5}>
+        <Col lg={5}>
           <h1>{title}</h1>
           {text}
         </Col>
