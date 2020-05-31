@@ -2,8 +2,10 @@ import React from 'react';
 import { IInvitation, IDonate } from './types';
 import ezpayImage from '../../images/ezpay.png';
 import bitpayImage from '../../images/bitpay.png';
+import bitpayIcon from '../../images/bit-transfer.gif';
 import paypalImage from '../../images/paypal.svg';
 import patreonImage from '../../images/patreon.png';
+import { bitPhone } from '../../constants';
 
 export const Invitation: IInvitation = {
   title1: 'אנחנו מזמינים אותך להיות פטרונית או פטרון שלנו!',
@@ -59,9 +61,13 @@ export const Donate: IDonate = {
   buttons: [
     {
       title: 'ביט',
-      linkUrl: '#',
       imageUrl: bitpayImage,
-      disabled: true,
+      text: (
+        <>
+          <img width="24" height="24" src={bitpayIcon} alt="העבירו בביט" />{' '}
+          העבירו בביט למספר הסלולרי של עץבעיר {bitPhone}
+        </>
+      ),
     },
     {
       title: 'פייפאל',

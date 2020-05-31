@@ -34,7 +34,7 @@ p {
   &.transparent-box {
     background-color: rgba(white, 0.3);
 
-    p {
+    p, p a {
       color: $color2;
     }
   }

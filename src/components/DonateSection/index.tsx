@@ -1,5 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Popover,
+  OverlayTrigger,
+} from 'react-bootstrap';
 import { Invitation, Donate } from './constants';
 import './styles.scss';
 
@@ -27,70 +34,102 @@ const Subscribe = () => {
   );
 };
 
-export const DonateSection: React.FC<{}> = () => {
-  const { patreon: pat, buttons } = Donate;
-  const { title1, text1, title2, text2 } = Invitation;
+const Textbox = () => (
+  <div className="box">
+    <h1>{Invitation.title1}</h1>
+    <p>{Invitation.text1}</p>
+    <br />
+    <h2>{Invitation.title2}</h2>
+    <p>{Invitation.text2}</p>
+  </div>
+);
+
+const PopoverButton = ({ text, children }) => (
+  <>
+    <OverlayTrigger
+      trigger="click"
+      placement="top"
+      overlay={
+        <Popover id="popover-button">
+          <Popover.Content>{text}</Popover.Content>
+        </Popover>
+      }
+    >
+      <Button variant="light" size="sm">
+        {children}
+      </Button>
+    </OverlayTrigger>
+  </>
+);
+
+const DonateButton = ({
+  linkUrl = null,
+  text = null,
+  disabled = false,
+  imageUrl,
+  title,
+  maxHeight = null,
+}) => {
+  const image = <img src={imageUrl} alt={title} style={{ maxHeight }} />;
+
+  if (!disabled && !linkUrl && text) {
+    return <PopoverButton text={text}>{image}</PopoverButton>;
+  }
+
   return (
-    <div className="anchor" id="donate">
-      <section className="donateSection">
-        <Container>
-          <Row>
-            <Col xl={7}>
-              <div className="box">
-                <h1>{title1}</h1>
-                <p>{text1}</p>
-                <br />
-                <h2>{title2}</h2>
-                <p>{text2}</p>
-              </div>
-            </Col>
-            <Col xl={5} className="wrapper-col">
-              <Col lg={6} xl={12}>
-                <div className="box">
-                  <h2>{Donate.title}</h2>
-                  <p>{Donate.subtitle}</p>
-                  <div className="buttons">
-                    {buttons.map(
-                      ({ title, linkUrl, imageUrl, maxHeight, disabled }) => (
-                        <Button
-                          key={title}
-                          as="a"
-                          size="sm"
-                          href={linkUrl}
-                          target="_blank"
-                          variant="light"
-                          disabled={disabled}
-                        >
-                          <img
-                            src={imageUrl}
-                            alt={title}
-                            style={{ maxHeight }}
-                          />
-                        </Button>
-                      ),
-                    )}
-                  </div>
-                  <hr />
-                  <p className="txt-patreon">{pat.text}</p>
-                  <div className="btn-patreon">
-                    <Button
-                      title={pat.title}
-                      as="a"
-                      href={pat.linkUrl}
-                      target="_blank"
-                    >
-                      <img src={pat.imageUrl} alt={pat.title} />
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} xl={12}>
-                <Subscribe />
-              </Col>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+    <Button
+      as="a"
+      size="sm"
+      href={linkUrl}
+      target="_blank"
+      variant="light"
+      disabled={disabled}
+    >
+      {image}
+    </Button>
+  );
+};
+
+const Donatebox = () => {
+  const { patreon: pat, buttons } = Donate;
+  return (
+    <div className="box">
+      <h2>{Donate.title}</h2>
+      <p>{Donate.subtitle}</p>
+      <div className="buttons">
+        {buttons.map((data) => (
+          <DonateButton key={data.title} {...data} />
+        ))}
+      </div>
+      <hr />
+      <p className="txt-patreon">{pat.text}</p>
+      <div className="btn-patreon">
+        <Button title={pat.title} as="a" href={pat.linkUrl} target="_blank">
+          <img src={pat.imageUrl} alt={pat.title} />
+        </Button>
+      </div>
     </div>
   );
 };
+
+export const DonateSection: React.FC<{}> = () => (
+  <div className="anchor" id="donate">
+    <section className="donateSection">
+      <Container>
+        <Row>
+          <Col xl={7}>
+            <Textbox />
+          </Col>
+          <Col xl={5} className="wrapper-col">
+            <Col lg={6} xl={12}>
+              <Donatebox />
+            </Col>
+            <Col lg={6} xl={12}>
+              <Subscribe />
+            </Col>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  </div>
+);

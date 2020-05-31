@@ -1,14 +1,11 @@
 {
-  "name": "gatsby-starter-ts",
-  "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
+  "name": "citytree",
+  "description": "CityTree's landing page",
   "version": "1.0.0",
-  "private": true,
-  "author": "João Pedro Schmitz <oi@joaopedro.cc> (joaopedro.cc)",
+  "author": "Ran Byron <ranbena@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "gatsby",
-    "starter",
-    "typescript"
+    "citytree"
   ],
   "scripts": {
     "start": "gatsby develop",
