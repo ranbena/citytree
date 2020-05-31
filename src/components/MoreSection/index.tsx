@@ -61,10 +61,7 @@ const VisitSection = ({ title, text, mapUrl, addressTitle }) => (
 );
 
 const AboutUsSection = ({ title, text, imageUrl }) => (
-  <div
-    className="aboutUsSection"
-    style={{ backgroundImage: `url(${imageUrl})` }}
-  >
+  <div className="aboutUsSection" style={{ backgroundImage: `url(${imageUrl})` }}>
     <Container>
       <Row>
         <Col xl={6} lg={5} md={3} sm={0} />

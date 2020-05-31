@@ -1,12 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Popover,
-  OverlayTrigger,
-} from 'react-bootstrap';
+import { Container, Row, Col, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import { Invitation, Donate } from './constants';
 import './styles.scss';
 
@@ -15,9 +8,7 @@ const Subscribe = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
-    // eslint-disable-next-line prettier/prettier
-    script.src =
-      'https://app.creaditor.com/formCreator/assets/fc-basics.min.js';
+    script.src = 'https://app.creaditor.com/formCreator/assets/fc-basics.min.js';
     el.current.appendChild(script);
   }, []);
 
@@ -77,14 +68,7 @@ const DonateButton = ({
   }
 
   return (
-    <Button
-      as="a"
-      size="sm"
-      href={linkUrl}
-      target="_blank"
-      variant="light"
-      disabled={disabled}
-    >
+    <Button as="a" size="sm" href={linkUrl} target="_blank" variant="light" disabled={disabled}>
       {image}
     </Button>
   );
