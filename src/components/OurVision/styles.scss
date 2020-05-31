@@ -1,4 +1,12 @@
+@import '../../scss/breakpoints';
+
 .ourVision {
-  padding: 70px 0;
   background-size: cover;
+
+  .box.transparent-box {
+    @include media-breakpoint-down(sm) {
+      background-color: rgba(white, 0.8);
+      margin: 0 -15px;
+    }
+  }
 }

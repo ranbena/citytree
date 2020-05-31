@@ -5,7 +5,7 @@ import image from '../../images/our-story.jpg';
 import './styles.scss';
 
 export const OurStory = () => (
-  <div className="ourStory" style={{ backgroundImage: `url(${image})` }}>
+  <div className="ourStory container-padding" style={{ backgroundImage: `url(${image})` }}>
     <Container>
       <Row>
         <Col xl={6} lg={5} md={3} sm={0} />

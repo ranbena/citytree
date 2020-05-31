@@ -34,7 +34,7 @@ const VisitSection = ({ title, text, mapUrl, addressTitle }) => (
     <div className="tab-content box">
       <h1>{title}</h1>
       <div className="visitSection">
-        <div>{text}</div>
+        <div className="visitText">{text}</div>
         <div>
           <iframe
             title="מיקום במפה"
@@ -114,7 +114,7 @@ export const MoreSection: React.FC<{}> = () => {
           {Tabs.map((data) => {
             const { key } = data;
             return (
-              <Tab.Pane eventKey={key} key={key}>
+              <Tab.Pane eventKey={key} key={key} className="container-padding">
                 {renderMoreSectionContent(data)}
               </Tab.Pane>
             );

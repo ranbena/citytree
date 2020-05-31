@@ -1,3 +1,4 @@
+@import '../../scss/breakpoints';
 @import '../../scss/variables';
 
 .moreSection {
@@ -15,7 +16,6 @@
   }
   .tab-pane {
     background-color: $color6;
-    padding: 70px 0;
 
     .tab-content {
       min-height: 500px; // for "coming soon" items
@@ -25,6 +25,14 @@
   .visitSection {
     display: flex;
     margin: 0 -10px;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+
+      .visitText {
+        margin-bottom: 20px;
+      }
+    }
 
     & > * {
       margin: 0 10px;

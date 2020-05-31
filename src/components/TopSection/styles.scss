@@ -1,7 +1,16 @@
+@import '../../scss/breakpoints';
 @import '../../scss/variables';
 
 .topSection {
   padding: 100px 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
 
   h1 {
     margin-top: -7px;

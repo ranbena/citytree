@@ -98,7 +98,7 @@ const Donatebox = () => {
 
 export const DonateSection: React.FC<{}> = () => (
   <div className="anchor" id="donate">
-    <section className="donateSection">
+    <section className="donateSection container-padding">
       <Container>
         <Row>
           <Col xl={7}>

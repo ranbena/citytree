@@ -7,7 +7,7 @@ import './styles.scss';
 export const Header: React.FC<{}> = () => (
   <header>
     <Container>
-      <Navbar expand="lg">
+      <Navbar expand="lg" collapseOnSelect>
         <span className="navbar-brand logo">
           <img src={logo} alt="עץבעיר" />
         </span>

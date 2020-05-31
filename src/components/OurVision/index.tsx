@@ -6,9 +6,9 @@ import './styles.scss';
 
 export const OurVision = () => (
   <div className="anchor" id="vision">
-    <div className="ourVision" style={{ backgroundImage: `url(${image})` }}>
+    <div className="ourVision container-padding" style={{ backgroundImage: `url(${image})` }}>
       <Container>
-        <Col xl={7} lg={8} md={10} sm={12}>
+        <Col xl={7} lg={8} md={10}>
           <div className="box transparent-box">
             <h1>{title}</h1>
             <>{text}</>

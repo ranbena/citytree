@@ -3,7 +3,7 @@
 
 .donateSection {
   background-color: $color8;
-  padding: 70px 0;
+  margin-bottom: -30px; // compensate for .box bottom margin
 
   .btn-patreon {
     text-align: center;
@@ -66,7 +66,6 @@
 
     &.subscribe {
       background-color: $color5;
-      padding: 20px;
     }
 
     .fc-form {
@@ -86,8 +85,8 @@
       }
   
       p {
-        padding: 0 40px;
         margin-bottom: 0.7rem;
+        text-align: justify;
         font-size: $h2-font-size !important;
         color: white !important;
   
@@ -96,9 +95,65 @@
           line-height: 1rem !important;
         }
       }
+
+      // .fc_input_text:not([type="email"]) {
+      //   width: calc(50% - 10px) !important;
+      // }
+
+      .fc_input_text {
+        height: 34px;
+      }
+
+      .tbody {
+        width: 100% !important;
+      }
+
+      .fc-checkbox-row {
+        position: relative !important;
+        text-indent: 22px;
+        margin: 0 !important;
+
+        .fc-cell-field {
+          position: static;
+        }
+        
+        .fc-cell-text {
+          padding: 5px 0;
+        }
+
+        // override switch style
+        .switch-light { 
+          position: static;
+          width: auto;
+          animation: none;
+
+          a, .switch-span-holder {
+            display: none;
+          }
+
+          input {
+            opacity: 1;
+            right: 0;
+            top: 11px;
+            z-index: 1;
+          }
+        } 
+
+        .fc-text {
+          color: white;
+          font-size: 1rem !important;
+          line-height: 1rem !important;
+          font-family: $font-family-base !important;
+        }
+      }
   
       .fc_base, .fc-button-row {
         margin-bottom: 0 !important;
+      }
+
+      .fc-row-field {
+        width: auto !important;
+        margin-right: 0 !important;
       }
     }
   }

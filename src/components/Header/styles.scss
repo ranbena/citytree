@@ -1,3 +1,4 @@
+@import '../../scss/breakpoints';
 @import '../../scss/variables';
 
 header {
@@ -16,6 +17,24 @@ header {
       
       img {
         height: 50px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .navbar-collapse {
+        position: fixed;
+        top: 90px;
+        left: 0px;
+        width: 100vw;
+        z-index: 100000;
+        background: $color1;
+        padding: 0 50px 40px;
+        font-size: 1.2rem;
+
+        .btn {
+          width: 150px;
+          margin-top: 20px;
+        }
       }
     }
   }
