@@ -10,7 +10,7 @@ export const Footer: React.FC<{}> = () => (
     <Container>
       <div className="d-flex justify-content-between align-items-center">
         <a
-          href="http://citytree.net/"
+          href="http://archives.citytree.net/"
           target="_blank"
           rel="noopener noreferrer"
         >
