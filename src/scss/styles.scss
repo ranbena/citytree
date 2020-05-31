@@ -42,8 +42,8 @@ p {
 
 // allow to scroll into view under the fixed header
 .anchor {
-  padding-top: $header-height;
-  margin-top: -$header-height;
+  padding-top: $header-height - 1;
+  margin-top: -$header-height - 1;
 }
 
 .wrapper-col {
