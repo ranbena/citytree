@@ -8,7 +8,7 @@ export const address = 'ביאליק 25 דירה 7, תל אביב-יפו';
 
 export const meta = {
   title: 'אקולוגיה עירונית: עץבעיר',
-  siteUrl: 'https://citytree.net',
+  siteUrl: process.env.GATSBY_SITE_URL,
   siteName: 'עץבעיר',
   description: 'עץבעיר: עסק חברתי לאקולוגיה עירונית',
   keywords:
