@@ -4,11 +4,17 @@ export const NavItems = [
     link: '#visit',
   },
   {
-    title: 'החנות הקטנה והמקומית',
+    title: 'חנות קטנה ומקומית',
     link: '#shop',
   },
   {
     title: 'החזון של עץבעיר',
     link: '#vision',
   },
+  {
+    title: 'השיבה הביתה',
+    link: 'http://citytree.net/cominghome', // TODO: change this to relative at some point
+  },
 ];
+
+export const donateButtonText = 'כסף לעץ';

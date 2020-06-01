@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import { Tabs } from './constants';
-import { phone, email, address } from '../../constants';
+import { phoneLink, emailLink, address } from '../../constants';
 import './styles.scss';
 
 const tabKeys = Tabs.map(({ key }) => key);
@@ -16,13 +16,17 @@ const renderMoreSectionContent = (data) => {
     return <AboutUsSection {...data} />;
   }
 
+  if (key === 'schedule') {
+    return <ScheduleSection {...data} />;
+  }
+
   // coming soon <Workshops /> and <Schedule />
 
-  const { title, text } = data;
+  const { title, text, subtitle } = data;
   return (
     <Container>
       <div className="tab-content box">
-        <h1>{title}</h1>
+        <h1>{subtitle || title}</h1>
         {text}
       </div>
     </Container>
@@ -50,9 +54,9 @@ const VisitSection = ({ title, text, mapUrl, addressTitle }) => (
             <address>{address}</address>
           </h2>
           <h3>
-            Email: <a href={`mail:${email}`}>{email}</a>
+            {emailLink}
             <br />
-            Phone: <a href={`tel:${phone}`}>{phone}</a>
+            {phoneLink}
           </h3>
         </div>
       </div>
@@ -75,6 +79,36 @@ const AboutUsSection = ({ title, text, imageUrl }) => (
     </Container>
   </div>
 );
+
+const ScheduleSection = ({ subtitle, text, calendarUrl: cal }) => {
+  const urlParams = Object.keys(cal.params)
+    .map((k) => {
+      const v = escape(cal.params[k]);
+      return `${k}=${v}`;
+    })
+    .join('&');
+
+  return (
+    <Container>
+      <div className="tab-content box">
+        <h1>{subtitle}</h1>
+        <div className="scheduleSection">
+          <div className="scheduleText">{text}</div>
+          <div>
+            <iframe
+              title="לוח הזמנים"
+              src={`${cal.url}?${urlParams}`}
+              width="100%"
+              height="600"
+              frameBorder="0"
+              aria-hidden="false"
+            />
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
+};
 
 export const MoreSection: React.FC<{}> = () => {
   const [tabKey, setTabKey] = useState(Tabs[0].key);

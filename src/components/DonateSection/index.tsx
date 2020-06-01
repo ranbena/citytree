@@ -57,19 +57,19 @@ const DonateButton = ({
   linkUrl = null,
   text = null,
   disabled = false,
-  imageUrl,
+  imageUrl = null,
   title,
   maxHeight = null,
 }) => {
-  const image = <img src={imageUrl} alt={title} style={{ maxHeight }} />;
+  const icon = imageUrl ? <img src={imageUrl} alt={title} style={{ maxHeight }} /> : title;
 
   if (!disabled && !linkUrl && text) {
-    return <PopoverButton text={text}>{image}</PopoverButton>;
+    return <PopoverButton text={text}>{icon}</PopoverButton>;
   }
 
   return (
     <Button as="a" size="sm" href={linkUrl} target="_blank" variant="light" disabled={disabled}>
-      {image}
+      {icon}
     </Button>
   );
 };

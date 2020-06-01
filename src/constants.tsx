@@ -1,10 +1,16 @@
+import React from 'react';
+
 import ogImage from './images/og.png';
 import favicon from './images/favicon.ico';
 
 export const phone = '03-5254196';
 export const bitPhone = '058-4227531';
 export const email = 'tree@citytree.net';
-export const address = 'ביאליק 25 דירה 7, תל אביב-יפו';
+export const address = 'ביאליק 25 דירה 7';
+
+export const phoneLink = <a href={`tel:${phone}`}>{phone}</a>;
+export const emailLink = <a href={`mail:${email}`}>{email}</a>;
+export const patreonUrl = 'https://www.patreon.com/CityTree';
 
 export const meta = {
   title: 'אקולוגיה עירונית: עץבעיר',

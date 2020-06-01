@@ -10,7 +10,7 @@ export interface IInvitation {
 export interface IButton {
   title: string;
   linkUrl?: string;
-  imageUrl: string;
+  imageUrl?: string;
   maxHeight?: number;
   text?: ReactElement;
   disabled?: boolean;

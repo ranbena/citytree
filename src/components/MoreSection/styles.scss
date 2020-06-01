@@ -22,14 +22,14 @@
     }
   }
 
-  .visitSection {
+  .visitSection, .scheduleSection {
     display: flex;
     margin: 0 -10px;
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;
 
-      .visitText {
+      .visitText, .scheduleText {
         margin-bottom: 20px;
       }
     }
@@ -41,6 +41,12 @@
 
     h2 {
       margin-top: 10px;
+    }
+  }
+
+  .scheduleSection iframe {
+    @include media-breakpoint-down(md) {
+      height: 300px;
     }
   }
 

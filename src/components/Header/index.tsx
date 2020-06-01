@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
-import { NavItems } from './constants';
+import { NavItems, donateButtonText } from './constants';
 import logo from '../../images/logo.png';
 import './styles.scss';
 
@@ -21,7 +21,7 @@ export const Header: React.FC<{}> = () => (
             ))}
           </Nav>
           <Button variant="outline-secondary" href="#donate">
-            תרמו לעץ
+            {donateButtonText}
           </Button>
         </Navbar.Collapse>
       </Navbar>
