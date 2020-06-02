@@ -7,6 +7,10 @@
     @include container-padding(100px);
   }
 
+  .react-parallax {
+    overflow: visible !important; // so the leaf image extends to the next section as per design
+  }
+
   .leaf {
     left: calc(50% - 522px) !important;
     height: 770px  !important;

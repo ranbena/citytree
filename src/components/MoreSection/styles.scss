@@ -19,6 +19,10 @@
     background-color: $color6;
     @include container-padding;
 
+    /* hide the top section leaf image */
+    position: relative;
+    z-index: 1;
+
     .tab-content {
       min-height: 500px; // for "coming soon" items
     }
