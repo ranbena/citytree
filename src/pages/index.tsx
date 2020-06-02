@@ -26,6 +26,8 @@ const Home: React.FC<{}> = () => (
       <meta name="description" content={meta.description} />
       <meta name="author" content={meta.author} />
       <link rel="shortcut icon" href={meta.favicon} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
       <meta property="og:locale" content="he_IL" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={cannonicalUrl} />

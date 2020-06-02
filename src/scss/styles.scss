@@ -15,11 +15,9 @@ body {
   }
 }
 
-.container-padding {
-  padding: 70px 0;
-
-  @include media-breakpoint-down(sm) {
-    padding: 20px 0;
+@include media-breakpoint-down(md) {
+  .leaf {
+    display: none;
   }
 }
 

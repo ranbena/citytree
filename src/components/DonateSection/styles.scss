@@ -1,9 +1,22 @@
-@import '../../scss/variables';
 @import '../../scss/bootstrap-overrides';
+@import '../../scss/variables';
+@import '../../scss/mixins';
 
 .donateSection {
+  @include container-padding;
+
   background-color: $color8;
   margin-bottom: -30px; // compensate for .box bottom margin
+  position: relative;
+
+  .leaf {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    height: 362px;
+    width: 229px;
+    z-index: 1;
+  }
 
   .btn-patreon {
     text-align: center;

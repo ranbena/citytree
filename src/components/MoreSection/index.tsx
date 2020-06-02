@@ -8,19 +8,20 @@ const tabKeys = Tabs.map(({ key }) => key);
 
 const renderMoreSectionContent = (data) => {
   const { key } = data;
+
+  // if (key === 'about') {
+  //   return <AboutUsSection {...data} />;
+  // }
+
   if (key === 'visit') {
     return <VisitSection {...data} />;
-  }
-
-  if (key === 'about') {
-    return <AboutUsSection {...data} />;
   }
 
   if (key === 'schedule') {
     return <ScheduleSection {...data} />;
   }
 
-  // coming soon <Workshops /> and <Schedule />
+  // coming soon <Workshops />
 
   const { title, text, subtitle } = data;
   return (
@@ -148,7 +149,7 @@ export const MoreSection: React.FC<{}> = () => {
           {Tabs.map((data) => {
             const { key } = data;
             return (
-              <Tab.Pane eventKey={key} key={key} className="container-padding">
+              <Tab.Pane eventKey={key} key={key} mountOnEnter>
                 {renderMoreSectionContent(data)}
               </Tab.Pane>
             );

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import { Invitation, Donate } from './constants';
+import leafImageUrl from '../../images/leaf-mid.png';
 import './styles.scss';
 
 const Subscribe = () => {
@@ -98,7 +99,8 @@ const Donatebox = () => {
 
 export const DonateSection: React.FC<{}> = () => (
   <div className="anchor" id="donate">
-    <section className="donateSection container-padding">
+    <section className="donateSection">
+      <img src={leafImageUrl} alt="leaf" className="leaf" />
       <Container>
         <Row>
           <Col xl={7}>

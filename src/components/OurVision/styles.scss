@@ -1,7 +1,9 @@
 @import '../../scss/breakpoints';
+@import '../../scss/mixins';
 
 .ourVision {
   background-size: cover;
+  @include container-padding;
 
   .box.transparent-box {
     @include media-breakpoint-down(sm) {

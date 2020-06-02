@@ -1,5 +1,6 @@
 @import '../../scss/breakpoints';
 @import '../../scss/variables';
+@import '../../scss/mixins';
 
 .moreSection {
   .tabs {
@@ -16,6 +17,7 @@
   }
   .tab-pane {
     background-color: $color6;
+    @include container-padding;
 
     .tab-content {
       min-height: 500px; // for "coming soon" items

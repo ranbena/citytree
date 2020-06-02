@@ -1,8 +1,12 @@
 @import '../../scss/variables';
+@import '../../scss/mixins';
 
 .ourStory {
+  background-image: url('../../images/our-story.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 90%;
   background-color: $color10;
+
+  @include container-padding(140px);
 }
