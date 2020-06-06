@@ -1,6 +1,7 @@
 @import '../../scss/bootstrap-overrides';
 @import '../../scss/variables';
 @import '../../scss/mixins';
+@import '../../scss/breakpoints';
 
 .donateSection {
   @include container-padding;
@@ -9,13 +10,59 @@
   margin-bottom: -30px; // compensate for .box bottom margin
   position: relative;
 
-  .leaf {
+  .side-leaf {
     position: absolute;
     left: 0;
     top: -50px;
     height: 362px;
     width: 229px;
     z-index: 1;
+    pointer-events: none;
+    transform-origin: 0 0;
+
+    @media (max-width: 1440px) {
+      transform: scale(0.74);
+    }
+
+    @include media-breakpoint-only(lg) {
+      top: -28px;
+      transform: scale(0.75);
+    }
+
+    @include media-breakpoint-only(md) {
+      top: -40px;
+      transform: scale(0.65);
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  .bottom-leaf {
+    position: absolute;
+    right: -70px;
+    bottom: -100px;
+    height: 350px;
+    width: 254px;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.65;
+
+    @include media-breakpoint-down(lg) {
+      transform: scale(0.7);
+      right: -80px;
+    }
+
+    @include media-breakpoint-down(md) {
+      transform: scale(0.6);
+      right: -90px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
 
   .btn-patreon {
@@ -163,6 +210,10 @@
   
       .fc_base, .fc-button-row {
         margin-bottom: 0 !important;
+
+        .fc_button {
+          border-color: $color3;
+        }
       }
 
       .fc-row-field {

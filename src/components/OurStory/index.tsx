@@ -4,19 +4,18 @@ import { title, text } from './constants';
 import './styles.scss';
 
 export const OurStory = () => (
-  <div className="anchor" id="story">
-    <div className="ourStory">
-      <Container>
-        <Row>
-          <Col lg={4} sm={0} />
-          <Col lg={8} sm={12}>
-            <div className="box">
-              <h1>{title}</h1>
-              <>{text}</>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+  <div className="ourStory anchorWrapper">
+    <div className="anchor" id="story" />
+    <Container>
+      <Row>
+        <Col lg={4} sm={0} />
+        <Col lg={8} sm={12}>
+          <div className="box">
+            <h1>{title}</h1>
+            <>{text}</>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   </div>
 );

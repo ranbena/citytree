@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import { Invitation, Donate } from './constants';
-import leafImageUrl from '../../images/leaf-mid.png';
+import leafLeftImageUrl from '../../images/leaf-mid.png';
+import leafBottomImageUrl from '../../images/leaf-bottom.png';
 import './styles.scss';
 
 const Subscribe = () => {
@@ -39,7 +40,7 @@ const Textbox = () => (
 const PopoverButton = ({ text, children }) => (
   <>
     <OverlayTrigger
-      trigger="click"
+      trigger="focus"
       placement="top"
       overlay={
         <Popover id="popover-button">
@@ -98,24 +99,24 @@ const Donatebox = () => {
 };
 
 export const DonateSection: React.FC<{}> = () => (
-  <div className="anchor" id="donate">
-    <section className="donateSection">
-      <img src={leafImageUrl} alt="leaf" className="leaf" />
-      <Container>
-        <Row>
-          <Col xl={7}>
-            <Textbox />
+  <section className="donateSection anchorWrapper">
+    <div className="anchor" id="donate" />
+    <img src={leafLeftImageUrl} alt="leaf" className="side-leaf" />
+    <img src={leafBottomImageUrl} alt="leaf" className="bottom-leaf" />
+    <Container>
+      <Row>
+        <Col xl={7}>
+          <Textbox />
+        </Col>
+        <Col xl={5} className="wrapper-col">
+          <Col lg={6} xl={12}>
+            <Donatebox />
           </Col>
-          <Col xl={5} className="wrapper-col">
-            <Col lg={6} xl={12}>
-              <Donatebox />
-            </Col>
-            <Col lg={6} xl={12}>
-              <Subscribe />
-            </Col>
+          <Col lg={6} xl={12}>
+            <Subscribe />
           </Col>
-        </Row>
-      </Container>
-    </section>
-  </div>
+        </Col>
+      </Row>
+    </Container>
+  </section>
 );

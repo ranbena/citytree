@@ -1,14 +1,11 @@
-@import '../../scss/breakpoints';
 @import '../../scss/mixins';
+@import '../../scss/variables';
 
 .ourVision {
   background-size: cover;
   @include container-padding;
 
-  .box.transparent-box {
-    @include media-breakpoint-down(sm) {
-      background-color: rgba(white, 0.8);
-      margin: 0 -15px;
-    }
+  p, p a {
+    color: darken($color2, 7%);
   }
 }

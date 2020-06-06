@@ -9,9 +9,9 @@ const tabKeys = Tabs.map(({ key }) => key);
 const renderMoreSectionContent = (data) => {
   const { key } = data;
 
-  // if (key === 'about') {
-  //   return <AboutUsSection {...data} />;
-  // }
+  if (key === 'about') {
+    return <AboutUsSection {...data} />;
+  }
 
   if (key === 'visit') {
     return <VisitSection {...data} />;
@@ -130,7 +130,8 @@ export const MoreSection: React.FC<{}> = () => {
   }, []);
 
   return (
-    <section className="moreSection anchor" ref={el} id={tabKey}>
+    <section className="moreSection anchorWrapper" ref={el}>
+      <div id={tabKey} className="anchor" />
       <Tab.Container transition={false} activeKey={tabKey}>
         <div className="tabs">
           <Container>

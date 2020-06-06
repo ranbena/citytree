@@ -7,7 +7,7 @@ import './styles.scss';
 
 export const TopSection: React.FC<{}> = () => (
   <section className="topSection">
-    <Parallax bgImage={leafImageUrl} strength={500} bgClassName="leaf">
+    <Parallax bgImage={leafImageUrl} strength={200} bgClassName="leaf">
       <Container>
         <Row className="flex-row-reverse">
           <Col lg={7}>

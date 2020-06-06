@@ -1,16 +1,33 @@
 @import './breakpoints';
 
-@mixin container-padding($padding: 70px) {
+$spacing-xl: 70px;
+$spacing-lg: 50px;
+$spacing-sm: 20px;
+
+@mixin container-padding($padding: $spacing-xl) {
   padding-top: $padding;
   padding-bottom: $padding;
 
   @include media-breakpoint-down(lg) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: $spacing-lg;
+    padding-bottom: $spacing-lg;
   }
 
   @include media-breakpoint-down(sm) {
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: $spacing-sm;
+  }
+}
+
+@mixin container-margin($padding: $spacing-xl) {
+  margin-top: $padding;
+  margin-bottom: $padding;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-lg;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: $spacing-sm;
   }
 }
