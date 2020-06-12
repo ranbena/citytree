@@ -14,7 +14,7 @@ export const Footer: React.FC<{}> = () => (
         </a>
         <img src={logo} alt="CityTree" height="100" />
         <div id="info">
-          אנחנו כאן לשירותך
+          אנחנו כאן
           <br />
           <a href={`tel:${phone}`}>{phone}</a> | <a href={`mailto:${email}`}>{email}</a>
         </div>

@@ -1,4 +1,5 @@
 @import './breakpoints';
+@import './mixins';
 @import './variables';
 
 html {
@@ -38,16 +39,7 @@ p {
   }
 
   p {
-    color: $color9;
-
-    a {
-      color: $color9;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
+    @include box-text;
   }
 }
 

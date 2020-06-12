@@ -1,4 +1,5 @@
 @import './breakpoints';
+@import './variables';
 
 $spacing-xl: 70px;
 $spacing-lg: 50px;
@@ -29,5 +30,19 @@ $spacing-sm: 20px;
 
   @include media-breakpoint-down(sm) {
     margin-top: $spacing-sm;
+  }
+}
+
+@mixin box-text {
+  color: $color9;
+  font-size: 1rem;
+
+  a {
+    color: $color9;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

@@ -40,7 +40,7 @@ const Textbox = () => (
 const PopoverButton = ({ text, children }) => (
   <>
     <OverlayTrigger
-      trigger="focus"
+      trigger="click"
       placement="top"
       overlay={
         <Popover id="popover-button">
@@ -79,20 +79,20 @@ const DonateButton = ({
 const Donatebox = () => {
   const { patreon: pat, buttons } = Donate;
   return (
-    <div className="box">
+    <div className="box donate-box">
       <h2>{Donate.title}</h2>
-      <p>{Donate.subtitle}</p>
-      <div className="buttons">
-        {buttons.map((data) => (
-          <DonateButton key={data.title} {...data} />
-        ))}
-      </div>
-      <hr />
       <p className="txt-patreon">{pat.text}</p>
       <div className="btn-patreon">
         <Button title={pat.title} as="a" href={pat.linkUrl} target="_blank">
           <img src={pat.imageUrl} alt={pat.title} />
         </Button>
+      </div>
+      <hr />
+      <p>{Donate.subtitle}</p>
+      <div className="buttons">
+        {buttons.map((data) => (
+          <DonateButton key={data.title} {...data} />
+        ))}
       </div>
     </div>
   );

@@ -17,4 +17,4 @@ export const NavItems = [
   },
 ];
 
-export const donateButtonText = 'כסף לעץ';
+export const donateButtonText = 'לתת לעץ';

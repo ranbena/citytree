@@ -65,58 +65,74 @@
     }
   }
 
-  .btn-patreon {
+  .donate-box {
     text-align: center;
 
-    a {
-      background-color: $patreonColor;
-      border-color: $patreonColor;
-      display: inline-block;
-      border-radius: 2px;
+    .btn-patreon {
+      a {
+        background-color: $patreonColor;
+        border-color: $patreonColor;
+        display: inline-block;
+        border-radius: 2px;
 
-      img {
-        width: 183px;
-        position: relative;
-        top: -1px;
-      }
+        img {
+          width: 183px;
+          position: relative;
+          top: -1px;
+        }
 
-      &:hover {
-        background-color: darken($patreonColor, 7%); 
-      }
+        &:hover {
+          background-color: darken($patreonColor, 7%); 
+        }
 
-      &:active {
-        background-color: darken($patreonColor, 15%) !important;
-        border-color: $patreonColor !important;
+        &:active {
+          background-color: darken($patreonColor, 15%) !important;
+          border-color: $patreonColor !important;
+        }
       }
     }
-  }
 
-  .txt-patreon {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .txt-patreon {
+      margin: 30px 0 20px;
+    }
 
-  hr {
-    margin: 15px 0 20px;
-  }
+    hr {
+      margin: 40px 67px 30px;
+      position: relative;
 
-  .buttons {
-    text-align: center;
-    margin-top: 50px;
+      &:after {
+        @include box-text;
+        content: 'או';
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        top: -13px;
+        background: $color3;
+        padding: 0 20px;
+      }
 
-    .btn {
-      display: inline-flex;
-      margin: 0 5px;
-      padding: 5px 15px;
-      max-width: 40%;
-      height: 40px;
-      border-color: rgba(0,0,0, 0.15);
-      align-items: center;
-      margin-bottom: 11px;
+      & + p {
+        padding: 0 30px;
+      }
+    }
 
-      img {
-        max-height: 30px;
-        max-width: 100%;
+    .buttons {
+      margin: 20px 0 0;
+
+      .btn {
+        display: inline-flex;
+        margin: 0 5px;
+        padding: 5px 15px;
+        max-width: 40%;
+        height: 40px;
+        border-color: rgba(0,0,0, 0.15);
+        align-items: center;
+        margin-bottom: 11px;
+
+        img {
+          max-height: 30px;
+          max-width: 100%;
+        }
       }
     }
   }

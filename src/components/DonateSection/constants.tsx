@@ -50,7 +50,7 @@ export const Invitation: IInvitation = {
 };
 
 export const Donate: IDonate = {
-  title: 'כל הדרכים לתת כסף לעץ',
+  title: 'כל הדרכים לתת לעץ',
   subtitle: 'לתשלום חד-פעמי עבור סדנה או קורס, מוצר או ייעוץ או כי בא לכן',
   patreon: {
     title: 'היו פטרונים',
