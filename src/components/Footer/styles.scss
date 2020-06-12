@@ -21,7 +21,7 @@ footer {
     }
   }
 
-  img {
+  .logo {
     height: 100px;
 
     @include media-breakpoint-down(sm) {
@@ -41,5 +41,19 @@ footer {
 
   .link {
     padding-right: 17px;
+  }
+
+  .social {
+    margin-top: 10px;
+
+    a:hover {
+      opacity: 0.85;
+    }
+
+    img{
+      margin-right: 7px;
+      height: 35px;
+      width: 35px;
+    }
   }
 }
