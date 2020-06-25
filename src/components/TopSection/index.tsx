@@ -24,7 +24,7 @@ export const TopSection: React.FC<{}> = () => (
             )}
             {imageUrl && <img src={imageUrl} className="visual" alt="Thank you" width="100%" />}
           </Col>
-          <Col lg={5}>
+          <Col lg={5} className="topSectionText">
             <h1>{title}</h1>
             {text}
           </Col>
