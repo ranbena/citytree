@@ -3,6 +3,10 @@ export const NavItems = [
     title: 'מתי ואיך אפשר לבוא',
     link: '#visit',
   },
+  {
+    title: 'סדנאות',
+    link: '#workshops',
+  },
   // {
   //   title: 'חנות קטנה ומקומית',
   //   link: '#shop',
@@ -13,7 +17,7 @@ export const NavItems = [
   },
   {
     title: 'השיבה הביתה',
-    link: 'http://citytree.net/cominghome', // TODO: change this to relative at some point
+    link: '/cominghome',
   },
 ];
 

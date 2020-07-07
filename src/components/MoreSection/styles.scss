@@ -65,4 +65,14 @@
       background-size: cover;
     }
   }
+
+  .workshopsSection {
+    li a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

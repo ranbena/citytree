@@ -71,17 +71,92 @@ export const Tabs: ITabs[] = [
     ),
     mapUrl:
       'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13523.738071490261!2d34.7820358!3d32.0710198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf87e0681964f7087!2z16LXpdeR16LXmdeoIC0g15HXmdeqINec15DXp9eV15zXldeS15nXlCDXoteZ16jXldeg15nXqg!5e0!3m2!1sen!2sil!4v1590827210854!5m2!1sen!2sil',
-    addressTitle: 'ממש בלב העיר תל אביב-יפו',
+    addressTitle: 'ממש בלב העיר תל אביב',
   },
   {
     key: 'workshops',
-    title: 'סדנאות',
+    title: 'סדנאות וסיורים',
+    subtitle: 'לבירור פרטים או להזמנת סדנה, דברו איתנו',
     text: (
       <>
+        <p>
+          היומיום של עץבעיר משלב מחקר עשייה ולמידה הנטועים בבית ובגינות. בסדנאות של עץבעיר תוכלו
+          ללמוד את מכלול המלאכות והעבודות של משק-הבית והגינה האקולוגיים: שימוש חוזר ("מחדוש"),
+          תפירה, הכנת חומרי ניקוי וטיפוח, אוכל ומרפא, קומפוסט, וכמובן, גינון – בבית ובסביבתו.
+          מהסדנאות תצאו עם ידע איך לעשות בעצמכן'ם וגם, בדרך כלל, עם משהו שהכנו ביחד.{' '}
+        </p>
+        <p>
+          בסיורים קבוצות ומשפחות באות לביקור לימודי במרחב האקולוגי שלנו. בסיור אפשר לשלב ארוחה
+          טבעונית קלה, סדנאות קצרצרות או פעילות בגינה. אנחנו מתאימים את התוכן ואת המחיר לדרישות
+          וליכולת.
+        </p>
+        <p>אנחנו פועלים על פי הזמנים והעונות.</p>
         <br />
-        בקרוב
+        הסדנאות של זמן ניידות:
       </>
     ),
+    events: [
+      {
+        title: 'תיק כלי הרחצה האקולוגי',
+        facebookEventUrl: 'https://www.facebook.com/events/256390302111525/',
+      },
+      {
+        title: 'השיער המבריק',
+        facebookEventUrl: 'https://www.facebook.com/events/258756938892935/',
+      },
+      {
+        title: 'צמחים מועילים בקיץ בעיר',
+        facebookEventUrl: 'https://www.facebook.com/events/951579041967594/',
+      },
+      {
+        title: 'צנצנות מתגלגלות בכלכלה מעגלית',
+        facebookEventUrl: 'https://www.facebook.com/events/701897433929969/',
+      },
+      {
+        title: 'על ההאטה, עם אורח מיוחד: עמית נויפלד',
+        facebookEventUrl: 'https://www.facebook.com/events/612152333012448/',
+      },
+      {
+        title: 'צמחים מועילים בקיץ בעיר',
+        facebookEventUrl: 'https://www.facebook.com/events/571600510454833/',
+      },
+      {
+        title: 'על הזיעה ועל הדיאודורנט',
+        facebookEventUrl: 'https://www.facebook.com/events/586136439004505/',
+      },
+      {
+        title: 'ליקוט צמחים מועילים בקיץ בעיר',
+        facebookEventUrl: 'https://www.facebook.com/events/256948208958393/',
+      },
+      {
+        title: 'מפגש תפירה: שימוש חוזר בבגדים ובבדים עם חי ערב',
+        facebookEventUrl: 'https://www.facebook.com/events/2946199315499108/',
+      },
+      {
+        title: 'היה שלום הפלסטיק החד-פעמי',
+        facebookEventUrl: 'https://www.facebook.com/events/546106239402067/',
+      },
+      {
+        title: 'סדנת הנבטה וארוחת הצהריים הקיצית',
+        facebookEventUrl: 'https://www.facebook.com/events/2957209760998970/',
+      },
+      {
+        title: 'סדנת קומפוסט מקוונת',
+        facebookEventUrl: 'https://www.facebook.com/events/287863472599017/',
+      },
+      {
+        title: 'על ניידות ועל אנרגיה',
+        facebookEventUrl: 'https://www.facebook.com/events/3920351578039807/',
+      },
+      {
+        title: 'מפגש תפירה: שימוש חוזר בבגדים ובבדים עם חי ערב',
+        facebookEventUrl: 'https://www.facebook.com/events/592459831677734/',
+      },
+      {
+        title: 'ארוחת-צהריים קייצית מיידית – העמקה לסודות המיטפח',
+        facebookEventUrl: 'https://www.facebook.com/events/287863472599017/',
+      },
+    ],
   },
   {
     key: 'schedule',

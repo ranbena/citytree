@@ -7,32 +7,58 @@ import './styles.scss';
 const tabKeys = Tabs.map(({ key }) => key);
 
 const renderMoreSectionContent = (data) => {
-  const { key } = data;
+  switch (data.key) {
+    case 'about':
+      return <AboutUsSection {...data} />;
+      break;
 
-  if (key === 'about') {
-    return <AboutUsSection {...data} />;
+    case 'visit':
+      return <VisitSection {...data} />;
+      break;
+
+    case 'schedule':
+      return <ScheduleSection {...data} />;
+      break;
+
+    case 'workshops':
+      return <WorkshopsSection {...data} />;
+      break;
+
+    default:
+      return null;
   }
-
-  if (key === 'visit') {
-    return <VisitSection {...data} />;
-  }
-
-  if (key === 'schedule') {
-    return <ScheduleSection {...data} />;
-  }
-
-  // coming soon <Workshops />
-
-  const { title, text, subtitle } = data;
-  return (
-    <Container>
-      <div className="tab-content box">
-        <h1>{subtitle || title}</h1>
-        {text}
-      </div>
-    </Container>
-  );
 };
+
+const WorkshopsSection = ({ title, subtitle, text, events }) => (
+  <Container>
+    <div className="tab-content box">
+      <h1>{title}</h1>
+      <Row>
+        <Col xl={8} lg={9}>
+          <div className="workshopsSection">
+            {text}
+            <br />
+            <br />
+            <ul>
+              {events.map((event) => (
+                <li>
+                  <a href={event.facebookEventUrl} target="_blank" rel="noopener noreferrer">
+                    {event.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {subtitle}:
+            <br />
+            {emailLink}
+            <br />
+            {phoneLink}
+          </div>
+        </Col>
+      </Row>
+    </div>
+  </Container>
+);
 
 const VisitSection = ({ title, text, mapUrl, addressTitle }) => (
   <Container>

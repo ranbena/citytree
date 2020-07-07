@@ -8,6 +8,10 @@ export interface ITabs {
   mapUrl?: string;
   addressTitle?: string;
   imageUrl?: string;
+  events?: {
+    title: string;
+    facebookEventUrl: string;
+  }[];
   calendarUrl?: {
     url: string;
     params: { [key: string]: string | number };
