@@ -1,5 +1,7 @@
 This is the repo of landing page in http://citytree.net.
 
+<img src="https://github.com/ranbena/citytree/blob/master/preview.jpg" width="500" />
+
 Utilizes the following:
 * React as js library.
 * Gatsby as static site generator.
