@@ -17,7 +17,7 @@ Clone the repo to your local machine.
 git clone https://github.com/ranbena/citytree.git
 ```
 
-Install all npm dependencies
+Install all npm dependencies (preinstall `yarn` globally)
 
 ```
 yarn install
