@@ -1,12 +1,13 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { FC, useEffect, useState, useRef } from 'react';
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import { Tabs } from './constants';
+import { ITabs } from './types';
 import { phoneLink, emailLink, address } from '../../constants';
 import './styles.scss';
 
 const tabKeys = Tabs.map(({ key }) => key);
 
-const renderMoreSectionContent = (data) => {
+const renderMoreSectionContent = (data: ITabs) => {
   switch (data.key) {
     case 'about':
       return <AboutUsSection {...data} />;
@@ -29,7 +30,7 @@ const renderMoreSectionContent = (data) => {
   }
 };
 
-const WorkshopsSection = ({ title, subtitle, text, events }) => (
+const WorkshopsSection: FC<ITabs> = ({ title, subtitle, text, events }) => (
   <Container>
     <div className="tab-content box">
       <h1>{title}</h1>
@@ -41,7 +42,7 @@ const WorkshopsSection = ({ title, subtitle, text, events }) => (
             <br />
             <ul>
               {events.map((event) => (
-                <li>
+                <li key={event.facebookEventUrl}>
                   <a href={event.facebookEventUrl} target="_blank" rel="noopener noreferrer">
                     {event.title}
                   </a>
@@ -60,7 +61,7 @@ const WorkshopsSection = ({ title, subtitle, text, events }) => (
   </Container>
 );
 
-const VisitSection = ({ title, text, mapUrl, addressTitle }) => (
+const VisitSection: FC<ITabs> = ({ title, text, mapUrl, addressTitle }) => (
   <Container>
     <div className="tab-content box">
       <h1>{title}</h1>
@@ -91,7 +92,7 @@ const VisitSection = ({ title, text, mapUrl, addressTitle }) => (
   </Container>
 );
 
-const AboutUsSection = ({ title, text, imageUrl }) => (
+const AboutUsSection: FC<ITabs> = ({ title, text, imageUrl }) => (
   <div className="aboutUsSection" style={{ backgroundImage: `url(${imageUrl})` }}>
     <Container>
       <Row>
@@ -107,12 +108,9 @@ const AboutUsSection = ({ title, text, imageUrl }) => (
   </div>
 );
 
-const ScheduleSection = ({ subtitle, text, calendarUrl: cal }) => {
-  const urlParams = Object.keys(cal.params)
-    .map((k) => {
-      const v = escape(cal.params[k]);
-      return `${k}=${v}`;
-    })
+const ScheduleSection: FC<ITabs> = ({ subtitle, text, calendarUrl: cal }) => {
+  const urlParams = Object.entries(cal.params)
+    .map(([k, v]) => `${k}=${escape(v.toString())}`)
     .join('&');
 
   return (

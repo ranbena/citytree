@@ -65,6 +65,16 @@
     }
   }
 
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 635px 445px;
+    grid-gap: 30px;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 100%;
+    }
+  }
+
   .donate-box {
     text-align: center;
 
@@ -82,7 +92,7 @@
         }
 
         &:hover {
-          background-color: darken($patreonColor, 7%); 
+          background-color: darken($patreonColor, 7%);
         }
 
         &:active {
@@ -125,7 +135,7 @@
         padding: 5px 15px;
         max-width: 40%;
         height: 40px;
-        border-color: rgba(0,0,0, 0.15);
+        border-color: rgba(0, 0, 0, 0.15);
         align-items: center;
         margin-bottom: 11px;
 
@@ -138,11 +148,14 @@
   }
 
   .box {
-    margin-bottom: 30px;
     min-height: 382px;
 
     &.subscribe {
       background-color: $color5;
+    }
+
+    &.text-box {
+      grid-row: 1 / 3;
     }
 
     .fc-form {
@@ -155,27 +168,23 @@
         min-height: auto;
         width: 100%;
       }
-  
+
       .fc_header {
         font-family: $font-family-base !important;
         margin-bottom: 0;
       }
-  
+
       p {
         margin-bottom: 0.7rem;
         text-align: justify;
         font-size: $h2-font-size !important;
         color: white !important;
-  
+
         span {
           font-size: 1rem !important;
           line-height: 1rem !important;
         }
       }
-
-      // .fc_input_text:not([type="email"]) {
-      //   width: calc(50% - 10px) !important;
-      // }
 
       .fc_input_text {
         height: 34px;
@@ -193,18 +202,19 @@
         .fc-cell-field {
           position: static;
         }
-        
+
         .fc-cell-text {
           padding: 5px 0;
         }
 
         // override switch style
-        .switch-light { 
+        .switch-light {
           position: static;
           width: auto;
           animation: none;
 
-          a, .switch-span-holder {
+          a,
+          .switch-span-holder {
             display: none;
           }
 
@@ -214,7 +224,7 @@
             top: 11px;
             z-index: 1;
           }
-        } 
+        }
 
         .fc-text {
           color: white;
@@ -223,8 +233,9 @@
           font-family: $font-family-base !important;
         }
       }
-  
-      .fc_base, .fc-button-row {
+
+      .fc_base,
+      .fc-button-row {
         margin-bottom: 0 !important;
 
         .fc_button {

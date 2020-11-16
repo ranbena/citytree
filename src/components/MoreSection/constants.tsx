@@ -117,7 +117,7 @@ export const Tabs: ITabs[] = [
         facebookEventUrl: 'https://www.facebook.com/events/612152333012448/',
       },
       {
-        title: 'צמחים מועילים בקיץ בעיר',
+        title: 'צמחים מועילים בקיץ בעיר - סדנה מקוונת',
         facebookEventUrl: 'https://www.facebook.com/events/571600510454833/',
       },
       {
@@ -142,7 +142,7 @@ export const Tabs: ITabs[] = [
       },
       {
         title: 'סדנת קומפוסט מקוונת',
-        facebookEventUrl: 'https://www.facebook.com/events/287863472599017/',
+        facebookEventUrl: 'https://www.facebook.com/events/678195979606570/',
       },
       {
         title: 'על ניידות ועל אנרגיה',

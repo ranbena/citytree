@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { Container, Row, Col, Button, Popover, OverlayTrigger } from 'react-bootstrap';
+import React, { FC, useEffect, useRef } from 'react';
+import { Container, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import { Invitation, Donate } from './constants';
 import leafLeftImageUrl from '../../images/leaf-mid.png';
 import leafBottomImageUrl from '../../images/leaf-bottom.png';
 import './styles.scss';
 
-const Subscribe = () => {
+const Subscribe: FC = () => {
   const el = useRef(null);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Subscribe = () => {
 };
 
 const Textbox = () => (
-  <div className="box">
+  <div className="box text-box">
     <h1>{Invitation.title1}</h1>
     <p>{Invitation.text1}</p>
     <br />
@@ -103,20 +103,10 @@ export const DonateSection: React.FC<{}> = () => (
     <div className="anchor" id="donate" />
     <img src={leafLeftImageUrl} alt="leaf" className="side-leaf" />
     <img src={leafBottomImageUrl} alt="leaf" className="bottom-leaf" />
-    <Container>
-      <Row>
-        <Col xl={7}>
-          <Textbox />
-        </Col>
-        <Col xl={5} className="wrapper-col">
-          <Col lg={6} xl={12}>
-            <Donatebox />
-          </Col>
-          <Col lg={6} xl={12}>
-            <Subscribe />
-          </Col>
-        </Col>
-      </Row>
+    <Container className="gridContainer">
+      <Textbox />
+      <Donatebox />
+      <Subscribe />
     </Container>
   </section>
 );

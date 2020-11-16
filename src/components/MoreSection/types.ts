@@ -14,6 +14,6 @@ export interface ITabs {
   }[];
   calendarUrl?: {
     url: string;
-    params: { [key: string]: string | number };
+    params: Record<string, string | number>;
   };
 }
