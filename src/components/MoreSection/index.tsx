@@ -1,112 +1,18 @@
 import React, { FC, useEffect, useState, useRef } from 'react';
-import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
+import { Container, Nav, Tab } from 'react-bootstrap';
+import { FormattedMessage } from 'gatsby-plugin-intl';
+
+import AboutUsSection from './AboutUsSection';
+import VisitSection from './VisitSection';
+import WorkshopsSection from './WorkshopsSection';
+
 import { Tabs } from './constants';
 import { ITabs } from './types';
-import { phoneLink, emailLink, address } from '../../constants';
+
 import './styles.scss';
 
-const tabKeys = Tabs.map(({ key }) => key);
-
-const renderMoreSectionContent = (data: ITabs) => {
-  switch (data.key) {
-    case 'about':
-      return <AboutUsSection {...data} />;
-      break;
-
-    case 'visit':
-      return <VisitSection {...data} />;
-      break;
-
-    case 'schedule':
-      return <ScheduleSection {...data} />;
-      break;
-
-    case 'workshops':
-      return <WorkshopsSection {...data} />;
-      break;
-
-    default:
-      return null;
-  }
-};
-
-const WorkshopsSection: FC<ITabs> = ({ title, subtitle, text, events }) => (
-  <Container>
-    <div className="tab-content box">
-      <h1>{title}</h1>
-      <Row>
-        <Col xl={8} lg={9}>
-          <div className="workshopsSection">
-            {text}
-            <br />
-            <br />
-            <ul>
-              {events.map((event) => (
-                <li key={event.facebookEventUrl}>
-                  <a href={event.facebookEventUrl} target="_blank" rel="noopener noreferrer">
-                    {event.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            {subtitle}:
-            <br />
-            {emailLink}
-            <br />
-            {phoneLink}
-          </div>
-        </Col>
-      </Row>
-    </div>
-  </Container>
-);
-
-const VisitSection: FC<ITabs> = ({ title, text, mapUrl, addressTitle }) => (
-  <Container>
-    <div className="tab-content box">
-      <h1>{title}</h1>
-      <div className="visitSection">
-        <div className="visitText">{text}</div>
-        <div>
-          <iframe
-            title="מיקום במפה"
-            src={mapUrl}
-            width="100%"
-            height="300"
-            frameBorder="0"
-            aria-hidden="false"
-            allowFullScreen
-          />
-          <h2>
-            {addressTitle}
-            <address>{address}</address>
-          </h2>
-          <h3>
-            {emailLink}
-            <br />
-            {phoneLink}
-          </h3>
-        </div>
-      </div>
-    </div>
-  </Container>
-);
-
-const AboutUsSection: FC<ITabs> = ({ title, text, imageUrl }) => (
-  <div className="aboutUsSection" style={{ backgroundImage: `url(${imageUrl})` }}>
-    <Container>
-      <Row>
-        <Col xl={6} lg={5} md={3} sm={0} />
-        <Col xl={6} lg={7} md={9} sm={12}>
-          <div className="box">
-            <h1>{title}</h1>
-            <>{text}</>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
+const tabKeys = ['about', 'visit', 'workshops', 'schedule'] as const;
+type TabKey = typeof tabKeys[number];
 
 const ScheduleSection: FC<ITabs> = ({ subtitle, text, calendarUrl: cal }) => {
   const urlParams = Object.entries(cal.params)
@@ -136,11 +42,11 @@ const ScheduleSection: FC<ITabs> = ({ subtitle, text, calendarUrl: cal }) => {
 };
 
 export const MoreSection: React.FC<{}> = () => {
-  const [tabKey, setTabKey] = useState(Tabs[0].key);
+  const [tabKey, setTabKey] = useState<TabKey>('about');
   const el = useRef(null);
 
   function onHistoryChange() {
-    const hashKey = window.location.hash.substr(1); // remove '#'
+    const hashKey = window.location.hash.substr(1) as TabKey; // remove '#'
     if (hashKey && tabKeys.includes(hashKey)) {
       setTabKey(hashKey);
       el.current.scrollIntoView();
@@ -160,25 +66,42 @@ export const MoreSection: React.FC<{}> = () => {
         <div className="tabs">
           <Container>
             <Nav>
-              {Tabs.map(({ key, title }) => (
-                <Nav.Item key={key}>
-                  <Nav.Link href={`#${key}`} active={key === tabKey}>
-                    {title}
-                  </Nav.Link>
-                </Nav.Item>
-              ))}
+              <Nav.Item>
+                <Nav.Link href="#about" active={tabKey === 'about'}>
+                  <FormattedMessage id="about.title" />
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#visit" active={tabKey === 'visit'}>
+                  <FormattedMessage id="visit.title" />
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#workshops" active={tabKey === 'workshops'}>
+                  <FormattedMessage id="workshops.title" />
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#schedule" active={tabKey === 'schedule'}>
+                  <FormattedMessage id="schedule.title" />
+                </Nav.Link>
+              </Nav.Item>
             </Nav>
           </Container>
         </div>
         <Tab.Content>
-          {Tabs.map((data) => {
-            const { key } = data;
-            return (
-              <Tab.Pane eventKey={key} key={key} mountOnEnter>
-                {renderMoreSectionContent(data)}
-              </Tab.Pane>
-            );
-          })}
+          <Tab.Pane eventKey="about" key="about" mountOnEnter>
+            <AboutUsSection />;
+          </Tab.Pane>
+          <Tab.Pane eventKey="visit" key="visit" mountOnEnter>
+            <VisitSection />;
+          </Tab.Pane>
+          <Tab.Pane eventKey="schedule" key="schedule" mountOnEnter>
+            <ScheduleSection {...Tabs[0]} />;
+          </Tab.Pane>
+          <Tab.Pane eventKey="workshops" key="workshops" mountOnEnter>
+            <WorkshopsSection />;
+          </Tab.Pane>
         </Tab.Content>
       </Tab.Container>
     </section>

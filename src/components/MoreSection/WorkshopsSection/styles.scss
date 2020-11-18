@@ -1,0 +1,60 @@
+@import '../../../scss/variables';
+
+.workshopsSection {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 30px;
+    display: flex;
+
+    img {
+      height: 115px;
+      width: 140px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    &[data-past='true'] {
+      img {
+        filter: grayscale(1);
+      }
+
+      .date {
+        text-decoration: line-through;
+      }
+    }
+
+    & > div {
+      margin: 0 20px;
+
+      h2 {
+        font-weight: normal;
+        margin-bottom: 7px;
+      }
+
+      span {
+        color: $color9;
+
+        &.date {
+          font-size: 18px;
+        }
+
+        &.badge-primary {
+          color: white;
+          background-color: $color5;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../scss/breakpoints';
+
+.visitSection {
+  display: flex;
+  margin: 0 -10px;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+
+    .visitText {
+      margin-bottom: 20px;
+    }
+  }
+
+  & > * {
+    margin: 0 10px;
+    flex: 1;
+  }
+
+  h2 {
+    margin-top: 10px;
+  }
+}

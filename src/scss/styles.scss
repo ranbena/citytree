@@ -6,8 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  direction: rtl;
+body[dir='rtl'] {
   text-align: right;
 }
 
@@ -50,7 +49,6 @@ p {
 .anchor {
   position: absolute;
   top: -$header-height + 2;
-
 }
 
 .wrapper-col {

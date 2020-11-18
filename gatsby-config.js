@@ -23,5 +23,14 @@ module.exports = {
         subset: 'hebrew',
       },
     },
+    {
+      resolve: 'gatsby-plugin-intl',
+      options: {
+        path: `${__dirname}/src/intl`, // directory with the strings JSON
+        languages: ['he', 'en'],
+        defaultLanguage: 'he',
+        redirect: false,
+      },
+    },
   ],
 };

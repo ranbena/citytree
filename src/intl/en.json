@@ -1,0 +1,78 @@
+{
+  "citytree": "CityTree",
+  "address": "25 Bialik St., apt. 7",
+  "phone": "+97235254196",
+  "nav": {
+    "donate": "Support Us",
+    "visit": "How Can I Join?",
+    "workshops": "Workshops",
+    "vision": "Our Vision",
+    "cominghome": "Coming Home"
+  },
+  "top": {
+    "title": "A Tree’s Homecoming",
+    "visual-text": "Thank you",
+    "text": [
+      "CityTree is an eco-social business and community, gathering and sharing living knowledge about urban ecology and climate resilience.",
+      "As an independent organization at the intersection of environment, health and community, we live and demonstrate what we teach.",
+      "Founder Tami Zori began her journey into the urban climate resilience space three decades ago, by following the little things that do good to our health and environment. She established CityTree in 2006 in order to share the accumulating know-how with more people and live her passion within community. Dr. Alon Eliran has also followed his own personal track of holistic nutrition, urban nature, ecological gardening, foraging, activism and research and joined Tami in 2008, to further create a space for healthy, ecologically-attuned lifestyle and knowledge-sharing.",
+      "We are currently repackaging the know-how and products accumulated during the years of CityTree’s activity and will be offering our content  through new digital channels, in addition to our “older” yet beloved channels.",
+      "You can find all relevant content here on CityTree’s updated website."
+    ]
+  },
+  "about": {
+    "title": "The Blossoming Tree",
+    "text": [
+      "CityTree takes part as a node within the life-supportive network called The Great Turning. Its members are active inExtinction Rebellion and across the environmental movement. The unique gifts CityTree brings to the arena include  direct and accessible living examples of personal-communal-ecological change within an urban environment. Even for those of us active in community gardening, protests or other political activism, gaps still remain between the public and personal spheres. CityTree’s renewed emphasis on the Home and the work in and around it enriches environmental activism and brings it full circle.",
+      "At CityTree we live our utopia to the extent possible here and now - a utopia that sends us signs of encouragement  with every step we take - from the history of our beloved city to a mantis discovered in the garden.",
+      "CityTree conducts research while practicing the “good life in the city” and distributes tried-and-true knowhow of how to nourish the urban environment as a vital space, abundant with relationships - among and between humans,  plants, animals, soil, water and all the elements. CityTree’s accumulated wisdom may prove to be be life-saving during times of crisis, while at other times it simply allows for quality of life: nourishment, food preservation, returning our food waste to soil, working harmoniously with plants and water, human ecology, interconnectedness, circular economy, and local productivity."
+    ],
+    "column-sizes": {
+      "xl": "6",
+      "lg": "7",
+      "md": "9",
+      "sm": "12"
+    }
+  },
+  "visit": {
+    "title": "How can I join?",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13523.738071490261!2d34.7820358!3d32.0710198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf87e0681964f7087!2z16LXpdeR16LXmdeoIC0g15HXmdeqINec15DXp9eV15zXldeS15nXlCDXoteZ16jXldeg15nXqg!5e0!3m2!1sen!2sil!4v1590827210854!5m2!1sen!2sil",
+    "mapAltText": "Location on the map",
+    "addressTitle": "Right at the Heart of Tel Aviv",
+    "text": [
+      "Tuesdays are our open-house days at the home and garden! Come visit and meet Tami, Alon and the students and short-term residents who live in or are visiting the apartment. We also open the house for events, tours or workshops. You can schedule a meeting with us and come to buy vinegar, soap and other home products.",
+      "We also offer the option to design your own personal retreat. People come here to study, experience practical ecological living, meet companions, rest and heal. We open our house to serve those who come to further learning and healing processes.",
+      "Anytime you come, you’ll get a peek into a little bubble of warmth and sanity in the heart of the city and be exposed to all the work being done to create a renewed humanity that knows how to live with - not just on - Planet Earth. We offer an open invitation to come and join!",
+      "** We offer working retreats and invite designers, illustration, video, editing and marketing professionals to combine our living space at the Tree with the opportunity to experience and apply your skills to our developing digital presence while enjoying the local organic vegan food and open access to a wealth of knowledge answering all your environmental and health questions - a healing experience for all involved."
+    ]
+  },
+  "workshops": {
+    "title": "Workshops and Tours",
+    "subtitle": "For details and registration please contact us",
+    "text": [
+      "CityTree’s methodology combines research, practice and learning based in the home and gardens. CityTree’s workshops teach the entire range of handicraft and techniques of the ecological household and garden: reuse strategies, knitting and sewing, DIY cleaning materials and cosmetics, food and homeopathy, compost and gardening. You will leave the program with knowledge, resources, a community and, in most cases, with a product we prepare together.",
+      "During our tours, groups and families experience an educational visit of our eco-space. The tour may include a light vegan meal, mini workshops and garden activity. We tailor the content and price to the goals and abilities of each group.",
+      "We follow times of the year and seasons."
+    ],
+    "events": {
+      "online": "Online workshop",
+      "tour": "Tour",
+      "house": "At CityTree",
+      "en": "In English",
+      "he": "In Hebrew",
+      "upcoming": "Upcoming Event",
+      "title": "Here are the workshops of Thrivability Time:",
+      "titles": {
+        "376031080223235": "Compost and the Big City",
+        "346135006581979": "How to be Sick?",
+        "383640592802406": "The Winter Lunch",
+        "761561041330970": "Bialik Square Tour",
+        "2799376593676978": "Vinegar and Life in Fall",
+        "624089721619740": "Fire of Rebellion - Ecological Hanukkah Candles"
+      }
+    }
+  },
+  "schedule": {
+    "title": "Schedule"
+  }
+}

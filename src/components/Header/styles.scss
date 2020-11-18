@@ -5,7 +5,7 @@ header {
   position: sticky;
   background-color: $color1;
   top: 0;
-  box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
   z-index: 2;
 
   nav {
@@ -13,11 +13,16 @@ header {
 
     .logo {
       display: inline-block; /* flexbox fix for ie10 */
-      margin-left: 40px;
-      
+      width: 90px;
+      margin: 0;
+
       img {
         height: 50px;
       }
+    }
+
+    .navbar-collapse {
+      justify-content: space-between;
     }
 
     @include media-breakpoint-down(md) {

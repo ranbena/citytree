@@ -1,17 +1,24 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import { Container, Row, Col } from 'react-bootstrap';
-import { title, text, youtubeId, imageUrl } from './constants';
+import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
+import { forEachMessage } from '../../utils';
+
 import leafImageUrl from '../../images/leaf-top.png';
+import mainImageUrl from '../../images/thanks.jpg';
+
 import './styles.scss';
 
-export const TopSection: React.FC<{}> = () => (
-  <section className="topSection">
-    <Parallax bgImage={leafImageUrl} strength={200} bgClassName="leaf">
-      <Container>
-        <Row className="flex-row-reverse">
-          <Col lg={7}>
-            {youtubeId && (
+export const TopSection: React.FC = () => {
+  const intl = useIntl();
+
+  return (
+    <section className="topSection">
+      <Parallax bgImage={leafImageUrl} strength={200} bgClassName="leaf">
+        <Container>
+          <Row className="flex-row-reverse">
+            <Col lg={7}>
+              {/* {youtubeId && (
               <iframe
                 className="visual"
                 allowFullScreen
@@ -21,15 +28,25 @@ export const TopSection: React.FC<{}> = () => (
                 src={`https://www.youtube.com/embed/${youtubeId}?origin=http://citytree.com&amp;playsinline=1&amp;color=white&amp;fs=1`}
                 frameBorder="0"
               />
-            )}
-            {imageUrl && <img src={imageUrl} className="visual" alt="Thank you" width="100%" />}
-          </Col>
-          <Col lg={5} className="topSectionText">
-            <h1>{title}</h1>
-            {text}
-          </Col>
-        </Row>
-      </Container>
-    </Parallax>
-  </section>
-);
+            )} */}
+              <img
+                src={mainImageUrl}
+                className="visual"
+                alt={intl.formatMessage({ id: 'top.visual-text' })}
+                width="100%"
+              />
+            </Col>
+            <Col lg={5} className="topSectionText">
+              <h1>
+                <FormattedMessage id="top.title" />
+              </h1>
+              {forEachMessage(intl, 'top.text').map((txt) => (
+                <p>{txt}</p>
+              ))}
+            </Col>
+          </Row>
+        </Container>
+      </Parallax>
+    </section>
+  );
+};

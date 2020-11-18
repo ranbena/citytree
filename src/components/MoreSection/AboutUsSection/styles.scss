@@ -1,0 +1,16 @@
+@import '../../../scss/breakpoints';
+
+.aboutUsSection {
+  direction: rtl; // in En, the direction switch doesn't work with the image
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: contain;
+
+  body[dir='ltr'] & .box {
+    direction: ltr; // compensate for the above direction reversal
+  }
+
+  @include media-breakpoint-down(md) {
+    background-size: cover;
+  }
+}

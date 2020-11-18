@@ -8,12 +8,13 @@
 
   .tabs {
     background-color: $color5;
-    
+
     .nav-link {
       color: $color3;
       font-size: 1rem;
 
-      &.active, &:hover {
+      &.active,
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -22,20 +23,20 @@
     .container {
       @include container-padding;
     }
-    
+
     .tab-content {
       min-height: 500px; // for "coming soon" items
     }
   }
 
-  .visitSection, .scheduleSection {
+  .scheduleSection {
     display: flex;
     margin: 0 -10px;
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;
 
-      .visitText, .scheduleText {
+      .scheduleText {
         margin-bottom: 20px;
       }
     }
@@ -53,26 +54,6 @@
   .scheduleSection iframe {
     @include media-breakpoint-down(md) {
       height: 300px;
-    }
-  }
-
-  .aboutUsSection {
-    background-repeat: no-repeat;
-    background-position: 70%;
-    background-size: contain;
-
-    @include media-breakpoint-down(md) {
-      background-size: cover;
-    }
-  }
-
-  .workshopsSection {
-    li a {
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 }
