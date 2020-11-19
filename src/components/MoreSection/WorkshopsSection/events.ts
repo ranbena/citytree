@@ -84,7 +84,7 @@ export const events: Event[] = [
     id: '335776294432008',
     url: 'https://www.facebook.com/events/335776294432008/',
     image:
-      'https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-0/s526x296/119953756_3706273346051363_6465286044402436575_o.jpg?_nc_cat=104&ccb=2&_nc_sid=340051&_nc_ohc=8Qpqow5kPggAX8qua1g&_nc_ht=scontent.fsdv3-1.fna&tp=7&oh=167b35e3ca17e5479b998622bb654c29&oe=5FDBFED2',
+      'https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-0/s526x296/125956058_3881176181894411_190289610102069296_o.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=XSrubQVZWs8AX-CxzAJ&_nc_ht=scontent.fsdv3-1.fna&tp=7&oh=b5628dbb3d61b7bce4b8bdfc57889b1c&oe=5FDCD305',
     date: 'Dec 29 2020 19:00:00 GMT+0200',
     type: 'online',
   },
