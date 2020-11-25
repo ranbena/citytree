@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
 import { useIntl, FormattedMessage, FormattedDate, FormattedTime } from 'gatsby-plugin-intl';
 
@@ -13,7 +13,16 @@ const now = Date.now();
 
 const WorkshopsSection: FC = () => {
   const intl = useIntl();
-  let upcomingEventFlag = false;
+  const ref = useRef<HTMLUListElement>(null);
+
+  useEffect(() => {
+    // add [data-past] attribute (must not be prerendered)
+    ref.current.querySelectorAll('li').forEach((li) => {
+      const time = Number(li.getAttribute('data-time'));
+      const isPast = now - time > 0;
+      li.setAttribute('data-past', isPast.toString());
+    });
+  }, []);
 
   return (
     <Container>
@@ -31,7 +40,7 @@ const WorkshopsSection: FC = () => {
               <FormattedMessage id="workshops.events.title" />
               <br />
               <br />
-              <ul>
+              <ul ref={ref}>
                 {events.map(({ url, image, id, date, type, locale = intl.defaultLocale }) => {
                   const key = `workshops.events.titles.${id}`;
                   if (!(key in intl.messages)) {
@@ -39,14 +48,9 @@ const WorkshopsSection: FC = () => {
                   }
                   const title = intl.formatMessage({ id: key });
                   const dateObject = new Date(date);
-                  const isPast = now - dateObject.getTime() > 0;
-                  const isUpcomingEvent = !isPast && !upcomingEventFlag;
-                  if (isUpcomingEvent) {
-                    upcomingEventFlag = true;
-                  }
 
                   return (
-                    <li key={id} data-past={isPast}>
+                    <li key={id} data-time={dateObject.getTime()}>
                       <a href={url} target="_blank" rel="noopener noreferrer">
                         <img src={image} alt={title} />
                       </a>
@@ -67,11 +71,9 @@ const WorkshopsSection: FC = () => {
                           <FormattedTime value={dateObject} />
                         </span>
                         <div>
-                          {isUpcomingEvent && (
-                            <Badge variant="primary">
-                              ★ <FormattedMessage id="workshops.events.upcoming" />
-                            </Badge>
-                          )}{' '}
+                          <Badge variant="primary" className="upcoming">
+                            ★ <FormattedMessage id="workshops.events.upcoming" />
+                          </Badge>{' '}
                           <Badge variant="light">
                             <FormattedMessage id={`workshops.events.${type}`} />
                           </Badge>{' '}

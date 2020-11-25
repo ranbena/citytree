@@ -28,6 +28,12 @@
       }
     }
 
+    // show upcoming for first [data-past="false"] item
+    &[data-past='true'] .upcoming,
+    &[data-past='false'] ~ [data-past='false'] .upcoming {
+      display: none;
+    }
+
     & > div {
       margin: 0 20px;
 
