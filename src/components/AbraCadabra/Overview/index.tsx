@@ -22,7 +22,7 @@ const Overview: FC = () => (
         <hr />
         <h4>COURSE DATES</h4>
         <p>
-          January 20-March 10 (Every Wednesday)
+          February 3-March 24 (Every Wednesday)
           <br />
           19:00-20:15 IST (12:00pm-1:15pm EST)
         </p>

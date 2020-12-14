@@ -7,10 +7,11 @@ export { Anchor } from './styles';
 
 interface IProps {
   color: string;
+  navHeight: number;
 }
 
-const Navigation: FC<PropsWithChildren<IProps>> = ({ color, children }) => (
-  <Wrapper color={color}>
+const Navigation: FC<PropsWithChildren<IProps>> = ({ children, ...props }) => (
+  <Wrapper {...props}>
     <Container>{children}</Container>
   </Wrapper>
 );

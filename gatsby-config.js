@@ -18,10 +18,11 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-root-import',
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Assistant:300,400,600,700', 'Proza+Libre:400,700'],
+        fonts: ['Assistant:200,300,400,600,700', 'Proza+Libre:400,700'],
         display: 'swap',
         subset: 'hebrew',
       },

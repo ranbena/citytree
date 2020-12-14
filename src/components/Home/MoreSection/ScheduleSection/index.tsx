@@ -38,16 +38,16 @@ const ScheduleSection: FC = () => {
         </h1>
         <div className="scheduleSection">
           <div className="scheduleText">
-            {forEachMessage(intl, 'schedule.text1').map((txt: string) => (
-              <Fragment key={txt}>
+            {forEachMessage(intl, 'schedule.text1').map(([txt, key]) => (
+              <Fragment key={key}>
                 {txt}
                 <br />
               </Fragment>
             ))}
             <br />
             <br />
-            {forEachMessage(intl, 'schedule.text2').map((txt: string) => (
-              <Fragment key={txt}>
+            {forEachMessage(intl, 'schedule.text2').map(([txt, key]) => (
+              <Fragment key={key}>
                 {txt}
                 <br />
               </Fragment>

@@ -169,16 +169,22 @@ export const events: Event[] = [
     date: 'Feb 23 2021 19:00:00 GMT+0200',
     type: 'online',
   },
-
   {
-    id: '2792107381034313',
-    url: 'https://www.facebook.com/events/2792107381034313/',
+    id: '243636040457586',
+    url: 'https://www.facebook.com/events/243636040457586/',
     image:
-      'https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/119936382_3706270856051612_6715558972044257408_o.jpg?_nc_cat=103&ccb=2&_nc_sid=340051&_nc_ohc=wPwkAO5YP20AX88cbNp&_nc_ht=scontent.fsdv3-1.fna&oh=3954ba627c062a40c9cb98f2af5e5c0f&oe=60076364',
+      'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/135098224_4008737315804963_2655185466106235802_o.jpg?_nc_cat=104&ccb=2&_nc_sid=340051&_nc_ohc=9AAd6zRaVU4AX_Xl_-Z&_nc_oc=AQmSn6gHo41yAoQLnpDtFUSzZobfrSLFIC62MJNmYpQSjTmfWQ7FKRbN86d30Q8-dfM&_nc_ht=scontent.fsdv2-1.fna&oh=ffb7fd892bfd7eefa8c4365db35eccb7&oe=60183583',
+    date: 'Mar 2 2021 19:00:00 GMT+0200',
+    type: 'online',
+  },
+  {
+    id: '451485792523691',
+    url: 'https://www.facebook.com/events/451485792523691/',
+    image:
+      'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/135283763_4008724769139551_1815789711436598228_o.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=SsFL-hpJcx0AX_neGJZ&_nc_ht=scontent.fsdv2-1.fna&oh=53ac4935d7e4708f1a920789339c24aa&oe=601A26CD',
     date: 'Mar 9 2021 19:00:00 GMT+0200',
     type: 'online',
   },
-
   {
     id: '612468359441909',
     url: 'https://www.facebook.com/events/612468359441909/',

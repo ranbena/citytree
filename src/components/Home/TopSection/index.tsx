@@ -40,8 +40,8 @@ const TopSection: React.FC = () => {
               <h1>
                 <FormattedMessage id="top.title" />
               </h1>
-              {forEachMessage(intl, 'top.text').map((txt: string) => (
-                <p key={txt}>{txt}</p>
+              {forEachMessage(intl, 'top.text').map(([txt, key]) => (
+                <p key={key}>{txt}</p>
               ))}
             </Col>
           </Row>

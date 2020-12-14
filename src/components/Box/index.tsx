@@ -9,13 +9,16 @@ interface IProps {
   md?: number;
   sm?: number;
   color?: string;
+  transparent?: boolean;
 }
 
 export const BoxInner = Wrapper;
 
-const Box: FC<PropsWithChildren<IProps>> = ({ children, color, ...props }) => (
+const Box: FC<PropsWithChildren<IProps>> = ({ children, color, transparent, ...props }) => (
   <Col {...props}>
-    <Wrapper color={color}>{children}</Wrapper>
+    <Wrapper color={color} transparent={transparent}>
+      {children}
+    </Wrapper>
   </Col>
 );
 

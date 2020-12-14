@@ -1,18 +1,19 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { HEADER_HEIGHT } from '../Header';
 
-export const NAVIGATION_HEIGHT = 53;
-
-export const Anchor = styled.div`
+export const Anchor = styled.div<{ navHeight: number }>`
   position: relative;
-  top: -${NAVIGATION_HEIGHT + HEADER_HEIGHT}px;
 
-  @media (max-width: 991px) {
-    top: -${HEADER_HEIGHT}px;
-  }
+  ${({ navHeight }) => css`
+    top: -${navHeight + HEADER_HEIGHT}px;
+
+    @media (max-width: 991px) {
+      top: -${navHeight}px;
+    }
+  `}
 `;
 
-export const Wrapper = styled.div<{ color: string }>`
+export const Wrapper = styled.div<{ color: string; navHeight: number }>`
   font-size: 20px;
   background-color: ${(p) => p.color};
   position: sticky;
@@ -24,8 +25,10 @@ export const Wrapper = styled.div<{ color: string }>`
     margin-right: 70px;
     display: inline-block;
     color: white;
-    height: ${NAVIGATION_HEIGHT}px;
-    line-height: ${NAVIGATION_HEIGHT}px;
+    ${({ navHeight }) => css`
+      height: ${navHeight}px;
+      line-height: ${navHeight}px;
+    `}
   }
 
   @media (max-width: 991px) {

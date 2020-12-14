@@ -5,7 +5,7 @@ import { useIntl } from 'gatsby-plugin-intl';
 
 import ogImage from 'src/assets/images/abracadabra/og.jpeg';
 import Layout from 'src/components/Layout';
-import Navigation, { Anchor } from 'src/components/Navigation';
+import { Navigation, Anchor } from '../components/AbraCadabra/styles';
 import {
   TopSection,
   Overview,
@@ -56,7 +56,7 @@ const Page: FC<PageProps> = () => {
         <meta property="og:image:height" content={image.height} />
       </Helmet>
       <TopSection />
-      <Navigation color="#223a39">
+      <Navigation>
         <a href="#overview">Overview</a>
         <a href="#investment">Investment</a>
         <a href="#details">The Details</a>

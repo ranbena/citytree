@@ -18,8 +18,8 @@ const OurStory: FC = () => {
               <h1>
                 <FormattedMessage id="story.title" />
               </h1>
-              {forEachMessage(intl, 'story.text').map((txt: string) => (
-                <p key={txt}>{txt}</p>
+              {forEachMessage(intl, 'story.text').map(([txt, key]) => (
+                <p key={key}>{txt}</p>
               ))}
             </div>
           </Col>

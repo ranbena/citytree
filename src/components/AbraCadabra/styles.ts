@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import bullet from 'src/assets/images/abracadabra/bullet.svg';
 import BoxComponent from '../Box';
+import NavComponent, { Anchor as AnchorComponent } from '../Navigation';
 
 export const MainWrapper = styled.div`
   font-family: minion-pro, serif;
@@ -38,6 +39,15 @@ export const MainWrapper = styled.div`
     margin: 2rem 0;
   }
 `;
+
+export const Navigation = styled(NavComponent).attrs({
+  color: '#223a39',
+  navHeight: 53,
+})``;
+
+export const Anchor = styled(AnchorComponent).attrs({
+  navHeight: 53,
+})``;
 
 const TitleBullets = css`
   &:before,

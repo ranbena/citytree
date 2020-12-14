@@ -1,9 +1,16 @@
 {
   "direction": "ltr",
   "citytree": "CityTree",
+  "language": "Language",
+  "hebrew": "Hebrew",
+  "english": "English",
+  "workshop-dates": "Workshop Dates",
+  "dates": "Dates",
+  "element": "Element",
   "address": "25 Bialik St., apt. 7",
   "phone": "+97235254196",
   "or": "or",
+  "nis": "nis",
   "newsletter": {
     "formId": "255340",
     "dataFormId": "255340-fec3f9f7-2196-da60-33e6-b2f5318d3b83-22"
@@ -31,7 +38,7 @@
     "archive": "The Hebrew archived site"
   },
   "nav": {
-    "donate": "Support Us",
+    "donate": "Support CityTree",
     "visit": "How Can I Join?",
     "workshops": "Workshops",
     "vision": "Our Vision",
@@ -104,7 +111,9 @@
         "359931955368230": "ABRACADABRA - אברא כדברא : On magic, deep ecology, and the rise of the feminine",
         "331939588081680": "Useful Trees",
         "966818803823564": "Farewell, Disposable Paper Products",
-        "945134666017445": "The Song of the Weeds"
+        "945134666017445": "The Weed's Song",
+        "243636040457586": "Oh So Sweet",
+        "451485792523691": "The Winter Lunch"
         
       }
     }
@@ -169,5 +178,86 @@
     "manifest": "We have described our concept of Home in our <manifest>Home manifesto</manifest>.",
     "kikar": "We have a detailed vision for the city of Tel Aviv which can be adapted to any locality. In our vision, the whole city is a forest-city. Cities all around the world become green and their inhabitants turn them into spaces abundant with life and productivity.",
     "trees": "Tree are the cornerstone of the forest-city. If we honor the trees as sacred partners, it will become easier to bring the rest of the vision into reality around them. Inspired by these ideas, we wrote <trees>the Holy Trees Treaty (in Hebrew)</trees>."
+  },
+  "practical-ecology": {
+    "metatitle": "CityTree | Practical Ecology",
+    "title": "Practical Ecology",
+    "subtitle": "A seasonal Coming Home workshop series",
+    "nav": {
+      "overview": "Overview",
+      "schedule": "Workshops Schedule",
+      "pricing": "Pricing",
+      "times": "About the Times"
+    },
+    "signupnow": "Sign up now",
+    "overview": {
+      "subtitle": "Winter Workshops 2020-2021",
+      "text": [
+        "Each workshop in the Coming Home: Practical Ecology series takes participants on a journey around thought and habit, step by step.",
+        "Overlapping, preparing lunch, wiping, soaping - it’s unbelievable how many thoughts we have around every little action in life, and what a huge change happens when we are ready to meet them and test them against what we already know about the world."
+      ],
+      "date": "The workshops begin November 10",
+      "time": "Every Tuesday, 19:00-20:00 IST"
+    },
+    "magiclink": {
+      "title1": "18 WORKSHOPS,",
+      "title2": "1 MAGIC LINK",
+      "text": "All workshops are recorded and can be accessed to watch whenever, wherever for just 150nis.",
+      "button": "Get the link"
+    },
+    "workshops": {
+      "subtitle": "These 18 online workshops are curated specially for the winter season, divided into three modules that correlate to the CityTree “times.”",
+      "prosperity": {
+        "title": "Prosperity",
+        "element": "Earth"
+      },
+      "agriculture": {
+        "title": "Agriculture",
+        "element": "Earth"
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "element": "Air"
+      },
+      "timeof": "The Time of",
+      "next": "View Next module",
+      "prev": "View previous module",
+      "events": {
+        "1": "Compost and the Big City - Introduction",
+        "2": "How to Be Sick: A Medicinal Potion and More",
+        "3": "Winter Lunch: The Basics of a Simple Diet",
+        "4": "Vinegar and Life in the Fall: How to Make Vinegar",
+        "5": "Fire of Rebellion: Ecological Candles | Hanukkah Class",
+        "6": "Kombucha and Bacteria: Probiotics & Fun",
+        "7": "Useful Plants in Winter",
+        "8": "Compost and the Big City - Part II",
+        "9": "Local Tea Ceremony",
+        "10": "The Weed's Song",
+        "11": "Useful Trees",
+        "12": "Farewell, Disposable Paper Products",
+        "13": "Tsss-Spray",
+        "14": "What Do You Do When You Wake Up?",
+        "15": "Shiny Hair",
+        "16": "Oh So Sweet",
+        "17": "The Winter Lunch",
+        "18": "Making Sunscreen"
+      }
+    },
+    "investment": {
+      "title": "Winter Workshops Pricing",
+      "subtitle": "A one-time payment for the Magic Link grants you access to all 18 workshops in the Fall-Winter Coming Home Workshops series, as well as the video recordings.",
+      "tiers": {
+        "single": "Single Workshop",
+        "standard": "Standard Magic Link",
+        "patrons": "For CityTree Patrons"
+      },
+      "button": "Get the magic link now!",
+      "patronText": "Become a CityTree Patron and pay less"
+    },
+    "times": {
+      "title": "The CityTree “Times”",
+      "text": "CityTree was birthed in the spirit of connecting more closely to the natural rhythms of the planet. Tami Zori, CityTree’s founder, developed a calendar that unites the energy of seasons, elements lunar/solar cycles to more intentionally create in harmony with nature as it shifts year-round. The Coming Home: Practical Ecology workshop series (along with all of our work at CityTree) takes this calendar into account as we bring new ideas and creations into the world.",
+      "button": "Get the winter workshops"
+    }
   }
 }

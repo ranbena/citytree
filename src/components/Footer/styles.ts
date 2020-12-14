@@ -41,9 +41,12 @@ export const Info = styled.div`
 `;
 
 export const Social = styled.div`
-  margin: 10px 0;
+  margin: 10px -3px;
   display: flex;
-  gap: 7px;
+
+  a {
+    margin: 0 3px;
+  }
 
   a:hover {
     opacity: 0.85;

@@ -10,7 +10,7 @@ import ScheduleSection from './ScheduleSection';
 import './styles.scss';
 
 const tabKeys = ['about', 'visit', 'workshops', 'schedule'] as const;
-type TabKey = typeof tabKeys[number];
+export type TabKey = typeof tabKeys[number];
 
 const MoreSection: React.FC = () => {
   const [tabKey, setTabKey] = useState<TabKey>('about');

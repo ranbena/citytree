@@ -15,11 +15,11 @@ export function getOppositeSizes(sizes: Sizes): Sizes {
   return ret;
 }
 
-export function forEachMessage(intl: IntlShape, key: string): string[] {
-  const ret: string[] = [];
-  Object.entries(intl.messages).forEach(([k, v]) => {
+export function forEachMessage(intl: IntlShape, key: string): [string, string][] {
+  const ret: [string, string][] = [];
+  Object.entries(intl.messages).forEach(([k, v], idx) => {
     if (k.startsWith(key)) {
-      ret.push(v);
+      ret.push([v, `${key}${idx}`]);
     }
   });
   return ret;

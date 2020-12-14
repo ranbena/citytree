@@ -32,8 +32,8 @@ const WorkshopsSection: FC = () => {
         <Row>
           <Col xl={8} lg={9}>
             <div className="workshopsSection">
-              {forEachMessage(intl, 'workshops.text').map((txt: string) => (
-                <p key={txt}>{txt}</p>
+              {forEachMessage(intl, 'workshops.text').map(([txt, key]) => (
+                <p key={key}>{txt}</p>
               ))}
               <br />
               <FormattedMessage id="workshops.events.title" />

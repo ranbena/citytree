@@ -49,8 +49,8 @@ const Textbox = () => {
         <FormattedMessage id="invitation.title1" />
       </h1>
       <p>
-        {forEachMessage(intl, 'invitation.text1').map((txt: string) => (
-          <Fragment key={txt}>
+        {forEachMessage(intl, 'invitation.text1').map(([txt, key]) => (
+          <Fragment key={key}>
             {txt}
             <br />
             <br />
@@ -60,8 +60,8 @@ const Textbox = () => {
       <h2>
         <FormattedMessage id="invitation.title2" />
       </h2>
-      {forEachMessage(intl, 'invitation.text2').map((txt: string) => (
-        <p key={txt}>{txt}</p>
+      {forEachMessage(intl, 'invitation.text2').map(([txt, key]) => (
+        <p key={key}>{txt}</p>
       ))}
       <p>
         <a href={patreonUrl} target="_blank" rel="noopener noreferrer">
