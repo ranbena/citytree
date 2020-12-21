@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Assistant:400,600,700'],
+        fonts: ['Assistant:300,400,600,700', 'Proza+Libre:400,700'],
         display: 'swap',
         subset: 'hebrew',
       },
