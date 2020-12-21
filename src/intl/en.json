@@ -4,6 +4,13 @@
   "address": "25 Bialik St., apt. 7",
   "phone": "+97235254196",
   "or": "or",
+  "meta": {
+    "locale": "en_US",
+    "title": "CityTree - an eco-social business and community for urban ecology and climate resilience.",
+    "description": "An eco-social business and community for urban ecology and climate resilience",
+    "keywords": "Ecology, Urban Ecology, Green, Nature in the city, Ecological living, Ecological home, Community garden, Green environment, Compost, Guerilla gardening, Ice cream workshop, Healty chocolate, Natural ice cream, sustainability, Ecological tips, Organic community, Environmental thinking, Consideration nutrition, Responsible consumption, Minimalism, Reuse, Recycling, Home agriculture, Patio garden, Sustainable living, Permaculture, Practical ecology, Water recycling, vegetable growing, Health and Environment",
+    "author": "Tami Zori and the CityTree team"
+  },
   "footer": {
     "text": "Contact Us",
     "facebook": "CityTree on Facebook",
