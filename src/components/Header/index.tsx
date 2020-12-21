@@ -1,12 +1,17 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import { useIntl, Link, FormattedMessage } from 'gatsby-plugin-intl';
 import logo from '@/images/logo.png';
+import { formatPath } from '../../utils';
 import './styles.scss';
 
+// TODO: move this to styles.ts when available
+export const HEADER_HEIGHT = 90;
+
 const Header: React.FC = () => {
-  const { locale, formatMessage } = useIntl();
+  const intl = useIntl();
+  const href = (path: string) => formatPath(intl, path);
+  const { locale, formatMessage } = intl;
 
   return (
     <header>
@@ -18,13 +23,13 @@ const Header: React.FC = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav>
-              <Nav.Link href="#visit">
+              <Nav.Link href={href('/#visit')}>
                 <FormattedMessage id="nav.visit" />
               </Nav.Link>
-              <Nav.Link href="#workshops">
+              <Nav.Link href={href('/#workshops')}>
                 <FormattedMessage id="nav.workshops" />
               </Nav.Link>
-              <Nav.Link href="#vision">
+              <Nav.Link href={href('/#vision')}>
                 <FormattedMessage id="nav.vision" />
               </Nav.Link>
               <Nav.Link href="/cominghome">
@@ -37,7 +42,7 @@ const Header: React.FC = () => {
               ) : (
                 <Nav.Link href="/en">En</Nav.Link>
               )}
-              <Button variant="outline-secondary" href="#donate">
+              <Button variant="outline-secondary" href={href('#donate')}>
                 <FormattedMessage id="nav.donate" />
               </Button>
             </Nav>

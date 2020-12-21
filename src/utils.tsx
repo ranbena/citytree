@@ -24,3 +24,8 @@ export function forEachMessage(intl: IntlShape, key: string): string[] {
   });
   return ret;
 }
+
+export function formatPath(intl: IntlShape, path: string): string {
+  const { locale, defaultLocale } = intl;
+  return locale === defaultLocale ? path : `/${locale}${path}`;
+}
