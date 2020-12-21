@@ -3,7 +3,7 @@ type Event = {
   url: string;
   image: string;
   date: string;
-  type: 'online' | 'tour' | 'house';
+  type: 'online' | 'tour' | 'house' | 'retreat';
   locale?: 'he' | 'en';
 };
 
@@ -87,6 +87,22 @@ export const events: Event[] = [
       'https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/125956058_3881176181894411_190289610102069296_o.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=ZLQ4wC_3uf4AX8WIEYS&_nc_ht=scontent.fsdv3-1.fna&oh=f007853b97979848897f02c0af8bdef7&oe=6005660B',
     date: 'Dec 29 2020 19:00:00 GMT+0200',
     type: 'online',
+  },
+  {
+    id: '995435214299746',
+    url: 'https://www.facebook.com/events/995435214299746',
+    image:
+      'https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/130927617_3949121425099886_6603428162875570403_n.jpg?_nc_cat=100&ccb=2&_nc_sid=340051&_nc_ohc=gsCO6Pd6jFQAX9fwaDd&_nc_ht=scontent.fsdv3-1.fna&oh=609a00fbbbf27daf1743d387ef433525&oe=600450B0',
+    date: 'Jan 1, 2021 10:00:00 GMT+0200',
+    type: 'retreat',
+  },
+  {
+    id: '1409480316049596',
+    url: 'https://www.facebook.com/events/1409480316049596',
+    image:
+      'https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.0-9/127774333_3909698499042179_3180656173132429118_n.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=5-rO9YE8EmEAX8dL3_Y&_nc_ht=scontent.fsdv3-1.fna&oh=4b35b1b596989065e40f9b3b23ee4194&oe=6005FEA1',
+    date: 'Jan 8, 2021 11:00:00 GMT+0200',
+    type: 'tour',
   },
   {
     id: '3294869070634304',

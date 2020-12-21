@@ -1,8 +1,16 @@
 import React, { FC, useEffect, useRef } from 'react';
 import { Container, Button, Popover, OverlayTrigger } from 'react-bootstrap';
-import { Invitation, Donate } from './constants';
+import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
+import { forEachMessage } from '../../utils';
+import { patreonUrl, bitPhone } from '../../constants';
+
+import ezpayImage from '../../images/ezpay.png';
+import bitpayImage from '../../images/bitpay.png';
+import bitpayIcon from '../../images/bit-transfer.gif';
+import paypalImage from '../../images/paypal.svg';
 import leafLeftImageUrl from '../../images/leaf-mid.png';
 import leafBottomImageUrl from '../../images/leaf-bottom.png';
+import patreonImage from '../../images/patreon.png';
 import './styles.scss';
 
 const Subscribe: FC = () => {
@@ -27,15 +35,37 @@ const Subscribe: FC = () => {
   );
 };
 
-const Textbox = () => (
-  <div className="box text-box">
-    <h1>{Invitation.title1}</h1>
-    <p>{Invitation.text1}</p>
-    <br />
-    <h2>{Invitation.title2}</h2>
-    <p>{Invitation.text2}</p>
-  </div>
-);
+const Textbox = () => {
+  const intl = useIntl();
+
+  return (
+    <div className="box text-box">
+      <h1>
+        <FormattedMessage id="invitation.title1" />
+      </h1>
+      <p>
+        {forEachMessage(intl, 'invitation.text1').map((txt) => (
+          <>
+            {txt}
+            <br />
+            <br />
+          </>
+        ))}
+      </p>
+      <h2>
+        <FormattedMessage id="invitation.title2" />
+      </h2>
+      {forEachMessage(intl, 'invitation.text2').map((txt) => (
+        <p>{txt}</p>
+      ))}
+      <p>
+        <a href={patreonUrl} target="_blank" rel="noopener noreferrer">
+          <FormattedMessage id="invitation.patreonText" />
+        </a>
+      </p>
+    </div>
+  );
+};
 
 const PopoverButton = ({ text, children }) => (
   <>
@@ -57,10 +87,10 @@ const PopoverButton = ({ text, children }) => (
 
 const DonateButton = ({
   linkUrl = null,
-  text = null,
   disabled = false,
   imageUrl = null,
-  title,
+  title = null,
+  text = null,
   maxHeight = null,
 }) => {
   const icon = imageUrl ? <img src={imageUrl} alt={title} style={{ maxHeight }} /> : title;
@@ -77,32 +107,75 @@ const DonateButton = ({
 };
 
 const Donatebox = () => {
-  const { patreon: pat, buttons } = Donate;
+  const { formatMessage } = useIntl();
   return (
     <div className="box donate-box">
-      <h2>{Donate.title}</h2>
-      <p className="txt-patreon">{pat.text}</p>
+      <h2>
+        <FormattedMessage id="donate.title" />
+      </h2>
+      <p className="txt-patreon">
+        <FormattedMessage id="donate.text" />
+      </p>
       <div className="btn-patreon">
-        <Button title={pat.title} as="a" href={pat.linkUrl} target="_blank">
-          <img src={pat.imageUrl} alt={pat.title} />
+        <Button
+          title={formatMessage({ id: 'donate.patreonTitle' })}
+          as="a"
+          href={patreonUrl}
+          target="_blank"
+        >
+          <img src={patreonImage} alt={formatMessage({ id: 'donate.patreonTitle' })} />
         </Button>
       </div>
       <hr />
-      <p>{Donate.subtitle}</p>
+      <span>
+        <FormattedMessage id="or" />
+      </span>
+      <p>
+        <FormattedMessage id="donate.subtitle" />
+      </p>
       <div className="buttons">
-        {buttons.map((data) => (
-          <DonateButton key={data.title} {...data} />
-        ))}
+        <DonateButton
+          title={formatMessage({ id: 'donate.channels.bit' })}
+          imageUrl={bitpayImage}
+          text={
+            <>
+              <img
+                width="18"
+                height="18"
+                src={bitpayIcon}
+                alt={formatMessage({ id: 'donate.channels.bitText' })}
+              />{' '}
+              <FormattedMessage id="donate.channels.bitText" /> {bitPhone}
+            </>
+          }
+        />
+        <DonateButton
+          title={formatMessage({ id: 'donate.channels.paypal' })}
+          linkUrl="https://www.paypal.me/citytree"
+          imageUrl={paypalImage}
+          maxHeight={20}
+        />
+        <DonateButton
+          title={formatMessage({ id: 'donate.channels.ezpay' })}
+          linkUrl="https://www.ezpay.co.il/Payment.aspx?id=13295"
+          imageUrl={ezpayImage}
+        />
+        <DonateButton
+          title={formatMessage({ id: 'donate.channels.cash' })}
+          text={formatMessage({ id: 'donate.channels.cashText' })}
+        />
       </div>
     </div>
   );
 };
 
-export const DonateSection: React.FC<{}> = () => (
+export const DonateSection: React.FC = () => (
   <section className="donateSection anchorWrapper">
     <div className="anchor" id="donate" />
     <img src={leafLeftImageUrl} alt="leaf" className="side-leaf" />
-    <img src={leafBottomImageUrl} alt="leaf" className="bottom-leaf" />
+    <div className="bottom-leaf">
+      <img src={leafBottomImageUrl} alt="leaf" />
+    </div>
     <Container className="gridContainer">
       <Textbox />
       <Donatebox />

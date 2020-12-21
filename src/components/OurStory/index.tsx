@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Container, Col, Row } from 'react-bootstrap';
-import { title, text } from './constants';
+import { forEachMessage } from '@/utils';
 import './styles.scss';
 
-export const OurStory = () => (
-  <div className="ourStory anchorWrapper">
-    <div className="anchor" id="story" />
-    <Container>
-      <Row>
-        <Col lg={4} sm={0} />
-        <Col lg={8} sm={12}>
-          <div className="box">
-            <h1>{title}</h1>
-            <>{text}</>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
+export const OurStory: FC = () => {
+  const intl = useIntl();
+
+  return (
+    <div className="ourStory anchorWrapper">
+      <div className="anchor" id="story" />
+      <Container>
+        <Row>
+          <Col lg={3} sm={0} />
+          <Col lg={9} sm={12}>
+            <div className="box">
+              <h1>
+                <FormattedMessage id="story.title" />
+              </h1>
+              {forEachMessage(intl, 'story.text').map((txt) => (
+                <p>{txt}</p>
+              ))}
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+};

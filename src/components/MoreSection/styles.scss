@@ -1,4 +1,3 @@
-@import '../../scss/breakpoints';
 @import '../../scss/variables';
 @import '../../scss/mixins';
 
@@ -22,38 +21,6 @@
   .tab-pane {
     .container {
       @include container-padding;
-    }
-
-    .tab-content {
-      min-height: 500px; // for "coming soon" items
-    }
-  }
-
-  .scheduleSection {
-    display: flex;
-    margin: 0 -10px;
-
-    @include media-breakpoint-down(lg) {
-      flex-direction: column;
-
-      .scheduleText {
-        margin-bottom: 20px;
-      }
-    }
-
-    & > * {
-      margin: 0 10px;
-      flex: 1;
-    }
-
-    h2 {
-      margin-top: 10px;
-    }
-  }
-
-  .scheduleSection iframe {
-    @include media-breakpoint-down(md) {
-      height: 300px;
     }
   }
 }

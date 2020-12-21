@@ -41,23 +41,29 @@
 
   .bottom-leaf {
     position: absolute;
-    right: -70px;
+    overflow: hidden;
+    right: 0;
     bottom: -100px;
     height: 350px;
-    width: 254px;
+    width: 184px;
     z-index: 1;
     pointer-events: none;
     mix-blend-mode: multiply;
     opacity: 0.65;
 
+    img {
+      width: 254px;
+      height: 350px;
+    }
+
     @include media-breakpoint-down(lg) {
       transform: scale(0.7);
-      right: -80px;
+      right: -30px;
     }
 
     @include media-breakpoint-down(md) {
       transform: scale(0.6);
-      right: -90px;
+      right: -40px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -108,21 +114,18 @@
 
     hr {
       margin: 40px 67px 30px;
-      position: relative;
 
-      &:after {
+      & + span {
         @include box-text;
-        content: 'או';
-        position: absolute;
-        left: 50%;
-        margin-left: -20px;
-        top: -13px;
         background: $color3;
-        padding: 0 20px;
-      }
+        display: block;
+        position: relative;
+        width: 52px;
+        margin: -43px auto 23px;
 
-      & + p {
-        padding: 0 30px;
+        & + p {
+          padding: 0 30px;
+        }
       }
     }
 

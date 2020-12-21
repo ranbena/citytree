@@ -5,43 +5,14 @@ import { FormattedMessage } from 'gatsby-plugin-intl';
 import AboutUsSection from './AboutUsSection';
 import VisitSection from './VisitSection';
 import WorkshopsSection from './WorkshopsSection';
-
-import { Tabs } from './constants';
-import { ITabs } from './types';
+import ScheduleSection from './ScheduleSection';
 
 import './styles.scss';
 
 const tabKeys = ['about', 'visit', 'workshops', 'schedule'] as const;
 type TabKey = typeof tabKeys[number];
 
-const ScheduleSection: FC<ITabs> = ({ subtitle, text, calendarUrl: cal }) => {
-  const urlParams = Object.entries(cal.params)
-    .map(([k, v]) => `${k}=${escape(v.toString())}`)
-    .join('&');
-
-  return (
-    <Container>
-      <div className="tab-content box">
-        <h1>{subtitle}</h1>
-        <div className="scheduleSection">
-          <div className="scheduleText">{text}</div>
-          <div>
-            <iframe
-              title="לוח הזמנים"
-              src={`${cal.url}?${urlParams}`}
-              width="100%"
-              height="600"
-              frameBorder="0"
-              aria-hidden="false"
-            />
-          </div>
-        </div>
-      </div>
-    </Container>
-  );
-};
-
-export const MoreSection: React.FC<{}> = () => {
+export const MoreSection: React.FC = () => {
   const [tabKey, setTabKey] = useState<TabKey>('about');
   const el = useRef(null);
 
@@ -97,7 +68,7 @@ export const MoreSection: React.FC<{}> = () => {
             <VisitSection />;
           </Tab.Pane>
           <Tab.Pane eventKey="schedule" key="schedule" mountOnEnter>
-            <ScheduleSection {...Tabs[0]} />;
+            <ScheduleSection />;
           </Tab.Pane>
           <Tab.Pane eventKey="workshops" key="workshops" mountOnEnter>
             <WorkshopsSection />;

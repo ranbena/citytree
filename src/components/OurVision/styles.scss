@@ -5,7 +5,21 @@
   background-size: cover;
   @include container-padding;
 
-  p, p a {
+  body[dir='ltr'] & .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  p,
+  p a {
     color: darken($color2, 7%);
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: $color2;
+    }
   }
 }

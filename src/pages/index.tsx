@@ -7,7 +7,6 @@ import {
   TopSection,
   MoreSection,
   DonateSection,
-  // Shop,
   OurStory,
   OurVision,
 } from '../components';
@@ -46,7 +45,6 @@ const Home: React.FC = () => {
       <TopSection />
       <MoreSection />
       <DonateSection />
-      {/* <Shop /> */}
       <OurStory />
       <OurVision />
       <Footer />
