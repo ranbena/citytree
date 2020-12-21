@@ -1,15 +1,16 @@
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC } from 'react';
 import { Helmet } from 'react-helmet';
 import { useIntl } from 'gatsby-plugin-intl';
-import { Header, Footer } from '..';
-import { meta } from '../../constants';
+import { meta } from '@/constants';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 import './styles.scss';
 
 const pathPrefix = process.env.GATSBY_PATH_PREFIX || '';
 const cannonicalUrl = `${meta.siteUrl}${pathPrefix}`;
 
-export const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
+const Layout: FC = ({ children }) => {
   const intl = useIntl();
   const dir = intl.formatMessage({ id: 'direction' });
 
@@ -39,3 +40,5 @@ export const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
     </>
   );
 };
+
+export default Layout;

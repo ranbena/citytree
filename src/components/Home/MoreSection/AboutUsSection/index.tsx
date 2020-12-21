@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-import { forEachMessage } from '../../../utils';
+import { forEachMessage } from '@/utils';
 
-import aboutUsImage from '../../../images/about-us.jpg';
+import aboutUsImage from '@/images/about-us.jpg';
 
 import './styles.scss';
 

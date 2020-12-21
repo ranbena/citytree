@@ -3,10 +3,10 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Container, Col } from 'react-bootstrap';
 import { forEachMessage } from '@/utils';
 import { Parallax } from 'react-parallax';
-import image from '../../images/our-vision.jpg';
+import image from '@/images/our-vision.jpg';
 import './styles.scss';
 
-export const OurVision = () => {
+const OurVision = () => {
   const intl = useIntl();
 
   return (
@@ -80,3 +80,5 @@ export const OurVision = () => {
     </Parallax>
   );
 };
+
+export default OurVision;

@@ -12,7 +12,7 @@ import './styles.scss';
 const tabKeys = ['about', 'visit', 'workshops', 'schedule'] as const;
 type TabKey = typeof tabKeys[number];
 
-export const MoreSection: React.FC = () => {
+const MoreSection: React.FC = () => {
   const [tabKey, setTabKey] = useState<TabKey>('about');
   const el = useRef(null);
 
@@ -78,3 +78,5 @@ export const MoreSection: React.FC = () => {
     </section>
   );
 };
+
+export default MoreSection;

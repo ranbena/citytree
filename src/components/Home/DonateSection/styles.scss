@@ -1,7 +1,7 @@
-@import '../../scss/bootstrap-overrides';
-@import '../../scss/variables';
-@import '../../scss/mixins';
-@import '../../scss/breakpoints';
+@import '../../../scss/bootstrap-overrides';
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+@import '../../../scss/breakpoints';
 
 .donateSection {
   @include container-padding;

@@ -2,10 +2,10 @@
 import React from 'react';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import { useIntl, Link, FormattedMessage } from 'gatsby-plugin-intl';
-import logo from '../../images/logo.png';
+import logo from '@/images/logo.png';
 import './styles.scss';
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   const { formatMessage } = useIntl();
 
   return (
@@ -40,3 +40,5 @@ export const Header: React.FC = () => {
     </header>
   );
 };
+
+export default Header;

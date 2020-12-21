@@ -4,7 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import { forEachMessage } from '@/utils';
 import './styles.scss';
 
-export const OurStory: FC = () => {
+const OurStory: FC = () => {
   const intl = useIntl();
 
   return (
@@ -28,3 +28,5 @@ export const OurStory: FC = () => {
     </div>
   );
 };
+
+export default OurStory;

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { MdLink } from 'react-icons/md';
-import logo from '../../images/logo.png';
-import { phone, email } from '../../constants';
-import FacebookIcon from '../../images/social_facebook.svg';
-import InstagramIcon from '../../images/social_instagram.svg';
-import YoutubeIcon from '../../images/social_youtube.svg';
+import logo from '@/images/logo.png';
+import { phone, email } from '@/constants';
+import FacebookIcon from '@/images/social_facebook.svg';
+import InstagramIcon from '@/images/social_instagram.svg';
+import YoutubeIcon from '@/images/social_youtube.svg';
 import './styles.scss';
 
-export const Footer: React.FC<{}> = () => (
+const Footer: React.FC = () => (
   <footer>
     <Container>
       <div className="d-flex justify-content-between align-items-center">
@@ -36,3 +36,5 @@ export const Footer: React.FC<{}> = () => (
     </Container>
   </footer>
 );
+
+export default Footer;

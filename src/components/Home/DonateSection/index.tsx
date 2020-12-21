@@ -1,16 +1,16 @@
 import React, { FC, useEffect, useRef } from 'react';
 import { Container, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { forEachMessage } from '../../utils';
-import { patreonUrl, bitPhone } from '../../constants';
+import { forEachMessage } from '@/utils';
+import { patreonUrl, bitPhone } from '@/constants';
 
-import ezpayImage from '../../images/ezpay.png';
-import bitpayImage from '../../images/bitpay.png';
-import bitpayIcon from '../../images/bit-transfer.gif';
-import paypalImage from '../../images/paypal.svg';
-import leafLeftImageUrl from '../../images/leaf-mid.png';
-import leafBottomImageUrl from '../../images/leaf-bottom.png';
-import patreonImage from '../../images/patreon.png';
+import ezpayImage from '@/images/ezpay.png';
+import bitpayImage from '@/images/bitpay.png';
+import bitpayIcon from '@/images/bit-transfer.gif';
+import paypalImage from '@/images/paypal.svg';
+import leafLeftImageUrl from '@/images/leaf-mid.png';
+import leafBottomImageUrl from '@/images/leaf-bottom.png';
+import patreonImage from '@/images/patreon.png';
 import './styles.scss';
 
 const Subscribe: FC = () => {
@@ -169,7 +169,7 @@ const Donatebox = () => {
   );
 };
 
-export const DonateSection: React.FC = () => (
+const DonateSection: React.FC = () => (
   <section className="donateSection anchorWrapper">
     <div className="anchor" id="donate" />
     <img src={leafLeftImageUrl} alt="leaf" className="side-leaf" />
@@ -183,3 +183,5 @@ export const DonateSection: React.FC = () => (
     </Container>
   </section>
 );
+
+export default DonateSection;

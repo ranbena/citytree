@@ -2,14 +2,14 @@ import React from 'react';
 import { Parallax } from 'react-parallax';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
-import { forEachMessage } from '../../utils';
+import { forEachMessage } from '@/utils';
 
-import leafImageUrl from '../../images/leaf-top.png';
-import mainImageUrl from '../../images/thanks.jpg';
+import leafImageUrl from '@/images/leaf-top.png';
+import mainImageUrl from '@/images/thanks.jpg';
 
 import './styles.scss';
 
-export const TopSection: React.FC = () => {
+const TopSection: React.FC = () => {
   const intl = useIntl();
 
   return (
@@ -50,3 +50,5 @@ export const TopSection: React.FC = () => {
     </section>
   );
 };
+
+export default TopSection;
