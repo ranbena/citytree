@@ -54,6 +54,8 @@
     img {
       width: 254px;
       height: 350px;
+      position: absolute;
+      left: 0;
     }
 
     @include media-breakpoint-down(lg) {

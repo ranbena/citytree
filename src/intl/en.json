@@ -4,6 +4,12 @@
   "address": "25 Bialik St., apt. 7",
   "phone": "+97235254196",
   "or": "or",
+  "footer": {
+    "text": "Contact Us",
+    "facebook": "CityTree on Facebook",
+    "youtube": "CityTree on Youtube",
+    "instagram": "CityTree on Instagram"
+  },
   "nav": {
     "donate": "Support Us",
     "visit": "How Can I Join?",
