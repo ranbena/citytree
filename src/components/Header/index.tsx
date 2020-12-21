@@ -6,7 +6,7 @@ import logo from '@/images/logo.png';
 import './styles.scss';
 
 const Header: React.FC = () => {
-  const { formatMessage } = useIntl();
+  const { locale, formatMessage } = useIntl();
 
   return (
     <header>
@@ -31,9 +31,16 @@ const Header: React.FC = () => {
                 <FormattedMessage id="nav.cominghome" />
               </Nav.Link>
             </Nav>
-            <Button variant="outline-secondary" href="#donate">
-              <FormattedMessage id="nav.donate" />
-            </Button>
+            <Nav>
+              {locale === 'en' ? (
+                <Nav.Link href="/">עברית</Nav.Link>
+              ) : (
+                <Nav.Link href="/en">En</Nav.Link>
+              )}
+              <Button variant="outline-secondary" href="#donate">
+                <FormattedMessage id="nav.donate" />
+              </Button>
+            </Nav>
           </Navbar.Collapse>
         </Navbar>
       </Container>
