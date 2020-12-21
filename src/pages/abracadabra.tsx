@@ -44,7 +44,7 @@ const Page: FC<PageProps> = () => {
 
   return (
     <Layout>
-      <Helmet>
+      <Helmet defer={false}>
         <title>CityTree | AbraCadabra</title>
         <meta property="og:title" content="CityTree | AbraCadabra" />
         <meta
