@@ -17,8 +17,8 @@ const VisitSection: FC = () => {
         </h1>
         <div className="visitSection">
           <div className="visitText">
-            {forEachMessage(intl, 'visit.text').map((txt) => (
-              <p>{txt}</p>
+            {forEachMessage(intl, 'visit.text').map((txt: string) => (
+              <p key={txt}>{txt}</p>
             ))}
           </div>
           <div>

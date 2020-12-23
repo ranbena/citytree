@@ -21,8 +21,8 @@ const AboutUsSection: FC = () => {
               <h1>
                 <FormattedMessage id="about.title" />
               </h1>
-              {forEachMessage(intl, 'about.text').map((txt) => (
-                <p>{txt}</p>
+              {forEachMessage(intl, 'about.text').map((txt: string) => (
+                <p key={txt}>{txt}</p>
               ))}
               {'about.whitepaper' in intl.messages && (
                 <p>

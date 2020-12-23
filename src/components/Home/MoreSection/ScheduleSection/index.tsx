@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
@@ -38,19 +38,19 @@ const ScheduleSection: FC = () => {
         </h1>
         <div className="scheduleSection">
           <div className="scheduleText">
-            {forEachMessage(intl, 'schedule.text1').map((txt) => (
-              <>
+            {forEachMessage(intl, 'schedule.text1').map((txt: string) => (
+              <Fragment key={txt}>
                 {txt}
                 <br />
-              </>
+              </Fragment>
             ))}
             <br />
             <br />
-            {forEachMessage(intl, 'schedule.text2').map((txt) => (
-              <>
+            {forEachMessage(intl, 'schedule.text2').map((txt: string) => (
+              <Fragment key={txt}>
                 {txt}
                 <br />
-              </>
+              </Fragment>
             ))}
             <FormattedMessage
               id="schedule.contact"

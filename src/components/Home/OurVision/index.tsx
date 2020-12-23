@@ -18,8 +18,8 @@ const OurVision = () => {
             <h1>
               <FormattedMessage id="vision.title" />
             </h1>
-            {forEachMessage(intl, 'vision.text').map((txt) => (
-              <p>{txt}</p>
+            {forEachMessage(intl, 'vision.text').map((txt: string) => (
+              <p key={txt}>{txt}</p>
             ))}
             <p>
               <FormattedMessage
