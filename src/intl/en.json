@@ -4,6 +4,10 @@
   "address": "25 Bialik St., apt. 7",
   "phone": "+97235254196",
   "or": "or",
+  "newsletter": {
+    "formId": "255340",
+    "dataFormId": "255340-fec3f9f7-2196-da60-33e6-b2f5318d3b83-22"
+  },
   "meta": {
     "locale": "en_US",
     "title": "CityTree - an eco-social business and community for urban ecology and climate resilience.",

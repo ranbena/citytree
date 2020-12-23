@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef } from 'react';
+import React, { FC, useEffect, useRef, Fragment } from 'react';
 import { Container, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { forEachMessage } from '@/utils';
@@ -15,6 +15,11 @@ import './styles.scss';
 
 const Subscribe: FC = () => {
   const el = useRef(null);
+  const { formatMessage } = useIntl();
+
+  const formId = formatMessage({ id: 'newsletter.formId' });
+  const dataFormId = formatMessage({ id: 'newsletter.dataFormId' });
+  const direction = formatMessage({ id: 'direction' });
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -26,8 +31,8 @@ const Subscribe: FC = () => {
     <div className="box subscribe">
       <div
         ref={el}
-        className="fc-form form_224128 type-vertical rtl"
-        data-form-id="224128-29f304e5-d488-3bdc-2f42-f345ae38fc83-22"
+        className={`fc-form form_${formId} type-vertical ${direction}`}
+        data-form-id={dataFormId}
         data-smart="true"
         style={{ width: 433, height: 370, margin: 'auto' }}
       />
@@ -44,19 +49,19 @@ const Textbox = () => {
         <FormattedMessage id="invitation.title1" />
       </h1>
       <p>
-        {forEachMessage(intl, 'invitation.text1').map((txt) => (
-          <>
+        {forEachMessage(intl, 'invitation.text1').map((txt: string) => (
+          <Fragment key={txt}>
             {txt}
             <br />
             <br />
-          </>
+          </Fragment>
         ))}
       </p>
       <h2>
         <FormattedMessage id="invitation.title2" />
       </h2>
-      {forEachMessage(intl, 'invitation.text2').map((txt) => (
-        <p>{txt}</p>
+      {forEachMessage(intl, 'invitation.text2').map((txt: string) => (
+        <p key={txt}>{txt}</p>
       ))}
       <p>
         <a href={patreonUrl} target="_blank" rel="noopener noreferrer">

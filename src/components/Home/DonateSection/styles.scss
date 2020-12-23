@@ -171,7 +171,7 @@
       .fc_container {
         padding: 0 !important;
         min-height: auto;
-        width: 100%;
+        width: 100% !important;
       }
 
       .fc_header {
@@ -228,6 +228,11 @@
             right: 0;
             top: 11px;
             z-index: 1;
+
+            body[dir='ltr'] & {
+              right: auto;
+              left: 0;
+            }
           }
         }
 
@@ -242,6 +247,10 @@
       .fc_base,
       .fc-button-row {
         margin-bottom: 0 !important;
+
+        body[dir='ltr'] & .fc-cell-text {
+          text-align: right !important;
+        }
 
         .fc_button {
           border-color: $color3;
