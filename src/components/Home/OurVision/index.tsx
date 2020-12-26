@@ -1,9 +1,9 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Container, Col } from 'react-bootstrap';
-import { forEachMessage } from '@/utils';
+import { forEachMessage } from 'src/utils';
 import { Parallax } from 'react-parallax';
-import image from '@/images/our-vision.jpg';
+import image from 'src/images/our-vision.jpg';
 import './styles.scss';
 
 const OurVision = () => {

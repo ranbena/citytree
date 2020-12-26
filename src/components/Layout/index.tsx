@@ -2,11 +2,11 @@ import React, { FC } from 'react';
 import { Helmet } from 'react-helmet';
 import { useIntl } from 'gatsby-plugin-intl';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from 'src/components/Header';
+import Footer from 'src/components/Footer';
 
-import ogImage from '@/images/og.png';
-import favicon from '@/images/favicon.ico';
+import ogImage from 'src/images/og.png';
+import favicon from 'src/images/favicon.ico';
 
 import './styles.scss';
 
@@ -45,9 +45,11 @@ const Layout: FC = ({ children }) => {
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
       </Helmet>
-      <Header />
-      {children}
-      <Footer />
+      <div className="layout">
+        <Header />
+        <div className="content">{children}</div>
+        <Footer />
+      </div>
     </>
   );
 };

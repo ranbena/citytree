@@ -62,7 +62,7 @@
   "settings": {
     "import/resolver": {
       "root-import": {
-        "rootPathPrefix": "@",
+        "rootPathPrefix": "src",
         "rootPathSuffix": "src",
         "extensions": [".js", ".ts", ".tsx", ".jsx", ".mdx"]
       }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Modal } from 'react-bootstrap';
-import bgImage from '@/images/contact-modal.jpg';
+import bgImage from 'src/images/contact-modal.jpg';
 
 export const StyledModal = styled(Modal)`
   .modal-dialog {

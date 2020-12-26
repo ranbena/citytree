@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Container, Col, Row } from 'react-bootstrap';
-import { forEachMessage } from '@/utils';
+import { forEachMessage } from 'src/utils';
 import './styles.scss';
 
 const OurStory: FC = () => {

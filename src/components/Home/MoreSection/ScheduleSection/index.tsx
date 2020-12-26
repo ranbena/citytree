@@ -2,8 +2,8 @@ import React, { FC, Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-import { emailLink } from '@/constants';
-import { forEachMessage } from '@/utils';
+import { emailLink } from 'src/constants';
+import { forEachMessage } from 'src/utils';
 
 import './styles.scss';
 

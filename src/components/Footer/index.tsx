@@ -2,12 +2,12 @@ import React, { FC } from 'react';
 import { Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-import { email } from '@/constants';
+import { email } from 'src/constants';
 
-import logo from '@/images/logo.png';
-import FacebookIcon from '@/images/social_facebook.svg';
-import InstagramIcon from '@/images/social_instagram.svg';
-import YoutubeIcon from '@/images/social_youtube.svg';
+import logo from 'src/images/logo.png';
+import FacebookIcon from 'src/images/social_facebook.svg';
+import InstagramIcon from 'src/images/social_instagram.svg';
+import YoutubeIcon from 'src/images/social_youtube.svg';
 import { Wrapper, Social, Info, Link, Logo } from './styles';
 
 const Footer: FC = () => {

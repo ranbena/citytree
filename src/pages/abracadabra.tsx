@@ -3,9 +3,9 @@ import { PageProps, navigate } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { useIntl } from 'gatsby-plugin-intl';
 
-import ogImage from '@/images/abracadabra/og.jpeg';
-import Layout from '@/components/Layout';
-import Navigation, { Anchor } from '@/components/Navigation';
+import ogImage from 'src/images/abracadabra/og.jpeg';
+import Layout from 'src/components/Layout';
+import Navigation, { Anchor } from 'src/components/Navigation';
 import {
   TopSection,
   Overview,
@@ -32,7 +32,7 @@ const Page: FC<PageProps> = () => {
     // redirect to en version
     // TODO: make this an HOC?
     if (intl.locale !== 'en') {
-      navigate('en/abracadabra');
+      navigate('/en/abracadabra');
     } else {
       setReady(true);
     }

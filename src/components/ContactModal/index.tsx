@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { emailLink, phoneLink } from '@/constants';
+import { emailLink, phoneLink } from 'src/constants';
 import {
   Title,
   SubTitle,

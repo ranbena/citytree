@@ -2,8 +2,8 @@ import React, { FC, useEffect, useRef } from 'react';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
 import { useIntl, FormattedMessage, FormattedDate, FormattedTime } from 'gatsby-plugin-intl';
 
-import { emailLink } from '@/constants';
-import { forEachMessage } from '@/utils';
+import { emailLink } from 'src/constants';
+import { forEachMessage } from 'src/utils';
 import { events } from './events';
 
 import './styles.scss';
