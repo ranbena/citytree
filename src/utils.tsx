@@ -29,3 +29,10 @@ export function formatPath(intl: IntlShape, path: string): string {
   const { locale, defaultLocale } = intl;
   return locale === defaultLocale ? path : `/${locale}${path}`;
 }
+
+export const breakpoints = {
+  sm: '(max-width: 576px)',
+  md: '(max-width: 768px)',
+  lg: '(max-width: 992px)',
+  xl: '(max-width: 1200px)',
+};
