@@ -113,6 +113,14 @@ export const events: Event[] = [
     type: 'online',
   },
   {
+    id: '945134666017445',
+    url: 'https://www.facebook.com/events/945134666017445',
+    image:
+      'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/133691364_3994353327243362_448701656403272682_o.jpg?_nc_cat=101&ccb=2&_nc_sid=340051&_nc_ohc=6oSUMjlkocoAX80gSJP&_nc_ht=scontent.fsdv2-1.fna&oh=3e4cdf7ee576960463e9612fdb9438b6&oe=600F7DA6',
+    date: 'Jan 19 2021 19:00:00 GMT+0200',
+    type: 'online',
+  },
+  {
     id: '359931955368230',
     url: 'https://www.facebook.com/events/359931955368230/',
     image:
