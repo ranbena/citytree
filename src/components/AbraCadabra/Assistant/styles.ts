@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
+import image from 'src/assets/images/abracadabra/liana.png';
 import { MainWrapper, Box, Title } from '../styles';
 import { BoxInner } from '../../Box';
-import image from '../../../images/abracadabra/liana.png';
 
 export const Wrapper = styled(MainWrapper)`
   background-color: #d6dec6;

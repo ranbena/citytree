@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
+import leaf1 from 'src/assets/images/abracadabra/leaf1.png';
+import leaf2 from 'src/assets/images/abracadabra/leaf2.png';
 import { MainWrapper, Title, Box, List as MainList } from '../styles';
 import { BoxInner } from '../../Box';
-
-import leaf1 from '../../../images/abracadabra/leaf1.png';
-import leaf2 from '../../../images/abracadabra/leaf2.png';
 
 export const Wrapper = styled(MainWrapper)`
   background-color: #ebf0dd;

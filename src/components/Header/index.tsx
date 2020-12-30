@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import { useIntl, Link, FormattedMessage } from 'gatsby-plugin-intl';
-import logo from 'src/images/logo.png';
+import logo from 'src/assets/images/logo.png';
 import { formatPath } from '../../utils';
 import './styles.scss';
 

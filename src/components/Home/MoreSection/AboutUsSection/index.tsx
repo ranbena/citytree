@@ -4,7 +4,7 @@ import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
 import { forEachMessage } from 'src/utils';
 
-import aboutUsImage from 'src/images/about-us.jpg';
+import aboutUsImage from 'src/assets/images/about-us.jpg';
 
 import './styles.scss';
 

@@ -5,8 +5,8 @@ import { useIntl } from 'gatsby-plugin-intl';
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
 
-import ogImage from 'src/images/og.png';
-import favicon from 'src/images/favicon.ico';
+import ogImage from 'src/assets/images/og.png';
+import favicon from 'src/assets/images/favicon.ico';
 
 import './styles.scss';
 

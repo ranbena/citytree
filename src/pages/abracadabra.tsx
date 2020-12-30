@@ -3,7 +3,7 @@ import { PageProps, navigate } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { useIntl } from 'gatsby-plugin-intl';
 
-import ogImage from 'src/images/abracadabra/og.jpeg';
+import ogImage from 'src/assets/images/abracadabra/og.jpeg';
 import Layout from 'src/components/Layout';
 import Navigation, { Anchor } from 'src/components/Navigation';
 import {

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
+import leaf1 from 'src/assets/images/abracadabra/leaf1.png';
 import { MainWrapper } from '../styles';
-
-import leaf1 from '../../../images/abracadabra/leaf1.png';
 
 export const Wrapper = styled(MainWrapper)`
   padding: 110px 0 70px;

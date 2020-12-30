@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
+import bullet from 'src/assets/images/abracadabra/bullet.svg';
 import BoxComponent from '../Box';
-import bullet from '../../images/abracadabra/bullet.svg';
 
 export const MainWrapper = styled.div`
   font-family: minion-pro, serif;

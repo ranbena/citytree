@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
+import bgImage from 'src/assets/images/abracadabra/learn.jpg';
 import { MainWrapper, List as MainList } from '../styles';
-import bgImage from '../../../images/abracadabra/learn.jpg';
 
 export const Wrapper = styled(MainWrapper)`
   background: #d5dec5 url(${bgImage});

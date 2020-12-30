@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import LinkIcon from 'src/images/link.svg';
+import LinkIcon from 'src/assets/images/link.svg';
 import { breakpoints } from '../../utils';
 
 export const Wrapper = styled.footer`

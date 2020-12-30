@@ -4,8 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import { forEachMessage } from 'src/utils';
 
-import leafImageUrl from 'src/images/leaf-top.png';
-import mainImageUrl from 'src/images/thanks.jpg';
+import leafImageUrl from 'src/assets/images/leaf-top.png';
+import mainImageUrl from 'src/assets/images/thanks.jpg';
 
 import './styles.scss';
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
+import image from 'src/assets/images/abracadabra/tami.jpeg';
 import { MainWrapper } from '../styles';
-import image from '../../../images/abracadabra/tami.jpeg';
 
 export const Wrapper = styled(MainWrapper)`
   border-bottom: 10px solid #003535;

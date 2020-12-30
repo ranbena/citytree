@@ -4,13 +4,13 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { forEachMessage } from 'src/utils';
 import { patreonUrl, bitPhone } from 'src/constants';
 
-import ezpayImage from 'src/images/ezpay.png';
-import bitpayImage from 'src/images/bitpay.png';
-import bitpayIcon from 'src/images/bit-transfer.gif';
-import paypalImage from 'src/images/paypal.svg';
-import leafLeftImageUrl from 'src/images/leaf-mid.png';
-import leafBottomImageUrl from 'src/images/leaf-bottom.png';
-import patreonImage from 'src/images/patreon.png';
+import ezpayImage from 'src/assets/images/ezpay.png';
+import bitpayImage from 'src/assets/images/bitpay.png';
+import bitpayIcon from 'src/assets/images/bit-transfer.gif';
+import paypalImage from 'src/assets/images/paypal.svg';
+import leafLeftImageUrl from 'src/assets/images/leaf-mid.png';
+import leafBottomImageUrl from 'src/assets/images/leaf-bottom.png';
+import patreonImage from 'src/assets/images/patreon.png';
 import './styles.scss';
 
 const Subscribe: FC = () => {

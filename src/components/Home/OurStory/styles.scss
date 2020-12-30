@@ -1,8 +1,8 @@
-@import '../../../scss/variables';
-@import '../../../scss/mixins';
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
 
 .ourStory {
-  background-image: url('../../../images/our-story.jpg');
+  background-image: url('../../../assets/images/our-story.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 90%;
