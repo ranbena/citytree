@@ -50,7 +50,7 @@ const events: Events = {
       12: 'Feb 2 2021 19:00:00 GMT+0200',
     },
   },
-  nutrition: {
+  cultivation: {
     start: 'Feb 6 2021 19:00:00 GMT+0200',
     end: 'Mar 20 2021 19:00:00 GMT+0200',
     eventDates: {

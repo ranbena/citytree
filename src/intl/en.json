@@ -114,7 +114,6 @@
         "945134666017445": "The Weed's Song",
         "243636040457586": "Oh So Sweet",
         "451485792523691": "The Winter Lunch"
-        
       }
     }
   },
@@ -122,8 +121,8 @@
     "title": "Schedule",
     "subtitle": "Our Weekly Schedule",
     "text1": [
-        "Every Tuesday from 2 o’clock our house is open for visits.",
-        "On Tuesdays, as well as Fridays, from 3 you can join us for working in the nearby gardens."
+      "Every Tuesday from 2 o’clock our house is open for visits.",
+      "On Tuesdays, as well as Fridays, from 3 you can join us for working in the nearby gardens."
     ],
     "text2": [],
     "contact": "You are welcome to contact us at {email} or {phone}."
@@ -216,7 +215,7 @@
         "element": "Earth"
       },
       "nutrition": {
-        "title": "Nutrition",
+        "title": "Cultivation",
         "element": "Air"
       },
       "timeof": "The Time of",

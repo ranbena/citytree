@@ -40,7 +40,7 @@ const Header: React.FC = () => {
               {locale === 'en' ? (
                 <Nav.Link href="/">עברית</Nav.Link>
               ) : (
-                <Nav.Link href="/en">En</Nav.Link>
+                <Nav.Link href="/en">EN</Nav.Link>
               )}
               <Button variant="outline-secondary" href={href('#donate')}>
                 <FormattedMessage id="nav.donate" />

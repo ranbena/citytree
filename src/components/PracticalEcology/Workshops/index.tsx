@@ -5,7 +5,7 @@ import Table from './Table';
 import events from './events';
 import { Wrapper, Title, Subtitle, Tabs, Content, BottomNav, Next, Prev, Prefix } from './styles';
 
-const tabKeys = ['prosperity', 'agriculture', 'nutrition'] as const;
+const tabKeys = ['prosperity', 'agriculture', 'cultivation'] as const;
 export type TabKey = typeof tabKeys[number];
 
 const getId = (...keys: (string | number)[]) => `practical-ecology.workshops.${keys.join('.')}`;
@@ -30,12 +30,12 @@ const Component: FC = () => {
 
   useEffect(() => {
     setTabKey(getDefaultTabKey());
-  });
+  }, []);
 
   const renderNextLink = () => {
-    const nextKey = tabKey === 'prosperity' ? 'agriculture' : 'nutrition';
+    const nextKey = tabKey === 'prosperity' ? 'agriculture' : 'cultivation';
     return (
-      <Next onClick={() => setTabKey(nextKey)} $hidden={tabKey === 'nutrition'}>
+      <Next onClick={() => setTabKey(nextKey)} $hidden={tabKey === 'cultivation'}>
         <Prefix>
           <FormattedMessage id="practical-ecology.workshops.next" />:
         </Prefix>{' '}
@@ -45,7 +45,7 @@ const Component: FC = () => {
   };
 
   const renderPreviousLink = () => {
-    const prevKey = tabKey === 'nutrition' ? 'agriculture' : 'prosperity';
+    const prevKey = tabKey === 'cultivation' ? 'agriculture' : 'prosperity';
     return (
       <Prev onClick={() => setTabKey(prevKey)} $hidden={tabKey === 'prosperity'}>
         <Prefix>
