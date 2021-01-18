@@ -16,12 +16,11 @@ import {
 
 const Page: FC<PageProps> = () => {
   const { formatMessage } = useIntl();
+  const siteTitle = formatMessage({ id: 'practical-ecology.metatitle' });
 
   return (
     <Layout>
-      <Helmet>
-        <title>{formatMessage({ id: 'practical-ecology.metatitle' })}</title>
-      </Helmet>
+      <Helmet title={siteTitle} />
       <TopSection />
       <Navigation>
         <a href="#overview">

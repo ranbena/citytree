@@ -25,6 +25,7 @@
     "react/no-unescaped-entities": "off",
     "object-curly-newline": "off",
     "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
     "no-confusing-arrow": "off",
     "import/extensions": [
       "error",

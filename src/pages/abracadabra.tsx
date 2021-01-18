@@ -24,6 +24,9 @@ const image = {
   height: '800',
 };
 
+const siteDesc =
+  'An 8-week course with CityTree on magic, deep ecology, and the rise of the feminine';
+
 const Page: FC<PageProps> = () => {
   const intl = useIntl();
   const [ready, setReady] = useState(false);
@@ -44,13 +47,10 @@ const Page: FC<PageProps> = () => {
 
   return (
     <Layout>
-      <Helmet defer={false}>
-        <title>CityTree | AbraCadabra</title>
+      <Helmet title="CityTree | AbraCadabra">
         <meta property="og:title" content="CityTree | AbraCadabra" />
-        <meta
-          property="og:description"
-          content="An 8-week course with CityTree on magic, deep ecology, and the rise of the feminine"
-        />
+        <meta name="description" content={siteDesc} />
+        <meta property="og:description" content={siteDesc} />
         <meta property="og:image" content={`${siteUrl}${image.path}`} />
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
