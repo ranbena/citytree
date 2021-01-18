@@ -14,13 +14,31 @@ import {
   Times,
 } from 'src/components/PracticalEcology';
 
+import ogImageEn from 'src/assets/images/practical-ecology/og-en.jpeg';
+import ogImageHe from 'src/assets/images/practical-ecology/og-he.jpeg';
+
+const siteUrl = process.env.GATSBY_SITE_URL;
+
 const Page: FC<PageProps> = () => {
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
   const siteTitle = formatMessage({ id: 'practical-ecology.metatitle' });
+  const siteDesc = formatMessage({ id: 'practical-ecology.subtitle' });
+  const image = {
+    path: locale === 'en' ? ogImageEn : ogImageHe,
+    width: '1600',
+    height: '800',
+  };
 
   return (
     <Layout>
-      <Helmet title={siteTitle} />
+      <Helmet title={siteTitle}>
+        <meta property="og:title" content={siteTitle} />
+        <meta name="description" content={siteDesc} />
+        <meta property="og:description" content={siteDesc} />
+        <meta property="og:image" content={`${siteUrl}${image.path}`} />
+        <meta property="og:image:width" content={image.width} />
+        <meta property="og:image:height" content={image.height} />
+      </Helmet>
       <TopSection />
       <Navigation>
         <a href="#overview">
