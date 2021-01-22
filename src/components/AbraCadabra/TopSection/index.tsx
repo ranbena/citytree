@@ -9,6 +9,7 @@ import {
   Container,
   Title,
   HebrewTitle,
+  Colon,
   EnglishTitle,
   SubTitle,
 } from './styles';
@@ -24,7 +25,8 @@ const TopSection: FC = () => (
     <Container>
       <Title>
         <EnglishTitle>ABRACADABRA</EnglishTitle>
-        <HebrewTitle> : אברא כדברא</HebrewTitle>
+        <Colon>:</Colon>
+        <HebrewTitle>אברא כדברא</HebrewTitle>
       </Title>
       <SubTitle>
         An 8-week course with CityTree on magic, deep ecology, and the rise of the feminine

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
 import { MainWrapper } from '../styles';
+import { breakpoints } from '../../../utils';
 
 export const Wrapper = styled(MainWrapper)`
   text-align: right;
@@ -34,10 +35,21 @@ export const Title = styled.div`
   line-height: 45px;
 `;
 
+export const Colon = styled.span`
+  font-size: 44px;
+  margin: 0 10px 0 3px;
+  position: relative;
+  top: -3px;
+
+  @media ${breakpoints.md} {
+    display: none;
+  }
+`;
+
 export const HebrewTitle = styled.span`
-  font-family: adobe hebrew;
-  margin-left: 10px;
-  font-size: 60px;
+  font-family: Frank Ruhl Libre;
+  font-weight: 500;
+  font-size: 52px;
   display: inline-block;
 
   @media (max-width: 630px) {
@@ -46,7 +58,6 @@ export const HebrewTitle = styled.span`
 `;
 
 export const EnglishTitle = styled.span`
-  margin-right: 1px;
   font-size: 44px;
   letter-spacing: 5.4px;
 
