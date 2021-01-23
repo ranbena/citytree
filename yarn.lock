@@ -5780,6 +5780,14 @@ gatsby-plugin-google-fonts@^1.0.1:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
   integrity sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==
 
+gatsby-plugin-htaccess@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-htaccess/-/gatsby-plugin-htaccess-1.4.0.tgz#e7629cfca0e6cf12e714c6ad29162a12b0c60e89"
+  integrity sha512-CaUQ3SPkV8khTk2MvY58KJAGAQFLxrlSb9ysxB+BeOgdruI2F0hWsQQI5/A94VtZsdB/5CbJcZVNmCyDJ+SJqg==
+  dependencies:
+    fs-extra "^8.1.0"
+    lodash "^4.17.15"
+
 gatsby-plugin-intl@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-intl/-/gatsby-plugin-intl-0.3.3.tgz#3a0e55e6641bfcb09fae20215b8f72e2a0ec3de4"

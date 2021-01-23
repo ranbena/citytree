@@ -10,8 +10,6 @@ require('dotenv').config({
   path: `.env.${activeEnv}`,
 });
 
-// const path = require('path');
-
 module.exports = {
   pathPrefix: process.env.GATSBY_PATH_PREFIX,
   plugins: [
@@ -19,6 +17,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-root-import',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-htaccess',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
