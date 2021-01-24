@@ -10,14 +10,14 @@ const Overview: FC = () => (
       <Box xl={7} lg={8} md={10} sm={12}>
         <Title>OVERVIEW</Title>
         <p>
-          Answering the cry for a bit of magic amidst the widely-felt pain of our deeply wounded
-          world, CityTree is offering an 8-week online course that will teach you the foundations
-          you need to bring out the natural healer inside of you.
+          Answering the cry for a bit of magic in a wounded world, CityTree is offering an 8-week
+          online course that will teach the foundations you need to bring out the natural healer
+          inside of you.
         </p>
         <p>
-          We'll be exploring old-time magic for our modern lives by means of returning to the
-          sacredness of our creative, productive, ecological selves and our innate sense of harmony
-          with nature.
+          We’ll be exploring old-time magic for our modern lives, reconnecting to the sacred
+          elements, our innate sense of harmony with nature, and the wisdom held deep within our own
+          bodies.
         </p>
         <hr />
         <h4>COURSE DATES</h4>
