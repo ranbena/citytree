@@ -5788,10 +5788,9 @@ gatsby-plugin-htaccess@^1.4.0:
     fs-extra "^8.1.0"
     lodash "^4.17.15"
 
-gatsby-plugin-intl@^0.3.3:
+"gatsby-plugin-intl@git://github.com/ranbena/gatsby-plugin-intl.git#standalone":
   version "0.3.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-intl/-/gatsby-plugin-intl-0.3.3.tgz#3a0e55e6641bfcb09fae20215b8f72e2a0ec3de4"
-  integrity sha512-VPugNJv3GDkT6RcOBfncZPw3Eqh98RyvChsXfX7VuMQ8mBVoNB6XyNSIiEGG/atxFrpSp/r3WUKpnzpLLpY5dg==
+  resolved "git://github.com/ranbena/gatsby-plugin-intl.git#22864473f1cc682dd0ddc25ded291e6e321e02cd"
   dependencies:
     "@babel/runtime" "^7.8.4"
     "@formatjs/intl-pluralrules" "^1.5.2"
