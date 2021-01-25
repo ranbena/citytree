@@ -114,9 +114,12 @@ export const Button = styled.button`
   border-radius: 5px;
   padding: 0;
   transition: background-color 150ms linear;
+  display: inline-block; // as="a"
 
   &:hover {
     background-color: #223a39;
+    text-decoration: none;
+    color: white;
   }
 `;
 

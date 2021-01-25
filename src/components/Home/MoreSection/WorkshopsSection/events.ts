@@ -145,7 +145,7 @@ export const events: Event[] = [
   },
   {
     id: '359931955368230',
-    url: 'https://www.facebook.com/events/359931955368230/',
+    url: '/en/abracadabra',
     image: abracadabra,
     date: 'Feb 3 2021 19:00:00 GMT+0200',
     type: 'online',

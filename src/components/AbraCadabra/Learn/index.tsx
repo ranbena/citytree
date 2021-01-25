@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
-import EnrollNowButton from '../EnrollNowButton';
 
-import { Title, Box } from '../styles';
+import { Title, Box, Button } from '../styles';
 import { Wrapper, Container, List } from './styles';
 
 const Learn: FC = () => (
@@ -25,7 +24,13 @@ const Learn: FC = () => (
           </li>
           <li>Words from the Hebrew language and their divine teachings… and so much more!</li>
         </List>
-        <EnrollNowButton />
+        <Button
+          as="a"
+          href="https://docs.google.com/document/d/1Yxwnwa4uGoTssDjfV6yaXt6rrOM38owVn9u9HiyANPQ/preview"
+          target="_blank"
+        >
+          View Syllabus
+        </Button>
       </Box>
     </Container>
   </Wrapper>
