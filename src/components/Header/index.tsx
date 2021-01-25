@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, Link, FormattedMessage } from 'gatsby-plugin-intl';
 import logo from 'src/assets/images/logo.png';
 import { formatPath } from '../../utils';
@@ -26,9 +26,28 @@ const Header: React.FC = () => {
               <Nav.Link href={href('/#visit')}>
                 <FormattedMessage id="nav.visit" />
               </Nav.Link>
-              <Nav.Link href={href('/#workshops')}>
-                <FormattedMessage id="nav.workshops" />
-              </Nav.Link>
+              <NavDropdown
+                renderMenuOnMount
+                title={formatMessage({ id: 'nav.workshops.title' })}
+                id="workshops-dropdown"
+              >
+                <NavDropdown.Item eventKey="all" href={href('/#workshops')}>
+                  <FormattedMessage id="nav.workshops.all" />
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item eventKey="practical-ecology" href={href('/practical-ecology')}>
+                  <FormattedMessage id="nav.workshops.cominghome.title" />
+                  <small>
+                    <FormattedMessage id="nav.workshops.cominghome.subtitle" />
+                  </small>
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey="abracadabra" href="/en/abracadabra">
+                  <FormattedMessage id="nav.workshops.abracadabra.title" />
+                  <small>
+                    <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
+                  </small>
+                </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link href={href('/#vision')}>
                 <FormattedMessage id="nav.vision" />
               </Nav.Link>

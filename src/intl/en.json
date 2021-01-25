@@ -32,7 +32,18 @@
   "nav": {
     "donate": "Support CityTree",
     "visit": "How Can I Join?",
-    "workshops": "Workshops",
+    "workshops": {
+      "title": "Workshops",
+      "all": "All courses, workshops and tours",
+      "cominghome": {
+        "title": "Coming Home",
+        "subtitle": "practical ecology online series"
+      },
+      "abracadabra": {
+        "title": "ABRACADABRA",
+        "subtitle": "magic and ecology online course"
+      }
+    },
     "vision": "Our Vision",
     "cominghome": "Coming Home"
   },

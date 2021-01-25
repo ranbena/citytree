@@ -6,7 +6,7 @@ header {
   background-color: $color1;
   top: 0;
   box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+  z-index: 3;
 
   nav {
     height: $header-height;
@@ -25,22 +25,76 @@ header {
       justify-content: space-between;
     }
 
+    .dropdown {
+      .dropdown-toggle::after {
+        margin-right: 0.255em; // rtl
+      }
+
+      .dropdown-menu {
+        background-color: $color1;
+        border: 0;
+      }
+
+      .dropdown-item {
+        color: $color3;
+
+        &:active,
+        &.active,
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.75);
+        }
+
+        small {
+          font-size: 75%;
+          color: rgba(255, 255, 255, 0.5);
+          text-indent: 6px;
+          display: inline-block;
+        }
+      }
+
+      .dropdown-divider {
+        border-color: #94a355;
+        margin: 0.5rem 1.4rem;
+      }
+    }
+
     @include media-breakpoint-down(md) {
       .navbar-collapse {
         position: fixed;
-        top: 90px;
+        top: $header-height;
         left: 0px;
         width: 100vw;
         z-index: 100000;
         background: $color1;
-        padding: 0 50px 40px;
+        padding: 0 30px 40px;
         font-size: 1.2rem;
 
         .btn {
-          width: 150px;
+          width: fit-content;
           margin-top: 20px;
         }
       }
+
+      .dropdown-item {
+        padding-left: 0.65em;
+        padding-right: 0.65em;
+        white-space: normal;
+      }
+
+      .dropdown-divider {
+        display: none;
+      }
     }
   }
+}
+
+body[dir='rtl'] .dropdown-menu {
+  text-align: right;
+  right: 0;
+  left: auto;
 }
