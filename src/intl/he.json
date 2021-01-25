@@ -37,7 +37,8 @@
       "all": "כל הקורסים, הסדנאות והסיורים",
       "cominghome": {
         "title": "השיבה הביתה",
-        "subtitle": "סדרת סדנאות הזום"
+        "subtitle": "סדרת סדנאות הזום",
+        "link": "/practical-ecology"
       },
       "abracadabra": {
         "title": "אברא כדברא",

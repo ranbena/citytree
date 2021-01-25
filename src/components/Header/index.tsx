@@ -35,7 +35,10 @@ const Header: React.FC = () => {
                   <FormattedMessage id="nav.workshops.all" />
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item eventKey="practical-ecology" href={href('/practical-ecology')}>
+                <NavDropdown.Item
+                  eventKey="practical-ecology"
+                  href={formatMessage({ id: 'nav.workshops.cominghome.link' })}
+                >
                   <FormattedMessage id="nav.workshops.cominghome.title" />
                   <small>
                     <FormattedMessage id="nav.workshops.cominghome.subtitle" />
