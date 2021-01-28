@@ -64,7 +64,7 @@ const Header: React.FC = () => {
               ) : (
                 <Nav.Link href="/en">EN</Nav.Link>
               )}
-              <Button variant="outline-secondary" href={href('#donate')}>
+              <Button variant="outline-secondary" href={href('/#donate')}>
                 <FormattedMessage id="nav.donate" />
               </Button>
             </Nav>
