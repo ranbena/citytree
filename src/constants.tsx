@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const phone = '03-5254196';
-export const bitPhone = '058-4227531';
+export const bitPhone = '054-7505847';
 export const email = 'tree@citytree.net';
 export const address = 'ביאליק 25 דירה 7';
 
