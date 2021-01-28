@@ -162,7 +162,7 @@ const Donatebox = () => {
         />
         <DonateButton
           title={formatMessage({ id: 'donate.channels.ezpay' })}
-          linkUrl="https://www.ezpay.co.il/Payment.aspx?id=13295"
+          linkUrl="https://icom.yaad.net/cgi-bin/yaadpay/yaadpay3new.pl?Coin=1&FixTash=False&Info=&Masof=4500791534&MoreData=True&PageLang=HEB&Postpone=False&ShowEngTashText=True&Tash=1&UTF8out=True&action=pay&freq=1&sendemail=True&tmp=3&signature=c22f8f5ab65522decf5ade48ee952d04cf53ef682c696fe163e2b1fb29e39d58"
           imageUrl={ezpayImage}
         />
         <DonateButton
