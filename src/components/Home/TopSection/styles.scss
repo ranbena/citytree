@@ -24,15 +24,17 @@
     padding-left: 25px;
   }
 
-  h1 {
-    margin-top: -7px;
-  }
-
   .visual {
     background-color: $color4;
     border-radius: 6px;
+    margin-top: 56px; // to better align the visual to the text aside
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 68px;
+    }
 
     @include media-breakpoint-down(md) {
+      margin-top: 0;
       margin-bottom: 1rem;
     }
   }
