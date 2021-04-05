@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, Link, FormattedMessage } from 'gatsby-plugin-intl';
 import logo from 'src/assets/images/logo.png';
+import { storeUrl } from 'src/constants';
 import { formatPath } from '../../utils';
 import './styles.scss';
 
@@ -25,6 +26,9 @@ const Header: React.FC = () => {
             <Nav>
               <Nav.Link href={href('/#visit')}>
                 <FormattedMessage id="nav.visit" />
+              </Nav.Link>
+              <Nav.Link href={href('/#schedule')}>
+                <FormattedMessage id="nav.schedule" />
               </Nav.Link>
               <NavDropdown
                 renderMenuOnMount
@@ -54,8 +58,8 @@ const Header: React.FC = () => {
               <Nav.Link href={href('/#vision')}>
                 <FormattedMessage id="nav.vision" />
               </Nav.Link>
-              <Nav.Link href="/cominghome">
-                <FormattedMessage id="nav.cominghome" />
+              <Nav.Link href={storeUrl} target="_blank">
+                <FormattedMessage id="nav.store" />
               </Nav.Link>
             </Nav>
             <Nav>

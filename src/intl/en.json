@@ -32,8 +32,9 @@
   "nav": {
     "donate": "Support CityTree",
     "visit": "How Can I Join?",
+    "schedule": "Event Schedule",
     "workshops": {
-      "title": "Workshops",
+      "title": "Learn",
       "all": "All courses, workshops and tours",
       "cominghome": {
         "title": "Coming Home",
@@ -46,7 +47,7 @@
       }
     },
     "vision": "Our Vision",
-    "cominghome": "Coming Home"
+    "store": "Shop"
   },
   "top": {
     "title": "A Tree’s Homecoming",

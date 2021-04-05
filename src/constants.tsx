@@ -9,3 +9,4 @@ export const phoneLink = <a href={`tel:${phone}`}>{phone}</a>;
 export const emailLink = <a href={`mail:${email}`}>{email}</a>;
 export const patreonUrl = 'https://www.patreon.com/CityTree';
 export const joinPatreonUrl = 'https://www.patreon.com/join/CityTree';
+export const storeUrl = 'https://mypips.app/citytree';
