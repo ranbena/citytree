@@ -108,7 +108,7 @@ export const Tier = styled.div<{ $name: string }>`
   grid-area: ${({ $name }) => $name};
   background-color: #f7f9f0;
   display: grid;
-  grid-template-rows: 50px 120px;
+  grid-template-rows: auto 120px;
 
   ${({ $name }) => {
     switch ($name) {
@@ -130,6 +130,7 @@ export const Tier = styled.div<{ $name: string }>`
 export const Title = styled.div`
   align-self: center;
   font-size: 1.4rem;
+  padding: 8px 0;
 `;
 
 export const Price = styled.div`

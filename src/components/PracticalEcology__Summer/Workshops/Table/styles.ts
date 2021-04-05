@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
 export const Title = styled.div`
   color: #135049;
   font-size: 39px;
-  font-family: Proza Libre;
   font-weight: bold;
   line-height: 50px;
 `;

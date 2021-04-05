@@ -88,8 +88,7 @@
     "subtitle": "For details and registration please contact us",
     "text": [
       "CityTree’s methodology combines research, practice and learning based in the home and gardens. CityTree’s workshops teach the entire range of handicraft and techniques of the ecological household and garden: reuse strategies, knitting and sewing, DIY cleaning materials and cosmetics, food and home remedies, compost and gardening. You will leave with knowledge, resources, a community  and, in most cases, with a product we prepare together.",
-      "During our tours, groups and families experience an educational visit of our eco-space. The tour may include a light vegan meal, mini workshops and garden activity. We tailor the content and price to the goals and abilities of each group.",
-      "We follow times of the year and seasons with suitable themes. Here are the Zoom workshops of “Aghriculture Time”, every Thursday at 7pm IST, 12pm EST  (in Hebrew - if you wish to have a workshop in English, let us know!):"
+      "During our tours, groups and families experience an educational visit of our eco-space. The tour may include a light vegan meal, mini workshops and garden activity. We tailor the content and price to the goals and abilities of each group."
     ],
     "events": {
       "online": "Online workshop",
@@ -100,26 +99,7 @@
       "he": "In Hebrew",
       "upcoming": "Upcoming Event",
       "title": "Workshops and Tours in Hebrew for “Agriculture Time”",
-      "titles": {
-        "376031080223235": "Compost and the Big City",
-        "346135006581979": "How to be Sick?",
-        "383640592802406": "The Winter Lunch",
-        "761561041330970": "Bialik Square Tour",
-        "2799376593676978": "Vinegar and Life in Fall",
-        "624089721619740": "Fire of Rebellion - Ecological Hanukkah Candles",
-        "624365908469804": "Useful Plants in Winter",
-        "335776294432008": "Compost and the Big City - Part II",
-        "995435214299746": "7 Days of Rest & Radical Healing Retreat - the tree is closed for visits",
-        "1409480316049596": "Tour around Bialik Square - Toward a Forest City",
-        "3294869070634304": "Local Tea Ceremony",
-        "359931955368230": "ABRACADABRA - אברא כדברא : On magic, deep ecology, and the rise of the feminine",
-        "331939588081680": "Moonlit Trees",
-        "966818803823564": "Farewell, Disposable Paper Products",
-        "945134666017445": "The Weed's Song",
-        "243636040457586": "Oh So Sweet",
-        "451485792523691": "What To Do With All Those Peels",
-        "612468359441909": "Making Sunscreen"
-      }
+      "titles": {}
     }
   },
   "schedule": {

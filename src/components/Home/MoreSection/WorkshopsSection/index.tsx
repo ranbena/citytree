@@ -36,9 +36,13 @@ const WorkshopsSection: FC = () => {
                 <p key={key}>{txt}</p>
               ))}
               <br />
-              <FormattedMessage id="workshops.events.title" />
-              <br />
-              <br />
+              {!!events.length && (
+                <>
+                  <FormattedMessage id="workshops.events.title" />
+                  <br />
+                  <br />
+                </>
+              )}
               <ul ref={ref}>
                 {events.map(({ url, image, id, date, type, locale = intl.defaultLocale }) => {
                   const key = `workshops.events.titles.${id}`;

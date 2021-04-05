@@ -26,6 +26,7 @@ const Overview: FC = () => {
           <p>
             <FormattedMessage id="practical-ecology-summer.overview.date" />
             <br />
+            <br />
             <FormattedMessage id="practical-ecology-summer.overview.time" />
           </p>
           <p>

@@ -16,7 +16,6 @@ export const Title = styled.div`
   line-height: max(27.9px, 4.6vw);
   font-size: max(30px, 4.95vw);
   font-weight: bold;
-  font-family: Proza libre;
   letter-spacing: max(-0.75px, -0.125vw);
   margin-top: max(6.6px, 1.1vw);
   text-shadow: 0 0 8px white, 0 0 8px white; // for readabilty when bg image underlays text

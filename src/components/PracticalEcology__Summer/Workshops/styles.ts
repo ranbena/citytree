@@ -29,7 +29,6 @@ export const Tabs = styled(Nav)`
 
   & a {
     height: 66px;
-    font-family: Proza Libre;
     font-size: 17px;
     color: #135049;
     background-color: #ecefee;

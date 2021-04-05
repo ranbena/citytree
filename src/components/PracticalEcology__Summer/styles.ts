@@ -8,13 +8,8 @@ export const MainWrapper = styled.div`
   font-size: 1.3rem;
   line-height: 1.5rem;
 
-  h2 {
-    font-family: Proza Libre;
-  }
-
   h3 {
     font-weight: normal;
-    font-family: Proza Libre;
     font-size: 29px;
     letter-spacing: 2.9px;
     margin-bottom: 14px;
@@ -58,7 +53,6 @@ export const Anchor = styled(AnchorComponent).attrs({
 export const Title = styled.h1`
   position: relative;
   font-weight: bold;
-  font-family: Proza Libre;
   font-size: 2.63rem;
   color: #135049;
 
