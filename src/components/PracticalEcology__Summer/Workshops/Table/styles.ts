@@ -39,10 +39,6 @@ export const Row = styled.div`
     padding-bottom: 0;
   }
 
-  &:nth-child(odd) {
-    font-weight: bold;
-  }
-
   @media ${breakpoints.md} {
     grid-template-areas:
       'idx name'

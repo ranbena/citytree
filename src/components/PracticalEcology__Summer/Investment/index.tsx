@@ -32,7 +32,12 @@ const Investment: FC = () => (
         </Tier>
         <Tier>
           <TierTitle>
-            <FormattedMessage id="practical-ecology-summer.investment.tiers.patrons" />
+            <strong>
+              <FormattedMessage id="practical-ecology-summer.investment.tiers.patrons.0" />
+            </strong>
+            <div>
+              * <FormattedMessage id="practical-ecology-summer.investment.tiers.patrons.1" />
+            </div>
           </TierTitle>
           <Price>
             150 <FormattedMessage id="nis" />

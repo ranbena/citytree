@@ -31,7 +31,13 @@ export const MainWrapper = styled.div`
     font-weight: 300;
 
     &:not(:last-child) {
-      margin-bottom: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      margin: 10px 0;
+      font-weight: 600;
+      display: block;
     }
   }
 

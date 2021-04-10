@@ -8,14 +8,12 @@ const Component: FC = () => (
   <Wrapper>
     <Container>
       <h3>
-        <FormattedMessage id="practical-ecology-summer.magiclink.title1" />
-        <span>
-          <FormattedMessage id="practical-ecology-summer.magiclink.title2" />
-        </span>
+        <FormattedMessage id="practical-ecology-summer.magiclink.title" />
       </h3>
       <p>
         <FormattedMessage id="practical-ecology-summer.magiclink.text" />
       </p>
+      <br /><br />
       <SignUpButton>
         <FormattedMessage id="practical-ecology-summer.magiclink.button" />
       </SignUpButton>

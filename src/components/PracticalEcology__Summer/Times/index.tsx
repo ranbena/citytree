@@ -14,6 +14,7 @@ const Overview: FC = () => (
         <p>
           <FormattedMessage id="practical-ecology-summer.times.text" />
         </p>
+        <br /><br />
         <SignUpButton>
           <FormattedMessage id="practical-ecology-summer.times.button" />
         </SignUpButton>

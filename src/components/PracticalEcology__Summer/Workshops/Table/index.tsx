@@ -8,6 +8,7 @@ interface IProps {
   title: JSX.Element;
   dates: [string, string];
   element: string;
+  season: string;
   events: IEvent[];
 }
 
@@ -17,7 +18,7 @@ interface IEvent {
   date: string;
 }
 
-const Component: FC<IProps> = ({ title, dates, element, events }) => {
+const Component: FC<IProps> = ({ title, dates, element, season, events }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,15 +36,10 @@ const Component: FC<IProps> = ({ title, dates, element, events }) => {
         <FormattedMessage id="practical-ecology-summer.workshops.timeof" /> {title}
       </Title>
       <Subtitle>
-        <strong>
-          <FormattedMessage id="dates" />:
-        </strong>{' '}
+        <FormattedMessage id="dates" />:
         <FormattedDate value={dates[0]} month="long" day="numeric" /> -{' '}
         <FormattedDate value={dates[1]} month="long" day="numeric" /> |{' '}
-        <strong>
-          <FormattedMessage id="element" />:
-        </strong>{' '}
-        {element}
+        <FormattedMessage id="season" />: {season} | <FormattedMessage id="element" />: {element}
       </Subtitle>
       <Table ref={ref}>
         {events.map((event) => (

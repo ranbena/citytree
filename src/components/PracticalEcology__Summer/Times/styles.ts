@@ -29,5 +29,5 @@ export const Box = styled(MainBox)`
 
 export const Title = styled.h2`
   font-size: 42px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 `;
