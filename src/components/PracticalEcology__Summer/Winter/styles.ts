@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
-import overviewImage from 'src/assets/images/practical-ecology-summer/SummerMagic_WelcomePic.png';
-import { MainWrapper, Box as MainBox } from '../styles';
+import bgImage from 'src/assets/images/practical-ecology-winter/WinterMagic_MainPic_02-min.png';
+import { MainWrapper, Box as MainBox, Button as MainButton } from '../styles';
 
 export const Wrapper = styled(MainWrapper)`
-  background: #786452 url(${overviewImage}) no-repeat right top;
+  background: #786452 url(${bgImage}) no-repeat right top;
   background-size: auto 100%;
 
   direction: ltr; // in He, the direction switch doesn't work with the image
@@ -19,5 +19,13 @@ export const Box = styled(MainBox)`
 
   body[dir='rtl'] & {
     direction: rtl;
+  }
+`;
+
+export const Button = styled(MainButton)`
+  background-color: #2e6a2f;
+
+  &:hover {
+    background-color: #29542a;
   }
 `;

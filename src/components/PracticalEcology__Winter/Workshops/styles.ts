@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 import { TabContent, Nav } from 'react-bootstrap';
-import ltrBgImage from 'src/assets/images/practical-ecology-winter/workshops-bg.jpg';
+import ltrBgImage from 'src/assets/images/practical-ecology-winter/WinterMagic_WorkshopsPic_01.png';
 import { breakpoints } from 'src/utils';
 import { MainWrapper } from '../styles';
 
 export const Wrapper = styled(MainWrapper)`
   background: url(${ltrBgImage}) center top;
   background-size: cover;
-  padding: 112px 0 97px;
+  padding: 382px 0 97px;
   color: white;
 `;
 
@@ -19,7 +19,7 @@ export const Title = styled.h2`
 export const Subtitle = styled.div`
   font-size: 30px;
   line-height: normal;
-  margin-bottom: 92px;
+  margin-bottom: 32px;
 `;
 
 export const Tabs = styled(Nav)`
@@ -28,12 +28,11 @@ export const Tabs = styled(Nav)`
   margin: 0 -2px -8px;
 
   & a {
-    height: 66px;
-    font-family: Proza Libre;
-    font-size: 17px;
+    height: 55px;
+    font-size: 27px;
     color: #135049;
     background-color: #ecefee;
-    padding: 25px 40px 0;
+    padding: 13px 40px 0;
     border: 0;
     text-transform: uppercase;
     margin: 0 2px;
@@ -41,8 +40,8 @@ export const Tabs = styled(Nav)`
     border-top-right-radius: 9px;
 
     &.active {
-      height: 79px;
-      padding-top: 32px;
+      height: 69px;
+      padding-top: 27px;
       background-color: white;
       color: #135049 !important;
     }

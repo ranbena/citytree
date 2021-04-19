@@ -63,7 +63,7 @@ const Component: FC = () => {
     <Wrapper>
       <Container>
         <Title>
-          <FormattedMessage id="practical-ecology-winter.overview.subtitle" />
+          <FormattedMessage id="practical-ecology-winter.workshops.title" />
         </Title>
         <Subtitle>
           <FormattedMessage id="practical-ecology-winter.workshops.subtitle" />
@@ -74,7 +74,6 @@ const Component: FC = () => {
             {tabKeys.map((key) => (
               <Nav.Item key={key}>
                 <Nav.Link eventKey={key} onClick={() => setTabKey(key)} active={tabKey === key}>
-                  <FormattedMessage id="practical-ecology-winter.workshops.timeof" />{' '}
                   {getTitle(key)}
                 </Nav.Link>
               </Nav.Item>
@@ -85,6 +84,7 @@ const Component: FC = () => {
               <Tab.Pane eventKey={key} key={key}>
                 <Table
                   title={getTitle(key)}
+                  season={formatMessage({ id: getId(key, 'season') })}
                   element={formatMessage({ id: getId(key, 'element') })}
                   dates={[events[key].start, events[key].end]}
                   events={getEvents(key)}

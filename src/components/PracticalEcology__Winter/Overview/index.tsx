@@ -3,7 +3,7 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
 import { forEachMessage } from '../../../utils';
 
-import { Title, SubTitle } from '../styles';
+import { Title } from '../styles';
 import { Wrapper, Container, Box } from './styles';
 
 const Overview: FC = () => {
@@ -12,25 +12,26 @@ const Overview: FC = () => {
   return (
     <Wrapper>
       <Container>
-        <Box xl={7} lg={8} md={10} sm={12}>
+        <Box xl={9} md={10} sm={12}>
           <Title>
-            <FormattedMessage id="practical-ecology-winter.nav.overview" />
+            <FormattedMessage id="practical-ecology-winter.overview.title" />
           </Title>
-          <SubTitle>
-            <FormattedMessage id="practical-ecology-winter.overview.subtitle" />
-          </SubTitle>
           {forEachMessage(intl, 'practical-ecology-winter.overview.text').map(([txt, key]) => (
             <p key={key}>{txt}</p>
           ))}
-          <hr />
           <p>
-            <FormattedMessage id="practical-ecology-winter.overview.date" />
-            <br />
-            <FormattedMessage id="practical-ecology-winter.overview.time" />
+            <strong>
+              <FormattedMessage id="practical-ecology-winter.overview.date" />
+            </strong>
           </p>
           <p>
-            <FormattedMessage id="language" />: <FormattedMessage id="hebrew" />
+            {forEachMessage(intl, 'practical-ecology-winter.overview.bottomText').map(
+              ([txt, key]) => (
+                <p key={key}>{txt}</p>
+              ),
+            )}
           </p>
+          <br />
           <SignUpButton>
             <FormattedMessage id="practical-ecology-winter.signupnow" />
           </SignUpButton>

@@ -40,12 +40,21 @@ const Header: React.FC = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
-                  eventKey="practical-ecology"
-                  href={formatMessage({ id: 'nav.workshops.cominghome.link' })}
+                  eventKey="practical-ecology-summer"
+                  href={href('/practical-ecology-summer')}
                 >
-                  <FormattedMessage id="nav.workshops.cominghome.title" />
+                  <FormattedMessage id="nav.workshops.practical-ecology-summer.title" />
                   <small>
-                    <FormattedMessage id="nav.workshops.cominghome.subtitle" />
+                    <FormattedMessage id="nav.workshops.practical-ecology-summer.subtitle" />
+                  </small>
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="practical-ecology-winter"
+                  href={href('/practical-ecology-winter')}
+                >
+                  <FormattedMessage id="nav.workshops.practical-ecology-winter.title" />
+                  <small>
+                    <FormattedMessage id="nav.workshops.practical-ecology-winter.subtitle" />
                   </small>
                 </NavDropdown.Item>
                 <NavDropdown.Item eventKey="abracadabra" href="/en/abracadabra">

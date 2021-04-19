@@ -12,11 +12,10 @@ const Overview: FC = () => {
   return (
     <Wrapper>
       <Container>
-        <Box xl={8} lg={8} md={10} sm={12}>
+        <Box xl={9} md={10} sm={12}>
           <Title>
             <FormattedMessage id="practical-ecology-summer.overview.title" />
           </Title>
-          <br />
           {forEachMessage(intl, 'practical-ecology-summer.overview.text').map(([txt, key]) => (
             <p key={key}>{txt}</p>
           ))}
@@ -26,9 +25,11 @@ const Overview: FC = () => {
             </strong>
           </p>
           <p>
-            {forEachMessage(intl, 'practical-ecology-summer.overview.bottomText').map(([txt, key]) => (
-              <p key={key}>{txt}</p>
-            ))}
+            {forEachMessage(intl, 'practical-ecology-summer.overview.bottomText').map(
+              ([txt, key]) => (
+                <p key={key}>{txt}</p>
+              ),
+            )}
           </p>
           <br />
           <SignUpButton>

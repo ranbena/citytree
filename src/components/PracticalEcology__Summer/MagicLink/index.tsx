@@ -13,7 +13,8 @@ const Component: FC = () => (
       <p>
         <FormattedMessage id="practical-ecology-summer.magiclink.text" />
       </p>
-      <br /><br />
+      <br />
+      <br />
       <SignUpButton>
         <FormattedMessage id="practical-ecology-summer.magiclink.button" />
       </SignUpButton>

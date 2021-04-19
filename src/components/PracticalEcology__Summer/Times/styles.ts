@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
-import overviewImage from 'src/assets/images/practical-ecology-summer/times-bg.jpg';
+import overviewImage from 'src/assets/images/practical-ecology-summer/SummerMagic_WheelYearPic.png';
+import { BoxInner } from '../../Box';
 import { MainWrapper, Box as MainBox } from '../styles';
 
 export const Wrapper = styled(MainWrapper)`
@@ -12,22 +13,33 @@ export const Wrapper = styled(MainWrapper)`
   p {
     font-size: 30px;
     line-height: 40px;
+    color: white;
   }
 `;
 
 export const Container = styled(BSContainer)`
   padding: 160px 0 202px;
+  text-align: left;
 `;
 
 export const Box = styled(MainBox)`
-  padding: 0 35px;
+  background-color: #683c1fdf;
+  padding: 35px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  ${BoxInner} {
+    background-color: transparent;
+  }
 
   body[dir='rtl'] & {
     direction: rtl;
+    text-align: right;
   }
 `;
 
 export const Title = styled.h2`
   font-size: 42px;
   margin-bottom: 30px;
+  color: white;
 `;

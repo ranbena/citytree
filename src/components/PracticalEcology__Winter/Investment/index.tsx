@@ -1,8 +1,7 @@
 import React, { FC } from 'react';
 import { FormattedMessage } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
-import { Title } from '../styles';
-import { Wrapper, Container, Tiers, Tier, Title as TierTitle, Price } from './styles';
+import { Wrapper, Container, Tiers, Tier, Title, TierTitle, Price } from './styles';
 
 const Investment: FC = () => (
   <Wrapper>
@@ -19,7 +18,7 @@ const Investment: FC = () => (
             <FormattedMessage id="practical-ecology-winter.investment.tiers.single" />
           </TierTitle>
           <Price>
-            50 <FormattedMessage id="nis" />
+            20 <FormattedMessage id="nis" />
           </Price>
         </Tier>
         <Tier>
@@ -32,7 +31,12 @@ const Investment: FC = () => (
         </Tier>
         <Tier>
           <TierTitle>
-            <FormattedMessage id="practical-ecology-winter.investment.tiers.patrons" />
+            <strong>
+              <FormattedMessage id="practical-ecology-winter.investment.tiers.patrons.0" />
+            </strong>
+            <div>
+              * <FormattedMessage id="practical-ecology-winter.investment.tiers.patrons.1" />
+            </div>
           </TierTitle>
           <Price>
             100 <FormattedMessage id="nis" />

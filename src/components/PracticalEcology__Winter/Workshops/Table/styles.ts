@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
 export const Title = styled.div`
   color: #135049;
   font-size: 39px;
-  font-family: Proza Libre;
   font-weight: bold;
   line-height: 50px;
 `;
@@ -30,8 +29,8 @@ export const Table = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-areas: 'idx name date';
-  grid-template-columns: 60px auto 230px;
+  grid-template-areas: 'idx name';
+  grid-template-columns: 60px auto;
   border-bottom: 1px solid #d5d5d5;
 
   &:last-of-type {
@@ -40,14 +39,8 @@ export const Row = styled.div`
     padding-bottom: 0;
   }
 
-  &:nth-child(odd) {
-    font-weight: bold;
-  }
-
   @media ${breakpoints.md} {
-    grid-template-areas:
-      'idx name'
-      '. date';
+    grid-template-areas: 'idx name';
     grid-template-columns: 40px auto;
     margin-bottom: 22px;
     padding-bottom: 22px;
@@ -78,7 +71,6 @@ export const Name = styled(Cell)`
   grid-area: name;
   padding: 18px 30px;
   flex: 1;
-  border-left: 1px solid #d5d5d5;
   border-right: 1px solid #d5d5d5;
 
   @media ${breakpoints.md} {

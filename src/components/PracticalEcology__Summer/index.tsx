@@ -3,7 +3,7 @@ import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 
-import { Navigation, Anchor } from 'src/components/PracticalEcology__Winter/styles';
+import { Navigation, Anchor, WinterAnchor } from 'src/components/PracticalEcology__Summer/styles';
 import Layout from 'src/components/Layout';
 import ogImageHe from 'src/assets/images/practical-ecology-summer/og-he.jpeg';
 import TopSection from './TopSection';
@@ -11,6 +11,7 @@ import Overview from './Overview';
 import MagicLink from './MagicLink';
 import Workshops from './Workshops';
 import Investment from './Investment';
+import Winter from './Winter';
 import Times from './Times';
 
 const siteUrl = process.env.GATSBY_SITE_URL;
@@ -49,6 +50,9 @@ const Page: FC<PageProps> = () => {
         <a href="#times">
           <FormattedMessage id="practical-ecology-summer.nav.times" />
         </a>
+        <WinterAnchor href="#winter">
+          <FormattedMessage id="practical-ecology-summer.nav.winter" />
+        </WinterAnchor>
       </Navigation>
       <Anchor id="overview" />
       <Overview />
@@ -59,6 +63,8 @@ const Page: FC<PageProps> = () => {
       <Investment />
       <Anchor id="times" />
       <Times />
+      <Anchor id="winter" />
+      <Winter />
     </Layout>
   );
 };

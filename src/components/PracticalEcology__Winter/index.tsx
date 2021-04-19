@@ -3,25 +3,24 @@ import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 
-import { Navigation, Anchor } from 'src/components/PracticalEcology__Winter/styles';
+import { Navigation, Anchor, SummerAnchor } from 'src/components/PracticalEcology__Winter/styles';
 import Layout from 'src/components/Layout';
-import ogImageEn from 'src/assets/images/practical-ecology-winter/og-en.jpeg';
 import ogImageHe from 'src/assets/images/practical-ecology-winter/og-he.jpeg';
 import TopSection from './TopSection';
 import Overview from './Overview';
-import MagicLink from './MagicLink';
 import Workshops from './Workshops';
 import Investment from './Investment';
+import Summer from './Summer';
 import Times from './Times';
 
 const siteUrl = process.env.GATSBY_SITE_URL;
 
 const Page: FC<PageProps> = () => {
-  const { formatMessage, locale } = useIntl();
+  const { formatMessage } = useIntl();
   const siteTitle = formatMessage({ id: 'practical-ecology-winter.metatitle' });
   const siteDesc = formatMessage({ id: 'practical-ecology-winter.subtitle' });
   const image = {
-    path: locale === 'en' ? ogImageEn : ogImageHe,
+    path: ogImageHe,
     width: '1600',
     height: '800',
   };
@@ -39,27 +38,41 @@ const Page: FC<PageProps> = () => {
       <TopSection />
       <Navigation>
         <a href="#overview">
-          <FormattedMessage id="practical-ecology-winter.nav.overview" />
-        </a>
-        <a href="#schedule">
-          <FormattedMessage id="practical-ecology-winter.nav.schedule" />
+          <span>
+            <FormattedMessage id="practical-ecology-winter.nav.overview" />
+          </span>
         </a>
         <a href="#pricing">
-          <FormattedMessage id="practical-ecology-winter.nav.pricing" />
+          <span>
+            <FormattedMessage id="practical-ecology-winter.nav.pricing" />
+          </span>
+        </a>
+        <a href="#schedule">
+          <span>
+            <FormattedMessage id="practical-ecology-winter.nav.schedule" />
+          </span>
         </a>
         <a href="#times">
-          <FormattedMessage id="practical-ecology-winter.nav.times" />
+          <span>
+            <FormattedMessage id="practical-ecology-winter.nav.times" />
+          </span>
         </a>
+        <SummerAnchor href="#summer">
+          <span>
+            <FormattedMessage id="practical-ecology-winter.nav.summer" />
+          </span>
+        </SummerAnchor>
       </Navigation>
       <Anchor id="overview" />
       <Overview />
-      <MagicLink />
-      <Anchor id="schedule" />
-      <Workshops />
       <Anchor id="pricing" />
       <Investment />
+      <Anchor id="schedule" />
+      <Workshops />
       <Anchor id="times" />
       <Times />
+      <Anchor id="summer" />
+      <Summer />
     </Layout>
   );
 };

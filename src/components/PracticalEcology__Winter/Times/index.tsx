@@ -1,25 +1,32 @@
 import React, { FC } from 'react';
-import { FormattedMessage } from 'gatsby-plugin-intl';
+import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
+import { forEachMessage } from 'src/utils';
 import SignUpButton from '../SignUpButton';
 
 import { Wrapper, Container, Title, Box } from './styles';
 
-const Overview: FC = () => (
-  <Wrapper>
-    <Container>
-      <Box xl={7} lg={8} md={10} sm={12} transparent>
-        <Title>
-          <FormattedMessage id="practical-ecology-winter.times.title" />
-        </Title>
-        <p>
-          <FormattedMessage id="practical-ecology-winter.times.text" />
-        </p>
+const Overview: FC = () => {
+  const intl = useIntl();
+  return (
+    <Wrapper>
+      <Container>
+        <Box xl={10} sm={12} transparent>
+          <Title>
+            <FormattedMessage id="practical-ecology-winter.times.title" />
+          </Title>
+          <p>
+            {forEachMessage(intl, 'practical-ecology-winter.times.text').map(([txt, key]) => (
+              <p key={key}>{txt}</p>
+            ))}
+          </p>
+        </Box>
+
         <SignUpButton>
           <FormattedMessage id="practical-ecology-winter.times.button" />
         </SignUpButton>
-      </Box>
-    </Container>
-  </Wrapper>
-);
+      </Container>
+    </Wrapper>
+  );
+};
 
 export default Overview;
