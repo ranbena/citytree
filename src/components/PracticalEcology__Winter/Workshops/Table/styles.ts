@@ -1,12 +1,28 @@
 import styled from 'styled-components';
 import { breakpoints } from 'src/utils';
 
-export const Wrapper = styled.div`
-  color: #386b7e;
-`;
+type TabKey = 'prosperity' | 'agriculture' | 'cultivation';
+
+const tabKeyColors: Record<
+  TabKey,
+  {
+    border: string;
+  }
+> = {
+  prosperity: {
+    border: '#7899c7',
+  },
+  agriculture: {
+    border: '#679d7c',
+  },
+  cultivation: {
+    border: '#9fc778',
+  },
+};
+
+export const Wrapper = styled.div``;
 
 export const Title = styled.div`
-  color: #135049;
   font-size: 39px;
   font-weight: bold;
   line-height: 50px;
@@ -17,9 +33,9 @@ export const Subtitle = styled.div`
   line-height: 35px;
 `;
 
-export const Table = styled.div`
+export const Table = styled.div<{ tabKey: TabKey }>`
   border-radius: 10px;
-  border: 1px solid #d5d5d5;
+  border: 1px solid ${({ tabKey }) => tabKeyColors[tabKey].border};
   margin-top: 48px;
 
   @media ${breakpoints.md} {
@@ -27,11 +43,11 @@ export const Table = styled.div`
   }
 `;
 
-export const Row = styled.div`
+export const Row = styled.div<{ tabKey: TabKey }>`
   display: grid;
   grid-template-areas: 'idx name';
   grid-template-columns: 60px auto;
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid ${({ tabKey }) => tabKeyColors[tabKey].border};
 
   &:last-of-type {
     border: 0;
@@ -67,11 +83,11 @@ export const Idx = styled(Cell)`
   }
 `;
 
-export const Name = styled(Cell)`
+export const Name = styled(Cell)<{ tabKey: TabKey }>`
   grid-area: name;
   padding: 18px 30px;
   flex: 1;
-  border-right: 1px solid #d5d5d5;
+  border-right: 1px solid ${({ tabKey }) => tabKeyColors[tabKey].border};
 
   @media ${breakpoints.md} {
     border: 0;

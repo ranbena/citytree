@@ -1,9 +1,20 @@
 import React, { FC, useEffect, useState } from 'react';
-import { Container, Nav, Tab } from 'react-bootstrap';
+import { Container, Nav, Tab as BSTab } from 'react-bootstrap';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import Table from './Table';
 import events from './events';
-import { Wrapper, Title, Subtitle, Tabs, Content, BottomNav, Next, Prev, Prefix } from './styles';
+import {
+  Wrapper,
+  Title,
+  Subtitle,
+  Tabs,
+  Tab,
+  Content,
+  BottomNav,
+  Next,
+  Prev,
+  Prefix,
+} from './styles';
 
 const tabKeys = ['usefulness', 'movement', 'satisfaction'] as const;
 export type TabKey = typeof tabKeys[number];
@@ -69,34 +80,35 @@ const Component: FC = () => {
           <FormattedMessage id="practical-ecology-summer.workshops.subtitle" />
         </Subtitle>
 
-        <Tab.Container transition={false} activeKey={tabKey}>
+        <BSTab.Container transition={false} activeKey={tabKey}>
           <Tabs>
             {tabKeys.map((key) => (
-              <Nav.Item key={key}>
+              <Tab key={key} tabKey={key}>
                 <Nav.Link eventKey={key} onClick={() => setTabKey(key)} active={tabKey === key}>
                   {getTitle(key)}
                 </Nav.Link>
-              </Nav.Item>
+              </Tab>
             ))}
           </Tabs>
-          <Content>
+          <Content tabKey={tabKey}>
             {tabKeys.map((key) => (
-              <Tab.Pane eventKey={key} key={key}>
+              <BSTab.Pane eventKey={key} key={key}>
                 <Table
+                  tabKey={tabKey}
                   title={getTitle(key)}
                   season={formatMessage({ id: getId(key, 'season') })}
                   element={formatMessage({ id: getId(key, 'element') })}
                   dates={[events[key].start, events[key].end]}
                   events={getEvents(key)}
                 />
-              </Tab.Pane>
+              </BSTab.Pane>
             ))}
             <BottomNav>
               {renderPreviousLink()}
               {renderNextLink()}
             </BottomNav>
           </Content>
-        </Tab.Container>
+        </BSTab.Container>
       </Container>
     </Wrapper>
   );

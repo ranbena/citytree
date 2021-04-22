@@ -38,7 +38,7 @@ export const Tiers = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1px;
-  margin: 40px 0 70px;
+  margin: 40px 0 40px;
   text-align: center;
 
   @media ${breakpoints.md} {
@@ -70,5 +70,4 @@ export const Price = styled.div`
   place-content: center;
   font-size: 3.1rem;
   line-height: 2.8rem;
-  font-family: adobe hebrew;
 `;

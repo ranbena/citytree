@@ -2,8 +2,7 @@ import React, { FC } from 'react';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { navigate } from 'gatsby';
 import { forEachMessage } from '../../../utils';
-import { Title } from '../styles';
-import { Wrapper, Container, Box, Button } from './styles';
+import { Wrapper, Container, Box, Button, Title } from './styles';
 
 const Winter: FC = () => {
   const intl = useIntl();
@@ -18,6 +17,7 @@ const Winter: FC = () => {
           {forEachMessage(intl, 'practical-ecology-summer.winter.text').map(([txt, key]) => (
             <p key={key}>{txt}</p>
           ))}
+          <br />
           <br />
           <Button onClick={() => navigate('/practical-ecology-winter')}>
             <FormattedMessage id="practical-ecology-summer.winter.button" />

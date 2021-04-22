@@ -21,6 +21,6 @@ export const Wrapper = styled(MainWrapper)`
     margin: 0 auto;
     color: #4a251d;
     font-size: 31px;
-    line-height: 29px;
+    line-height: 34px;
   }
 `;

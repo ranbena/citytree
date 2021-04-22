@@ -18,6 +18,7 @@ const Summer: FC = () => {
             <p key={key}>{txt}</p>
           ))}
           <br />
+          <br />
           <Button onClick={() => navigate('/practical-ecology-summer')}>
             <FormattedMessage id="practical-ecology-winter.summer.button" />
           </Button>

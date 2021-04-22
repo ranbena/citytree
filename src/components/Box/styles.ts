@@ -6,8 +6,8 @@ export const Wrapper = styled.div<{ color?: string; transparent?: boolean }>`
     !transparent &&
     css`
       background: ${color || 'white'};
-      border-radius: 10px;
-      padding: 70px;
+      border-radius: 20px;
+      padding: 50px;
       height: 100%;
 
       @media (max-width: 768px) {

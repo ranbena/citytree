@@ -3,7 +3,7 @@ import ltrBgImage from 'src/assets/images/practical-ecology-winter/WinterMagic_u
 import { MainWrapper } from '../styles';
 
 export const Wrapper = styled(MainWrapper)<{ $locale: string }>`
-  height: 20.3vw;
+  height: 18vw;
   min-height: 130px;
   display: flex;
   align-items: center;
@@ -13,6 +13,7 @@ export const Wrapper = styled(MainWrapper)<{ $locale: string }>`
 `;
 
 export const Title = styled.div`
+  margin-top: 2vw;
   line-height: max(27.9px, 4.3vw);
   font-size: max(25px, 3.25vw);
   letter-spacing: max(-0.75px, -0.125vw);

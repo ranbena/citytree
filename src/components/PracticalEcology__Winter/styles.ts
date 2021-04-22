@@ -40,6 +40,7 @@ export const MainWrapper = styled.div`
       margin: 10px 0;
       font-weight: 600;
       display: block;
+      font-size: 25px;
     }
   }
 `;
@@ -66,7 +67,7 @@ export const SummerAnchor = styled.a`
 export const Title = styled.h1`
   position: relative;
   font-weight: bold;
-  font-size: 2.63rem;
+  font-size: 2.33rem;
   color: #274e13;
 
   @media (max-width: 630px) {

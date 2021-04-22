@@ -5,6 +5,7 @@ import { Wrapper, Title, Subtitle, Table, Row, Idx, Name, DateWrapper } from './
 const now = Date.now();
 
 interface IProps {
+  tabKey: 'usefulness' | 'movement' | 'satisfaction';
   title: JSX.Element;
   dates: [string, string];
   element: string;
@@ -18,7 +19,7 @@ interface IEvent {
   date: string;
 }
 
-const Component: FC<IProps> = ({ title, dates, element, season, events }) => {
+const Component: FC<IProps> = ({ tabKey, title, dates, element, season, events }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,16 +37,16 @@ const Component: FC<IProps> = ({ title, dates, element, season, events }) => {
         <FormattedMessage id="practical-ecology-summer.workshops.timeof" /> {title}
       </Title>
       <Subtitle>
-        <FormattedMessage id="dates" />:
+        <FormattedMessage id="dates" />:{' '}
         <FormattedDate value={dates[0]} month="long" day="numeric" /> -{' '}
         <FormattedDate value={dates[1]} month="long" day="numeric" /> |{' '}
         <FormattedMessage id="season" />: {season} | <FormattedMessage id="element" />: {element}
       </Subtitle>
-      <Table ref={ref}>
+      <Table ref={ref} tabKey={tabKey}>
         {events.map((event) => (
-          <Row key={event.index} data-time={new Date(event.date).getTime()}>
+          <Row key={event.index} data-time={new Date(event.date).getTime()} tabKey={tabKey}>
             <Idx>{event.index}</Idx>
-            <Name>{event.title}</Name>
+            <Name tabKey={tabKey}>{event.title}</Name>
             <DateWrapper>
               <FormattedDate value={event.date} year="2-digit" month="2-digit" day="2-digit" />
             </DateWrapper>

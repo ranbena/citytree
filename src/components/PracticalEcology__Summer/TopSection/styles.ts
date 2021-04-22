@@ -3,7 +3,7 @@ import ltrBgImage from 'src/assets/images/practical-ecology-summer/SummerMagic_T
 import { MainWrapper } from '../styles';
 
 export const Wrapper = styled(MainWrapper)<{ $locale: string }>`
-  height: 20.3vw;
+  height: 14.3vw;
   min-height: 130px;
   display: flex;
   align-items: center;
@@ -13,18 +13,17 @@ export const Wrapper = styled(MainWrapper)<{ $locale: string }>`
 `;
 
 export const Title = styled.div`
-  line-height: max(27.9px, 4.3vw);
-  font-size: max(25px, 3.25vw);
-  font-weight: bold;
+  line-height: max(27.9px, 3.3vw);
+  font-size: max(25px, 2.25vw);
+  font-weight: 600;
   letter-spacing: max(-0.75px, -0.125vw);
-  margin-top: max(70px, 9.1vw);
+  margin-top: max(46px, 4.1vw);
   text-shadow: 0 0 8px #c4f2feff, 0 0 8px #c4f2feff; // for readabilty when bg image underlays text
 `;
 
 export const SubTitle = styled.div`
-  line-height: max(12px, 1.98vw);
-  font-size: max(12px, 2.08vw);
-  margin-top: max(9px, -0.22vw);
+  line-height: max(34px, 1.98vw);
+  font-size: max(25px, 1.48vw);
   font-weight: 300;
   text-shadow: 0 0 8px #c4f2feff, 0 0 8px #c4f2feff; // for readabilty when bg image underlays text
 `;

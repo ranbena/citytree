@@ -35,7 +35,7 @@ export const Tiers = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1px;
-  margin: 40px 0 70px;
+  margin: 40px 0 40px;
   text-align: center;
 
   @media ${breakpoints.md} {
@@ -45,7 +45,7 @@ export const Tiers = styled.div`
 `;
 
 export const Tier = styled.div`
-  box-shadow: 0 0 0 1px #89b7db; // it's a border collapse trick (along with grid-gap: 1px)!
+  box-shadow: 0 0 0 1px #3a7bab; // it's a border collapse trick (along with grid-gap: 1px)!
   background-color: #bee2fc;
   display: grid;
   grid-template-rows: 60px 120px;
@@ -61,10 +61,9 @@ export const Title = styled.div`
 `;
 
 export const Price = styled.div`
-  border-top: 1px solid #89b7db;
+  border-top: 1px solid #3a7bab;
   display: grid;
   place-content: center;
   font-size: 3.1rem;
   line-height: 2.8rem;
-  font-family: adobe hebrew;
 `;

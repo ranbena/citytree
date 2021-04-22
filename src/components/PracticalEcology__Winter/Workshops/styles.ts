@@ -4,20 +4,44 @@ import ltrBgImage from 'src/assets/images/practical-ecology-winter/WinterMagic_W
 import { breakpoints } from 'src/utils';
 import { MainWrapper } from '../styles';
 
+type TabKey = 'prosperity' | 'agriculture' | 'cultivation';
+
+const tabKeyColors: Record<
+  TabKey,
+  {
+    bg: string;
+    text: string;
+  }
+> = {
+  prosperity: {
+    bg: '#e3f2fe',
+    text: '#073763',
+  },
+  agriculture: {
+    bg: '#e3feee',
+    text: '#076314',
+  },
+  cultivation: {
+    bg: '#edfee3',
+    text: '#436813',
+  },
+};
+
 export const Wrapper = styled(MainWrapper)`
   background: url(${ltrBgImage}) center top;
   background-size: cover;
-  padding: 382px 0 97px;
+  padding: 130px 0 97px;
   color: white;
 `;
 
 export const Title = styled.h2`
   font-size: 45px;
   line-height: 50px;
+  font-weight: 600;
 `;
 
 export const Subtitle = styled.div`
-  font-size: 30px;
+  font-size: 25px;
   line-height: normal;
   margin-bottom: 32px;
 `;
@@ -30,8 +54,6 @@ export const Tabs = styled(Nav)`
   & a {
     height: 55px;
     font-size: 27px;
-    color: #135049;
-    background-color: #ecefee;
     padding: 13px 40px 0;
     border: 0;
     text-transform: uppercase;
@@ -42,8 +64,6 @@ export const Tabs = styled(Nav)`
     &.active {
       height: 69px;
       padding-top: 27px;
-      background-color: white;
-      color: #135049 !important;
     }
 
     @media ${breakpoints.md} {
@@ -57,8 +77,23 @@ export const Tabs = styled(Nav)`
   }
 `;
 
-export const Content = styled(TabContent)`
-  background: white;
+export const Tab = styled(Nav.Item)<{ tabKey: TabKey }>`
+  a {
+    ${({ tabKey }) => css`
+      background-color: ${tabKeyColors[tabKey].bg};
+      color: ${tabKeyColors[tabKey].text};
+    `}
+  }
+`;
+
+export const Content = styled(TabContent)<{ tabKey: TabKey }>`
+  ${({ tabKey }) => {
+    const colors = tabKeyColors[tabKey];
+    return css`
+      background-color: ${colors.bg};
+      color: ${colors.text};
+    `;
+  }}
   padding: 57px 70px 52px;
   border-radius: 10px;
   position: relative;
@@ -80,7 +115,6 @@ export const BottomNav = styled.div`
 `;
 
 export const NavLink = styled.a<{ $hidden: boolean }>`
-  color: #003535 !important;
   font-size: 20px;
   cursor: pointer;
   visibility: ${(p) => (p.$hidden ? 'hidden' : 'visible')};

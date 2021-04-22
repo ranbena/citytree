@@ -50,6 +50,7 @@ export const Wrapper = styled.div<{
     display: flex;
     align-items: center;
     color: white;
+    font-size: 16pt;
     ${({ navHeight }) => css`
       min-height: ${navHeight}px;
       line-height: ${navHeight / 3.5}px;

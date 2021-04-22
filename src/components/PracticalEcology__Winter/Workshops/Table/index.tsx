@@ -3,6 +3,7 @@ import { FormattedMessage, FormattedDate } from 'gatsby-plugin-intl';
 import { Wrapper, Title, Subtitle, Table, Row, Idx, Name } from './styles';
 
 interface IProps {
+  tabKey: 'prosperity' | 'agriculture' | 'cultivation';
   title: JSX.Element;
   dates: [string, string];
   element: string;
@@ -16,7 +17,7 @@ interface IEvent {
   date: string;
 }
 
-const Component: FC<IProps> = ({ title, dates, element, season, events }) => (
+const Component: FC<IProps> = ({ tabKey, title, dates, element, season, events }) => (
   <Wrapper>
     <Title>
       <FormattedMessage id="practical-ecology-summer.workshops.timeof" /> {title}
@@ -27,11 +28,11 @@ const Component: FC<IProps> = ({ title, dates, element, season, events }) => (
       <FormattedDate value={dates[1]} month="long" day="numeric" /> |{' '}
       <FormattedMessage id="season" />: {season} | <FormattedMessage id="element" />: {element}
     </Subtitle>
-    <Table>
+    <Table tabKey={tabKey}>
       {events.map((event) => (
-        <Row key={event.index}>
+        <Row key={event.index} data-time={new Date(event.date).getTime()} tabKey={tabKey}>
           <Idx>{event.index}</Idx>
-          <Name>{event.title}</Name>
+          <Name tabKey={tabKey}>{event.title}</Name>
         </Row>
       ))}
     </Table>
