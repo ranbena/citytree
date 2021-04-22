@@ -14,7 +14,7 @@ export const MainWrapper = styled.div`
     font-weight: bold;
     font-size: 42px;
     letter-spacing: 1.1px;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     color: #4a251d;
   }
 

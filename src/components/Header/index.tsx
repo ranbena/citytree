@@ -39,24 +39,35 @@ const Header: React.FC = () => {
                   <FormattedMessage id="nav.workshops.all" />
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item
-                  eventKey="practical-ecology-summer"
-                  href={href('/practical-ecology-summer')}
-                >
-                  <FormattedMessage id="nav.workshops.practical-ecology-summer.title" />
-                  <small>
-                    <FormattedMessage id="nav.workshops.practical-ecology-summer.subtitle" />
-                  </small>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  eventKey="practical-ecology-winter"
-                  href={href('/practical-ecology-winter')}
-                >
-                  <FormattedMessage id="nav.workshops.practical-ecology-winter.title" />
-                  <small>
-                    <FormattedMessage id="nav.workshops.practical-ecology-winter.subtitle" />
-                  </small>
-                </NavDropdown.Item>
+                {locale === 'he' ? (
+                  <>
+                    <NavDropdown.Item
+                      eventKey="practical-ecology-summer"
+                      href="/practical-ecology-summer"
+                    >
+                      <FormattedMessage id="nav.workshops.practical-ecology-summer.title" />
+                      <small>
+                        <FormattedMessage id="nav.workshops.practical-ecology-summer.subtitle" />
+                      </small>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      eventKey="practical-ecology-winter"
+                      href="/practical-ecology-winter"
+                    >
+                      <FormattedMessage id="nav.workshops.practical-ecology-winter.title" />
+                      <small>
+                        <FormattedMessage id="nav.workshops.practical-ecology-winter.subtitle" />
+                      </small>
+                    </NavDropdown.Item>
+                  </>
+                ) : (
+                  <NavDropdown.Item eventKey="cominghome" href="/cominghome">
+                    <FormattedMessage id="nav.workshops.cominghome.title" />
+                    <small>
+                      <FormattedMessage id="nav.workshops.cominghome.subtitle" />
+                    </small>
+                  </NavDropdown.Item>
+                )}
                 <NavDropdown.Item eventKey="abracadabra" href="/en/abracadabra">
                   <FormattedMessage id="nav.workshops.abracadabra.title" />
                   <small>
