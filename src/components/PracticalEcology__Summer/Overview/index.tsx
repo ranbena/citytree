@@ -12,7 +12,7 @@ const Overview: FC = () => {
   return (
     <Wrapper>
       <Container>
-        <Box xl={9} md={10} sm={12}>
+        <Box xl={7} md={10} sm={12}>
           <Title>
             <FormattedMessage id="practical-ecology-summer.overview.title" />
           </Title>

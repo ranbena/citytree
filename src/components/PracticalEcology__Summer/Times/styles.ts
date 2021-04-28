@@ -11,14 +11,14 @@ export const Wrapper = styled(MainWrapper)`
   direction: ltr; // in He, the direction switch doesn't work with the image
 
   p {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     color: white;
   }
 `;
 
 export const Container = styled(BSContainer)`
-  padding: 160px 0 202px;
+  padding: 120px 0;
   text-align: left;
 `;
 
@@ -39,8 +39,7 @@ export const Box = styled(MainBox)`
 `;
 
 export const Title = styled.h2`
-  font-size: 42px;
-  margin-bottom: 30px;
+  font-size: 2rem;
   color: white;
   font-weight: 600;
 `;

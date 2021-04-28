@@ -10,7 +10,7 @@ const Overview: FC = () => {
   return (
     <Wrapper>
       <Container>
-        <Box xl={10} sm={12} transparent>
+        <Box xl={7} sm={12} transparent>
           <Title>
             <FormattedMessage id="practical-ecology-winter.times.title" />
           </Title>

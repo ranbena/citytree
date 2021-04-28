@@ -16,11 +16,11 @@ export const Container = styled(BSContainer)`
 
 export const Title = styled(MainTitle)`
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `;
 
 export const Box = styled(MainBox)`
-  padding: 50px;
+  padding: 40px;
 
   body[dir='rtl'] & {
     direction: rtl;

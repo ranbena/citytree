@@ -31,13 +31,13 @@ const tabKeyColors: Record<
 export const Wrapper = styled.div``;
 
 export const Title = styled.div`
-  font-size: 39px;
+  font-size: 31px;
   font-weight: bold;
   line-height: 50px;
 `;
 
 export const Subtitle = styled.div`
-  font-size: 30px;
+  font-size: 23px;
   line-height: 35px;
 `;
 
@@ -74,9 +74,9 @@ export const Row = styled.div<{ tabKey: TabKey }>`
 `;
 
 const Cell = styled.div`
-  font-size: 30px;
-  padding: 18px 0;
-  line-height: 32px;
+  font-size: 22px;
+  padding: 18px 20px;
+  line-height: 15px;
 
   @media ${breakpoints.md} {
     padding: 0;

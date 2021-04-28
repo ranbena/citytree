@@ -28,8 +28,8 @@ export const MainWrapper = styled.div`
   }
 
   p {
-    font-size: 1.5rem;
-    line-height: 1.81rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     font-weight: 300;
 
     &:not(:last-child) {
@@ -40,7 +40,7 @@ export const MainWrapper = styled.div`
       margin: 10px 0;
       font-weight: 600;
       display: block;
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 `;
@@ -66,7 +66,7 @@ export const WinterAnchor = styled.a`
 export const Title = styled.h1`
   position: relative;
   font-weight: bold;
-  font-size: 2.33rem;
+  font-size: 2rem;
   color: #4a251d;
 
   @media (max-width: 630px) {
@@ -95,11 +95,11 @@ export const Button = styled.button`
   font-family: Assistant;
   background-color: #7d483d;
   color: white;
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 500;
   min-width: 220px;
   text-align: center;
-  line-height: 35px;
+  line-height: 18px;
   border: 0;
   border-radius: 5px;
   padding: 16px 20px;

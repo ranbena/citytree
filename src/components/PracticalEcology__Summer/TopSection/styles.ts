@@ -14,7 +14,7 @@ export const Wrapper = styled(MainWrapper)<{ $locale: string }>`
 
 export const Title = styled.div`
   line-height: max(27.9px, 3.3vw);
-  font-size: max(25px, 2.25vw);
+  font-size: max(28px, 2.75vw);
   font-weight: 600;
   letter-spacing: max(-0.75px, -0.125vw);
   margin-top: max(46px, 4.1vw);
@@ -23,7 +23,7 @@ export const Title = styled.div`
 
 export const SubTitle = styled.div`
   line-height: max(34px, 1.98vw);
-  font-size: max(25px, 1.48vw);
+  font-size: max(21px, 1.48vw);
   font-weight: 300;
   text-shadow: 0 0 8px #c4f2feff, 0 0 8px #c4f2feff; // for readabilty when bg image underlays text
 `;

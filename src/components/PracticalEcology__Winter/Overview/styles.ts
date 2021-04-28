@@ -15,7 +15,7 @@ export const Container = styled(BSContainer)`
 `;
 
 export const Box = styled(MainBox)`
-  padding: 50px;
+  padding: 40px;
 
   body[dir='rtl'] & {
     direction: rtl;

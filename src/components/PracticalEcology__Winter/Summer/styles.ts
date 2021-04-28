@@ -11,7 +11,7 @@ export const Wrapper = styled(MainWrapper)`
   direction: ltr; // in He, the direction switch doesn't work with the image
 
   p:not(:last-child) {
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -22,11 +22,11 @@ export const Container = styled(BSContainer)`
 export const Title = styled(MainTitle)`
   color: #4a251d;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `;
 
 export const Box = styled(MainBox)`
-  padding: 50px;
+  padding: 40px;
 
   ${BoxInner} {
     background-color: #fafaf0;

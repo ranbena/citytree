@@ -47,7 +47,10 @@ const Header: React.FC = () => {
                     >
                       <FormattedMessage id="nav.workshops.practical-ecology-summer.title" />
                       <small>
-                        <FormattedMessage id="nav.workshops.practical-ecology-summer.subtitle" />
+                        <FormattedMessage
+                          id="nav.workshops.practical-ecology-summer.subtitle"
+                          defaultMessage={'\u200B'}
+                        />
                       </small>
                     </NavDropdown.Item>
                     <NavDropdown.Item
@@ -56,7 +59,10 @@ const Header: React.FC = () => {
                     >
                       <FormattedMessage id="nav.workshops.practical-ecology-winter.title" />
                       <small>
-                        <FormattedMessage id="nav.workshops.practical-ecology-winter.subtitle" />
+                        <FormattedMessage
+                          id="nav.workshops.practical-ecology-winter.subtitle"
+                          defaultMessage={'\u200B'}
+                        />
                       </small>
                     </NavDropdown.Item>
                   </>
@@ -64,14 +70,20 @@ const Header: React.FC = () => {
                   <NavDropdown.Item eventKey="cominghome" href="/cominghome">
                     <FormattedMessage id="nav.workshops.cominghome.title" />
                     <small>
-                      <FormattedMessage id="nav.workshops.cominghome.subtitle" />
+                      <FormattedMessage
+                        id="nav.workshops.cominghome.subtitle"
+                        defaultMessage={'\u200B'}
+                      />
                     </small>
                   </NavDropdown.Item>
                 )}
                 <NavDropdown.Item eventKey="abracadabra" href="/en/abracadabra">
                   <FormattedMessage id="nav.workshops.abracadabra.title" />
                   <small>
-                    <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
+                    <FormattedMessage
+                      id="nav.workshops.abracadabra.subtitle"
+                      defaultMessage={'\u200B'}
+                    />
                   </small>
                 </NavDropdown.Item>
               </NavDropdown>

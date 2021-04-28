@@ -30,7 +30,7 @@ const tabKeyColors: Record<
 export const Wrapper = styled(MainWrapper)`
   background: url(${ltrBgImage}) center top;
   background-size: cover;
-  padding: 130px 0 97px;
+  padding: 69px 0 97px;
   color: white;
 `;
 
@@ -38,12 +38,14 @@ export const Title = styled.h2`
   font-size: 45px;
   line-height: 50px;
   font-weight: 600;
+  text-shadow: 0 0 2px #4a5835;
 `;
 
 export const Subtitle = styled.div`
   font-size: 25px;
   line-height: normal;
   margin-bottom: 32px;
+  text-shadow: 0 0 4px #4a5835;
 `;
 
 export const Tabs = styled(Nav)`
@@ -52,9 +54,10 @@ export const Tabs = styled(Nav)`
   margin: 0 -2px -8px;
 
   & a {
-    height: 55px;
-    font-size: 27px;
-    padding: 13px 40px 0;
+    height: 54px;
+    width: 150px;
+    font-size: 21px;
+    padding: 12px 20px 0;
     border: 0;
     text-transform: uppercase;
     margin: 0 2px;
@@ -63,7 +66,7 @@ export const Tabs = styled(Nav)`
 
     &.active {
       height: 69px;
-      padding-top: 27px;
+      padding-top: 18px;
     }
 
     @media ${breakpoints.md} {
@@ -94,10 +97,15 @@ export const Content = styled(TabContent)<{ tabKey: TabKey }>`
       color: ${colors.text};
     `;
   }}
-  padding: 57px 70px 52px;
+  padding: 28px 70px;
   border-radius: 10px;
   position: relative;
   z-index: 1;
+  width: 91%;
+
+  @media ${breakpoints.lg} {
+    width: 100%;
+  }
 
   @media ${breakpoints.sm} {
     padding: 35px;
@@ -107,7 +115,7 @@ export const Content = styled(TabContent)<{ tabKey: TabKey }>`
 export const BottomNav = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 52px;
+  padding-top: 18px;
 
   @media ${breakpoints.sm} {
     padding-top: 35px;
