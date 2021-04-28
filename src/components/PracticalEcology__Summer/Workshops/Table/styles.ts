@@ -80,7 +80,8 @@ const Cell = styled.div`
 
   @media ${breakpoints.md} {
     padding: 0;
-    font-size: 25px;
+    font-size: 22px;
+    line-height: 19px;
   }
 `;
 
