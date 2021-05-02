@@ -77,13 +77,10 @@ const Header: React.FC = () => {
                     </small>
                   </NavDropdown.Item>
                 )}
-                <NavDropdown.Item eventKey="abracadabra" href="/en/abracadabra">
+                <NavDropdown.Item eventKey="abracadabra" href={href('/abracadabra')}>
                   <FormattedMessage id="nav.workshops.abracadabra.title" />
                   <small>
-                    <FormattedMessage
-                      id="nav.workshops.abracadabra.subtitle"
-                      defaultMessage={'\u200B'}
-                    />
+                    <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
                   </small>
                 </NavDropdown.Item>
               </NavDropdown>

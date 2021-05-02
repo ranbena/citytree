@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
-import image from 'src/assets/images/abracadabra/liana.png';
+import image from 'src/assets/images/abracadabra-en/liana.png';
 import { MainWrapper, Box, Title } from '../styles';
 import { BoxInner } from '../../Box';
 

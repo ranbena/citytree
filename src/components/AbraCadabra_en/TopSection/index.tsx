@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
-import leftBG from 'src/assets/images/abracadabra/bg-cotton-1.jpg';
-import rightBG from 'src/assets/images/abracadabra/bg-cotton-2.jpg';
+import leftBG from 'src/assets/images/abracadabra-en/bg-cotton-1.jpg';
+import rightBG from 'src/assets/images/abracadabra-en/bg-cotton-2.jpg';
 
 import {
   Wrapper,

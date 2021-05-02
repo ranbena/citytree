@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import leaf1 from 'src/assets/images/abracadabra/leaf1.png';
+import leaf1 from 'src/assets/images/abracadabra-en/leaf1.png';
 import { MainWrapper } from '../styles';
 
 export const Wrapper = styled(MainWrapper)`

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
-import leaf1 from 'src/assets/images/abracadabra/leaf1.png';
-import leaf2 from 'src/assets/images/abracadabra/leaf2.png';
+import leaf1 from 'src/assets/images/abracadabra-en/leaf1.png';
+import leaf2 from 'src/assets/images/abracadabra-en/leaf2.png';
 import { MainWrapper, Title, Box, List as MainList } from '../styles';
 import { BoxInner } from '../../Box';
 

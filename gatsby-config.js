@@ -21,7 +21,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Assistant:200,300,400,600,700', 'Proza+Libre:400,700', 'Frank+Ruhl+Libre:500'],
+        fonts: [
+          'Assistant:200,300,400,600,700',
+          'Proza+Libre:400,700',
+          'Frank+Ruhl+Libre:300,400,500',
+        ],
         display: 'swap',
         subset: 'hebrew',
       },

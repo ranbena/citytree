@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
-import bgImage from 'src/assets/images/abracadabra/learn.jpg';
+import bgImage from 'src/assets/images/abracadabra-en/learn.jpg';
 import { MainWrapper, List as MainList } from '../styles';
 
 export const Wrapper = styled(MainWrapper)`

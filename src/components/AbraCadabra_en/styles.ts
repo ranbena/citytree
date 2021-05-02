@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import bullet from 'src/assets/images/abracadabra/bullet.svg';
+import bullet from 'src/assets/images/abracadabra-en/bullet.svg';
 import BoxComponent from '../Box';
 import NavComponent, { Anchor as AnchorComponent } from '../Navigation';
 

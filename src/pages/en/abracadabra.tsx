@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
-import ogImage from 'src/assets/images/abracadabra/og.jpeg';
+import ogImage from 'src/assets/images/abracadabra-en/og.jpeg';
 import Layout from 'src/components/Layout';
-import { Navigation, Anchor } from 'src/components/AbraCadabra/styles';
+import { Navigation, Anchor } from 'src/components/AbraCadabra_en/styles';
 import {
   TopSection,
   Overview,
@@ -14,7 +14,7 @@ import {
   Instructor,
   Assistant,
   GetInTouch,
-} from 'src/components/AbraCadabra';
+} from 'src/components/AbraCadabra_en';
 
 const siteUrl = process.env.GATSBY_SITE_URL;
 const image = {

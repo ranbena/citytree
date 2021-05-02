@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
-import image from 'src/assets/images/abracadabra/tami.jpeg';
+import overviewImage from 'src/assets/images/abracadabra-en/overview.jpeg';
 import { MainWrapper } from '../styles';
 
 export const Wrapper = styled(MainWrapper)`
   border-bottom: 10px solid #003535;
-  background: #344c49 url(${image}) no-repeat center;
+  background: #d5dec5 url(${overviewImage}) no-repeat right top;
   background-size: auto 100%;
 `;
 

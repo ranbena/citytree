@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import leaf1 from 'src/assets/images/abracadabra/leaf1.png';
+import leaf1 from 'src/assets/images/abracadabra-en/leaf1.png';
 import leaf2 from 'src/assets/images/leaf-bottom.png';
 import { MainWrapper } from '../styles';
 
