@@ -5,23 +5,26 @@ import { MainWrapper, Box as MainBox, Title as MainTitle } from '../styles';
 import { BoxInner } from '../../Box';
 
 export const Wrapper = styled(MainWrapper)`
-  background: url(${overviewImage});
-  background-size: cover;
-  background-position: center;
+  background: #786452;
 `;
 
 export const Container = styled(BSContainer)`
-  padding: 300px 0 250px;
+  background: url(${overviewImage});
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
 `;
 
 export const Title = styled(MainTitle)`
-  color: #ffe8e8;
+  color: #ffe8f0;
 `;
 
 export const Box = styled(MainBox)`
   ${BoxInner} {
     background-color: #1c2d04b2;
     padding: 50px 40px;
+    color: #ffe8f0;
 
     p {
       color: #ffe8e8;

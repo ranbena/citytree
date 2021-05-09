@@ -10,7 +10,7 @@ const Cohost: FC = () => {
   return (
     <Wrapper>
       <Container>
-        <Box xl={5} lg={7} sm={12}>
+        <Box xl={6} lg={7} sm={12}>
           <Title>
             <FormattedMessage id="abracadabra-he.cohost.title" />
           </Title>

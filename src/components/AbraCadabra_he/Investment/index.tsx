@@ -50,9 +50,7 @@ const Investment: FC = () => (
           </Price>
         </Tier>
       </Tiers>
-      <SignUpButton>
-        <FormattedMessage id="abracadabra-he.investment.button" />
-      </SignUpButton>
+      <SignUpButton />
     </Container>
   </Wrapper>
 );

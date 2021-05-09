@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Popover as MSPopover } from 'react-bootstrap';
 import navBgImage from 'src/assets/images/abracadabra-he/Abra_TopMenu.jpg';
 import BoxComponent, { BoxInner } from '../Box';
 import NavComponent, { Anchor as AnchorComponent } from '../Navigation';
@@ -94,14 +95,14 @@ export const Button = styled.button`
   font-family: Assistant;
   background-color: #3d1a62f0;
   color: #a66be4;
-  font-size: 14pt;
+  font-size: 18pt;
   font-weight: 500;
   min-width: 220px;
   text-align: center;
   line-height: 18px;
   border: 1px solid #a66be4;
   border-radius: 2px;
-  padding: 14px 20px;
+  padding: 14px 30px;
   transition: background-color 150ms linear;
 
   &:hover {
@@ -112,8 +113,13 @@ export const Button = styled.button`
     color: #fa73fa;
     font-family: Frank Ruhl Libre;
     margin-right: 8px;
-    font-size: 15pt;
+    font-size: 19pt;
     font-weight: 300;
     text-shadow: 0 0 4px rgba(255, 255, 255, 0.84);
   }
+`;
+
+export const PopoverContent = styled(MSPopover.Content)`
+  padding: 1rem;
+  color: #3d1b61;
 `;
