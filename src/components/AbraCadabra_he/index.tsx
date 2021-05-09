@@ -15,6 +15,7 @@ import Host from './Host';
 import Wheel from './Wheel';
 import Contact from './Contact';
 import { Navigation, Anchor, PopoverContent } from './styles';
+import Receive from './Receive';
 
 // const siteUrl = process.env.GATSBY_SITE_URL;
 
@@ -88,6 +89,7 @@ const Page: FC<PageProps> = () => {
       <Anchor id="learn" />
       <Learn />
       <Anchor id="receive" />
+      <Receive />
       <Anchor id="investment" />
       <Investment />
       <Host />
