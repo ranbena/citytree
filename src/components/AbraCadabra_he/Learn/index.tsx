@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { OverlayTrigger, Popover } from 'react-bootstrap';
-import { emailLink } from 'src/constants';
 import SignUpButton from '../SignUpButton';
 import { forEachMessage } from '../../../utils';
 
@@ -21,24 +19,11 @@ const Learn: FC = () => {
             <p key={key}>{txt}</p>
           ))}
           <br />
-          <OverlayTrigger
-            trigger="click"
-            placement="bottom"
-            overlay={
-              <Popover id="sylabus-popover-button">
-                <Popover.Content>
-                  <FormattedMessage id="abracadabra-he.sylabus.button" />
-                  {emailLink}
-                </Popover.Content>
-              </Popover>
-            }
-          >
-            <span>
-              <SignUpButton url={null}>
-                <FormattedMessage id="abracadabra-he.learn.button" />
-              </SignUpButton>
-            </span>
-          </OverlayTrigger>
+          <span>
+            <SignUpButton url="https://docs.google.com/document/d/1FXW_Wekv2h4NufrYhCjA28oLwmGLgrqTDiGag88CCBY/preview">
+              <FormattedMessage id="abracadabra-he.learn.button" />
+            </SignUpButton>
+          </span>
         </Box>
       </Container>
     </Wrapper>

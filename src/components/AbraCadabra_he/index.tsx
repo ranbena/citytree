@@ -3,7 +3,6 @@ import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 
-import { OverlayTrigger, Popover } from 'react-bootstrap';
 import Layout from 'src/components/Layout';
 // import ogImageHe from 'src/assets/images/practical-ecology-winter/og-he.jpeg';
 import TopSection from './TopSection';
@@ -14,7 +13,7 @@ import Cohost from './Cohost';
 import Host from './Host';
 import Wheel from './Wheel';
 import Contact from './Contact';
-import { Navigation, Anchor, PopoverContent } from './styles';
+import { Navigation, Anchor } from './styles';
 import Receive from './Receive';
 
 // const siteUrl = process.env.GATSBY_SITE_URL;
@@ -61,22 +60,14 @@ const Page: FC<PageProps> = () => {
             <FormattedMessage id="abracadabra-he.nav.investment" />
           </span>
         </a>
-        <a href="#sylabus">
-          <OverlayTrigger
-            trigger="click"
-            placement="bottom"
-            overlay={
-              <Popover id="sylabus-popover-button">
-                <PopoverContent>
-                  <FormattedMessage id="abracadabra-he.sylabus.navTooltip" />
-                </PopoverContent>
-              </Popover>
-            }
-          >
-            <span>
-              <FormattedMessage id="abracadabra-he.nav.sylabus" />
-            </span>
-          </OverlayTrigger>
+        <a
+          href="https://docs.google.com/document/d/1FXW_Wekv2h4NufrYhCjA28oLwmGLgrqTDiGag88CCBY/preview"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span>
+            <FormattedMessage id="abracadabra-he.nav.sylabus" />
+          </span>
         </a>
         <a href="#wheel">
           <span>
