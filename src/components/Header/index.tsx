@@ -65,24 +65,32 @@ const Header: React.FC = () => {
                         />
                       </small>
                     </NavDropdown.Item>
+                    <NavDropdown.Item eventKey="hineni" href={href('/hineni')}>
+                      <FormattedMessage id="nav.workshops.abracadabra.title" />
+                      <small>
+                        <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
+                      </small>
+                    </NavDropdown.Item>
                   </>
                 ) : (
-                  <NavDropdown.Item eventKey="cominghome" href="/cominghome">
-                    <FormattedMessage id="nav.workshops.cominghome.title" />
-                    <small>
-                      <FormattedMessage
-                        id="nav.workshops.cominghome.subtitle"
-                        defaultMessage={'\u200B'}
-                      />
-                    </small>
-                  </NavDropdown.Item>
+                  <>
+                    <NavDropdown.Item eventKey="cominghome" href="/cominghome">
+                      <FormattedMessage id="nav.workshops.cominghome.title" />
+                      <small>
+                        <FormattedMessage
+                          id="nav.workshops.cominghome.subtitle"
+                          defaultMessage={'\u200B'}
+                        />
+                      </small>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item eventKey="abracadabra" href={href('/abracadabra')}>
+                      <FormattedMessage id="nav.workshops.abracadabra.title" />
+                      <small>
+                        <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
+                      </small>
+                    </NavDropdown.Item>
+                  </>
                 )}
-                <NavDropdown.Item eventKey="abracadabra" href={href('/abracadabra')}>
-                  <FormattedMessage id="nav.workshops.abracadabra.title" />
-                  <small>
-                    <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
-                  </small>
-                </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href={href('/#vision')}>
                 <FormattedMessage id="nav.vision" />
