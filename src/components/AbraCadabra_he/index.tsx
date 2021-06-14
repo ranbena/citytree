@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 
 import Layout from 'src/components/Layout';
-// import ogImageHe from 'src/assets/images/practical-ecology-winter/og-he.jpeg';
+import ogImage from 'src/assets/images/abracadabra-he/og.png';
 import TopSection from './TopSection';
 import Overview from './Overview';
 import Learn from './Learn';
@@ -16,17 +16,17 @@ import Contact from './Contact';
 import { Navigation, Anchor } from './styles';
 import Receive from './Receive';
 
-// const siteUrl = process.env.GATSBY_SITE_URL;
+const siteUrl = process.env.GATSBY_SITE_URL;
 
 const Page: FC<PageProps> = () => {
   const { formatMessage } = useIntl();
   const siteTitle = formatMessage({ id: 'abracadabra-he.metatitle' });
   const siteDesc = formatMessage({ id: 'abracadabra-he.title' });
-  // const image = {
-  //   path: ogImageHe,
-  //   width: '1600',
-  //   height: '800',
-  // };
+  const image = {
+    path: ogImage,
+    width: '442',
+    height: '221',
+  };
 
   return (
     <Layout>
@@ -34,9 +34,9 @@ const Page: FC<PageProps> = () => {
         <meta property="og:title" content={siteTitle} />
         <meta name="description" content={siteDesc} />
         <meta property="og:description" content={siteDesc} />
-        {/* <meta property="og:image" content={`${siteUrl}${image.path}`} /> */}
-        {/* <meta property="og:image:width" content={image.width} />
-        <meta property="og:image:height" content={image.height} /> */}
+        <meta property="og:image" content={`${siteUrl}${image.path}`} />
+        <meta property="og:image:width" content={image.width} />
+        <meta property="og:image:height" content={image.height} />
       </Helmet>
       <TopSection />
       <Navigation>
