@@ -18,8 +18,8 @@ export const Title = styled.div`
 
   strong {
     font-family: Frank Ruhl Libre;
-    font-size: 34pt;
-    font-weight: normal;
+    font-size: 40pt;
+    font-weight: 500;
     margin-left: 15px;
   }
 
