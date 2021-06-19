@@ -13,3 +13,5 @@ export const whatsappLink = <a href="https://wa.me/972547505847">{bitPhone}</a>;
 export const patreonUrl = 'https://www.patreon.com/CityTree';
 export const joinPatreonUrl = 'https://www.patreon.com/join/CityTree';
 export const storeUrl = 'https://mypips.app/citytree';
+export const calendarUrl =
+  'https://calendar.google.com/calendar/u/1/render?cid=fmhj0n2anv9prsoquhoc22g8m0%40group.calendar.google.com';

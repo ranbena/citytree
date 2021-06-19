@@ -1,93 +1,16 @@
-@import 'src/scss/variables';
 @import 'src/scss/breakpoints';
 
 .workshopsSection {
-  ul {
-    list-style: none;
-    padding: 0;
+  direction: ltr;
+  background-repeat: no-repeat;
+  background-position: 30%;
+  background-size: contain;
+
+  body[dir='ltr'] & .box {
+    direction: ltr; // compensate for the above direction reversal
   }
 
-  li {
-    margin-bottom: 30px;
-    display: flex;
-
-    img {
-      height: 115px;
-      width: 140px;
-      border-radius: 6px;
-      object-fit: cover;
-    }
-
-    &[data-past='true'] {
-      img {
-        filter: grayscale(1);
-      }
-
-      .date {
-        text-decoration: line-through;
-      }
-    }
-
-    // show upcoming for first [data-past="false"] item
-    &[data-past='true'] .upcoming,
-    &[data-past='false'] ~ [data-past='false'] .upcoming {
-      display: none;
-    }
-
-    & > div {
-      margin: 0 20px;
-
-      h2 {
-        font-weight: normal;
-        margin-bottom: 7px;
-      }
-
-      span {
-        color: $color9;
-
-        &.date {
-          font-size: 18px;
-        }
-
-        &.badge-primary {
-          color: white;
-          background-color: $color5;
-        }
-      }
-
-      a {
-        text-decoration: underline;
-
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-  @include media-breakpoint-down(sm) {
-    li {
-      flex-direction: column;
-      margin-bottom: 30px;
-
-      img {
-        width: 100%;
-        height: 150px;
-      }
-
-      & > div {
-        margin: 10px 0 0;
-
-        h2 {
-          font-size: 20px;
-        }
-
-        span.date {
-          font-size: 15px;
-          display: block;
-          margin-bottom: 6px;
-        }
-      }
-    }
+  @include media-breakpoint-down(md) {
+    background-size: cover;
   }
 }

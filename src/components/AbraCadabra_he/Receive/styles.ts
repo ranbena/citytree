@@ -27,12 +27,12 @@ const greenBoxStyle = css`
   }
 `;
 
-export const Box = styled(MainBox)<{ green?: boolean }>`
+export const Box = styled(MainBox)<{ $green?: boolean }>`
   direction: rtl;
 
   ${BoxInner} {
     padding: 50px 40px;
-    ${(p) => (p.green ? greenBoxStyle : null)};
+    ${(p) => (p.$green ? greenBoxStyle : null)};
   }
 
   ${Title}:nth-of-type(2) {

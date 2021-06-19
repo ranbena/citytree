@@ -21,6 +21,7 @@ const siteUrl = process.env.GATSBY_SITE_URL;
 const Page: FC<PageProps> = () => {
   const { formatMessage } = useIntl();
   const siteTitle = formatMessage({ id: 'abracadabra-he.metatitle' });
+  const siteDesc = formatMessage({ id: 'abracadabra-he.metadesc' });
   const image = {
     path: ogImage,
     width: '1012',
@@ -31,6 +32,8 @@ const Page: FC<PageProps> = () => {
     <Layout>
       <Helmet title={siteTitle}>
         <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={siteDesc} />
+        <meta property="description" content={siteDesc} />
         <meta property="og:image" content={`${siteUrl}${image.path}`} />
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />

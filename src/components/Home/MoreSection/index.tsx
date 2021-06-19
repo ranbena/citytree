@@ -9,11 +9,11 @@ import ScheduleSection from './ScheduleSection';
 
 import './styles.scss';
 
-const tabKeys = ['about', 'visit', 'workshops', 'schedule'] as const;
+const tabKeys = ['visit', 'workshops', 'schedule', 'about'] as const;
 export type TabKey = typeof tabKeys[number];
 
 const MoreSection: React.FC = () => {
-  const [tabKey, setTabKey] = useState<TabKey>('about');
+  const [tabKey, setTabKey] = useState<TabKey>('visit');
   const el = useRef(null);
 
   function onHistoryChange() {
@@ -38,32 +38,29 @@ const MoreSection: React.FC = () => {
           <Container>
             <Nav>
               <Nav.Item>
-                <Nav.Link href="#about" active={tabKey === 'about'}>
-                  <FormattedMessage id="about.title" />
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
                 <Nav.Link href="#visit" active={tabKey === 'visit'}>
-                  <FormattedMessage id="visit.title" />
+                  <FormattedMessage id="visit.tabTitle" />
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link href="#workshops" active={tabKey === 'workshops'}>
-                  <FormattedMessage id="workshops.title" />
+                  <FormattedMessage id="workshops.tabTitle" />
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link href="#schedule" active={tabKey === 'schedule'}>
-                  <FormattedMessage id="schedule.title" />
+                  <FormattedMessage id="schedule.tabTitle" />
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#about" active={tabKey === 'about'}>
+                  <FormattedMessage id="about.tabTitle" />
                 </Nav.Link>
               </Nav.Item>
             </Nav>
           </Container>
         </div>
         <Tab.Content>
-          <Tab.Pane eventKey="about" key="about" mountOnEnter>
-            <AboutUsSection />;
-          </Tab.Pane>
           <Tab.Pane eventKey="visit" key="visit" mountOnEnter>
             <VisitSection />;
           </Tab.Pane>
@@ -72,6 +69,9 @@ const MoreSection: React.FC = () => {
           </Tab.Pane>
           <Tab.Pane eventKey="workshops" key="workshops" mountOnEnter>
             <WorkshopsSection />;
+          </Tab.Pane>
+          <Tab.Pane eventKey="about" key="about" mountOnEnter>
+            <AboutUsSection />;
           </Tab.Pane>
         </Tab.Content>
       </Tab.Container>

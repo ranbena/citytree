@@ -59,6 +59,7 @@
   },
   "about": {
     "title": "The Blossoming Tree",
+    "tabTitle": "The Blossoming Tree",
     "text": [
       "CityTree takes part as a node within the life-supportive network called “The Great Turning”. The community  members are active in Extinction Rebellion and across the environmental movement. The unique gifts CityTree brings to the arena include  direct and accessible living examples of personal-communal-ecological change within an urban environment. Even for those of us active in community gardening, protests or other political activism, gaps still remain between the public and personal spheres. CityTree’s renewed emphasis on the Home and the work in and around it enriches environmental activism and brings it full circle.",
       "At CityTree we live our utopia to the extent possible here and now - a utopia that sends us signs of encouragement with every step we take - from Sir Patrick Geddes  to a mantis discovered in the garden.",
@@ -72,10 +73,9 @@
     }
   },
   "visit": {
+    "tabTitle": "How can I join?",
     "title": "How can I join?",
-    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13523.738071490261!2d34.7820358!3d32.0710198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf87e0681964f7087!2z16LXpdeR16LXmdeoIC0g15HXmdeqINec15DXp9eV15zXldeS15nXlCDXoteZ16jXldeg15nXqg!5e0!3m2!1sen!2sil!4v1590827210854!5m2!1sen!2sil",
-    "mapAltText": "Location on the map",
-    "addressTitle": "Right at the Heart of Tel Aviv",
+    "subtitle": "To participate in volunteer work or personal retreats contact Einat:",
     "text": [
       "Tuesday afternoons are our open-house times at the home and garden! Come visit and meet Tami, Alon and the apprentices and short-term residents who live in or are visiting the apartment. We also open the house for events, tours and workshops. You can schedule a meeting with us and come to buy vinegar, soap and other home seasonal products.",
       "We also offer the option to design your own personal retreat. People come here to study, experience practical ecological living, meet companions, rest and heal.",
@@ -85,31 +85,26 @@
   },
   "workshops": {
     "title": "Workshops, Courses, Tours and Retreats",
-    "subtitle": "For details and registration please contact us",
+    "tabTitle": "Workshops, Courses, Tours and Retreats",
+    "subtitle": "For details and registration please contact us:",
     "text": [
       "CityTree’s methodology combines research, practice and learning based in the home and gardens. CityTree’s workshops teach the entire range of handicraft and techniques of the ecological household and garden: reuse strategies, knitting and sewing, DIY cleaning materials and cosmetics, food and home remedies, compost and gardening. You will leave with knowledge, resources, a community  and, in most cases, with a product we prepare together.",
-      "During our tours, groups and families experience an educational visit of our eco-space. The tour may include a light vegan meal, mini workshops and garden activity. We tailor the content and price to the goals and abilities of each group."
-    ],
-    "events": {
-      "online": "Online workshop",
-      "tour": "Tour",
-      "house": "At CityTree",
-      "retreat": "Retreat",
-      "en": "In English",
-      "he": "In Hebrew",
-      "upcoming": "Upcoming Event",
-      "title": "Workshops and Tours in Hebrew for “Agriculture Time”",
-      "titles": {}
-    }
+      "During our tours, groups and families experience an educational visit of our eco-space. The tour may include a light vegan meal, mini workshops and garden activity. We tailor the content and price to the goals and abilities of each group.",
+      " "
+    ]
   },
   "schedule": {
     "title": "Schedule",
+    "tabTitle": "Schedule",
     "subtitle": "Our Weekly Schedule",
-    "text1": [
+    "text": [
       "Every Tuesday from 2 o’clock our house is open for visits.",
-      "On Tuesdays, as well as Fridays, from 3 you can join us for working in the nearby gardens."
+      "On Tuesdays, as well as Fridays, from 3 you can join us for working in the nearby gardens.",
+      " ",
+      " ",
+      " ",
+      " "
     ],
-    "text2": [],
     "contact": "You are welcome to contact us at {email} or {phone}."
   },
   "invitation": {

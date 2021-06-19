@@ -43,6 +43,14 @@ p {
   border-radius: 5px;
   padding: 30px 50px;
 
+  &.fullheight {
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
   @include media-breakpoint-down(sm) {
     padding: 20px;
   }

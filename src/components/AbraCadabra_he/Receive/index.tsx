@@ -12,7 +12,7 @@ const Receive: FC = () => {
     <Wrapper>
       <Container>
         <BoxContainer>
-          <Box green>
+          <Box $green>
             <Title>
               <FormattedMessage id="abracadabra-he.receive.box1.title" />
             </Title>

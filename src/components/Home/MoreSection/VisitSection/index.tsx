@@ -1,54 +1,59 @@
 import React, { FC } from 'react';
-import { Container } from 'react-bootstrap';
-import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
-import { emailLink } from 'src/constants';
-import { forEachMessage } from 'src/utils';
+import { Col, Container, Row } from 'react-bootstrap';
+import { FormattedMessage } from 'gatsby-plugin-intl';
+import { storeUrl, emailLink } from 'src/constants';
+
+import visitImage from 'src/assets/images/visit.jpeg';
 
 import './styles.scss';
 
-const VisitSection: FC = () => {
-  const intl = useIntl();
-
-  return (
+const VisitSection: FC = () => (
+  <div className="visitSection" style={{ backgroundImage: `url(${visitImage})` }}>
     <Container>
-      <div className="tab-content box">
-        <h1>
-          <FormattedMessage id="visit.title" />
-        </h1>
-        <div className="visitSection">
-          <div className="visitText">
-            {forEachMessage(intl, 'visit.text').map(([txt, key]) => (
-              <p key={key}>{txt}</p>
-            ))}
+      <Row>
+        <Col xl={5} lg={4} md={2} sm={0} />
+        <Col xl={7} lg={8} md={10} sm={12}>
+          <div className="box">
+            <h1>
+              <FormattedMessage id="visit.title" />
+            </h1>
+            <div className="visitText">
+              <p>
+                <FormattedMessage id="visit.text.0" />
+              </p>
+              <p>
+                <FormattedMessage id="visit.text.1" />
+              </p>
+              <p>
+                <FormattedMessage
+                  id="visit.text.2"
+                  values={{
+                    shop: (txt: string) => (
+                      <a href={storeUrl} target="blank">
+                        {txt}
+                      </a>
+                    ),
+                  }}
+                />
+              </p>
+              <p>~~~~</p>
+              <p>
+                <strong>
+                  <FormattedMessage id="visit.subtitle" />
+                </strong>
+                <br />
+                {emailLink}
+                <br />
+                <FormattedMessage id="phone">
+                  {(phone) => <a href={`tel:${phone}`}>{phone}</a>}
+                </FormattedMessage>
+              </p>
+            </div>
           </div>
-          <div>
-            <iframe
-              title={intl.formatMessage({ id: 'visit.mapAltText' })}
-              src={intl.formatMessage({ id: 'visit.mapUrl' })}
-              width="100%"
-              height="300"
-              frameBorder="0"
-              aria-hidden="false"
-              allowFullScreen
-            />
-            <h2>
-              <FormattedMessage id="visit.addressTitle" />
-              <address>
-                <FormattedMessage id="address" />
-              </address>
-            </h2>
-            <h3>
-              {emailLink}
-              <br />
-              <FormattedMessage id="phone">
-                {(phone) => <a href={`tel:${phone}`}>{phone}</a>}
-              </FormattedMessage>
-            </h3>
-          </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </Container>
-  );
-};
+  </div>
+);
 
 export default VisitSection;

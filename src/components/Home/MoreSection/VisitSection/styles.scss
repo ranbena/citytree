@@ -1,23 +1,16 @@
 @import 'src/scss/breakpoints';
 
 .visitSection {
-  display: flex;
-  margin: 0 -10px;
+  direction: rtl; // in En, the direction switch doesn't work with the image
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: contain;
 
-  @include media-breakpoint-down(lg) {
-    flex-direction: column;
-
-    .visitText {
-      margin-bottom: 20px;
-    }
+  body[dir='ltr'] & .box {
+    direction: ltr; // compensate for the above direction reversal
   }
 
-  & > * {
-    margin: 0 10px;
-    flex: 1;
-  }
-
-  h2 {
-    margin-top: 10px;
+  @include media-breakpoint-down(md) {
+    background-size: cover;
   }
 }
