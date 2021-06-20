@@ -35,12 +35,14 @@ const Header: React.FC = () => {
                 title={formatMessage({ id: 'nav.workshops.title' })}
                 id="workshops-dropdown"
               >
-                <NavDropdown.Item eventKey="all" href={href('/#workshops')}>
-                  <FormattedMessage id="nav.workshops.all" />
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
                 {locale === 'he' ? (
                   <>
+                    <NavDropdown.Item eventKey="hineni" href={href('/hineni')}>
+                      <FormattedMessage id="nav.workshops.abracadabra.title" />
+                      <small>
+                        <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
+                      </small>
+                    </NavDropdown.Item>
                     <NavDropdown.Item
                       eventKey="practical-ecology-summer"
                       href="/practical-ecology-summer"
@@ -53,7 +55,7 @@ const Header: React.FC = () => {
                         />
                       </small>
                     </NavDropdown.Item>
-                    <NavDropdown.Item
+                    {/* <NavDropdown.Item
                       eventKey="practical-ecology-winter"
                       href="/practical-ecology-winter"
                     >
@@ -64,13 +66,7 @@ const Header: React.FC = () => {
                           defaultMessage={'\u200B'}
                         />
                       </small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="hineni" href={href('/hineni')}>
-                      <FormattedMessage id="nav.workshops.abracadabra.title" />
-                      <small>
-                        <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
-                      </small>
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                   </>
                 ) : (
                   <>
@@ -91,6 +87,9 @@ const Header: React.FC = () => {
                     </NavDropdown.Item>
                   </>
                 )}
+                <NavDropdown.Item eventKey="all" href={href('/#workshops')}>
+                  <FormattedMessage id="nav.workshops.all" />
+                </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href={href('/#vision')}>
                 <FormattedMessage id="nav.vision" />
