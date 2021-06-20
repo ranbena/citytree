@@ -14,13 +14,11 @@ export type TabKey = typeof tabKeys[number];
 
 const MoreSection: React.FC = () => {
   const [tabKey, setTabKey] = useState<TabKey>('visit');
-  const el = useRef(null);
 
   function onHistoryChange() {
     const hashKey = window.location.hash.substr(1) as TabKey; // remove '#'
     if (hashKey && tabKeys.includes(hashKey)) {
       setTabKey(hashKey);
-      el.current.scrollIntoView();
     }
   }
 
@@ -31,8 +29,10 @@ const MoreSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="moreSection anchorWrapper" ref={el}>
-      <div id={tabKey} className="anchor" />
+    <section className="moreSection anchorWrapper">
+      {tabKeys.map((tk) => (
+        <div id={tk} key={tk} className="anchor" />
+      ))}
       <Tab.Container transition={false} activeKey={tabKey}>
         <div className="tabs">
           <Container>
