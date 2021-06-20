@@ -58,54 +58,49 @@
     ]
   },
   "about": {
-    "title": "The Blossoming Tree",
-    "tabTitle": "The Blossoming Tree",
+    "title": "More about CityTree",
+    "tabTitle": "More about CityTree",
     "text": [
-      "CityTree takes part as a node within the life-supportive network called “The Great Turning”. The community  members are active in Extinction Rebellion and across the environmental movement. The unique gifts CityTree brings to the arena include  direct and accessible living examples of personal-communal-ecological change within an urban environment. Even for those of us active in community gardening, protests or other political activism, gaps still remain between the public and personal spheres. CityTree’s renewed emphasis on the Home and the work in and around it enriches environmental activism and brings it full circle.",
-      "At CityTree we live our utopia to the extent possible here and now - a utopia that sends us signs of encouragement with every step we take - from Sir Patrick Geddes  to a mantis discovered in the garden.",
-      "CityTree conducts ongoing research while practicing the “good life in the city” and distributes tried-and-true knowhow of how to nourish the urban environment as a vital space, abundant with relationships - among and between humans,  plants, animals, soil, water and all the elements. CityTree’s accumulated wisdom may prove to be be life-saving during times of crisis, while at other times it simply allows for quality of life: nourishment, food preservation, returning our food waste to the soil, working harmoniously with plants and water, human ecology, interconnectedness, circular economy, and local productivity."
+      "CityTree is a node on the life supporting network called “The Big Movement”. Its friends are active in the Extinction Rebellion and across the environmental movement. The unique present “the Tree” brings to the map is the immediate and accessible possibility for a personal-communal-ecological change. Even for those of us who are active in community gardens, demonstrations or other public activity, there is often a gap between the public and the personal. CityTree turns the home and work in and around it into a subversive, artistic arena of change and discovery and thus complements and enriches any public activity.",
+      "At CityTree we live the utopia as much as we can here and now - a utopia sending us hints on every step - from the history of our beloved city to a grasshopper discovered in the garden.",
+      "The Tree actively researches how to “live well in the city” and spreads knowhow focused on shaping the urban environment as a space vibrating with life and relationships - amongst people and between them and all living creatures, soil, water and all elements. The valuable information gathered at the Tree may have an existential value at times of crisis, and on the daily basis it simply translates to well being: healthy nutrition, food conservation, returning our organic waste to the soil, working properly with water and plants, human ecology, co-interdependence, circular economy, local productivity."
     ],
-    "column-sizes": {
-      "xl": "6",
-      "lg": "7",
-      "md": "9",
-      "sm": "12"
-    }
+    "whitepaper": "Further reading (in Hebrew): <a>What does CityTree give the city?</a>"
   },
   "visit": {
-    "tabTitle": "How can I join?",
-    "title": "How can I join?",
-    "subtitle": "To participate in volunteer work or personal retreats contact Einat:",
+    "tabTitle": "When and how can I come or participate?",
+    "title": "Come and participate",
+    "subtitle": "To set a volunteering day or a personal retreat, or to come for a visit, please contact Einat:",
     "text": [
-      "Tuesday afternoons are our open-house times at the home and garden! Come visit and meet Tami, Alon and the apprentices and short-term residents who live in or are visiting the apartment. We also open the house for events, tours and workshops. You can schedule a meeting with us and come to buy vinegar, soap and other home seasonal products.",
-      "We also offer the option to design your own personal retreat. People come here to study, experience practical ecological living, meet companions, rest and heal.",
-      "Anytime you come, you’ll get a peek into a little bubble of warmth and sanity in the heart of the restless, consumerism-oriented city and be exposed to all the work being done to create a renewed humanity that knows how to live with - not just on - Planet Earth. We offer an open invitation to come and join!",
-      "** We offer working retreats and invite designers, illustration, video, editing and marketing professionals to combine our living space at the Tree with the opportunity to experience andapply your skills  to our developing digital presence while enjoying the local organic vegan food and open access to  a wealth of knowledge answering all your environmental and health questions - a healing experience for all involved."
+      "Our ecological apartment is a real model of urban, ecological living. You can come to short tours by setting the time with us in advance. It costs NIS25 per person. You can participate in our work and study through volunteering days at times suitable for you and us.",
+      "You can join a scheduled event such as “vinegar day”, “bokashi day” or “sewing day”, full moon gatherings or seasonal community gatherings. We send weekly updates (in Hebrew) in our  newsletters as well as on our Whatsapp group and Facebook pageWe also offer the option to design your own personal retreat. People come here to study, experience practical ecological living, meet companions, rest and heal.",
+      "Our crazy little shop is open! You can set a time and come buy vinegar, bokashi, soap or other zero-waste products. Please visit the <shop>online shop</shop> that is gradually being enriched with more products.",
+      "You can also join us for a longer period of life and learning, be exposed to ecological practice, meet companions, rest and heal, whether in our seasonal retreats or by personal coordination."
     ]
   },
   "workshops": {
-    "title": "Workshops, Courses, Tours and Retreats",
-    "tabTitle": "Workshops, Courses, Tours and Retreats",
+    "title": "Private workshops and tours",
+    "tabTitle": "Private workshops and tours",
     "subtitle": "For details and registration please contact us:",
     "text": [
-      "CityTree’s methodology combines research, practice and learning based in the home and gardens. CityTree’s workshops teach the entire range of handicraft and techniques of the ecological household and garden: reuse strategies, knitting and sewing, DIY cleaning materials and cosmetics, food and home remedies, compost and gardening. You will leave with knowledge, resources, a community  and, in most cases, with a product we prepare together.",
-      "During our tours, groups and families experience an educational visit of our eco-space. The tour may include a light vegan meal, mini workshops and garden activity. We tailor the content and price to the goals and abilities of each group.",
-      " "
-    ]
+      "Everyday at CityTree combines work, research and study concentrating on the home and gardens. Groups and families come to us for learning  visits in the ecological space of the home and gardens. The tours can include a light, vegan meal, mini workshops or some work in the garden. We fit the content and price to your needs and ability.",
+      "Short tours cost NIS25 - please set the time with us in advance.",
+      "You can also set a workshop out of our wide choice."
+    ],
+    "contact": "Tel.: {phone} | Whatsapp: {whatsapp}"
   },
   "schedule": {
-    "title": "Schedule",
-    "tabTitle": "Schedule",
-    "subtitle": "Our Weekly Schedule",
+    "title": "Events at the Tree",
+    "tabTitle": "Events at the Tree",
     "text": [
-      "Every Tuesday from 2 o’clock our house is open for visits.",
-      "On Tuesdays, as well as Fridays, from 3 you can join us for working in the nearby gardens.",
-      " ",
-      " ",
-      " ",
-      " "
+      "“The Tree” is a space or learning and happening for all those connected to it and there are different ways to connect. Working in the gardens as well as community gatherings are open for joining.",
+      "Garden session: every Tuesday and Friday from 3 to 6 you can join Alon.",
+      "Once in a month and a half, at time shifts, we hold a community gathering on a Friday morning, starting at 11 - the house is open to come and get to know the house and the community around it as well as purchase from what the Tree has to offer or bring presents from your used stuff or excess products.",
+      "We send updates about such happenings in our weekly newsletters and on Whatsapp.",
+      "You can download our Google Calendar and add it to yours! <calendar>Here is the link</calendar>.",
+      "You can set with us private workshops or tours at your convenient time."
     ],
-    "contact": "You are welcome to contact us at {email} or {phone}."
+    "contact": "Tel.: {phone} | {email}"
   },
   "invitation": {
     "title1": "We Invite You To Join  Our Community of Patrons!",
