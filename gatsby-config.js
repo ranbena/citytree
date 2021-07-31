@@ -47,5 +47,6 @@ module.exports = {
         redirect: false,
       },
     },
+    'gatsby-plugin-client-side-redirect',
   ],
 };
