@@ -55,7 +55,7 @@ const Header: React.FC = () => {
                         />
                       </small>
                     </NavDropdown.Item>
-                    {/* <NavDropdown.Item
+                    <NavDropdown.Item
                       eventKey="practical-ecology-winter"
                       href="/practical-ecology-winter"
                     >
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
                           defaultMessage={'\u200B'}
                         />
                       </small>
-                    </NavDropdown.Item> */}
+                    </NavDropdown.Item>
                   </>
                 ) : (
                   <>
