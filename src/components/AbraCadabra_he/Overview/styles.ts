@@ -19,3 +19,15 @@ export const Box = styled(MainBox)`
     direction: rtl;
   }
 `;
+
+export const BottomPart = styled.div`
+  p {
+    margin: 30px 0;
+    font-weight: 500;
+
+    strong {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+`;

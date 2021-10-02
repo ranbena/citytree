@@ -4,7 +4,7 @@ import SignUpButton from '../SignUpButton';
 import { forEachMessage } from '../../../utils';
 
 import { Title } from '../styles';
-import { Wrapper, Container, Box } from './styles';
+import { Wrapper, Container, Box, BottomPart } from './styles';
 
 const Overview: FC = () => {
   const intl = useIntl();
@@ -19,17 +19,16 @@ const Overview: FC = () => {
           {forEachMessage(intl, 'abracadabra-he.overview.text').map(([txt, key]) => (
             <p key={key}>{txt}</p>
           ))}
-          <p>
-            <strong>
-              <FormattedMessage id="abracadabra-he.overview.date" />
-            </strong>
-          </p>
-          <div>
-            {forEachMessage(intl, 'abracadabra-he.overview.bottomText').map(([txt, key]) => (
-              <p key={key}>{txt}</p>
-            ))}
-          </div>
-          <br />
+          <BottomPart>
+            <p>
+              <strong>
+                <FormattedMessage id="abracadabra-he.overview.date" />
+              </strong>
+            </p>
+            <p>
+              <FormattedMessage id="abracadabra-he.overview.bottomText" />
+            </p>
+          </BottomPart>
           <SignUpButton />
         </Box>
       </Container>

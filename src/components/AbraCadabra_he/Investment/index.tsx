@@ -20,7 +20,7 @@ const Investment: FC = () => (
             </div>
           </TierTitle>
           <Price>
-            480 <FormattedMessage id="nis" />
+            380 <FormattedMessage id="nis" />
           </Price>
         </Tier>
         <Tier>
@@ -33,7 +33,7 @@ const Investment: FC = () => (
             </div>
           </TierTitle>
           <Price>
-            380 <FormattedMessage id="nis" />
+            280 <FormattedMessage id="nis" />
           </Price>
         </Tier>
         <Tier>
