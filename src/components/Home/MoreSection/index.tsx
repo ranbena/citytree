@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Nav, Tab } from 'react-bootstrap';
 import { FormattedMessage } from 'gatsby-plugin-intl';
 
