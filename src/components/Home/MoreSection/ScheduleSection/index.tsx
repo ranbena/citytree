@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-import { emailLink, calendarUrl, phoneLink } from 'src/constants';
+import { emailLink, calendarUrl, phoneLink, whatsappGroupInviteLink } from 'src/constants';
 
 const ScheduleSection: FC = () => {
   const intl = useIntl();
@@ -39,6 +39,11 @@ const ScheduleSection: FC = () => {
               <FormattedMessage id="schedule.text.0" />
             </p>
             <p>
+              <strong>
+                <FormattedMessage id="schedule.subtitle" />
+              </strong>
+            </p>
+            <p>
               <FormattedMessage id="schedule.text.1" />
             </p>
             <p>
@@ -48,13 +53,23 @@ const ScheduleSection: FC = () => {
               <FormattedMessage id="schedule.text.3" />
             </p>
             <p>
+              <FormattedMessage id="schedule.text.4" />
+            </p>
+
+            <p>
               <FormattedMessage
-                id="schedule.text.4"
+                id="schedule.text.5"
+                values={{ whatsapp: (txt: string) => <a href={whatsappGroupInviteLink}>{txt}</a> }}
+              />
+            </p>
+            <p>
+              <FormattedMessage
+                id="schedule.text.6"
                 values={{ calendar: (txt: string) => <a href={calendarUrl}>{txt}</a> }}
               />
             </p>
             <p>
-              <FormattedMessage id="schedule.text.5" />
+              <FormattedMessage id="schedule.text.7" />
             </p>
             <p>
               <FormattedMessage
