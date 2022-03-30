@@ -22,7 +22,7 @@ const OurStory: FC = () => {
               {forEachMessage(intl, 'story.text').map(([txt, key]) => (
                 <p key={key}>{txt}</p>
               ))}
-              {'about.whitepaper' in intl.messages && (
+              {'story.wiki' in intl.messages && (
                 <p>
                   <FormattedMessage
                     id="story.wiki"
