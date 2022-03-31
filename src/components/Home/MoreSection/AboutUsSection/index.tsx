@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
-
+import { aboutWhitepaperUrl } from 'src/constants';
 import { forEachMessage } from 'src/utils';
 
 import image from 'src/assets/images/about-us.jpeg';
@@ -32,11 +32,7 @@ const AboutUsSection: FC = () => {
                   defaultMessage=""
                   values={{
                     a: (txt: string) => (
-                      <a
-                        href="https://docs.google.com/document/d/1b_J-MArPb-HrdbwanwqlwcGY1L7Zy3_aEeqj-rMNIAI/edit?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <a href={aboutWhitepaperUrl} target="_blank" rel="noopener noreferrer">
                         {txt}
                       </a>
                     ),

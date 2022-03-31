@@ -4,7 +4,7 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { forEachMessage } from 'src/utils';
 import { patreonUrl, bitPhone } from 'src/constants';
 
-import ezpayImage from 'src/assets/images/ezpay.png';
+import payboxImage from 'src/assets/images/paybox.png';
 import bitpayImage from 'src/assets/images/bitpay.png';
 import bitpayIcon from 'src/assets/images/bit-transfer.gif';
 import paypalImage from 'src/assets/images/paypal.svg';
@@ -161,9 +161,9 @@ const Donatebox = () => {
           maxHeight={20}
         />
         <DonateButton
-          title={formatMessage({ id: 'donate.channels.ezpay' })}
-          linkUrl="https://icom.yaad.net/cgi-bin/yaadpay/yaadpay3new.pl?Coin=1&FixTash=False&Info=&Masof=4500791534&MoreData=True&PageLang=HEB&Postpone=False&ShowEngTashText=True&Tash=1&UTF8out=True&action=pay&freq=1&sendemail=True&tmp=3&signature=c22f8f5ab65522decf5ade48ee952d04cf53ef682c696fe163e2b1fb29e39d58"
-          imageUrl={ezpayImage}
+          title={formatMessage({ id: 'donate.channels.paybox' })}
+          linkUrl="https://payboxapp.page.link/ecdf8UhBJ6dG25Mu7"
+          imageUrl={payboxImage}
         />
         <DonateButton
           title={formatMessage({ id: 'donate.channels.cash' })}

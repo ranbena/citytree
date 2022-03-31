@@ -3,6 +3,7 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Container, Col, Row } from 'react-bootstrap';
 import { forEachMessage } from 'src/utils';
 import './styles.scss';
+import { wikiUrl } from 'src/constants';
 
 const OurStory: FC = () => {
   const intl = useIntl();
@@ -21,6 +22,21 @@ const OurStory: FC = () => {
               {forEachMessage(intl, 'story.text').map(([txt, key]) => (
                 <p key={key}>{txt}</p>
               ))}
+              {'story.wiki' in intl.messages && (
+                <p>
+                  <FormattedMessage
+                    id="story.wiki"
+                    defaultMessage=""
+                    values={{
+                      a: (txt: string) => (
+                        <a href={wikiUrl} target="_blank" rel="noopener noreferrer">
+                          {txt}
+                        </a>
+                      ),
+                    }}
+                  />
+                </p>
+              )}
             </div>
           </Col>
         </Row>

@@ -22,11 +22,53 @@ const VisitSection: FC = () => (
                 <FormattedMessage id="visit.text.0" />
               </p>
               <p>
+                <strong>
+                  <FormattedMessage id="visit.sub1" />
+                </strong>
                 <FormattedMessage id="visit.text.1" />
               </p>
               <p>
+                <strong>
+                  <FormattedMessage id="visit.sub2" />
+                </strong>
+                <FormattedMessage id="visit.text.2" />
+              </p>
+              <p>
+                <strong>
+                  <FormattedMessage id="visit.sub3" />
+                </strong>
+                <FormattedMessage id="visit.text.3" />
+              </p>
+              <p>
+                <strong>
+                  <FormattedMessage id="visit.sub4" />
+                </strong>
+                <FormattedMessage id="visit.text.4" />
+              </p>
+              <p>
+                <strong>
+                  <FormattedMessage id="visit.sub5" />
+                </strong>
+                <FormattedMessage id="visit.text.5" />
+              </p>
+              <p>
+                <strong>
+                  <FormattedMessage id="visit.sub6" />
+                </strong>
+                <FormattedMessage id="visit.text.6" />
+              </p>
+              <p>
+                <strong>
+                  <FormattedMessage id="visit.sub7" />
+                </strong>
+                <FormattedMessage id="visit.text.7" />
+              </p>
+              <p>
+                <strong>
+                  <FormattedMessage id="visit.sub8" />
+                </strong>
                 <FormattedMessage
-                  id="visit.text.2"
+                  id="visit.text.8"
                   values={{
                     shop: (txt: string) => (
                       <a href={storeUrl} target="blank">
@@ -35,6 +77,9 @@ const VisitSection: FC = () => (
                     ),
                   }}
                 />
+              </p>
+              <p>
+                <FormattedMessage id="visit.text.9" />
               </p>
               <p>~~~~</p>
               <p>
