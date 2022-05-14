@@ -1,0 +1,23 @@
+.leafContainer {
+  position: relative;
+
+  .leftBush, .rightBush {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+  }
+
+  .leftBush {
+    background-image: url('../../assets/images/bush-left.png');
+    width: 432px;
+    left: -140px;
+  }
+
+  .rightBush {
+    width: 468px;
+    right: -210px;
+    background-image: url('../../assets/images/bush-right.png');
+  }
+
+}

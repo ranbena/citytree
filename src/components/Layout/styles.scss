@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: $color1;
 }
 
 body[dir='rtl'] {
@@ -17,6 +18,7 @@ body[dir='rtl'] {
 
   .content {
     flex-grow: 1;
+    background-color: $bgcolor;
   }
 }
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
-import { useIntl, Link, FormattedMessage } from 'gatsby-plugin-intl';
-import logo from 'src/assets/images/logo.png';
-import { storeUrl } from 'src/constants';
+import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
+import patreonLogo from 'src/assets/images/patreon-standalone.png';
+import { joinPatreonUrl } from 'src/constants';
 import { formatPath } from '../../utils';
 import './styles.scss';
 
@@ -18,85 +18,98 @@ const Header: React.FC = () => {
     <header>
       <Container>
         <Navbar expand="lg" collapseOnSelect>
-          <Link className="navbar-brand logo" to="/">
-            <img src={logo} alt={formatMessage({ id: 'citytree' })} />
-          </Link>
+          <NavDropdown title={formatMessage({ id: 'citytree' })} id="logo-dropdown">
+            <NavDropdown.Item>
+              <FormattedMessage id="nav.main.staff" />
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <FormattedMessage id="nav.main.supporters" />
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <FormattedMessage id="nav.main.contact" />
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <FormattedMessage id="nav.main.money" />
+            </NavDropdown.Item>
+          </NavDropdown>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav>
-              <Nav.Link href={href('/#visit')}>
-                <FormattedMessage id="nav.visit" />
-              </Nav.Link>
-              <Nav.Link href={href('/#schedule')}>
-                <FormattedMessage id="nav.schedule" />
-              </Nav.Link>
+              <NavDropdown title={formatMessage({ id: 'nav.tours.title' })} id="tours-dropdown">
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.tours.groups" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.tours.private" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.tours.foraging" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.tours.magic" />
+                </NavDropdown.Item>
+              </NavDropdown>
+
               <NavDropdown
-                renderMenuOnMount
                 title={formatMessage({ id: 'nav.workshops.title' })}
                 id="workshops-dropdown"
               >
-                {locale === 'he' ? (
-                  <>
-                    <NavDropdown.Item eventKey="hineni" href={href('/hineni')}>
-                      <FormattedMessage id="nav.workshops.abracadabra.title" />
-                      <small>
-                        <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
-                      </small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      eventKey="practical-ecology-summer"
-                      href="/practical-ecology-summer"
-                    >
-                      <FormattedMessage id="nav.workshops.practical-ecology-summer.title" />
-                      <small>
-                        <FormattedMessage
-                          id="nav.workshops.practical-ecology-summer.subtitle"
-                          defaultMessage={'\u200B'}
-                        />
-                      </small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      eventKey="practical-ecology-winter"
-                      href="/practical-ecology-winter"
-                    >
-                      <FormattedMessage id="nav.workshops.practical-ecology-winter.title" />
-                      <small>
-                        <FormattedMessage
-                          id="nav.workshops.practical-ecology-winter.subtitle"
-                          defaultMessage={'\u200B'}
-                        />
-                      </small>
-                    </NavDropdown.Item>
-                  </>
-                ) : (
-                  <>
-                    <NavDropdown.Item eventKey="cominghome" href="/cominghome">
-                      <FormattedMessage id="nav.workshops.cominghome.title" />
-                      <small>
-                        <FormattedMessage
-                          id="nav.workshops.cominghome.subtitle"
-                          defaultMessage={'\u200B'}
-                        />
-                      </small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="abracadabra" href={href('/abracadabra')}>
-                      <FormattedMessage id="nav.workshops.abracadabra.title" />
-                      <small>
-                        <FormattedMessage id="nav.workshops.abracadabra.subtitle" />
-                      </small>
-                    </NavDropdown.Item>
-                  </>
-                )}
-                <NavDropdown.Item eventKey="all" href={href('/#workshops')}>
-                  <FormattedMessage id="nav.workshops.all" />
+                <NavDropdown.Item href={href('/practical-ecology-summer')}>
+                  <FormattedMessage id="nav.workshops.practical-ecology" />
+                </NavDropdown.Item>
+                <NavDropdown.Item href={href('/magical-economy')}>
+                  <FormattedMessage id="nav.workshops.magical-economy" />
+                </NavDropdown.Item>
+                <NavDropdown.Item href={href('/hineni')}>
+                  <FormattedMessage id="nav.workshops.abracadabra" />
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href={href('/#vision')}>
-                <FormattedMessage id="nav.vision" />
-              </Nav.Link>
-              <Nav.Link href={storeUrl} target="_blank">
-                <FormattedMessage id="nav.store" />
-              </Nav.Link>
+
+              <NavDropdown title={formatMessage({ id: 'nav.stay.title' })} id="stay-dropdown">
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.stay.airbnb" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.stay.retreats" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.stay.apprenticeship" />
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <NavDropdown title={formatMessage({ id: 'nav.info.title' })} id="info-dropdown">
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.info.posts" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.info.articles" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.info.videos" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.info.glossary" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.info.sources" />
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <NavDropdown title={formatMessage({ id: 'nav.vision.title' })} id="vision-dropdown">
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.vision.dream" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.vision.trees" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.vision.forest" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.vision.poetry" />
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
             <Nav>
               {locale === 'en' ? (
@@ -104,8 +117,9 @@ const Header: React.FC = () => {
               ) : (
                 <Nav.Link href="/en">EN</Nav.Link>
               )}
-              <Button variant="outline-secondary" href={href('/#donate')}>
-                <FormattedMessage id="nav.donate" />
+              <Button id="PatreonButton" href={joinPatreonUrl} as="a" target="_blank">
+                <img src={patreonLogo} alt={formatMessage({ id: 'donate.patreonTitle' })} />
+                <FormattedMessage id="nav.patreon" />
               </Button>
             </Nav>
           </Navbar.Collapse>

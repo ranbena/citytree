@@ -4,19 +4,14 @@
 
 .topSection {
   .container {
-    @include container-padding(100px);
+    position: relative;
+    background-color: $color6;
+    overflow: hidden;
+    @include container-padding(70px);
   }
 
-  .leaf {
-    left: calc(50% - 522px) !important;
-    height: 770px !important;
-    width: 432px !important;
-    top: 0;
-
-    body[dir='ltr'] & {
-      left: auto !important;
-      right: calc(50% - 1010px) !important;
-    }
+  .row {
+    flex-direction: row-reverse !important;
   }
 
   .topSectionText {
@@ -24,18 +19,14 @@
     padding-left: 25px;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 1.27rem;
     }
   }
 
   .visual {
     background-color: $color4;
     border-radius: 6px;
-    margin-top: 56px; // to better align the visual to the text aside
-
-    @include media-breakpoint-down(lg) {
-      margin-top: 68px;
-    }
+    margin-top: 8px;
 
     @include media-breakpoint-down(md) {
       margin-top: 0;
