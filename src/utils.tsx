@@ -1,4 +1,5 @@
 import { IntlShape } from 'gatsby-plugin-intl';
+import { IntlMessageFormat } from 'intl-messageformat';
 
 type Sizes = {
   xl?: number;
@@ -15,11 +16,17 @@ export function getOppositeSizes(sizes: Sizes): Sizes {
   return ret;
 }
 
-export function forEachMessage(intl: IntlShape, key: string): [string, string][] {
+export function forEachMessage(
+  intl: IntlShape,
+  key: string,
+  values?: Record<string, any>,
+): [string, string][] {
   const ret: [string, string][] = [];
-  Object.entries(intl.messages).forEach(([k, v], idx) => {
+  const { messages, locale } = intl;
+  Object.entries(messages).forEach(([k, v], idx) => {
     if (k.startsWith(key)) {
-      ret.push([v, `${key}${idx}`]);
+      const formatted = new IntlMessageFormat(v, locale).format(values);
+      ret.push([formatted, `${key}${idx}`]);
     }
   });
   return ret;

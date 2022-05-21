@@ -74,6 +74,12 @@ header {
     .dropdown {
       padding: 0 1rem;
 
+      @include media-breakpoint-down(lg) {
+        & {
+          padding: 0 0.7rem;
+        }
+      }
+
       @include media-breakpoint-down(md) {
         & {
           padding: 0;
