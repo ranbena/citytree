@@ -5,6 +5,7 @@ interface IProps {
   image?: string;
   boxColor?: string;
   position?: 'right' | 'left' | 'center';
+  anchor?: string;
 }
 
 const Hero: FC<PropsWithChildren<IProps>> = ({
@@ -12,10 +13,12 @@ const Hero: FC<PropsWithChildren<IProps>> = ({
   image,
   boxColor,
   position = 'center',
+  anchor = '',
 }) => (
   <Wrapper
     style={{ backgroundImage: `url(${image})`, backgroundPositionX: position }}
     boxColor={boxColor}
+    id={anchor}
   >
     {children}
   </Wrapper>

@@ -17,3 +17,6 @@ export const storeUrl = 'https://mypips.app/citytree';
 export const calendarUrl =
   'https://calendar.google.com/calendar/u/1/render?cid=fmhj0n2anv9prsoquhoc22g8m0%40group.calendar.google.com';
 export const wikiUrl = 'https://he.wikipedia.org/wiki/%D7%A2%D7%A5%D7%91%D7%A2%D7%99%D7%A8';
+
+export const airbnbUrl = 'https://airbnb.com/';
+export const airbnbForm = '';

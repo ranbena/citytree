@@ -45,7 +45,7 @@ const Layout: FC = ({ children }) => {
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
       </Helmet>
-      <div className="layout">
+      <div className="layout" id="top">
         <Header />
         <div className="content">{children}</div>
         <Footer />

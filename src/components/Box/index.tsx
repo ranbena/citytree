@@ -24,27 +24,35 @@ export const Box: FC<PropsWithChildren<IProps>> = ({ children, color, transparen
   </Col>
 );
 
-export const Paragraph: FC<{ children?: React.ReactNode; intlId?: string }> = ({
-  intlId,
-  children,
-}) => {
+export const Paragraph: FC<{
+  children?: React.ReactNode;
+  intlId?: string;
+  weight?: number;
+  stretch?: boolean;
+  values?: Record<string, any>;
+}> = ({ intlId, weight, stretch, values, children }) => {
   const intl = useIntl();
 
   if (intlId) {
+    const values1 = { ...values, b: (txt: string) => <strong>{txt}</strong> };
     return (
       <>
-        {forEachMessage(intl, intlId, { b: (txt: string) => <strong>{txt}</strong> }).map(
-          ([txt, key]) => (
-            <StyledParagraph key={key}>{txt}</StyledParagraph>
-          ),
-        )}
+        {forEachMessage(intl, intlId, values1).map(([txt, key]) => (
+          <StyledParagraph key={key} weight={weight} stretch={stretch}>
+            {txt}
+          </StyledParagraph>
+        ))}
       </>
     );
   }
 
-  return <StyledParagraph>{children}</StyledParagraph>;
+  return (
+    <StyledParagraph weight={weight} stretch={stretch}>
+      {children}
+    </StyledParagraph>
+  );
 };
 
-export { Title } from './styles';
+export { Title, Button } from './styles';
 
 export default Box;

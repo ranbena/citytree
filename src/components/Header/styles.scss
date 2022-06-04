@@ -72,7 +72,7 @@ header {
     }
 
     .dropdown {
-      padding: 0 1rem;
+      padding: 0 1.4rem;
 
       @include media-breakpoint-down(lg) {
         & {
@@ -88,22 +88,20 @@ header {
 
       .dropdown-toggle {
         &::after {
-          margin-right: 0.255em; // rtl
-          opacity: 0;
-          transition: opacity 0.1s;
-        }
-
-        &:hover::after  {
-          opacity: 1;
+          display: none; // no toggle button
         }
       }
-
 
       .dropdown-menu {
         background-color: $color1;
         border: 0;
         box-shadow: $shadow;
         padding-bottom: 2px;
+
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s;
 
         // hide top shadow
         &:before {
@@ -118,6 +116,8 @@ header {
         }
 
         @include media-breakpoint-down(md) {
+          display: none !important; // no subnav for mobile
+
           & {
             box-shadow: none;
           }
@@ -126,6 +126,11 @@ header {
             display: none;
           }
         }
+      }
+
+      &:hover .dropdown-menu {
+        opacity: 1;
+        pointer-events: all;
       }
 
       .dropdown-item {

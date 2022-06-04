@@ -3,8 +3,9 @@
 @import '../../scss/variables';
 
 html {
-  scroll-behavior: smooth;
   background-color: $color1;
+  scroll-behavior: smooth;
+  scroll-padding-top: $header-height;
 }
 
 body[dir='rtl'] {
@@ -78,5 +79,38 @@ p {
   & > * {
     display: inline-block;
     vertical-align: top;
+  }
+}
+
+.side-column {
+  --gap: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+
+  .row {
+    flex: 1;
+  }
+
+  @include media-breakpoint-down(md) {
+    & {
+      margin-top: var(--gap);
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+      }
+    }
+  }
+}
+
+.mockLink {
+  text-decoration: underline;
+  cursor: default;
+
+  &:hover {
+    text-decoration: none;
   }
 }
