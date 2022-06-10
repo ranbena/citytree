@@ -23,14 +23,14 @@ function Tours() {
           <Col xl={5} lg={6} className="side-column">
             <Row>
               <Col lg={6}>
-                <BoxInner size="small" center>
+                <BoxInner size="small" center fullHeight>
                   <Title>
                     <FormattedMessage id="tours.groups.title" />
                   </Title>
-                  <Paragraph>
+                  <Paragraph grow>
                     <FormattedMessage id="tours.groups.text" />
                   </Paragraph>
-                  <Paragraph weight={600}>
+                  <Paragraph weight={600} reverseUnderline>
                     <Link to="/tours#groups">
                       - <FormattedMessage id="more-details" />
                       ...
@@ -44,14 +44,14 @@ function Tours() {
                 </BoxInner>
               </Col>
               <Col lg={6}>
-                <BoxInner size="small" center>
+                <BoxInner size="small" center fullHeight>
                   <Title>
                     <FormattedMessage id="tours.private.title" />
                   </Title>
-                  <Paragraph>
+                  <Paragraph grow>
                     <FormattedMessage id="tours.private.text" />
                   </Paragraph>
-                  <Paragraph weight={600}>
+                  <Paragraph weight={600} reverseUnderline>
                     <Link to="/tours#private">
                       - <FormattedMessage id="more-details" />
                       ...
@@ -67,14 +67,14 @@ function Tours() {
             </Row>
             <Row>
               <Col lg={6}>
-                <BoxInner size="small" center>
+                <BoxInner size="small" center fullHeight>
                   <Title>
                     <FormattedMessage id="tours.forage.title" />
                   </Title>
-                  <Paragraph>
+                  <Paragraph grow>
                     <FormattedMessage id="tours.forage.text" />
                   </Paragraph>
-                  <Paragraph weight={600}>
+                  <Paragraph weight={600} reverseUnderline>
                     <Link to="/tours#forage">
                       - <FormattedMessage id="more-details" />
                       ...
@@ -88,14 +88,14 @@ function Tours() {
                 </BoxInner>
               </Col>
               <Col lg={6}>
-                <BoxInner size="small" center>
+                <BoxInner size="small" center fullHeight>
                   <Title>
                     <FormattedMessage id="tours.magic.title" />
                   </Title>
-                  <Paragraph>
+                  <Paragraph grow>
                     <FormattedMessage id="tours.magic.text" />
                   </Paragraph>
-                  <Paragraph weight={600}>
+                  <Paragraph weight={600} reverseUnderline>
                     <Link to="/tours#magic">
                       - <FormattedMessage id="more-details" />
                       ...

@@ -5,17 +5,30 @@ export const Title = styled.div`
   font-weight: bold;
 `;
 
-export const Paragraph = styled.p<{ weight?: number; stretch?: boolean }>`
+export const Paragraph = styled.p<{
+  weight?: number;
+  stretch?: boolean;
+  reverseUnderline?: boolean;
+  grow?: boolean;
+}>`
   font-size: 17px;
   margin-bottom: 10px;
 
-  a {
-    text-decoration: underline;
+  ${({ grow }) =>
+    grow &&
+    css`
+      flex-grow: 1;
+    `}
 
-    &:hover {
-      text-decoration: none;
+  ${({ reverseUnderline }) => css`
+    a {
+      text-decoration: ${reverseUnderline ? 'none' : 'underline'};
+
+      &:hover {
+        text-decoration: ${reverseUnderline ? 'underline' : 'none'};
+      }
     }
-  }
+  `}
 
   ${({ weight }) =>
     weight &&

@@ -30,7 +30,9 @@ export const Paragraph: FC<{
   weight?: number;
   stretch?: boolean;
   values?: Record<string, any>;
-}> = ({ intlId, weight, stretch, values, children }) => {
+  reverseUnderline?: boolean;
+  grow?: boolean;
+}> = ({ intlId, weight, stretch, values, reverseUnderline, grow, children }) => {
   const intl = useIntl();
 
   if (intlId) {
@@ -38,7 +40,13 @@ export const Paragraph: FC<{
     return (
       <>
         {forEachMessage(intl, intlId, values1).map(([txt, key]) => (
-          <StyledParagraph key={key} weight={weight} stretch={stretch}>
+          <StyledParagraph
+            key={key}
+            weight={weight}
+            stretch={stretch}
+            reverseUnderline={reverseUnderline}
+            grow={grow}
+          >
             {txt}
           </StyledParagraph>
         ))}
@@ -47,7 +55,12 @@ export const Paragraph: FC<{
   }
 
   return (
-    <StyledParagraph weight={weight} stretch={stretch}>
+    <StyledParagraph
+      weight={weight}
+      stretch={stretch}
+      reverseUnderline={reverseUnderline}
+      grow={grow}
+    >
       {children}
     </StyledParagraph>
   );
