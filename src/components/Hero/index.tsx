@@ -6,6 +6,7 @@ interface IProps {
   boxColor?: string;
   position?: 'right' | 'left' | 'center';
   anchor?: string;
+  className?: string;
 }
 
 const Hero: FC<PropsWithChildren<IProps>> = ({
@@ -14,11 +15,13 @@ const Hero: FC<PropsWithChildren<IProps>> = ({
   boxColor,
   position = 'center',
   anchor = '',
+  className,
 }) => (
   <Wrapper
     style={{ backgroundImage: `url(${image})`, backgroundPositionX: position }}
     boxColor={boxColor}
     id={anchor}
+    className={className}
   >
     {children}
   </Wrapper>

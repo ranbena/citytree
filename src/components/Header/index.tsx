@@ -11,7 +11,7 @@ import './styles.scss';
 // TODO: move this to styles.ts when available
 export const HEADER_HEIGHT = 90;
 
-export type NavAnchorT = 'tours' | 'workshops' | 'stay' | 'top';
+export type NavAnchorT = 'tours' | 'workshops' | 'stay' | 'top' | 'info';
 
 const stopPropagation: MouseEventHandler<HTMLDivElement> = (event) => event.stopPropagation();
 
@@ -117,9 +117,13 @@ const Header: React.FC = () => {
                 renderMenuOnMount
                 title={formatMessage({ id: 'nav.info.title' })}
                 id="info-dropdown"
+                onClick={anchor('info')}
               >
                 <NavDropdown.Item>
                   <FormattedMessage id="nav.info.posts" />
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <FormattedMessage id="nav.info.manifests" />
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <FormattedMessage id="nav.info.articles" />

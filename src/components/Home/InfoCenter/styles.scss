@@ -1,0 +1,62 @@
+.infoCenter {
+  min-height: 650px !important;
+}
+
+.infoCenterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+  position: absolute;
+  top: 50px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+}
+
+.floatBox {
+  position: absolute;
+  width: 150px;
+  padding: 10px 25px !important;
+  border-radius: 40px !important;
+}
+
+.center {
+  position: static;
+  width: 270px;
+  padding: 25px !important;
+  border-radius: 70px !important;
+}
+
+.topRight {
+  top: 25px;
+  right: 260px;
+}
+
+.right {
+  top: 230px;
+  right: 220px;
+}
+
+.bottomRight {
+  top: 390px;
+  right: 330px;
+}
+
+.bottom {
+  bottom: -80px;
+  left: 380px;
+}
+
+.left {
+  top: 220px;
+  left: 200px;
+}
+
+.topLeft {
+  top: 0px;
+  left: 250px;
+  width: 170px;
+}
