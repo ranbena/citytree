@@ -3,7 +3,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
 import Hero from 'src/components/Hero';
-import image from '../../../assets/images/workshops_bg.jpeg';
+import image from 'src/assets/images/workshops_bg.jpeg';
 import './styles.scss';
 
 function Workshops() {

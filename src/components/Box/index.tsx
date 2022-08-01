@@ -32,7 +32,8 @@ export const Paragraph: FC<{
   values?: Record<string, any>;
   reverseUnderline?: boolean;
   grow?: boolean;
-}> = ({ intlId, weight, stretch, values, reverseUnderline, grow, children }) => {
+  className?: string;
+}> = ({ intlId, weight, stretch, values, reverseUnderline, grow, className, children }) => {
   const intl = useIntl();
 
   if (intlId) {
@@ -46,6 +47,7 @@ export const Paragraph: FC<{
             stretch={stretch}
             reverseUnderline={reverseUnderline}
             grow={grow}
+            className={className}
           >
             {txt}
           </StyledParagraph>
@@ -60,6 +62,7 @@ export const Paragraph: FC<{
       stretch={stretch}
       reverseUnderline={reverseUnderline}
       grow={grow}
+      className={className}
     >
       {children}
     </StyledParagraph>

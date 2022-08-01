@@ -4,7 +4,7 @@ import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Container } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner } from 'src/components/Box';
 import Hero from 'src/components/Hero';
-import image from '../../../assets/images/info_bg.jpeg';
+import image from 'src/assets/images/info_bg.jpeg';
 import './styles.scss';
 
 function FloatBox({
@@ -31,6 +31,37 @@ function InfoCenter() {
           </Title>
           <Paragraph>
             <FormattedMessage id="info.text" />
+            <span className="inner-links">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="">
+                <FormattedMessage id="info.title" />
+              </a>
+              <br />
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="">
+                <FormattedMessage id="info.manifests.title" />
+              </a>
+              <br />
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="">
+                <FormattedMessage id="info.articles.title" />
+              </a>
+              <br />
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="">
+                <FormattedMessage id="info.sources.title" />
+              </a>
+              <br />
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="">
+                <FormattedMessage id="info.glossary.title" />
+              </a>
+              <br />
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="">
+                <FormattedMessage id="info.videos.title" />
+              </a>
+            </span>
           </Paragraph>
         </FloatBox>
 

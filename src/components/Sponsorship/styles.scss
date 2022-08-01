@@ -1,0 +1,91 @@
+@import 'src/scss/bootstrap-overrides';
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+@import 'src/scss/breakpoints';
+
+.sponsorship {
+  em {
+    display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    margin-inline-end: 12px;
+  }
+
+  .donate {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .donate-subtitle {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .btn-patreon {
+      flex: 1;
+      margin: 10px 0 20px;
+
+      a {
+        background-color: $patreonColor;
+        border-color: $patreonColor;
+        display: inline-block;
+        border-radius: 5px;
+
+        img {
+          width: 183px;
+          position: relative;
+          top: -1px;
+        }
+
+        &:hover {
+          background-color: darken($patreonColor, 7%);
+        }
+
+        &:active {
+          background-color: darken($patreonColor, 15%) !important;
+          border-color: $patreonColor !important;
+        }
+      }
+    }
+
+    .txt-patreon {
+      margin: 30px 0 20px;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      max-width: 250px;
+      margin: 0 auto;
+
+      .btn {
+        display: inline-flex;
+        padding: 5px 10px;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        align-items: center;
+        background-color: #e7ecd1;
+        border: none;
+        box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15);
+
+        img {
+          max-height: 30px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+

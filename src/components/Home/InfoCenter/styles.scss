@@ -1,62 +1,143 @@
+@import '../../../scss/breakpoints.scss';
+
 .infoCenter {
   min-height: 650px !important;
-}
 
-.infoCenterContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .inner-links {
+    display: none;
+    font-size: 20px;
+    margin-top: 20px;
+  }
 
+  .infoCenterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    position: absolute;
+    top: 50px;
+    bottom: 100px;
+    left: 0;
+    right: 0;
 
-  position: absolute;
-  top: 50px;
-  bottom: 100px;
-  left: 0;
-  right: 0;
-}
+    .floatBox {
+      position: absolute;
+      width: 150px;
+      padding: 10px 25px !important;
+      border-radius: 40px !important;
+    }
 
-.floatBox {
-  position: absolute;
-  width: 150px;
-  padding: 10px 25px !important;
-  border-radius: 40px !important;
-}
+    .center {
+      position: static;
+      width: 270px;
+      padding: 25px !important;
+      border-radius: 70px !important;
+    }
 
-.center {
-  position: static;
-  width: 270px;
-  padding: 25px !important;
-  border-radius: 70px !important;
-}
+    .topRight {
+      top: 25px;
+      right: 260px;
+    }
 
-.topRight {
-  top: 25px;
-  right: 260px;
-}
+    .right {
+      top: 230px;
+      right: 220px;
+    }
 
-.right {
-  top: 230px;
-  right: 220px;
-}
+    .bottomRight {
+      top: 390px;
+      right: 330px;
+    }
 
-.bottomRight {
-  top: 390px;
-  right: 330px;
-}
+    .bottom {
+      bottom: -80px;
+      left: 380px;
+    }
 
-.bottom {
-  bottom: -80px;
-  left: 380px;
-}
+    .left {
+      top: 220px;
+      left: 200px;
+    }
 
-.left {
-  top: 220px;
-  left: 200px;
-}
+    .topLeft {
+      top: 0px;
+      left: 250px;
+      width: 170px;
+    }
 
-.topLeft {
-  top: 0px;
-  left: 250px;
-  width: 170px;
+    @include media-breakpoint-down(lg) {
+      .topRight {
+        right: 180px;
+      }
+
+      .right {
+        right: 140px;
+      }
+
+      .bottomRight {
+        right: 250px;
+      }
+
+      .bottom {
+        left: 300px;
+      }
+
+      .left {
+        left: 120px;
+      }
+
+      .topLeft {
+        left: 170px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .topRight {
+        right: 80px;
+      }
+
+      .right {
+        right: 40px;
+      }
+
+      .bottomRight {
+        right: 150px;
+      }
+
+      .bottom {
+        left: 200px;
+      }
+
+      .left {
+        left: 20px;
+      }
+
+      .topLeft {
+        left: 70px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    min-height: 0 !important;
+
+    .infoCenterContainer {
+      position: static;
+
+      .center {
+        width: 100% !important;
+        padding: 15px !important;
+        border-radius: 20px !important;
+        position: static;
+      }
+
+      .floatBox:not(.center) {
+        display: none;
+      }
+
+      .inner-links {
+        display: block;
+      }
+    }
+  }
 }

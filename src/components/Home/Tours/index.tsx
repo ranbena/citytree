@@ -4,7 +4,7 @@ import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
 import Hero from 'src/components/Hero';
-import image from '../../../assets/images/CityTreeSite_Tours_01_Alex.jpeg';
+import image from 'src/assets/images/CityTreeSite_Tours_01_Alex.jpeg';
 import './styles.scss';
 
 function Tours() {

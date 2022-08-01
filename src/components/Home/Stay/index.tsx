@@ -5,7 +5,7 @@ import { Col, Container, OverlayTrigger, Popover, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import { airbnbForm, airbnbUrl, phone } from 'src/constants';
-import image from '../../../assets/images/stay_bg.jpeg';
+import image from 'src/assets/images/stay_bg.jpeg';
 import './styles.scss';
 
 const PopoverButton = ({ text, children }) => (
