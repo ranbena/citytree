@@ -1,8 +1,7 @@
 import React from 'react';
-import { navigate } from 'gatsby';
 import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Container, OverlayTrigger, Popover, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import { airbnbForm, airbnbUrl, phone } from 'src/constants';
 import image from 'src/assets/images/stay_bg.jpeg';
@@ -55,9 +54,9 @@ function Stay() {
                     />
                   </Paragraph>
                   <div>
-                    <Button onClick={() => navigate(airbnbUrl)}>
+                    <LinkButton href={airbnbUrl} target="_blank">
                       <FormattedMessage id="stay.airbnb.button" />
-                    </Button>
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>

@@ -24,11 +24,10 @@
       font-size: 16px;
     }
 
-    button {
+    .box-button {
       background-color: #657054;
       width: auto;
       max-width: 100%;
-      display: block;
       margin: 6px auto 0;
       padding: 5px 0 5px 20px;
       height: auto;
@@ -43,6 +42,10 @@
         position: relative;
         top: -1px;
       }
+
+      &:hover {
+        color: white;
+      }
     }
   }
 
@@ -51,6 +54,14 @@
       background-color: transparent !important;
       padding: 0 50px !important;
       min-height: 410px;
+    }
+
+    .fc_button {
+      color: #E6EAD2 !important;
+
+      &:hover {
+        color: white !important;
+      }
     }
   }
 }

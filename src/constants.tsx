@@ -23,7 +23,7 @@ export const payboxUrl = 'https://payboxapp.page.link/ecdf8UhBJ6dG25Mu7';
 export const facebookUrl = 'https://facebook.com/citytree';
 export const youtubeUrl = 'https://www.youtube.com/user/citytreenet/';
 
-export const airbnbUrl = 'https://airbnb.com/';
+export const airbnbUrl = 'https://www.airbnb.co.uk/rooms/3057651';
 export const airbnbForm = '';
 
 export enum PAGES {

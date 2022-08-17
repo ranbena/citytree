@@ -1,8 +1,7 @@
 import React from 'react';
-import { navigate } from 'gatsby';
 import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
 import { facebookUrl, whatsappUrl, calendarUrl } from 'src/constants';
 import { ReactComponent as GoogleIcon } from 'src/assets/images/icon_google.svg';
@@ -29,10 +28,10 @@ function Contact() {
                 <strong>
                   <FormattedMessage id="contact.details.whatsapp.text" />
                 </strong>
-                <Button onClick={() => navigate(whatsappUrl)}>
+                <LinkButton href={whatsappUrl} target="_blank">
                   <WhatsappIcon />
                   <FormattedMessage id="contact.details.whatsapp.button" />
-                </Button>
+                </LinkButton>
               </div>
               <div className="contact-details">
                 <h4>
@@ -41,10 +40,10 @@ function Contact() {
                 <strong>
                   <FormattedMessage id="contact.details.google.text" />
                 </strong>
-                <Button onClick={() => navigate(calendarUrl)}>
+                <LinkButton href={calendarUrl} target="_blank">
                   <GoogleIcon />
                   <FormattedMessage id="contact.details.google.button" />
-                </Button>
+                </LinkButton>
               </div>
               <div className="contact-details">
                 <h4>
@@ -53,10 +52,10 @@ function Contact() {
                 <strong>
                   <FormattedMessage id="contact.details.facebook.text" />
                 </strong>
-                <Button onClick={() => navigate(facebookUrl)}>
+                <LinkButton href={facebookUrl} target="_blank">
                   <FacebookIcon />
                   <FormattedMessage id="contact.details.facebook.button" />
-                </Button>
+                </LinkButton>
               </div>
             </BoxInner>
           </Col>

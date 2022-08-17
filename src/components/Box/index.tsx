@@ -69,6 +69,6 @@ export const Paragraph: FC<{
   );
 };
 
-export { Title, Button } from './styles';
+export { Title, Button, LinkButton } from './styles';
 
 export default Box;

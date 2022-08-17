@@ -43,7 +43,7 @@ export const Paragraph = styled.p<{
     `}
 `;
 
-export const Button = styled.button`
+const ButtonStyle = css`
   border: none;
   background-color: #424234;
   color: #c6d1be;
@@ -69,6 +69,20 @@ export const Button = styled.button`
 
   &:focus {
     outline: none;
+  }
+`;
+
+export const Button = styled.button.attrs(() => ({ className: 'box-button' }))`
+  ${ButtonStyle};
+`;
+
+export const LinkButton = styled.a.attrs(() => ({ className: 'box-button' }))`
+  ${ButtonStyle};
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
   }
 `;
 
