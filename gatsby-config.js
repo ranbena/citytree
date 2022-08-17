@@ -19,6 +19,16 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-htaccess',
     {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        prettier: true,
+        svgo: true,
+        svgoConfig: {
+          plugins: [{ removeViewBox: false }, { cleanupIDs: true }],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [

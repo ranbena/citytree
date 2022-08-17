@@ -1,30 +1,49 @@
 import styled from 'styled-components';
-import LinkIcon from 'src/assets/images/link.svg';
 import { breakpoints } from '../../utils';
 
 export const Wrapper = styled.footer`
-  background-color: #809336;
-  padding: 30px 0;
-  color: white;
+  background-color: #2c410f;
+  color: #dadfcc;
+  overflow: hidden;
+
+  .container {
+    padding: 25px 0;
+  }
 
   a {
-    color: white;
+    color: #dadfcc;
     font-size: 16px;
 
     &:hover {
       opacity: 0.75;
     }
   }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: 15px;
 
   @media ${breakpoints.sm} {
-    .d-flex {
-      flex-direction: column;
+    flex-direction: column-reverse;
+
+    & > * {
+      justify-content: center;
+      text-align: center;
     }
   }
 `;
 
 export const Logo = styled.img`
-  height: 100px;
+  height: 45px;
+  filter: brightness(100);
+  opacity: 0.8;
+  margin-left: 30px;
+  margin-top: 2px;
 
   @media ${breakpoints.md} {
     display: none;
@@ -33,43 +52,36 @@ export const Logo = styled.img`
 
 export const Info = styled.div`
   font-size: 16px;
-
-  @media ${breakpoints.sm} {
-    text-align: center;
-    margin-bottom: 15px;
-  }
+  display: flex;
+  align-items: top;
 `;
 
 export const Social = styled.div`
-  margin: 10px -3px;
+  margin: 10px 0;
   display: flex;
+  flex: 1;
+  justify-content: center;
 
   a {
-    margin: 0 3px;
+    margin: 0 10px;
+    background: #dadfcc;
+    color: #2c410f;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    padding: 4px;
   }
 
   a:hover {
     opacity: 0.85;
   }
 
-  img {
-    height: 35px;
-    width: 35px;
+  svg {
+    height: auto;
+    width: 100%;
   }
 
-  @media ${breakpoints.sm} {
-    justify-content: center;
-  }
-`;
-
-export const Link = styled.a`
-  &:before {
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: url(${LinkIcon});
-    background-size: cover;
-    display: inline-block;
-    margin: 0 5px;
+  a.facebook {
+    padding: 6px 3px 0 3px;
   }
 `;

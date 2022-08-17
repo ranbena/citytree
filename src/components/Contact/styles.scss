@@ -37,9 +37,11 @@
       color: #E6EAD2;
       box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
 
-      img {
+      svg {
         height: 21px;
         margin: 0 10px;
+        position: relative;
+        top: -1px;
       }
     }
   }

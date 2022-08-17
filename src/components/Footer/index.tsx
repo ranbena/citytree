@@ -1,52 +1,60 @@
-import React, { FC } from 'react';
-import { Container } from 'react-bootstrap';
+import React from 'react';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
-
-import { email } from 'src/constants';
-
+import { email, facebookUrl, whatsappUrl, youtubeUrl } from 'src/constants';
 import logo from 'src/assets/images/logo.png';
-import FacebookIcon from 'src/assets/images/social_facebook.svg';
-import InstagramIcon from 'src/assets/images/social_instagram.svg';
-import YoutubeIcon from 'src/assets/images/social_youtube.svg';
-import { Wrapper, Social, Info, Link, Logo } from './styles';
+import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
+import { ReactComponent as YoutubeIcon } from 'src/assets/images/icon_youtube.svg';
+import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
+import { Wrapper, Social, Info, Logo, Content } from './styles';
+import LeafContainer from '../LeafContainer';
 
-const Footer: FC = () => {
+const Footer: React.FC = () => {
   const { formatMessage } = useIntl();
   const youtube = formatMessage({ id: 'footer.youtube' });
-  const instagram = formatMessage({ id: 'footer.instagram' });
+  const whatsapp = formatMessage({ id: 'footer.whatsapp' });
   const facebook = formatMessage({ id: 'footer.facebook' });
 
   return (
     <Wrapper>
-      <Container>
-        <div className="d-flex justify-content-between align-items-center">
+      <LeafContainer opacity={0.15}>
+        <Content>
           <Info>
-            <FormattedMessage id="footer.text" />
-            <br />
-            <FormattedMessage id="phone">
-              {(phone) => <a href={`tel:${phone}`}>{phone}</a>}
-            </FormattedMessage>{' '}
-            | <a href={`mailto:${email}`}>{email}</a>
-            <Social>
-              <a href="https://www.youtube.com/user/citytreenet/" title={youtube}>
-                <img src={YoutubeIcon} alt={youtube} />
-              </a>
-              <a href="https://www.instagram.com/citytreetlv/" title={instagram}>
-                <img src={InstagramIcon} alt={instagram} />
-              </a>
-              <a href="https://facebook.com/citytree" title={facebook}>
-                <img src={FacebookIcon} alt={facebook} />
-              </a>
-            </Social>
+            <Logo src={logo} alt="CityTree" className="logo" />
+            <div>
+              <FormattedMessage id="footer.text" />
+              <br />
+              <FormattedMessage id="phone">
+                {(phone) => <a href={`tel:${phone}`}>{phone}</a>}
+              </FormattedMessage>{' '}
+              | <a href={`mailto:${email}`}>{email}</a>
+            </div>
           </Info>
-          <Logo src={logo} alt="CityTree" className="logo" />
+          <Social>
+            <a href={youtubeUrl} title={youtube}>
+              <YoutubeIcon />
+            </a>
+            <a href={facebookUrl} title={facebook} className="facebook">
+              <FacebookIcon />
+            </a>
+            <a href={whatsappUrl} title={whatsapp}>
+              <WhatsappIcon />
+            </a>
+          </Social>
           <div>
-            <Link href="http://archives.citytree.net">
+            <a href="">
+              <FormattedMessage id="nav.main.about" />
+            </a>
+            <br />
+            <a href="">
+              <FormattedMessage id="nav.main.contact" />
+            </a>
+            <br />
+            <a href="http://archives.citytree.net">
               <FormattedMessage id="footer.archive" />
-            </Link>
+            </a>
           </div>
-        </div>
-      </Container>
+        </Content>
+      </LeafContainer>
     </Wrapper>
   );
 };

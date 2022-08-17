@@ -2,16 +2,16 @@ import React from 'react';
 import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
-import WhatsappIcon from 'src/assets/images/send_whatsapp.svg';
-import GoogleIcon from 'src/assets/images/send_google.svg';
-import FacebookIcon from 'src/assets/images/send_facebook.svg';
+import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
+import { ReactComponent as GoogleIcon } from 'src/assets/images/icon_google.svg';
+import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
 import Subscribe from './Subscribe';
 import LeafContainer from '../LeafContainer';
 import './styles.scss';
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <LeafContainer>
         <Row>
           <Col lg={6}>
@@ -28,7 +28,7 @@ function Contact() {
                   <FormattedMessage id="contact.details.whatsapp.text" />
                 </strong>
                 <Button>
-                  <img src={WhatsappIcon} alt="WhatsApp" />
+                  <WhatsappIcon />
                   <FormattedMessage id="contact.details.whatsapp.button" />
                 </Button>
               </div>
@@ -40,7 +40,7 @@ function Contact() {
                   <FormattedMessage id="contact.details.google.text" />
                 </strong>
                 <Button>
-                  <img src={GoogleIcon} alt="Google" />
+                  <GoogleIcon />
                   <FormattedMessage id="contact.details.google.button" />
                 </Button>
               </div>
@@ -52,7 +52,7 @@ function Contact() {
                   <FormattedMessage id="contact.details.facebook.text" />
                 </strong>
                 <Button>
-                  <img src={FacebookIcon} alt="Facebook" />
+                  <FacebookIcon />
                   <FormattedMessage id="contact.details.facebook.button" />
                 </Button>
               </div>
