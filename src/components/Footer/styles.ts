@@ -67,8 +67,8 @@ export const Social = styled.div`
     background: #dadfcc;
     color: #2c410f;
     border-radius: 5px;
-    height: 35px;
-    width: 35px;
+    height: 36px;
+    width: 36px;
     padding: 4px;
   }
 

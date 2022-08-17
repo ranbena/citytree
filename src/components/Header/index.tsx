@@ -4,7 +4,7 @@ import React, { MouseEventHandler } from 'react';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
-import { joinPatreonUrl } from 'src/constants';
+import { joinPatreonUrl, PAGES } from 'src/constants';
 import { formatPath } from '../../utils';
 import './styles.scss';
 
@@ -82,13 +82,13 @@ const Header: React.FC = () => {
                 onClick={anchor('workshops')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item href={href('/practical-ecology-summer')}>
+                  <NavDropdown.Item href={href(PAGES.practicalEcologySummer)}>
                     <FormattedMessage id="nav.workshops.practical-ecology" />
                   </NavDropdown.Item>
                   <NavDropdown.Item href={href('/magical-economy')}>
                     <FormattedMessage id="nav.workshops.magical-economy" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item href={href('/hineni')}>
+                  <NavDropdown.Item href={href(PAGES.hineni)}>
                     <FormattedMessage id="nav.workshops.abracadabra" />
                   </NavDropdown.Item>
                 </div>

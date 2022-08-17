@@ -12,7 +12,7 @@ const TopSection: React.FC = () => {
   const intl = useIntl();
 
   return (
-    <section className="topSection">
+    <section className="topSection" id="top">
       <LeafContainer>
         <Row className="row">
           <Col lg={6}>

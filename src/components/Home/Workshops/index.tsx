@@ -1,10 +1,12 @@
-import { FormattedMessage } from 'gatsby-plugin-intl';
 import React from 'react';
+import { navigate } from 'gatsby';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/workshops_bg.jpeg';
 import './styles.scss';
+import { PAGES } from 'src/constants';
 
 function Workshops() {
   return (
@@ -30,7 +32,7 @@ function Workshops() {
                     <FormattedMessage id="workshops.ecology.text" />
                   </Paragraph>
                   <div>
-                    <Button>
+                    <Button onClick={() => navigate(PAGES.practicalEcologySummer)}>
                       <FormattedMessage id="workshops.ecology.button" />
                     </Button>
                   </div>
@@ -64,7 +66,7 @@ function Workshops() {
                     <FormattedMessage id="workshops.economy.text" />
                   </Paragraph>
                   <div>
-                    <Button>
+                    <Button onClick={() => navigate(PAGES.hineni)}>
                       <FormattedMessage id="details-purchase" />
                     </Button>
                   </div>

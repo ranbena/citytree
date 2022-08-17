@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { navigate } from 'gatsby';
+import { PAGES } from 'src/constants';
 import { forEachMessage } from '../../../utils';
 import { Wrapper, Container, Box, Button, Title } from './styles';
 
@@ -19,7 +20,7 @@ const Winter: FC = () => {
           ))}
           <br />
           <br />
-          <Button onClick={() => navigate('/practical-ecology-winter')}>
+          <Button onClick={() => navigate(PAGES.practicalEcologyWinter)}>
             <FormattedMessage id="practical-ecology-summer.winter.button" />
           </Button>
         </Box>
