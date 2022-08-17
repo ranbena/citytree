@@ -37,6 +37,24 @@ export function formatPath(intl: IntlShape, path: string): string {
   return locale === defaultLocale ? path : `/${locale}${path}`;
 }
 
+export type NavAnchorT =
+  | 'tours'
+  | 'workshops'
+  | 'stay'
+  | 'top'
+  | 'info'
+  | 'vision'
+  | 'people'
+  | 'donate';
+
+export function formatAnchor(intl: IntlShape, type?: NavAnchorT) {
+  return formatPath(intl, type ? `/#${type}` : '/');
+}
+
+export const anchor = (intl: IntlShape, type?: NavAnchorT) => () => {
+  window.location.href = formatAnchor(intl, type);
+};
+
 export const breakpoints = {
   sm: '(max-width: 576px)',
   md: '(max-width: 768px)',

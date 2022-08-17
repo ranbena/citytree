@@ -4,12 +4,12 @@ import { Col, Row, Container } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner } from 'src/components/Box';
 import image from 'src/assets/images/sponsorship_bg.jpeg';
 import Hero from '../Hero';
-import './styles.scss';
 import Donate from './Donate';
+import './styles.scss';
 
 function Sponsorship() {
   return (
-    <Hero image={image} boxColor="#f8fbe4d6" position="right">
+    <Hero image={image} boxColor="#f8fbe4d6" position="right" anchor="sponsor">
       <Container className="sponsorship">
         <Row>
           <Col lg={7}>

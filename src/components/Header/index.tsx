@@ -5,24 +5,17 @@ import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
 import { joinPatreonUrl, PAGES } from 'src/constants';
-import { formatPath } from '../../utils';
+import { anchor, formatPath } from 'src/utils';
 import './styles.scss';
 
 // TODO: move this to styles.ts when available
 export const HEADER_HEIGHT = 90;
-
-export type NavAnchorT = 'tours' | 'workshops' | 'stay' | 'top' | 'info' | 'vision' | 'people';
 
 const stopPropagation: MouseEventHandler<HTMLDivElement> = (event) => event.stopPropagation();
 
 const Header: React.FC = () => {
   const intl = useIntl();
   const { locale, formatMessage } = intl;
-  const href = (path: string) => formatPath(intl, path);
-  const anchor = (type?: NavAnchorT) => () => {
-    const url = type ? href(`/#${type}`) : href('/');
-    window.location.href = url;
-  };
 
   return (
     <header>
@@ -32,10 +25,10 @@ const Header: React.FC = () => {
             renderMenuOnMount
             title={formatMessage({ id: 'citytree' })}
             id="logo-dropdown"
-            onClick={anchor('top')}
+            onClick={anchor(intl, 'top')}
           >
             <div onClick={stopPropagation}>
-              <NavDropdown.Item onClick={anchor('people')}>
+              <NavDropdown.Item onClick={anchor(intl, 'people')}>
                 <FormattedMessage id="nav.main.staff" />
               </NavDropdown.Item>
               <NavDropdown.Item>
@@ -57,7 +50,7 @@ const Header: React.FC = () => {
                 renderMenuOnMount
                 title={formatMessage({ id: 'nav.tours.title' })}
                 id="tours-dropdown"
-                onClick={anchor('tours')}
+                onClick={anchor(intl, 'tours')}
               >
                 <div onClick={stopPropagation}>
                   <NavDropdown.Item>
@@ -79,16 +72,16 @@ const Header: React.FC = () => {
                 renderMenuOnMount
                 title={formatMessage({ id: 'nav.workshops.title' })}
                 id="workshops-dropdown"
-                onClick={anchor('workshops')}
+                onClick={anchor(intl, 'workshops')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item href={href(PAGES.practicalEcologySummer)}>
+                  <NavDropdown.Item href={formatPath(intl, PAGES.practicalEcologySummer)}>
                     <FormattedMessage id="nav.workshops.practical-ecology" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item href={href('/magical-economy')}>
+                  <NavDropdown.Item href={formatPath(intl, '/magical-economy')}>
                     <FormattedMessage id="nav.workshops.magical-economy" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item href={href(PAGES.hineni)}>
+                  <NavDropdown.Item href={formatPath(intl, PAGES.hineni)}>
                     <FormattedMessage id="nav.workshops.abracadabra" />
                   </NavDropdown.Item>
                 </div>
@@ -98,7 +91,7 @@ const Header: React.FC = () => {
                 renderMenuOnMount
                 title={formatMessage({ id: 'nav.stay.title' })}
                 id="stay-dropdown"
-                onClick={anchor('stay')}
+                onClick={anchor(intl, 'stay')}
               >
                 <div onClick={stopPropagation}>
                   <NavDropdown.Item>
@@ -117,7 +110,7 @@ const Header: React.FC = () => {
                 renderMenuOnMount
                 title={formatMessage({ id: 'nav.info.title' })}
                 id="info-dropdown"
-                onClick={anchor('info')}
+                onClick={anchor(intl, 'info')}
               >
                 <NavDropdown.Item>
                   <FormattedMessage id="nav.info.posts" />
@@ -143,7 +136,7 @@ const Header: React.FC = () => {
                 renderMenuOnMount
                 title={formatMessage({ id: 'nav.vision.title' })}
                 id="vision-dropdown"
-                onClick={anchor('vision')}
+                onClick={anchor(intl, 'vision')}
               >
                 <NavDropdown.Item>
                   <FormattedMessage id="nav.vision.dream" />

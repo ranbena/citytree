@@ -1,13 +1,15 @@
 import React from 'react';
-import { FormattedMessage } from 'gatsby-plugin-intl';
+import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner } from 'src/components/Box';
 import Hero from 'src/components/Hero';
-import { patreonUrl } from 'src/constants';
 import image from 'src/assets/images/ppl_bg.jpeg';
+import { formatAnchor } from 'src/utils';
 import './styles.scss';
 
 function People() {
+  const intl = useIntl();
+
   return (
     <Hero image={image} boxColor="#aabad3cc" position="right" anchor="people">
       <Container className="people">
@@ -24,11 +26,7 @@ function People() {
                 intlId="people.general.text"
                 values={{
                   b: (txt: string) => <strong>{txt}</strong>,
-                  a: (txt: string) => (
-                    <a href={patreonUrl} target="_blank" rel="noopener noreferrer">
-                      {txt}
-                    </a>
-                  ),
+                  a: (txt: string) => <a href={formatAnchor(intl, 'sponsor')}>{txt}</a>,
                 }}
               />
             </BoxInner>
