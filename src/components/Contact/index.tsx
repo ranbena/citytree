@@ -3,7 +3,7 @@ import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
-import { facebookUrl, whatsappUrl, calendarUrl } from 'src/constants';
+import { facebookUrl, whatsappGroupInviteLink, calendarUrl } from 'src/constants';
 import { ReactComponent as GoogleIcon } from 'src/assets/images/icon_google.svg';
 import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
 import Subscribe from './Subscribe';
@@ -28,7 +28,7 @@ function Contact() {
                 <strong>
                   <FormattedMessage id="contact.details.whatsapp.text" />
                 </strong>
-                <LinkButton href={whatsappUrl} target="_blank">
+                <LinkButton href={whatsappGroupInviteLink} target="_blank">
                   <WhatsappIcon />
                   <FormattedMessage id="contact.details.whatsapp.button" />
                 </LinkButton>

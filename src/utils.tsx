@@ -45,7 +45,8 @@ export type NavAnchorT =
   | 'info'
   | 'vision'
   | 'people'
-  | 'donate';
+  | 'contact'
+  | 'sponsor';
 
 export function formatAnchor(intl: IntlShape, type?: NavAnchorT) {
   return formatPath(intl, type ? `/#${type}` : '/');

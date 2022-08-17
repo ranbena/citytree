@@ -65,3 +65,36 @@
     }
   }
 }
+
+.subscribe-tab-wrapper {
+  position: relative;
+}
+
+.subscribe-tab {
+  position: sticky;
+  top: 261px;
+  left: 0px;
+  z-index: 1;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.subscribe-tab-content {
+  width: 50px;
+  padding: 10px 10px 10px 14px;
+  box-sizing: content-box;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background-color: $color1;
+  color: $color2;
+  font-size: 14px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 2px 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-weight: bold;
+}
