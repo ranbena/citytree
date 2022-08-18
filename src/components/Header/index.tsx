@@ -5,7 +5,7 @@ import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
 import { joinPatreonUrl, PAGES } from 'src/constants';
-import { anchor, formatPath } from 'src/utils';
+import { anchor, formatPath, formatAnchor } from 'src/utils';
 import './styles.scss';
 
 // TODO: move this to styles.ts when available
@@ -28,13 +28,13 @@ const Header: React.FC = () => {
             onClick={anchor(intl, 'top')}
           >
             <div onClick={stopPropagation}>
-              <NavDropdown.Item onClick={anchor(intl, 'people')}>
+              <NavDropdown.Item href={formatAnchor(intl, 'people')}>
                 <FormattedMessage id="nav.main.staff" />
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <FormattedMessage id="nav.main.supporters" />
               </NavDropdown.Item>
-              <NavDropdown.Item>
+              <NavDropdown.Item href={formatAnchor(intl, 'contact')}>
                 <FormattedMessage id="nav.main.contact" />
               </NavDropdown.Item>
               <NavDropdown.Item>

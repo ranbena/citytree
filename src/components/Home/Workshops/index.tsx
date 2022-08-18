@@ -1,14 +1,18 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import { FormattedMessage } from 'gatsby-plugin-intl';
+import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/workshops_bg.jpeg';
-import './styles.scss';
 import { PAGES } from 'src/constants';
+import { formatPath } from 'src/utils';
+import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
+import './styles.scss';
 
 function Workshops() {
+  const intl = useIntl();
+
   return (
     <Hero image={image} boxColor="#f2f9cfc6" position="right" anchor="workshops">
       <Container className="workshops">
@@ -32,9 +36,9 @@ function Workshops() {
                     <FormattedMessage id="workshops.ecology.text" />
                   </Paragraph>
                   <div>
-                    <Button onClick={() => navigate(PAGES.practicalEcologySummer)}>
+                    <LinkButton href={formatPath(intl, PAGES.practicalEcologySummer)}>
                       <FormattedMessage id="workshops.ecology.button" />
-                    </Button>
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
@@ -49,9 +53,13 @@ function Workshops() {
                     <FormattedMessage id="workshops.magic.text" />
                   </Paragraph>
                   <div>
-                    <Button>
-                      <FormattedMessage id="details-purchase" />
-                    </Button>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Button onClick={showModal}>
+                          <FormattedMessage id="details-purchase" />
+                        </Button>
+                      )}
+                    </ComingSoonModalProvider>
                   </div>
                 </BoxInner>
               </Col>

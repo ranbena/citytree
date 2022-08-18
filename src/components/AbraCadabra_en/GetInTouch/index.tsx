@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import ContactModal from 'src/components/ContactModal';
+import ContactModal from '../ContactModal';
 import { Button } from '../styles';
 import { Wrapper } from './styles';
 

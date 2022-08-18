@@ -5,14 +5,15 @@ import logo from 'src/assets/images/logo.png';
 import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
 import { ReactComponent as YoutubeIcon } from 'src/assets/images/icon_youtube.svg';
 import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
+import { anchor, formatAnchor } from 'src/utils';
 import { Wrapper, Social, Info, Logo, Content } from './styles';
 import LeafContainer from '../LeafContainer';
 
 const Footer: React.FC = () => {
-  const { formatMessage } = useIntl();
-  const youtube = formatMessage({ id: 'footer.youtube' });
-  const whatsapp = formatMessage({ id: 'footer.whatsapp' });
-  const facebook = formatMessage({ id: 'footer.facebook' });
+  const intl = useIntl();
+  const youtube = intl.formatMessage({ id: 'footer.youtube' });
+  const whatsapp = intl.formatMessage({ id: 'footer.whatsapp' });
+  const facebook = intl.formatMessage({ id: 'footer.facebook' });
 
   return (
     <Wrapper>
@@ -45,7 +46,7 @@ const Footer: React.FC = () => {
               <FormattedMessage id="nav.main.about" />
             </a>
             <br />
-            <a href="">
+            <a href={formatAnchor(intl, 'contact')} onClick={anchor(intl, 'contact')}>
               <FormattedMessage id="nav.main.contact" />
             </a>
             <br />

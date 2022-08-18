@@ -6,6 +6,7 @@ import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/CityTreeSite_Tours_01_Alex.jpeg';
 import './styles.scss';
+import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 
 function Tours() {
   return (
@@ -31,15 +32,23 @@ function Tours() {
                     <FormattedMessage id="tours.groups.text" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to="/tours#groups">
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Link to="/tours#groups" onClick={showModal}>
+                          - <FormattedMessage id="more-details" />
+                          ...
+                        </Link>
+                      )}
+                    </ComingSoonModalProvider>
                   </Paragraph>
                   <div>
-                    <Button>
-                      <FormattedMessage id="order" />
-                    </Button>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Button onClick={showModal}>
+                          <FormattedMessage id="order" />
+                        </Button>
+                      )}
+                    </ComingSoonModalProvider>
                   </div>
                 </BoxInner>
               </Col>
@@ -52,15 +61,23 @@ function Tours() {
                     <FormattedMessage id="tours.private.text" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to="/tours#private">
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Link to="/tours#private" onClick={showModal}>
+                          - <FormattedMessage id="more-details" />
+                          ...
+                        </Link>
+                      )}
+                    </ComingSoonModalProvider>
                   </Paragraph>
                   <div>
-                    <Button>
-                      <FormattedMessage id="order" />
-                    </Button>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Button onClick={showModal}>
+                          <FormattedMessage id="order" />
+                        </Button>
+                      )}
+                    </ComingSoonModalProvider>
                   </div>
                 </BoxInner>
               </Col>
@@ -75,15 +92,23 @@ function Tours() {
                     <FormattedMessage id="tours.forage.text" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to="/tours#forage">
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Link to="/tours#forage" onClick={showModal}>
+                          - <FormattedMessage id="more-details" />
+                          ...
+                        </Link>
+                      )}
+                    </ComingSoonModalProvider>
                   </Paragraph>
                   <div>
-                    <Button>
-                      <FormattedMessage id="register" />
-                    </Button>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Button onClick={showModal}>
+                          <FormattedMessage id="register" />
+                        </Button>
+                      )}
+                    </ComingSoonModalProvider>
                   </div>
                 </BoxInner>
               </Col>
@@ -96,15 +121,23 @@ function Tours() {
                     <FormattedMessage id="tours.magic.text" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to="/tours#magic">
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Link to="/tours#magic" onClick={showModal}>
+                          - <FormattedMessage id="more-details" />
+                          ...
+                        </Link>
+                      )}
+                    </ComingSoonModalProvider>
                   </Paragraph>
                   <div>
-                    <Button>
-                      <FormattedMessage id="register" />
-                    </Button>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Button onClick={showModal}>
+                          <FormattedMessage id="register" />
+                        </Button>
+                      )}
+                    </ComingSoonModalProvider>
                   </div>
                 </BoxInner>
               </Col>

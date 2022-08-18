@@ -3,6 +3,7 @@ import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Container, OverlayTrigger, Popover, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
+import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import { airbnbForm, airbnbUrl, phone } from 'src/constants';
 import image from 'src/assets/images/stay_bg.jpeg';
 import './styles.scss';
@@ -71,9 +72,13 @@ function Stay() {
                     <FormattedMessage id="stay.retreat.text" />
                   </Paragraph>
                   <div>
-                    <Button>
-                      <FormattedMessage id="stay.retreat.button" />
-                    </Button>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Button onClick={showModal}>
+                          <FormattedMessage id="stay.retreat.button" />
+                        </Button>
+                      )}
+                    </ComingSoonModalProvider>
                   </div>
                 </BoxInner>
               </Col>
@@ -88,9 +93,13 @@ function Stay() {
                     <FormattedMessage id="stay.apprenticeship.text" />
                   </Paragraph>
                   <div>
-                    <Button>
-                      <FormattedMessage id="stay.apprenticeship.button" />
-                    </Button>
+                    <ComingSoonModalProvider>
+                      {(showModal) => (
+                        <Button onClick={showModal}>
+                          <FormattedMessage id="stay.apprenticeship.button" />
+                        </Button>
+                      )}
+                    </ComingSoonModalProvider>
                   </div>
                 </BoxInner>
               </Col>
