@@ -11,7 +11,7 @@ const SubscribeTab: React.FC<{ children: React.ReactNode }> = ({ children }) => 
     <div className="subscribe-tab-wrapper">
       <div className="subscribe-tab">
         <div className="subscribe-tab-content" onClick={anchor(intl, 'contact')}>
-          <FormattedMessage id="contact.newsletter.title" />
+          <FormattedMessage id="contact.newsletter.title" values={{ space: () => 'Hello' }} />
         </div>
       </div>
       {children}

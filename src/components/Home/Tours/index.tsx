@@ -45,7 +45,7 @@ function Tours() {
                     <ComingSoonModalProvider>
                       {(showModal) => (
                         <Button onClick={showModal}>
-                          <FormattedMessage id="order" />
+                          <FormattedMessage id="tours.order" />
                         </Button>
                       )}
                     </ComingSoonModalProvider>
@@ -74,7 +74,7 @@ function Tours() {
                     <ComingSoonModalProvider>
                       {(showModal) => (
                         <Button onClick={showModal}>
-                          <FormattedMessage id="order" />
+                          <FormattedMessage id="tours.order" />
                         </Button>
                       )}
                     </ComingSoonModalProvider>
@@ -105,7 +105,7 @@ function Tours() {
                     <ComingSoonModalProvider>
                       {(showModal) => (
                         <Button onClick={showModal}>
-                          <FormattedMessage id="register" />
+                          <FormattedMessage id="tours.register" />
                         </Button>
                       )}
                     </ComingSoonModalProvider>
@@ -134,7 +134,7 @@ function Tours() {
                     <ComingSoonModalProvider>
                       {(showModal) => (
                         <Button onClick={showModal}>
-                          <FormattedMessage id="register" />
+                          <FormattedMessage id="tours.register" />
                         </Button>
                       )}
                     </ComingSoonModalProvider>

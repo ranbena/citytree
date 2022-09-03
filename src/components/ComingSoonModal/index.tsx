@@ -1,5 +1,8 @@
 import React from 'react';
-import { Title, SubTitle, StyledModal } from './styles';
+import { FormattedMessage } from 'gatsby-plugin-intl';
+import { githubProject, ranbenaPage } from 'src/constants';
+import SeedlingImage from 'src/assets/images/seedling.jpg';
+import { Title, SubTitle, StyledModal, Developer, Top, Text } from './styles';
 
 export const ComingSoonModalProvider: React.FC<{
   children: (show: (e: React.MouseEvent) => void) => React.ReactNode;
@@ -15,10 +18,35 @@ export const ComingSoonModalProvider: React.FC<{
     <>
       <StyledModal show={isVisible} onHide={hide} centered size="md">
         <StyledModal.Body>
-          <Title>Coming Soon</Title>
-          <SubTitle>
-            Just give us a call or send us a message and we’ll get back to you shortly.
-          </SubTitle>
+          <Top>
+            <Text>
+              <Title>
+                <FormattedMessage id="coming-soon.title" />
+              </Title>
+              <SubTitle>
+                <FormattedMessage id="coming-soon.subtitle" />
+              </SubTitle>
+            </Text>
+            <img src={SeedlingImage} alt="" />
+          </Top>
+          <Developer>
+            <FormattedMessage
+              id="coming-soon.developer.0"
+              values={{
+                github: (txt: string) => <a href={githubProject}>{txt}</a>,
+                ranbena: (txt: string) => <a href={ranbenaPage}>{txt}</a>,
+              }}
+            />{' '}
+            🧑‍💻
+            <br />
+            <FormattedMessage
+              id="coming-soon.developer.1"
+              values={{
+                github: (txt: string) => <a href={githubProject}>{txt}</a>,
+                ranbena: (txt: string) => <a href={ranbenaPage}>{txt}</a>,
+              }}
+            />
+          </Developer>
         </StyledModal.Body>
       </StyledModal>
       {children(show)}

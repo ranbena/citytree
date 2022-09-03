@@ -229,6 +229,10 @@ body[dir='rtl'] .dropdown-menu {
   transition-delay: 50ms;
   transition-timing-function: linear;
 
+  body[dir='ltr'] & {
+    align-items: flex-start;
+  }
+
   img {
     height: 34px;
     margin-bottom: -5px;

@@ -26,6 +26,9 @@ export const youtubeUrl = 'https://www.youtube.com/user/citytreenet/';
 export const airbnbUrl = 'https://www.airbnb.co.uk/rooms/3057651';
 export const airbnbForm = '';
 
+export const githubProject = 'https://github.com/ranbena/citytree';
+export const ranbenaPage = 'https://github.com/ranbena/';
+
 export enum PAGES {
   hineni = '/hineni',
   practicalEcologySummer = '/practical-ecology-summer',

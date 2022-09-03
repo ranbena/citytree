@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 export const Title = styled.div`
   font-size: 26px;
   font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 10px;
 `;
 
 export const Paragraph = styled.p<{
@@ -125,6 +127,10 @@ export const Wrapper = styled.div<{
       ${Title} {
         font-size: 18px;
         margin-bottom: 5px;
+      }
+
+      body[dir='ltr'] & {
+        padding: 20px 18px;
       }
     `}
 
