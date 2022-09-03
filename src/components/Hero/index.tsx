@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren } from 'react';
-import { Wrapper } from './styles';
+import { Wrapper, Image } from './styles';
 
 interface IProps {
   image?: string;
@@ -17,12 +17,8 @@ const Hero: FC<PropsWithChildren<IProps>> = ({
   anchor = '',
   className,
 }) => (
-  <Wrapper
-    style={{ backgroundImage: `url(${image})`, backgroundPositionX: position }}
-    boxColor={boxColor}
-    id={anchor}
-    className={className}
-  >
+  <Wrapper boxColor={boxColor} id={anchor} className={className}>
+    <Image src={image} loading="lazy" width="100%" height="100%" $position={position} />
     {children}
   </Wrapper>
 );

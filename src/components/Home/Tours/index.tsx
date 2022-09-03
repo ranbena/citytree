@@ -10,7 +10,7 @@ import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 
 function Tours() {
   return (
-    <Hero image={image} boxColor="#fff8decc" position="right" anchor="tours">
+    <Hero image={image} boxColor="#fff8decc" anchor="tours" position="right">
       <Container className="tours">
         <Row>
           <Col xl={7} lg={6}>

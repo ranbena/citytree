@@ -23,7 +23,7 @@ function FloatBox({
 
 function InfoCenter() {
   return (
-    <Hero image={image} boxColor="#c9ddc9cc" position="right" anchor="info" className="infoCenter">
+    <Hero image={image} boxColor="#c9ddc9cc" anchor="info" className="infoCenter">
       <Container className="infoCenterContainer">
         <FloatBox position="center">
           <Title>

@@ -14,7 +14,7 @@ function Workshops() {
   const intl = useIntl();
 
   return (
-    <Hero image={image} boxColor="#f2f9cfc6" position="right" anchor="workshops">
+    <Hero image={image} boxColor="#f2f9cfc6" anchor="workshops">
       <Container className="workshops">
         <Row>
           <Col lg={6}>

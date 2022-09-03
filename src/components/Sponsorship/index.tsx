@@ -9,7 +9,7 @@ import './styles.scss';
 
 function Sponsorship() {
   return (
-    <Hero image={image} boxColor="#f8fbe4d6" position="right" anchor="sponsor">
+    <Hero image={image} boxColor="#f8fbe4d6" anchor="sponsor">
       <Container className="sponsorship">
         <Row>
           <Col lg={7}>

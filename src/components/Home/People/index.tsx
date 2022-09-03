@@ -11,7 +11,7 @@ function People() {
   const intl = useIntl();
 
   return (
-    <Hero image={image} boxColor="#aabad3cc" position="right" anchor="people">
+    <Hero image={image} boxColor="#aabad3cc" anchor="people">
       <Container className="people">
         <Row>
           <Col lg={6} className="side-column">

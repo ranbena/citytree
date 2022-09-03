@@ -24,7 +24,7 @@ const PopoverButton = ({ text, children }) => (
 
 function Stay() {
   return (
-    <Hero image={image} boxColor="#e5f9cfd6" position="right" anchor="stay">
+    <Hero image={image} boxColor="#e5f9cfd6" anchor="stay">
       <Container className="stay">
         <Row>
           <Col lg={6}>

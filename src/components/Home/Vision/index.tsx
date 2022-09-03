@@ -8,7 +8,7 @@ import './styles.scss';
 
 function Vision() {
   return (
-    <Hero image={image} boxColor="#b9d3d6cc" position="right" anchor="vision" className="vision">
+    <Hero image={image} boxColor="#b9d3d6cc" anchor="vision" className="vision">
       <Container className="vision">
         <Row>
           <Col lg={6}>
