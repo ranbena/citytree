@@ -48,12 +48,12 @@ export const ComingSoonModalProvider: React.FC<{
                   id="coming-soon.developer.text.0"
                   values={{
                     github: (txt: string) => (
-                      <a href={githubProject} target="_blank" rel="noreferrer">
+                      <a href={githubProject} target="_blank" rel="noopener noreferrer">
                         {txt}
                       </a>
                     ),
                     ranbena: (txt: string) => (
-                      <a href={ranbenaPage} target="_blank" rel="noreferrer">
+                      <a href={ranbenaPage} target="_blank" rel="noopener noreferrer">
                         {txt}
                       </a>
                     ),
@@ -64,7 +64,7 @@ export const ComingSoonModalProvider: React.FC<{
                   id="coming-soon.developer.text.1"
                   values={{
                     a: (txt: string) => (
-                      <a href={PAGES.employment} target="_blank" rel="noreferrer">
+                      <a href={PAGES.employment} target="_blank" rel="noopener noreferrer">
                         {txt}
                       </a>
                     ),

@@ -1,13 +1,13 @@
 import React from 'react';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
-import { email, facebookUrl, whatsappUrl, youtubeUrl } from 'src/constants';
+import { email, facebookUrl, PAGES, whatsappUrl, youtubeUrl } from 'src/constants';
 import logo from 'src/assets/images/logo.png';
 import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
 import { ReactComponent as YoutubeIcon } from 'src/assets/images/icon_youtube.svg';
 import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
 import { anchor, formatAnchor } from 'src/utils';
-import { Wrapper, Social, Info, Logo, Content } from './styles';
 import LeafContainer from '../LeafContainer';
+import { Wrapper, Social, Info, Logo, Content } from './styles';
 
 const Footer: React.FC = () => {
   const intl = useIntl();
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             </a>
           </Social>
           <div>
-            <a href="">
+            <a href={PAGES.people}>
               <FormattedMessage id="nav.main.about" />
             </a>
             <br />
