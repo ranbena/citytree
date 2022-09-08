@@ -28,11 +28,11 @@ export const airbnbForm = '';
 
 export const githubProject = 'https://github.com/ranbena/citytree';
 export const ranbenaPage = 'https://github.com/ranbena/';
-export const termsOfEmploymentDoc =
-  'https://docs.google.com/document/d/19lGy6-0081T6W9lxgcPJ-ngN057rjU4IBVn5xRgal0g/preview';
 
 export enum PAGES {
   hineni = '/hineni',
   practicalEcologySummer = '/practical-ecology-summer',
   practicalEcologyWinter = '/practical-ecology-winter',
+  people = 'https://docs.google.com/document/d/e/2PACX-1vTjJy7kZ9ObbIz6E7oHKkxvF50gNUeo0Rapknf99YzxzYixFvLsao20QbhGnZ3LsEmr9e24qkXsHNq-/pub',
+  employment = 'https://docs.google.com/document/d/e/2PACX-1vStK7lP26XAvT35LRbUlDs5mrJeniHmSrGHL53g2YYSPnxc00u395MMfjnx7GcbbcBf-pxCxJgqLkfC/pub',
 }

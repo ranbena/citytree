@@ -50,7 +50,8 @@
   },
   "nav": {
     "main": {
-      "staff": "CityTree people",
+      "about": "About us",
+      "people": "CityTree people",
       "supporters": "Supportes",
       "contact": "Contact us",
       "money": "Money"

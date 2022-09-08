@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           >
             <div onClick={stopPropagation}>
               <NavDropdown.Item href={formatAnchor(intl, 'people')}>
-                <FormattedMessage id="nav.main.staff" />
+                <FormattedMessage id="nav.main.people" />
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <FormattedMessage id="nav.main.supporters" />
