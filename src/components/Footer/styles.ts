@@ -40,7 +40,7 @@ export const Content = styled.div`
 
 export const Logo = styled.img`
   height: 45px;
-  filter: brightness(100);
+  filter: contrast(0) brightness(4);
   opacity: 0.8;
   margin-left: 30px;
   margin-top: 2px;
