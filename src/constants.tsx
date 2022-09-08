@@ -28,6 +28,8 @@ export const airbnbForm = '';
 
 export const githubProject = 'https://github.com/ranbena/citytree';
 export const ranbenaPage = 'https://github.com/ranbena/';
+export const termsOfEmploymentDoc =
+  'https://docs.google.com/document/d/19lGy6-0081T6W9lxgcPJ-ngN057rjU4IBVn5xRgal0g/preview';
 
 export enum PAGES {
   hineni = '/hineni',

@@ -15,12 +15,20 @@
   "more-details": "More details",
   "details-purchase": "Details and Purchase",
   "coming-soon": {
-    "title": "This part is under construction",
-    "subtitle": "Still working on the site and didn't yet get to this section.",
-    "developer": [
-      "Wait! Are you a web developer and can contribute?",
-      "The site is open source on <github>Github</github> so contact <ranbena>Ran</ranbena>."
-    ]
+    "title": "This part is under construction.",
+    "text": [
+      "This content totally exists in the real world - in post-its and docs, thoughts and conversations, in the garden or the house!",
+      "Our work on the website is ant-paced - diligent but tiny, likes to rest but busy at home and the garden - just like in life and play.",
+      "We'll get to this on day, or something else entirely will eventually happen."
+    ],
+    "contact": "In the meantime, simply contact us and ask for the information you're after from an actual person (in 3D!) -- {whatsappLink} (Einat, on whatsapp) / {phoneLink} (house phone!)",
+    "developer": {
+      "title": "Wait!! Are you a web developer and want to come work with us?",
+      "text": [
+        "The site is open source on <github>Github</github>, and you can contact <ranbena>our lovely coder Ran</ranbena> directly.",
+        "Or mayhaps you wanna read our <a>terms of employment</a> (spoiler: work for stay)"
+      ]
+    }
   },
   "newsletter": {
     "formId": "255340",
