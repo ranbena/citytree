@@ -4,8 +4,9 @@ import React, { MouseEventHandler } from 'react';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
-import { joinPatreonUrl, PAGES } from 'src/constants';
+import { airbnbUrl, joinPatreonUrl, PAGES } from 'src/constants';
 import { anchor, formatPath, formatAnchor } from 'src/utils';
+import { ComingSoonModalProvider } from '../ComingSoonModal';
 import './styles.scss';
 
 // TODO: move this to styles.ts when available
@@ -53,18 +54,36 @@ const Header: React.FC = () => {
                 onClick={anchor(intl, 'tours')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item>
-                    <FormattedMessage id="nav.tours.groups" />
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                    <FormattedMessage id="nav.tours.private" />
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                    <FormattedMessage id="nav.tours.foraging" />
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                    <FormattedMessage id="nav.tours.magic" />
-                  </NavDropdown.Item>
+                  <ComingSoonModalProvider>
+                    {(showModal) => (
+                      <>
+                        <NavDropdown.Item
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.groupTours)}
+                        >
+                          <FormattedMessage id="nav.tours.groups" />
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.privateTours)}
+                        >
+                          <FormattedMessage id="nav.tours.private" />
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.forageTours)}
+                        >
+                          <FormattedMessage id="nav.tours.foraging" />
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.magicTours)}
+                        >
+                          <FormattedMessage id="nav.tours.magic" />
+                        </NavDropdown.Item>
+                      </>
+                    )}
+                  </ComingSoonModalProvider>
                 </div>
               </NavDropdown>
 
@@ -78,9 +97,16 @@ const Header: React.FC = () => {
                   <NavDropdown.Item href={formatPath(intl, PAGES.practicalEcologySummer)}>
                     <FormattedMessage id="nav.workshops.practical-ecology" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item href={formatPath(intl, '/magical-economy')}>
-                    <FormattedMessage id="nav.workshops.magical-economy" />
-                  </NavDropdown.Item>
+                  <ComingSoonModalProvider>
+                    {(showModal) => (
+                      <NavDropdown.Item
+                        onClick={showModal}
+                        href={formatPath(intl, PAGES.magicalEconomy)}
+                      >
+                        <FormattedMessage id="nav.workshops.magical-economy" />
+                      </NavDropdown.Item>
+                    )}
+                  </ComingSoonModalProvider>
                   <NavDropdown.Item href={formatPath(intl, PAGES.hineni)}>
                     <FormattedMessage id="nav.workshops.abracadabra" />
                   </NavDropdown.Item>
@@ -94,15 +120,27 @@ const Header: React.FC = () => {
                 onClick={anchor(intl, 'stay')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item>
+                  <NavDropdown.Item href={airbnbUrl} target="_blank">
                     <FormattedMessage id="nav.stay.airbnb" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item>
-                    <FormattedMessage id="nav.stay.retreats" />
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                    <FormattedMessage id="nav.stay.apprenticeship" />
-                  </NavDropdown.Item>
+                  <ComingSoonModalProvider>
+                    {(showModal) => (
+                      <>
+                        <NavDropdown.Item
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.retreats)}
+                        >
+                          <FormattedMessage id="nav.stay.retreats" />
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.apprenticeship)}
+                        >
+                          <FormattedMessage id="nav.stay.apprenticeship" />
+                        </NavDropdown.Item>
+                      </>
+                    )}
+                  </ComingSoonModalProvider>
                 </div>
               </NavDropdown>
 

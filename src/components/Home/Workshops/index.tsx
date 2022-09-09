@@ -1,8 +1,7 @@
 import React from 'react';
-import { navigate } from 'gatsby';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/workshops_bg.jpeg';
 import { PAGES } from 'src/constants';
@@ -55,9 +54,12 @@ function Workshops() {
                   <div>
                     <ComingSoonModalProvider>
                       {(showModal) => (
-                        <Button onClick={showModal}>
+                        <LinkButton
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.magicalEconomy)}
+                        >
                           <FormattedMessage id="details-purchase" />
-                        </Button>
+                        </LinkButton>
                       )}
                     </ComingSoonModalProvider>
                   </div>
@@ -74,9 +76,9 @@ function Workshops() {
                     <FormattedMessage id="workshops.economy.text" />
                   </Paragraph>
                   <div>
-                    <Button onClick={() => navigate(PAGES.hineni)}>
+                    <LinkButton href={formatPath(intl, PAGES.hineni)}>
                       <FormattedMessage id="details-purchase" />
-                    </Button>
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>

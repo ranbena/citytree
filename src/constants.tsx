@@ -28,6 +28,18 @@ export enum PAGES {
   hineni = '/hineni',
   practicalEcologySummer = '/practical-ecology-summer',
   practicalEcologyWinter = '/practical-ecology-winter',
+
+  // non-exsistent (coming soon modal)
+  magicalEconomy = '/magical-economy',
+  retreats = '/retreats',
+  apprenticeship = '/apprenticeship',
+  tours = '/tours',
+  groupTours = '/tours#group',
+  privateTours = '/tours#private',
+  forageTours = '/tours#forage',
+  magicTours = '/tours#magic',
+
+  // temp external
   people = 'https://docs.google.com/document/d/e/2PACX-1vTjJy7kZ9ObbIz6E7oHKkxvF50gNUeo0Rapknf99YzxzYixFvLsao20QbhGnZ3LsEmr9e24qkXsHNq-/pub',
   employment = 'https://docs.google.com/document/d/e/2PACX-1vStK7lP26XAvT35LRbUlDs5mrJeniHmSrGHL53g2YYSPnxc00u395MMfjnx7GcbbcBf-pxCxJgqLkfC/pub',
 }

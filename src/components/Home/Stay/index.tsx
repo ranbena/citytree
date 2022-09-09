@@ -1,11 +1,12 @@
 import React from 'react';
-import { FormattedMessage } from 'gatsby-plugin-intl';
+import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, OverlayTrigger, Popover, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
-import { airbnbForm, airbnbUrl, phone } from 'src/constants';
+import { airbnbForm, airbnbUrl, PAGES, phone } from 'src/constants';
 import image from 'src/assets/images/stay_bg.jpeg';
+import { formatPath } from 'src/utils';
 import './styles.scss';
 
 const PopoverButton = ({ text, children }) => (
@@ -23,6 +24,8 @@ const PopoverButton = ({ text, children }) => (
 );
 
 function Stay() {
+  const intl = useIntl();
+
   return (
     <Hero image={image} boxColor="#e5f9cfd6" anchor="stay">
       <Container className="stay">
@@ -74,9 +77,9 @@ function Stay() {
                   <div>
                     <ComingSoonModalProvider>
                       {(showModal) => (
-                        <Button onClick={showModal}>
+                        <LinkButton onClick={showModal} href={formatPath(intl, PAGES.retreats)}>
                           <FormattedMessage id="stay.retreat.button" />
-                        </Button>
+                        </LinkButton>
                       )}
                     </ComingSoonModalProvider>
                   </div>
@@ -95,9 +98,12 @@ function Stay() {
                   <div>
                     <ComingSoonModalProvider>
                       {(showModal) => (
-                        <Button onClick={showModal}>
+                        <LinkButton
+                          onClick={showModal}
+                          href={formatPath(intl, PAGES.apprenticeship)}
+                        >
                           <FormattedMessage id="stay.apprenticeship.button" />
-                        </Button>
+                        </LinkButton>
                       )}
                     </ComingSoonModalProvider>
                   </div>
