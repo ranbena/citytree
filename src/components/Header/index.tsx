@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { MouseEventHandler } from 'react';
+import { Link } from 'gatsby';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
@@ -174,11 +175,9 @@ const Header: React.FC = () => {
                   </NavDropdown>
                 </Nav>
                 <Nav>
-                  {locale === 'en' ? (
-                    <Nav.Link href="/">עברית</Nav.Link>
-                  ) : (
-                    <Nav.Link href="/en">EN</Nav.Link>
-                  )}
+                  <Link className="nav-link" to={locale === 'en' ? '/' : '/en'}>
+                    {locale === 'en' ? 'עברית' : 'EN'}
+                  </Link>
                   <Button id="PatreonButton" href={joinPatreonUrl} as="a" target="_blank">
                     <img src={patreonLogo} alt={formatMessage({ id: 'donate.patreonTitle' })} />
                     <FormattedMessage id="nav.patreon" />

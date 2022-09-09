@@ -1,3 +1,4 @@
+import { withPrefix } from 'gatsby';
 import { IntlShape } from 'gatsby-plugin-intl';
 import { IntlMessageFormat } from 'intl-messageformat';
 
@@ -34,7 +35,8 @@ export function forEachMessage(
 
 export function formatPath(intl: IntlShape, path: string): string {
   const { locale, defaultLocale } = intl;
-  return locale === defaultLocale ? path : `/${locale}${path}`;
+  const value = locale === defaultLocale ? path : `/${locale}${path}`;
+  return withPrefix(value);
 }
 
 export type NavAnchorT =
