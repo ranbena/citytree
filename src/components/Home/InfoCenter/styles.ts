@@ -1,6 +1,9 @@
-@import '../../../scss/breakpoints.scss';
+import styled from 'styled-components';
+import Hero from 'src/components/Hero';
+import { Title } from 'src/components/Box';
+import { breakpoints } from 'src/utils';
 
-.infoCenter {
+export const InfoCenterHero = styled(Hero)`
   min-height: 650px !important;
 
   .inner-links {
@@ -25,6 +28,27 @@
       width: 150px;
       padding: 10px 25px !important;
       border-radius: 40px !important;
+    }
+
+    .clickable {
+      cursor: pointer;
+      transition: background-color 100ms linear;
+
+      &:hover {
+        background-color: #c9ddc9e6;
+      }
+
+      &:hover ${Title} {
+        text-decoration: underline;
+      }
+    }
+
+    .float-box-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
 
     .center {
@@ -65,7 +89,7 @@
       width: 170px;
     }
 
-    @include media-breakpoint-down(lg) {
+    @media ${breakpoints.xl} {
       .topRight {
         right: 180px;
       }
@@ -91,7 +115,7 @@
       }
     }
 
-    @include media-breakpoint-down(md) {
+    @media ${breakpoints.lg} {
       .topRight {
         right: 80px;
       }
@@ -118,7 +142,7 @@
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @media ${breakpoints.md} {
     min-height: 0 !important;
 
     .infoCenterContainer {
@@ -142,4 +166,4 @@
       }
     }
   }
-}
+`;

@@ -58,7 +58,7 @@ export const anchor = (intl: IntlShape, type?: NavAnchorT) => () => {
 
 export const breakpoints = {
   sm: '(max-width: 576px)',
-  md: '(max-width: 768px)',
-  lg: '(max-width: 992px)',
-  xl: '(max-width: 1200px)',
+  md: '(max-width: 767.98px)',
+  lg: '(max-width: 991.98px)',
+  xl: '(max-width: 1199.98px)',
 };

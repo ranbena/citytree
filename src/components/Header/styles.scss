@@ -245,13 +245,12 @@ body[dir='rtl'] .dropdown-menu {
   }
 
   @include media-breakpoint-down(md) {
-    & {
-      border-radius: 10px;
-      flex-direction: row-reverse;
-      height: auto;
-      padding: 10px 20px;
-      margin-inline-start: 0;
-    }
+    border-radius: 10px;
+    direction: rtl;
+    flex-direction: row-reverse;
+    height: auto;
+    padding: 10px 20px;
+    margin-inline-start: 0;
 
     &:hover {
       transform: none;
@@ -261,6 +260,7 @@ body[dir='rtl'] .dropdown-menu {
       height: 20px;
       margin: 0;
       margin-inline-start: 8px;
+      align-self: flex-end;
     }
   }
 }

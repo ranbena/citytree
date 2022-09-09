@@ -38,6 +38,11 @@ export enum PAGES {
   privateTours = '/tours#private',
   forageTours = '/tours#forage',
   magicTours = '/tours#magic',
+  glossary = '/glossary',
+  blog = '/blog',
+  manifests = '/manifests',
+  articles = '/articles',
+  sources = '/sources',
 
   // temp external
   people = 'https://docs.google.com/document/d/e/2PACX-1vTjJy7kZ9ObbIz6E7oHKkxvF50gNUeo0Rapknf99YzxzYixFvLsao20QbhGnZ3LsEmr9e24qkXsHNq-/pub',
