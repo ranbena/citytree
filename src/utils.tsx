@@ -64,3 +64,10 @@ export const breakpoints = {
   lg: '(max-width: 991.98px)',
   xl: '(max-width: 1199.98px)',
 };
+
+export const breakpointsMin = {
+  sm: '(min-width: 576px)',
+  md: '(min-width: 768px)',
+  lg: '(min-width: 992px)',
+  xl: '(min-width: 1200px)',
+};

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Hero from 'src/components/Hero';
-import { Title } from 'src/components/Box';
 import { breakpoints } from 'src/utils';
 
 export const InfoCenterHero = styled(Hero)`
@@ -22,34 +21,6 @@ export const InfoCenterHero = styled(Hero)`
     bottom: 100px;
     left: 0;
     right: 0;
-
-    .floatBox {
-      position: absolute;
-      width: 150px;
-      padding: 10px 25px !important;
-      border-radius: 40px !important;
-    }
-
-    .clickable {
-      cursor: pointer;
-      transition: background-color 100ms linear;
-
-      &:hover {
-        background-color: #c9ddc9e6;
-      }
-
-      &:hover ${Title} {
-        text-decoration: underline;
-      }
-    }
-
-    .float-box-link {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
 
     .center {
       position: static;

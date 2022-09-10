@@ -43,6 +43,9 @@ export enum PAGES {
   manifests = '/manifests',
   articles = '/articles',
   sources = '/sources',
+  trees = '/trees',
+  forestCity = '/forest-city',
+  poetry = '/poetry',
 
   // temp external
   people = 'https://docs.google.com/document/d/e/2PACX-1vTjJy7kZ9ObbIz6E7oHKkxvF50gNUeo0Rapknf99YzxzYixFvLsao20QbhGnZ3LsEmr9e24qkXsHNq-/pub',

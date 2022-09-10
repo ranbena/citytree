@@ -160,16 +160,16 @@ const Header: React.FC = () => {
                     id="vision-dropdown"
                     onClick={anchor(intl, 'vision')}
                   >
-                    <NavDropdown.Item>
+                    <NavDropdown.Item onClick={anchor(intl, 'vision')}>
                       <FormattedMessage id="nav.vision.dream" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item>
+                    <NavDropdown.Item href={formatPath(intl, PAGES.trees)} onClick={showModal}>
                       <FormattedMessage id="nav.vision.trees" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <FormattedMessage id="nav.vision.forest" />
+                    <NavDropdown.Item href={formatPath(intl, PAGES.forestCity)} onClick={showModal}>
+                      <FormattedMessage id="nav.vision.forest-city" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item>
+                    <NavDropdown.Item href={formatPath(intl, PAGES.poetry)} onClick={showModal}>
                       <FormattedMessage id="nav.vision.poetry" />
                     </NavDropdown.Item>
                   </NavDropdown>

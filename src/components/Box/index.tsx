@@ -1,5 +1,6 @@
-import React, { FC, PropsWithChildren } from 'react';
-import { useIntl } from 'gatsby-plugin-intl';
+import React from 'react';
+import cx from 'classnames';
+import { Link, useIntl } from 'gatsby-plugin-intl';
 import { Col } from 'react-bootstrap';
 import { forEachMessage } from 'src/utils';
 
@@ -16,7 +17,12 @@ interface IProps {
 
 export const BoxInner = Wrapper;
 
-export const Box: FC<PropsWithChildren<IProps>> = ({ children, color, transparent, ...props }) => (
+export const Box: React.FC<React.PropsWithChildren<IProps>> = ({
+  children,
+  color,
+  transparent,
+  ...props
+}) => (
   <Col {...props}>
     <Wrapper color={color} transparent={transparent}>
       {children}
@@ -24,7 +30,7 @@ export const Box: FC<PropsWithChildren<IProps>> = ({ children, color, transparen
   </Col>
 );
 
-export const Paragraph: FC<{
+export const Paragraph: React.FC<{
   children?: React.ReactNode;
   intlId?: string;
   weight?: number;
@@ -68,6 +74,20 @@ export const Paragraph: FC<{
     </StyledParagraph>
   );
 };
+
+export const FloatBox: React.FC<{
+  position: 'top' | 'topRight' | 'right' | 'bottomRight' | 'bottom' | 'left' | 'topLeft' | 'center';
+  href?: string;
+  target?: string;
+  onClick?: (e: React.MouseEvent) => void;
+  staticPosition?: boolean;
+  children: React.ReactNode;
+}> = ({ position, href, target, onClick, staticPosition = false, children }) => (
+  <BoxInner center className={cx('floatBox', position, { clickable: href, staticPosition })}>
+    {href && <Link to={href} className="float-box-link" onClick={onClick} target={target} />}
+    {children}
+  </BoxInner>
+);
 
 export { Title, Button, LinkButton } from './styles';
 

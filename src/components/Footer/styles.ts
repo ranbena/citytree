@@ -42,7 +42,7 @@ export const Logo = styled.img`
   height: 45px;
   filter: contrast(0) brightness(4);
   opacity: 0.8;
-  margin-left: 30px;
+  margin-inline-end: 30px;
   margin-top: 2px;
 
   @media ${breakpoints.md} {

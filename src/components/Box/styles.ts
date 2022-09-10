@@ -1,3 +1,4 @@
+import { breakpoints } from 'src/utils';
 import styled, { css } from 'styled-components';
 
 export const Title = styled.div`
@@ -140,4 +141,56 @@ export const Wrapper = styled.div<{
     css`
       text-align: center;
     `}
+
+  &.floatBox {
+    position: absolute;
+    width: 150px;
+    padding: 10px 25px !important;
+    border-radius: 40px !important;
+
+    &.staticPosition {
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      right: auto;
+
+      @media ${breakpoints.md} {
+        width: 100%;
+        max-width: unset;
+        margin-inline-start: 0 !important;
+
+        ${Paragraph} {
+          max-width: 240px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .float-box-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &.clickable {
+      cursor: pointer;
+      transition-property: backdrop-filter, transform, box-shadow;
+      transition-duration: 150ms;
+      box-shadow: 0 0 0 rgba(0,0,0,0.2);
+
+      &:hover {
+        backdrop-filter: blur(3px);
+        transform: translateY(-1px);
+        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+      }
+
+      &:hover ${Title} {
+        text-decoration: underline;
+      }
+    }
+  }
 `;

@@ -1,35 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import cx from 'classnames';
 import { Container } from 'react-bootstrap';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { Title, Paragraph, BoxInner } from 'src/components/Box';
+import { Title, Paragraph, FloatBox } from 'src/components/Box';
 import image from 'src/assets/images/info_bg.jpeg';
 import { PAGES, youtubeUrl } from 'src/constants';
 import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import { formatPath } from 'src/utils';
 import { InfoCenterHero } from './styles';
-
-function FloatBox({
-  position,
-  href,
-  target,
-  onClick,
-  children,
-}: {
-  position: 'topRight' | 'right' | 'bottomRight' | 'bottom' | 'left' | 'topLeft' | 'center';
-  href?: string;
-  target?: string;
-  onClick?: (e: React.MouseEvent) => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <BoxInner center className={cx('floatBox', position, { clickable: href })}>
-      {href && <Link to={href} className="float-box-link" onClick={onClick} target={target} />}
-      {children}
-    </BoxInner>
-  );
-}
 
 function InfoCenter() {
   const intl = useIntl();
