@@ -159,6 +159,7 @@ export const Wrapper = styled.div<{
         width: 100%;
         max-width: unset;
         margin-inline-start: 0 !important;
+        margin-inline-end: 0 !important;
 
         ${Paragraph} {
           max-width: 240px;

@@ -84,7 +84,11 @@ export const FloatBox: React.FC<{
   children: React.ReactNode;
 }> = ({ position, href, target, onClick, staticPosition = false, children }) => (
   <BoxInner center className={cx('floatBox', position, { clickable: href, staticPosition })}>
-    {href && <Link to={href} className="float-box-link" onClick={onClick} target={target} />}
+    {href && (
+      <a href={href} className="float-box-link" onClick={onClick} target={target}>
+        {' '}
+      </a>
+    )}
     {children}
   </BoxInner>
 );

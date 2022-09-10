@@ -52,7 +52,7 @@
     "main": {
       "about": "About us",
       "people": "CityTree people",
-      "supporters": "Supportes",
+      "supporters": "Our Community",
       "contact": "Contact us",
       "money": "Money"
     },
@@ -243,6 +243,18 @@
         "המחבקות זוכות ליחס מיוחד: מפגשים, תכנים רדיקליים והתנסות בכלכלת מתנות.",
         "<b>הבה ונשוב הביתה!</b>"
       ]
+    },
+    "people": {
+      "title": "The family",
+      "text": "Tami, Alon, Avi, Einat... almost all you wanted to know about us..."
+    },
+    "supporters": {
+      "title": "Our community",
+      "text": "A few of our supporters and their thoughts about Citytree..."
+    },
+    "money": {
+      "title": "Money",
+      "text": "Wanna know how Citytree earns a living? Here's our whole financial story..."
     }
   },
   "schedule": {

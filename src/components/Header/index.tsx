@@ -32,7 +32,7 @@ const Header: React.FC = () => {
                 onClick={anchor(intl, 'top')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item href={formatAnchor(intl, 'people')}>
+                  <NavDropdown.Item href={formatPath(intl, PAGES.people)}>
                     <FormattedMessage id="nav.main.people" />
                   </NavDropdown.Item>
                   <NavDropdown.Item className="disabled">
@@ -41,7 +41,11 @@ const Header: React.FC = () => {
                   <NavDropdown.Item href={formatAnchor(intl, 'contact')}>
                     <FormattedMessage id="nav.main.contact" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item href={formatAnchor(intl, 'sponsor')}>
+                  <NavDropdown.Item
+                    className="disabled"
+                    href={formatPath(intl, PAGES.money)}
+                    onClick={showModal}
+                  >
                     <FormattedMessage id="nav.main.money" />
                   </NavDropdown.Item>
                 </div>
