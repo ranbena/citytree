@@ -35,13 +35,13 @@ const Header: React.FC = () => {
                   <NavDropdown.Item href={formatAnchor(intl, 'people')}>
                     <FormattedMessage id="nav.main.people" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item>
+                  <NavDropdown.Item className="disabled">
                     <FormattedMessage id="nav.main.supporters" />
                   </NavDropdown.Item>
                   <NavDropdown.Item href={formatAnchor(intl, 'contact')}>
                     <FormattedMessage id="nav.main.contact" />
                   </NavDropdown.Item>
-                  <NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor(intl, 'sponsor')}>
                     <FormattedMessage id="nav.main.money" />
                   </NavDropdown.Item>
                 </div>
@@ -58,24 +58,28 @@ const Header: React.FC = () => {
                   >
                     <div onClick={stopPropagation}>
                       <NavDropdown.Item
+                        className="disabled"
                         onClick={showModal}
                         href={formatPath(intl, PAGES.groupTours)}
                       >
                         <FormattedMessage id="nav.tours.groups" />
                       </NavDropdown.Item>
                       <NavDropdown.Item
+                        className="disabled"
                         onClick={showModal}
                         href={formatPath(intl, PAGES.privateTours)}
                       >
                         <FormattedMessage id="nav.tours.private" />
                       </NavDropdown.Item>
                       <NavDropdown.Item
+                        className="disabled"
                         onClick={showModal}
                         href={formatPath(intl, PAGES.forageTours)}
                       >
                         <FormattedMessage id="nav.tours.foraging" />
                       </NavDropdown.Item>
                       <NavDropdown.Item
+                        className="disabled"
                         onClick={showModal}
                         href={formatPath(intl, PAGES.magicTours)}
                       >
@@ -95,6 +99,7 @@ const Header: React.FC = () => {
                         <FormattedMessage id="nav.workshops.practical-ecology" />
                       </NavDropdown.Item>
                       <NavDropdown.Item
+                        className="disabled"
                         onClick={showModal}
                         href={formatPath(intl, PAGES.magicalEconomy)}
                       >
@@ -116,10 +121,15 @@ const Header: React.FC = () => {
                       <NavDropdown.Item href={airbnbUrl} target="_blank">
                         <FormattedMessage id="nav.stay.airbnb" />
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={showModal} href={formatPath(intl, PAGES.retreats)}>
+                      <NavDropdown.Item
+                        className="disabled"
+                        onClick={showModal}
+                        href={formatPath(intl, PAGES.retreats)}
+                      >
                         <FormattedMessage id="nav.stay.retreats" />
                       </NavDropdown.Item>
                       <NavDropdown.Item
+                        className="disabled"
                         onClick={showModal}
                         href={formatPath(intl, PAGES.apprenticeship)}
                       >
@@ -134,22 +144,42 @@ const Header: React.FC = () => {
                     id="info-dropdown"
                     onClick={anchor(intl, 'info')}
                   >
-                    <NavDropdown.Item href={formatPath(intl, PAGES.blog)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.blog)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.info.posts" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href={formatPath(intl, PAGES.manifests)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.manifests)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.info.manifests" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href={formatPath(intl, PAGES.articles)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.articles)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.info.articles" />
                     </NavDropdown.Item>
                     <NavDropdown.Item href={youtubeUrl} target="_blank">
                       <FormattedMessage id="nav.info.videos" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href={formatPath(intl, PAGES.glossary)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.glossary)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.info.glossary" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href={formatPath(intl, PAGES.sources)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.sources)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.info.sources" />
                     </NavDropdown.Item>
                   </NavDropdown>
@@ -163,13 +193,25 @@ const Header: React.FC = () => {
                     <NavDropdown.Item onClick={anchor(intl, 'vision')}>
                       <FormattedMessage id="nav.vision.dream" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href={formatPath(intl, PAGES.trees)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.trees)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.vision.trees" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href={formatPath(intl, PAGES.forestCity)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.forestCity)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.vision.forest-city" />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href={formatPath(intl, PAGES.poetry)} onClick={showModal}>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(intl, PAGES.poetry)}
+                      onClick={showModal}
+                    >
                       <FormattedMessage id="nav.vision.poetry" />
                     </NavDropdown.Item>
                   </NavDropdown>

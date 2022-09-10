@@ -163,6 +163,10 @@ header {
           }
         }
 
+        &.disabled {
+          color: #33410f80 !important;
+          pointer-events: unset !important;
+        }
 
         @include media-breakpoint-down(md) {
           &::after {
