@@ -25,7 +25,7 @@
     "developer": {
       "title": "Wait!! Are you a web developer and want to come work with us?",
       "text": [
-        "The site is open source on <github>Github</github>, and you can contact <ranbena>our lovely coder Ran</ranbena> directly.",
+        "The site is <github>open source</github>, and you can contact <ranbena>our lovely coder Ran</ranbena> directly.",
         "Or mayhaps you wanna read our <a>terms of employment</a> (spoiler: work for stay)"
       ]
     }
@@ -106,7 +106,7 @@
     "register": "Order a tour",
     "order": "Order a tour",
     "general": {
-      "title": "Tours of The Tree’s apartment and gardens - a visit in another world",
+      "title": "Tours of The Tree’s apartment and gardens - a visit into another world",
       "text": [
         "The best way to be exposed to the research and creation happening at CityTree for 15 years already, is by joining a real-world tour.",
         "<b>What will you be receiving during the tour?</b> Definitely an experience, as well as lots of knowledge and inspiration for your life. How to compost by different methods? How to get and prepare good food? How to culticate a little paradise over a square meter? How to live togethe? How to free the home of poison? And finally: if it is so good, how come it remains marginal? In other words, the tour covers the entire range between practice and politics. The experience activates all senses and sometimes raises strong emotions.ence acitvates all senses and sometimes raises strong emotions.",
@@ -317,27 +317,27 @@
   },
   "contact": {
     "details": {
-      "title": "כל הדרכים להיות בקשר עם העץ",
-      "text": "אנחנו אוהבות לכתוב. אתן מוזמנות להירשם לרשימת התפוצה, אם אתן אוהבות לקרוא. אפשר לעקוב אחרינו גם בפייסבוק או להירשם לקבוצת ההודעות בוואטסאפ.",
+      "title": "All the ways to contact us",
+      "text": "We like to write. You're invited to our mailing list if you liek to read. You can follow us on Facebook or join the Whatsapp group.",
       "whatsapp": {
-        "title": "לכל מי שרוצה רק (או גם) הודעות קצרות:",
-        "text": "אפשר להצטרף לקבוצת וואטסאפ ״דברים שקורים בעץ״.",
-        "button": "להצטרפות לקבוצת ההודעות בוואטסאפ"
+        "title": "For those wanting only (or also) short messages",
+        "text": "join our Whatsapp group ״דברים שקורים בעץ״",
+        "button": "Join the Whatsapp message group"
       },
       "google": {
-        "title": "לגיקים שבינינו (אנחנו אוהבות אתכם!):",
-        "text": "אפשר להוסיף את יומן האירועים שלנו ליומן שלכם בגוגל! וואו!",
-        "button": "להוספת יומן האירועים ״דברים שקורים בעץ״"
+        "title": "For the geeks out there (we do love you!)",
+        "text": "add our events to your Google Calendar! Wow!",
+        "button": "Add the Citytree schedule to your calendar"
       },
       "facebook": {
-        "title": "לשבויים של פייסבוק (כמונו!):",
-        "text": "אפשר לעקוב אחרינו וגם לכתוב אלינו. בפייסבוק:",
-        "button": "לעמוד של עץבעיר בפייסבוק"
+        "title": "For Facebook captives (such as us)",
+        "text": "you can follow us and message us on Facebook",
+        "button": "To the Citytree Facebook page"
       }
     },
     "newsletter": {
       "title": "Sign Up For Our Mailing List",
-      "text": "פעם בחודש וחצי אנחנו שולחות עלון, ובו מידע על כל הסדנאות והאירועים, טיפ שבועי ועדכונים שוטפים. לעתים אנחנו שולחות עוד עלוןצ'יק בין לבין."
+      "text": "Every 6 weeks we send out a bulletin with workshop and event info, tip of the week and updates. We may send out an additional mini-bulletin in between."
     }
   }
 }

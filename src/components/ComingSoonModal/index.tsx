@@ -21,7 +21,11 @@ export const ComingSoonModalProvider: React.FC<{
   return (
     <>
       <StyledModal show={isVisible} onHide={hide} centered>
-        <LeafContainer include={locale === 'he' ? 'left' : 'right'} excludeDefaultClassName>
+        <LeafContainer
+          include={locale === 'he' ? 'left' : 'right'}
+          excludeDefaultClassName
+          opacity={0.6}
+        >
           <StyledModal.Body>
             <Top>
               <Title>
