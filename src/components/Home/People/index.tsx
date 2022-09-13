@@ -35,14 +35,14 @@ function People() {
                     <FloatBox
                       position="center"
                       staticPosition
-                      href={formatPath(intl, PAGES.supporters)}
+                      href={formatPath(intl, PAGES.huggers)}
                       onClick={showModal}
                     >
                       <Title>
-                        <FormattedMessage id="people.supporters.title" />
+                        <FormattedMessage id="people.huggers.title" />
                       </Title>
                       <Paragraph>
-                        <FormattedMessage id="people.supporters.text" />
+                        <FormattedMessage id="people.huggers.text" />
                       </Paragraph>
                     </FloatBox>
                   </Col>

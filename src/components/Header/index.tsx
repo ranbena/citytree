@@ -36,7 +36,7 @@ const Header: React.FC = () => {
                     <FormattedMessage id="nav.main.people" />
                   </NavDropdown.Item>
                   <NavDropdown.Item className="disabled">
-                    <FormattedMessage id="nav.main.supporters" />
+                    <FormattedMessage id="nav.main.huggers" />
                   </NavDropdown.Item>
                   <NavDropdown.Item href={formatAnchor(intl, 'contact')}>
                     <FormattedMessage id="nav.main.contact" />

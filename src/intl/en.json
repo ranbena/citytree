@@ -51,8 +51,8 @@
   "nav": {
     "main": {
       "about": "About us",
-      "people": "CityTree people",
-      "supporters": "Our Community",
+      "people": "People of The Tree",
+      "huggers": "Huggers",
       "contact": "Contact us",
       "money": "Money"
     },
@@ -248,7 +248,7 @@
       "title": "People of The Tree",
       "text": "Tami, Alon, Avi, Einat… Almost everything you wanted to know about us…"
     },
-    "supporters": {
+    "huggers": {
       "title": "Huggers",
       "text": "Several Huggers of The Tree and what they have to say about The Tree…"
     },

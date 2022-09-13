@@ -46,7 +46,7 @@ export enum PAGES {
   trees = '/trees',
   forestCity = '/forest-city',
   poetry = '/poetry',
-  supporters = '/supporters',
+  huggers = '/huggers',
   money = '/money',
 
   // temp external
