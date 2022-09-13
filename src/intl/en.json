@@ -59,9 +59,9 @@
     "tours": {
       "title": "Tours",
       "groups": "Group tours",
-      "private": "Private tours",
-      "foraging": "Foraging tour with Alon",
-      "magic": "Magic tour with Tami"
+      "private": "A tour of your own",
+      "foraging": "Urban foraging tour",
+      "magic": "Urban witchcraft tour"
     },
     "workshops": {
       "title": "Workshops and courses",
@@ -76,16 +76,16 @@
       "apprenticeship": "Apprenticeship"
     },
     "info": {
-      "title": "Information center",
+      "title": "Knowledge center",
       "posts": "Blog",
       "manifests": "Manifests",
       "articles": "Articles",
       "videos": "Videos",
       "glossary": "CityTree glossary",
-      "sources": "Source list"
+      "references": "References"
     },
     "vision": {
-      "title": "Vision",
+      "title": "Dream",
       "dream": "Our world dream",
       "trees": "Tree camaraderie",
       "forest-city": "Forest-City",
@@ -183,40 +183,40 @@
     }
   },
   "info": {
-    "title": "מרכז ידע",
+    "title": "Knowledge center",
     "text": "לכל מי שרוצה להתעמק בידע שנצבר בעץבעיר, בדעה וברעיונות שאנחנו מייצגים – אנחנו פותחות כאן הרבה ממה שהיה במגירה עד כה, להעמקה בזמנכן ולפי נושאי העניין שלכן.",
     "posts": {
-      "title": "רשומות",
+      "title": "Blog",
       "text": "הבלוג של א'נשות העץ"
     },
     "manifests": {
-      "title": "מניפסטים",
+      "title": "Manifests",
       "text": "דפים לתיקון עולם"
     },
     "articles": {
-      "title": "מאמרים",
+      "title": "Articles",
       "text": "ממשק הבית האקולוגי ועד פוסטקפיטליזם"
     },
     "videos": {
-      "title": "סרטונים",
+      "title": "Videos",
       "text": "סדרת סרטוני ״השיבה הביתה״ ועוד, בערוץ יוטיוב של העץ"
     },
     "glossary": {
-      "title": "מילון",
+      "title": "Glossary",
       "text": "חידושי מילים והגיגים על שפה"
     },
-    "sources": {
-      "title": "מקורות",
+    "references": {
+      "title": "References",
       "text": "רשימת הספרים ומקורות הידע המועדפים של העץ"
     }
   },
   "vision": {
     "general": {
-      "title": "עץ חולם עולם אחר שאפשרי",
+      "title": "A Tree dreams another, possible world",
       "text": [
-        "אנו רואות לנגד עינינו עולם שבו גופנו, ביתנו וכדור-הארץ כולו שבים ומקבלים מהא'נשים יחס של כבוד וייראה, ככלים מקודשים לסביבות מחיה חיוניות שהחיים משגשגים בהן במלואם. אנו מאחלות ומאחלים שבני-האדם ימצאו מחדש את מקומם בעולם, כשחוקי הטבע משמשים להם כמדריך.",
-        "אנו רואות תרבות אנושית מחוברת ליסודות החיים: מוקירה את האדמה, מכבדת את המים, חוגגת את האש ומעריכה את האוויר. בזמנים אלה של חוסר־ביטחון ואובדן־אמון, אנו מקווים לימים שבהם תחושת הביטחון תנבע לא ממערכת של כסף אלא משפע של אהבה, חיבור ובריאות. אנו רואות בעיני־רוחנו את הבתים מתמלאים מחדש בחיים ואותנו, הא'נשים, חוזרים הביתה – אל החיבור הבלתי־אמצעי לכל מה שמזין אותנו – לטבע, למזון בריא ומיטיב, לקהילה, לכל מה שחי סביבנו ובתוכנו. השיבה הביתה היא שיבה לאכפתיות, לטיפוח הסביבה שלנו ולהרמוניה עם הפלנטה. הבה ונחזור לתפקידנו כשומרי החיים עלי אדמות.",
-        "<b>הבה ונשוב הביתה!</b>"
+        "We imagine a world in which our body,our  home and the entire Planet are again respected and honored as sacred vessels for vital habitats in which life fully thrives. We wish that people found again their place in the world, with the laws of Nature as their guide.",
+        "We see a human culture connected to the elements of Life:  a culture that cherishes the Soil, respects the Water, celebrated Fire and honors the Air. At this time of uncertainty and loss of confidence, we  hope for days in which the feeling of security will stem not out of a money system of but out of abundant love, connection and health. We imagine homes filling up with life again, and us, people, returning home - to the direct connection to everything that nourishes us - to Nature, to healthy food, to community, to all that lives around and inside us. Homecoming means returning to caring for and enriching our environment as well as creating harmony with the Planet. Let us return to our role as Guardians of Life on Earth.",
+        "<b>Let’s return home!</b>"
       ]
     },
     "trees": {
@@ -234,27 +234,27 @@
   },
   "people": {
     "general": {
-      "title": "מי עומד מאחורי העץ?",
+      "title": "Who’s behind The Tree?",
       "text": [
-        "או יותר נכון, מי עומד מסביבו ומחבק אותו?",
-        "במרכז העשייה תמי צרי שהקימה את עץבעיר ומסורה לו מ-2006, ולצידה אלון אלירן שהצטרף אליה ב-2008. חוברים אליהם אבי ועינת, כל אחת בדרכה, וכל אחת בדרכים שבהן היא תורמת ליצירה המתמשכת. אנחנו גרים יחדיו בדירה האקולוגית, ואיתנו אורחות פורחות ממעגל המחבקות.",
-        "ובכן... מהו ״מעגל המחבקות״?",
-        "״המחבקות״ הן כל אותם א'נשים שעזרו ועוזרים לנו בדרכינו. שבלעדיהן לא היינו כאן היום, ובלעדיהן לא נוכל להמשיך. רבות מהן תורמות לנו בסכום חודשי קבוע (<a>דרך הפטראון או באמצעי תשלום אחרים</a>), ואחרות תורמות בדרכים אחרות ובזמנים שונים - בתרומות חד פעמיות של כסף, של זמן, של יכולות ושל רעיונות ועצות.",
-        "המחבקות זוכות ליחס מיוחד: מפגשים, תכנים רדיקליים והתנסות בכלכלת מתנות.",
-        "<b>הבה ונשוב הביתה!</b>"
+        "Or better said: Who is standing around it, hugging it?",
+        "In the heart of CityTree’s activity is Tami Zori who founded it in 2006 and has devoted her life to it since then; Alon Eliran joined her in 2008. They are joined by Avi and Einat, each in her/his way of contributing to the ongoing creation. We live together in the ecological apartment. From time to time we host Huggers as guests.",
+        "So… what is “the Huggers circle”?",
+        "“Huggers” are all those people who have helped and are helping us along the way; without them we wouldn’t be here today and would not be able to continue. Many of them donate to us a monthly sum (throughPatreon or other payment platforms), others donate in different ways and times - whether a one-time donation, whether time, ideas, skills and advice.",
+        "Huggers receive special attention; they enjoy exclusive get togethers and radical contents and are invited to exercise gift economy.",
+        "<b>Let’s return home!</b>"
       ]
     },
     "people": {
-      "title": "The family",
-      "text": "Tami, Alon, Avi, Einat... almost all you wanted to know about us..."
+      "title": "People of The Tree",
+      "text": "Tami, Alon, Avi, Einat… Almost everything you wanted to know about us…"
     },
     "supporters": {
-      "title": "Our community",
-      "text": "A few of our supporters and their thoughts about Citytree..."
+      "title": "Huggers",
+      "text": "Several Huggers of The Tree and what they have to say about The Tree…"
     },
     "money": {
       "title": "Money",
-      "text": "Wanna know how Citytree earns a living? Here's our whole financial story..."
+      "text": "Curious how exactly do we make our living? “What do we live of?” Here is our complete economic story…"
     }
   },
   "schedule": {
@@ -287,38 +287,37 @@
     }
   },
   "donate": {
-    "title": "כל הדרכים לתת לעץ",
-    "subtitle": ["לתשלום חד פעמי עבור סיור, לימוד, ייעוץ,", "או פשוט כי בא לכן:"],
-    "patreonTitle": "היו פטרונים",
-    "text": "לתמיכה חודשית קבועה:",
+    "title": "All channels for supporting The Tree",
+    "subtitle": ["One time payment for a tour, study, advice", "or just because:"],
+    "patreonTitle": "Become a Patron",
+    "text": "For a monthly support:",
     "channels": {
-      "paypal": "פייפאל",
-      "bit": "ביט",
-      "bitText": "העבירו בביט למספר הסלולרי של עץבעיר",
-      "paybox": "פייבוקס",
-      "cash": "כמו פעם: מזומן!",
-      "cashText": "כסף הוא גם חומר! בואו לבקר ושלמו במטבעות ובניירות כמו פעם!"
+      "paypal": "Paypal",
+      "bit": "Bit",
+      "bitText": "Transfer with Bit to the CityTree mobile number",
+      "paybox": "Paybox",
+      "cash": "Cash, just as it used to be!",
+      "cashText": "Come visit us and pay in coins and bills like yesteryear!"
     }
   },
   "invitation": {
-    "title1": "אנו מזמינים אותך להיות פטרונית או פטרון של עץבעיר!",
+    "title1": "Hug The Tree on Patreon",
     "text1": [
-      "אין לעץבעיר קיום ללא הקהילה שסביבו – החקלאים שמהם אנחנו קונים את האוכל שלנו, המורות והמורים שאנחנו לומדות מהן לאורך השנים, המבקרות בעץ וכל מי שבאה ללמוד, לחיות ולעבוד איתנו. העשייה שלנו מבוססת במהותה על השתתפות פעילה של החברים והחברות השותפות לדרך ועל מערכות יחסים מורכבות. זמן וכסף שמגיעים מחברות וחברים הם נדבך הכרחי לקיומו של עץבעיר.",
-      "אנחנו מאמינות שהמידע שאנו מפיצות ייחודי, מציל חיים וחיוני יותר מתמיד, ולא כל אחד ואחת שזקוקים לו יכולים לשלם עבורו. אנחנו כאן כדי להמשיך ליצור, ללמוד, לחקור, ללמד ולהפיץ את הידע שלנו בערוצי מידע נגישים לכל דורש. ביצירת ערוצים אלה מצטרפים אלינו תלמידות ותלמידים לריטריטים של מגורים ועבודה, תוך שהם מבריאים ולומדים איך לבנות בריאות וחוסן בעולם שנמצא בסכנה.",
-      "כל תרומה כספית תומכת הן ביצירת ערוצי המידע, הן במי שאינם יכולים לשלם עבור הידע והן במתלמדים המתגוררים בעץבעיר.",
-      "עזרו לנו להגיע לעוד א'נשים, לשנות עוד משקי-בית, להזיז עוד ברגים בראשים. אנחנו קוראות לכן ולכם להיכנס למעגל הפטרונים והפטרוניות של עץבעיר."
+      "CityTree cannot exist without its community - the farmers from whom we buy our food, the teachers from whom we continue to learn over the years, the visitors and residents who come to learn, live and work with us. Our activity is essentially based on the active participation of friends and companions and on multidimensional relationships. Time, resources and money given by friends are crucial to CityTree’s existence.",
+      "We believe that the knowledge we distribute is unique, life-saving and necessary. Not everyone who needs it can pay for it. We wish to continue our creation, learning, research, teaching and distribution on different, widely accessible platforms. Moreover, in creation of our platforms provides an educational experience for the apprentices who join us in working retreats. Each and every contribution supports the creation of our knowledge platforms, as well as extends access to those who cannot afford them and supports our students as they learn and build resilience in an endangered world.",
+      "Help us reach more people, transform more households and change more mindsets. We invite you to join CityTree’s circle of patrons."
     ],
-    "title2": "מלבד הסיפוק שבפטרונות תקבלו גם מתנות ומידע רדיקלי",
+    "title2": "In addition to the satisfaction of patronage, you’ll also receive gifts and valuable knowledge",
     "text2": [
-      "הפטרונים והפטרוניות שלנו מקבלות מתנות מיוחדות, מפגשי קהילה מקוונים והצצות ראשונות לשלבי הפיתוח של פרויקטים חדשים. גולת-הכותרת הם הפרויקטים הניסיוניים ששעתם לחשיפה רחבה עדיין לא הגיעה, אם משום שהניסיון נדמה רדיקלי מדי לעת-עתה, ואם משום שאנחנו עדיין בשלבי הפיתוח הראשוניים ואיננו בטוחים לגבי התוצאה. ממניפסט חדש ועד מערכת מהפכנית לטיפול בפסולת אנושית באמצע העיר - עם הפטרונים והפטרוניות שלנו נוח לנו לשתף בתהליך, ומהן נרצה לקבל משוב.",
-      "הביעו את האמון שלכן במתן תרומה חודשית לעץבעיר והיכנסו למעגל ”יודעי-הדבר” שלנו!"
+      "Our patrons receive special gifts, access to online community spaces and early-birds peeks into the development stages of new, sometimes radical, projects. Those are experimental projects that are not yet ready for exposure for a variety of reasons. This is exactly where our friends who believe in our way come in. With our patrons, we feel comfortable sharing works in progress and requesting feedback, whether for a new manifesto or a revolutionary system for treating humanure in the middle of the city.",
+      "Join our circle of trusted confidantes with a monthly contribution to CityTree and become a member of the community."
     ],
-    "patreonText": "הצטרפו לדף של עץבעיר בפטראון!"
+    "patreonText": "Join the CityTree Patreon page!"
   },
   "contact": {
     "details": {
-      "title": "All the ways to contact us",
-      "text": "We like to write. You're invited to our mailing list if you liek to read. You can follow us on Facebook or join the Whatsapp group.",
+      "title": "All channels for contacting The Tree",
+      "text": "We love writing. Most of our writing is in Hebrew. We will gladly register you for email updates in English, sent whenever relevant.",
       "whatsapp": {
         "title": "For those wanting only (or also) short messages",
         "text": "join our Whatsapp group ״דברים שקורים בעץ״",

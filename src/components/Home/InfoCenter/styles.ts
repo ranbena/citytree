@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Hero from 'src/components/Hero';
+import { Title } from 'src/components/Box';
 import { breakpoints } from 'src/utils';
 
 export const InfoCenterHero = styled(Hero)`
@@ -136,5 +137,10 @@ export const InfoCenterHero = styled(Hero)`
         display: block;
       }
     }
+  }
+
+  body[dir='ltr'] & ${Title} {
+    font-size: 22px;
+    margin-bottom: 5px;
   }
 `;

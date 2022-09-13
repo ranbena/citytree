@@ -42,7 +42,7 @@ export enum PAGES {
   blog = '/blog',
   manifests = '/manifests',
   articles = '/articles',
-  sources = '/sources',
+  references = '/references',
   trees = '/trees',
   forestCity = '/forest-city',
   poetry = '/poetry',

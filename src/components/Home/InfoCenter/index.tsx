@@ -32,8 +32,8 @@ function InfoCenter() {
                     <FormattedMessage id="info.articles.title" />
                   </Link>
                   <br />
-                  <Link to={PAGES.sources} onClick={showModal}>
-                    <FormattedMessage id="info.sources.title" />
+                  <Link to={PAGES.references} onClick={showModal}>
+                    <FormattedMessage id="info.references.title" />
                   </Link>
                   <br />
                   <Link to={PAGES.glossary} onClick={showModal}>
@@ -78,12 +78,16 @@ function InfoCenter() {
               </Paragraph>
             </FloatBox>
 
-            <FloatBox position="bottom" href={formatPath(intl, PAGES.sources)} onClick={showModal}>
+            <FloatBox
+              position="bottom"
+              href={formatPath(intl, PAGES.references)}
+              onClick={showModal}
+            >
               <Title>
-                <FormattedMessage id="info.sources.title" />
+                <FormattedMessage id="info.references.title" />
               </Title>
               <Paragraph>
-                <FormattedMessage id="info.sources.text" />
+                <FormattedMessage id="info.references.text" />
               </Paragraph>
             </FloatBox>
 
