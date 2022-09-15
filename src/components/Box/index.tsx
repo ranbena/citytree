@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import { Link, useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-intl';
 import { Col } from 'react-bootstrap';
 import { forEachMessage } from 'src/utils';
 

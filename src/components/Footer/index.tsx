@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             </a>
           </Social>
           <div>
-            <a href={PAGES.people}>
+            <a href={PAGES.people} target="_blank" rel="noreferrer noopener">
               <FormattedMessage id="nav.main.about" />
             </a>
             <br />

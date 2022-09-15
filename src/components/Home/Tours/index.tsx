@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, Button } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/CityTreeSite_Tours_01_Alex.jpeg';
-import './styles.scss';
 import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import { formatPath } from 'src/utils';
 import { PAGES } from 'src/constants';
+import './styles.scss';
 
 function Tours() {
   const intl = useIntl();
@@ -46,13 +46,9 @@ function Tours() {
                     </ComingSoonModalProvider>
                   </Paragraph>
                   <div>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Button onClick={showModal}>
-                          <FormattedMessage id="tours.order" />
-                        </Button>
-                      )}
-                    </ComingSoonModalProvider>
+                    <LinkButton href={PAGES.groupTourFormHebrew} target="_blank">
+                      <FormattedMessage id="tours.order" />
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
@@ -75,13 +71,9 @@ function Tours() {
                     </ComingSoonModalProvider>
                   </Paragraph>
                   <div>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Button onClick={showModal}>
-                          <FormattedMessage id="tours.order" />
-                        </Button>
-                      )}
-                    </ComingSoonModalProvider>
+                    <LinkButton href={PAGES.privateTourFormHebrew} target="_blank">
+                      <FormattedMessage id="tours.order" />
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
