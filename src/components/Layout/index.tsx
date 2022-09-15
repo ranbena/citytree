@@ -1,16 +1,13 @@
 import React, { FC } from 'react';
 import { Helmet } from 'react-helmet';
 import { useIntl } from 'gatsby-plugin-intl';
-
+import { getAbsolutePath } from 'src/utils';
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
-
 import ogImage from 'src/assets/images/og.png';
 import favicon from 'src/assets/images/favicon.ico';
-
 import './styles.scss';
 
-const siteUrl = process.env.GATSBY_SITE_URL;
 const image = {
   path: ogImage,
   width: '765',
@@ -41,7 +38,7 @@ const Layout: FC = ({ children }) => {
         <meta property="og:locale" content={locale} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteName} />
-        <meta property="og:image" content={`${siteUrl}${image.path}`} />
+        <meta property="og:image" content={getAbsolutePath(image.path)} />
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
       </Helmet>

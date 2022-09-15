@@ -2,10 +2,10 @@ import React, { FC } from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-
-import { Navigation, Anchor, WinterAnchor } from 'src/components/PracticalEcology__Summer/styles';
 import Layout from 'src/components/Layout';
 import ogImageHe from 'src/assets/images/practical-ecology-summer/og-he.jpeg';
+import { getAbsolutePath } from 'src/utils';
+import { Navigation, Anchor, WinterAnchor } from 'src/components/PracticalEcology__Summer/styles';
 import TopSection from './TopSection';
 import Overview from './Overview';
 import MagicLink from './MagicLink';
@@ -14,17 +14,16 @@ import Investment from './Investment';
 import Winter from './Winter';
 import Times from './Times';
 
-const siteUrl = process.env.GATSBY_SITE_URL;
+const image = {
+  path: ogImageHe,
+  width: '1600',
+  height: '800',
+};
 
 const Page: FC<PageProps> = () => {
   const { formatMessage } = useIntl();
   const siteTitle = formatMessage({ id: 'practical-ecology-summer.metatitle' });
   const siteDesc = formatMessage({ id: 'practical-ecology-summer.subtitle' });
-  const image = {
-    path: ogImageHe,
-    width: '1600',
-    height: '800',
-  };
 
   return (
     <Layout>
@@ -32,7 +31,7 @@ const Page: FC<PageProps> = () => {
         <meta property="og:title" content={siteTitle} />
         <meta name="description" content={siteDesc} />
         <meta property="og:description" content={siteDesc} />
-        <meta property="og:image" content={`${siteUrl}${image.path}`} />
+        <meta property="og:image" content={getAbsolutePath(image.path)} />
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
       </Helmet>

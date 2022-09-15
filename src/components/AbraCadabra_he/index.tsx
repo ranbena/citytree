@@ -5,6 +5,7 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 
 import Layout from 'src/components/Layout';
 import ogImage from 'src/assets/images/abracadabra-he/og.png';
+import { getAbsolutePath } from 'src/utils';
 import TopSection from './TopSection';
 import Overview from './Overview';
 import Learn from './Learn';
@@ -13,20 +14,19 @@ import Cohost from './Cohost';
 import Host from './Host';
 import Wheel from './Wheel';
 import Contact from './Contact';
-import { Navigation, Anchor } from './styles';
 import Receive from './Receive';
+import { Navigation, Anchor } from './styles';
 
-const siteUrl = process.env.GATSBY_SITE_URL;
+const image = {
+  path: ogImage,
+  width: '1012',
+  height: '506',
+};
 
 const Page: FC<PageProps> = () => {
   const { formatMessage } = useIntl();
   const siteTitle = formatMessage({ id: 'abracadabra-he.metatitle' });
   const siteDesc = formatMessage({ id: 'abracadabra-he.metadesc' });
-  const image = {
-    path: ogImage,
-    width: '1012',
-    height: '506',
-  };
 
   return (
     <Layout>
@@ -34,7 +34,7 @@ const Page: FC<PageProps> = () => {
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content={siteDesc} />
         <meta property="description" content={siteDesc} />
-        <meta property="og:image" content={`${siteUrl}${image.path}`} />
+        <meta property="og:image" content={getAbsolutePath(image.path)} />
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
       </Helmet>

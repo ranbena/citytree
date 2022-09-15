@@ -83,3 +83,7 @@ export const breakpointsMin = {
   lg: '(min-width: 992px)',
   xl: '(min-width: 1200px)',
 };
+
+export function getAbsolutePath(relativePath: string): string {
+  return process.env.GATSBY_SITE_URL + relativePath;
+}
