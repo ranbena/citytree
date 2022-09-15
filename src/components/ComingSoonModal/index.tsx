@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { githubProject, ranbenaPage, whatsappLink, phoneLink, PAGES } from 'src/constants';
+import { githubProject, ranbenaPage, whatsappLink, homePhoneLink, PAGES } from 'src/constants';
 import { forEachMessage } from 'src/utils';
 import LeafContainer from '../LeafContainer';
 import { Title, SubTitle, StyledModal, Developer, Top, Contact } from './styles';
@@ -40,7 +40,10 @@ export const ComingSoonModalProvider: React.FC<{
                 ))}
               </SubTitle>
               <Contact>
-                <FormattedMessage id="coming-soon.contact" values={{ whatsappLink, phoneLink }} />
+                <FormattedMessage
+                  id="coming-soon.contact"
+                  values={{ whatsappLink, homePhoneLink }}
+                />
               </Contact>
             </Top>
             <Developer>

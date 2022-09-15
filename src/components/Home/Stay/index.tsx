@@ -4,7 +4,7 @@ import { Col, Container, OverlayTrigger, Popover, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
-import { airbnbForm, airbnbUrl, PAGES, phone } from 'src/constants';
+import { airbnbForm, airbnbUrl, PAGES, homePhone } from 'src/constants';
 import image from 'src/assets/images/stay_bg.jpeg';
 import { formatPath } from 'src/utils';
 import './styles.scss';
@@ -39,7 +39,7 @@ function Stay() {
                 intlId="stay.general.text"
                 values={{
                   airbnb: (txt: string) => <a href={airbnbUrl}>{txt}</a>,
-                  call: (txt: string) => <PopoverButton text={phone}>{txt}</PopoverButton>,
+                  call: (txt: string) => <PopoverButton text={homePhone}>{txt}</PopoverButton>,
                 }}
               />
             </BoxInner>

@@ -1,6 +1,13 @@
 import React from 'react';
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
-import { email, facebookUrl, PAGES, whatsappUrl, youtubeUrl } from 'src/constants';
+import {
+  emailLink,
+  facebookUrl,
+  homePhoneLink,
+  PAGES,
+  whatsappUrl,
+  youtubeUrl,
+} from 'src/constants';
 import logo from 'src/assets/images/logo.png';
 import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
 import { ReactComponent as YoutubeIcon } from 'src/assets/images/icon_youtube.svg';
@@ -24,10 +31,7 @@ const Footer: React.FC = () => {
             <div>
               <FormattedMessage id="footer.text" />
               <br />
-              <FormattedMessage id="phone">
-                {(phone) => <a href={`tel:${phone}`}>{phone}</a>}
-              </FormattedMessage>{' '}
-              | <a href={`mailto:${email}`}>{email}</a>
+              {homePhoneLink} | {emailLink}
             </div>
           </Info>
           <Social>

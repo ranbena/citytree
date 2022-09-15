@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { emailLink, phoneLink } from 'src/constants';
+import { emailLink, homePhoneLink } from 'src/constants';
 import {
   Title,
   SubTitle,
@@ -30,7 +30,7 @@ const Modal: FC<IProps> = ({ show, hide }) => (
         </EmailItem>
         <PhoneItem>
           <ItemTitle>PHONE</ItemTitle>
-          {phoneLink}
+          {homePhoneLink}
         </PhoneItem>
         <FacebookItem>
           <ItemTitle>FACEBOOK</ItemTitle>

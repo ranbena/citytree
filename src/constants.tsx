@@ -1,15 +1,18 @@
 import React from 'react';
+import { stripPhoneNumber } from './utils';
 
-export const phone = '03-5254196';
-export const bitPhone = '054-7505847';
+export const homePhone = '03-525-4196';
+export const mobilePhone = '054-750-5847';
+export const bitPhone = mobilePhone;
+export const whatsappPhone = mobilePhone;
 export const email = 'tree@citytree.net';
 
 export const whatsappGroupInviteLink = 'https://chat.whatsapp.com/FsTi2IrNA4uJTjk6k554O0';
-export const phoneLink = <a href="tel:035254196">{phone}</a>;
+export const homePhoneLink = <a href={`tel:${stripPhoneNumber(homePhone)}`}>{homePhone}</a>;
 export const emailLink = <a href={`mail:${email}`}>{email}</a>;
 export const patreonUrl = 'https://www.patreon.com/CityTree';
-export const whatsappUrl = 'https://wa.me/972547505847';
-export const whatsappLink = <a href={whatsappUrl}>{bitPhone}</a>;
+export const whatsappUrl = `https://wa.me/972${stripPhoneNumber(whatsappPhone, 1)}`;
+export const whatsappLink = <a href={whatsappUrl}>{whatsappPhone}</a>;
 export const joinPatreonUrl = 'https://www.patreon.com/join/CityTree';
 export const calendarUrl =
   'https://calendar.google.com/calendar/u/1/render?cid=fmhj0n2anv9prsoquhoc22g8m0%40group.calendar.google.com';
