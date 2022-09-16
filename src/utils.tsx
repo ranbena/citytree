@@ -20,11 +20,11 @@ export function getOppositeSizes(sizes: Sizes): Sizes {
 export function stripPhoneNumber(number: string, excludeLeadingZero?: 0 | 1): string {
   let ret = number;
 
-  if (excludeLeadingZero === 1 && number.at(0) === '0') {
+  if (excludeLeadingZero === 1 && number.charAt(0) === '0') {
     ret = number.substring(1);
   }
 
-  ret = ret.replaceAll('-', '');
+  ret = ret.replace(/-/g, '');
 
   return ret;
 }
