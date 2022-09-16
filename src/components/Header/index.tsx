@@ -61,32 +61,16 @@ const Header: React.FC = () => {
                     onClick={anchor(intl, 'tours')}
                   >
                     <div onClick={stopPropagation}>
-                      <NavDropdown.Item
-                        className="disabled"
-                        onClick={showModal}
-                        href={formatPath(intl, PAGES.groupTours)}
-                      >
+                      <NavDropdown.Item href={formatPath(intl, PAGES.groupTours)}>
                         <FormattedMessage id="nav.tours.groups" />
                       </NavDropdown.Item>
-                      <NavDropdown.Item
-                        className="disabled"
-                        onClick={showModal}
-                        href={formatPath(intl, PAGES.privateTours)}
-                      >
+                      <NavDropdown.Item href={formatPath(intl, PAGES.privateTours)}>
                         <FormattedMessage id="nav.tours.private" />
                       </NavDropdown.Item>
-                      <NavDropdown.Item
-                        className="disabled"
-                        onClick={showModal}
-                        href={formatPath(intl, PAGES.forageTours)}
-                      >
+                      <NavDropdown.Item href={formatPath(intl, PAGES.forageTours)}>
                         <FormattedMessage id="nav.tours.foraging" />
                       </NavDropdown.Item>
-                      <NavDropdown.Item
-                        className="disabled"
-                        onClick={showModal}
-                        href={formatPath(intl, PAGES.magicTours)}
-                      >
+                      <NavDropdown.Item href={formatPath(intl, PAGES.magicTours)}>
                         <FormattedMessage id="nav.tours.magic" />
                       </NavDropdown.Item>
                     </div>

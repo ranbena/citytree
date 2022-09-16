@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components';
 import { Wrapper as Box } from '../Box/styles';
 
-export const Wrapper = styled.div<{ boxColor?: string }>`
+export const Wrapper = styled.div<{ boxColor?: string; bgColor?: string }>`
   padding: 50px 0;
   min-height: 500px;
   position: relative;
+  background-color: ${({ bgColor }) => bgColor};
 
   ${Box} {
     background-color: ${({ boxColor }) => boxColor};

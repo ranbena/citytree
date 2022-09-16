@@ -8,7 +8,16 @@ export const whatsappPhone = mobilePhone;
 export const email = 'tree@citytree.net';
 
 export const whatsappGroupInviteLink = 'https://chat.whatsapp.com/FsTi2IrNA4uJTjk6k554O0';
-export const homePhoneLink = <a href={`tel:${stripPhoneNumber(homePhone)}`}>{homePhone}</a>;
+export const homePhoneLink = (
+  <a style={{ whiteSpace: 'nowrap' }} href={`tel:${stripPhoneNumber(homePhone)}`}>
+    {homePhone}
+  </a>
+);
+export const mobilePhoneLink = (
+  <a style={{ whiteSpace: 'nowrap' }} href={`tel:${stripPhoneNumber(mobilePhone)}`}>
+    {mobilePhone}
+  </a>
+);
 export const emailLink = <a href={`mail:${email}`}>{email}</a>;
 export const patreonUrl = 'https://www.patreon.com/CityTree';
 export const whatsappUrl = `https://wa.me/972${stripPhoneNumber(whatsappPhone, 1)}`;

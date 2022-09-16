@@ -3,6 +3,7 @@ import { Wrapper, Image } from './styles';
 
 interface IProps {
   image?: string;
+  bgColor?: string;
   boxColor?: string;
   position?: 'right' | 'left' | 'center';
   anchor?: string;
@@ -12,13 +13,14 @@ interface IProps {
 const Hero: FC<PropsWithChildren<IProps>> = ({
   children,
   image,
+  bgColor,
   boxColor,
   position = 'center',
   anchor = '',
   className,
 }) => (
-  <Wrapper boxColor={boxColor} id={anchor} className={className}>
-    <Image src={image} loading="lazy" width="100%" height="100%" $position={position} />
+  <Wrapper boxColor={boxColor} id={anchor} className={className} bgColor={bgColor}>
+    {image && <Image src={image} loading="lazy" width="100%" height="100%" $position={position} />}
     {children}
   </Wrapper>
 );

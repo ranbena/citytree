@@ -26,7 +26,8 @@ export const Box = styled(MainBox)`
     padding: 50px 40px;
     color: #ffe8f0;
 
-    p {
+    p,
+    p a {
       color: #ffe8e8;
     }
   }

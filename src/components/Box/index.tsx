@@ -44,15 +44,16 @@ export const Paragraph: React.FC<{
 
   if (intlId) {
     const values1 = { ...values, b: (txt: string) => <strong>{txt}</strong> };
+    const messageArr = forEachMessage(intl, intlId, values1);
     return (
       <>
-        {forEachMessage(intl, intlId, values1).map(([txt, key]) => (
+        {messageArr.map(([txt, key], idx) => (
           <StyledParagraph
             key={key}
             weight={weight}
             stretch={stretch}
             reverseUnderline={reverseUnderline}
-            grow={grow}
+            grow={idx === messageArr.length - 1 && grow}
             className={className}
           >
             {txt}

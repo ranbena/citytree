@@ -4,7 +4,7 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
-import image from 'src/assets/images/CityTreeSite_Tours_01_Alex.jpeg';
+import image from 'src/assets/images/tours/CityTreeSite_Tours_01_Alex.jpeg';
 import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import { formatPath } from 'src/utils';
 import { PAGES } from 'src/constants';
@@ -33,17 +33,13 @@ function Tours() {
                     <FormattedMessage id="tours.groups.title" />
                   </Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.groups.text" />
+                    <FormattedMessage id="tours.groups.desc" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Link to={formatPath(intl, PAGES.groupTours)} onClick={showModal}>
-                          - <FormattedMessage id="more-details" />
-                          ...
-                        </Link>
-                      )}
-                    </ComingSoonModalProvider>
+                    <Link to={formatPath(intl, PAGES.groupTours)}>
+                      - <FormattedMessage id="more-details" />
+                      ...
+                    </Link>
                   </Paragraph>
                   <div>
                     <LinkButton href={PAGES.groupTourFormHebrew} target="_blank">
@@ -58,17 +54,13 @@ function Tours() {
                     <FormattedMessage id="tours.private.title" />
                   </Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.private.text" />
+                    <FormattedMessage id="tours.private.desc" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Link to={formatPath(intl, PAGES.privateTours)} onClick={showModal}>
-                          - <FormattedMessage id="more-details" />
-                          ...
-                        </Link>
-                      )}
-                    </ComingSoonModalProvider>
+                    <Link to={formatPath(intl, PAGES.privateTours)}>
+                      - <FormattedMessage id="more-details" />
+                      ...
+                    </Link>
                   </Paragraph>
                   <div>
                     <LinkButton href={PAGES.privateTourFormHebrew} target="_blank">
@@ -85,17 +77,13 @@ function Tours() {
                     <FormattedMessage id="tours.forage.title" />
                   </Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.forage.text" />
+                    <FormattedMessage id="tours.forage.desc" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Link to={formatPath(intl, PAGES.forageTours)} onClick={showModal}>
-                          - <FormattedMessage id="more-details" />
-                          ...
-                        </Link>
-                      )}
-                    </ComingSoonModalProvider>
+                    <Link to={formatPath(intl, PAGES.forageTours)}>
+                      - <FormattedMessage id="more-details" />
+                      ...
+                    </Link>
                   </Paragraph>
                   <div>
                     <ComingSoonModalProvider>
@@ -114,17 +102,13 @@ function Tours() {
                     <FormattedMessage id="tours.magic.title" />
                   </Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.magic.text" />
+                    <FormattedMessage id="tours.magic.desc" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Link to={formatPath(intl, PAGES.magicTours)} onClick={showModal}>
-                          - <FormattedMessage id="more-details" />
-                          ...
-                        </Link>
-                      )}
-                    </ComingSoonModalProvider>
+                    <Link to={formatPath(intl, PAGES.magicTours)}>
+                      - <FormattedMessage id="more-details" />
+                      ...
+                    </Link>
                   </Paragraph>
                   <div>
                     <ComingSoonModalProvider>
