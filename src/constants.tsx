@@ -68,4 +68,6 @@ export enum PAGES {
   // forms
   groupTourFormHebrew = 'https://docs.google.com/forms/d/e/1FAIpQLSdVWnVO9VQSflBY59tG9s9Wdl8fUKRzpPFzO2mrEZH5sP-37Q/viewform?entry.2087709586=סיור לקבוצה מאורגנת – קבוצה מהעבודה מהלימודים או מארגון',
   privateTourFormHebrew = 'https://docs.google.com/forms/d/e/1FAIpQLSdVWnVO9VQSflBY59tG9s9Wdl8fUKRzpPFzO2mrEZH5sP-37Q/viewform?entry.2087709586=סיור משלכם – לך או לקבוצת חברים/משפחה',
+  forageTourFormHebrew = 'https://bit.ly/FormForage',
+  magicTourFormHebrew = 'https://bit.ly/FormMagic',
 }

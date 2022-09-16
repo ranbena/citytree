@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, Button, LinkButton } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/tours/CityTreeSite_Tours_01_Alex.jpeg';
-import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import { formatPath } from 'src/utils';
 import { PAGES } from 'src/constants';
 import './styles.scss';
@@ -14,7 +13,7 @@ function Tours() {
   const intl = useIntl();
 
   return (
-    <Hero image={image} boxColor="#fff8decc" anchor="tours" position="right">
+    <Hero image={image} boxColor="#fff8dedd" anchor="tours" position="right">
       <Container className="tours">
         <Row>
           <Col xl={7} lg={6}>
@@ -86,13 +85,9 @@ function Tours() {
                     </Link>
                   </Paragraph>
                   <div>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Button onClick={showModal}>
-                          <FormattedMessage id="tours.register" />
-                        </Button>
-                      )}
-                    </ComingSoonModalProvider>
+                    <LinkButton href={PAGES.forageTourFormHebrew} target="_blank">
+                      <FormattedMessage id="tours.register" />
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
@@ -111,13 +106,9 @@ function Tours() {
                     </Link>
                   </Paragraph>
                   <div>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <Button onClick={showModal}>
-                          <FormattedMessage id="tours.register" />
-                        </Button>
-                      )}
-                    </ComingSoonModalProvider>
+                    <LinkButton href={PAGES.magicTourFormHebrew} target="_blank">
+                      <FormattedMessage id="tours.register" />
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>

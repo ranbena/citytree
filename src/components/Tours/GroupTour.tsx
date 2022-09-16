@@ -22,7 +22,7 @@ const Box: React.FC = () => (
       }}
     />
     <ButtonWrapper>
-      <LinkButton href={PAGES.groupTourFormHebrew} target="_blank">
+      <LinkButton href={PAGES.groupTourFormHebrew} target="_blank" bgcolor="#4a3b35">
         <FormattedMessage id="tours.orderTour" />
       </LinkButton>
     </ButtonWrapper>

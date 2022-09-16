@@ -27,7 +27,7 @@ function Stay() {
   const intl = useIntl();
 
   return (
-    <Hero image={image} boxColor="#e5f9cfd6" anchor="stay">
+    <Hero image={image} boxColor="#e5f9cfdd" anchor="stay">
       <Container className="stay">
         <Row>
           <Col lg={6}>

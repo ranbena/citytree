@@ -66,7 +66,6 @@ const ButtonStyle = css`
 
   &:active {
     color: white;
-    background-color: #454530;
     transform: translateY(1px);
   }
 
@@ -79,10 +78,18 @@ export const Button = styled.button.attrs(() => ({ className: 'box-button' }))`
   ${ButtonStyle};
 `;
 
-export const LinkButton = styled.a.attrs(() => ({ className: 'box-button' }))`
+export const LinkButton = styled.a.attrs(() => ({ className: 'box-button' }))<{
+  bgcolor?: string;
+}>`
   ${ButtonStyle};
   display: inline-block;
   text-align: center;
+
+  ${({ bgcolor }) =>
+    bgcolor &&
+    css`
+      background-color: ${bgcolor};
+    `}
 
   &:hover {
     text-decoration: none;

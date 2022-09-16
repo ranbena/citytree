@@ -14,7 +14,7 @@ function Vision() {
   return (
     <ComingSoonModalProvider>
       {(showModal) => (
-        <VisionHero image={image} boxColor="#b9d3d6cc" anchor="vision">
+        <VisionHero image={image} boxColor="#b9d3d6dd" anchor="vision">
           <Container>
             <Row>
               <Col md={8} lg={7} xl={6}>

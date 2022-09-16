@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { BoxInner as BoxInnerComponent, LinkButton } from 'src/components/Box';
+import { Paragraph } from '../Box/styles';
 
 export const Title = styled.h1``;
 
 export const BoxInner = styled(BoxInnerComponent)`
   strong {
-    margin: 10px 0;
     display: block;
+    text-align: start;
   }
 
   ${LinkButton} {
@@ -17,6 +18,13 @@ export const BoxInner = styled(BoxInnerComponent)`
     padding: 0 30px;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.9);
+  }
+
+  ${Paragraph} {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
   }
 `;
 

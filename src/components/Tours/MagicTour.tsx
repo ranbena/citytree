@@ -8,24 +8,14 @@ import { BoxInner, ButtonWrapper, Title } from './styles';
 import { ImageContainer } from './Tour/styles';
 
 const Box: React.FC = () => (
-  <BoxInner fullHeight color="#fffcf0">
+  <BoxInner fullHeight color="#cfe5e3">
     <Title>
-      <FormattedMessage id="tours.private.title" />
+      <FormattedMessage id="tours.magic.fullTitle" />
     </Title>
-    <Paragraph
-      grow
-      intlId="tours.private.text"
-      values={{
-        a: (txt: string) => (
-          <a href={PAGES.privateTourFormHebrew} target="_blank" rel="noreferrer noopener">
-            {txt}
-          </a>
-        ),
-      }}
-    />
+    <Paragraph grow intlId="tours.magic.text" />
     <ButtonWrapper>
-      <LinkButton href={PAGES.privateTourFormHebrew} target="_blank" bgcolor="#595337">
-        <FormattedMessage id="tours.orderTour" />
+      <LinkButton href={PAGES.magicTourFormHebrew} target="_blank" bgcolor="#385958">
+        <FormattedMessage id="tours.magic.buttonLabel" />
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>
@@ -34,14 +24,14 @@ const Box: React.FC = () => (
 const Images: React.FC = () => (
   <ImageContainer>
     <StaticImage
-      src="../../assets/images/tours/Couple_garden.jpg"
+      src="../../assets/images/tours/CityTree_TamiWitch_01_Inbal.jpg"
       alt=""
       placeholder="none"
       loading="lazy"
       width={720}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Dates_02_tami.jpg"
+      src="../../assets/images/tours/CityTree_Sage_tami.jpg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -49,7 +39,7 @@ const Images: React.FC = () => (
       height={175}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_OrangePeels_01_tami.jpg"
+      src="../../assets/images/tours/CityTree_Art_01_tami.jpg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -57,7 +47,7 @@ const Images: React.FC = () => (
       height={175}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_harissa_Tami.jpg"
+      src="../../assets/images/tours/CityTree_Tinkture_01_tami.jpg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -67,8 +57,8 @@ const Images: React.FC = () => (
   </ImageContainer>
 );
 
-const PrivateTour: React.FC = () => (
-  <Tour bgcolor="#595337" anchor="private" reverseLayout box={<Box />} images={<Images />} />
+const MagicTour: React.FC = () => (
+  <Tour bgcolor="#385958" anchor="magic" reverseLayout box={<Box />} images={<Images />} />
 );
 
-export default PrivateTour;
+export default MagicTour;
