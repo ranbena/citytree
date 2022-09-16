@@ -5,7 +5,6 @@ export const Title = styled.h1``;
 
 export const BoxInner = styled(BoxInnerComponent)`
   strong {
-    font-weight: 600;
     margin: 10px 0;
     display: block;
   }

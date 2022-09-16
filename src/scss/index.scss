@@ -1,2 +1,8 @@
 @import './bootstrap-overrides.scss';
 @import '~bootstrap/scss/bootstrap';
+
+
+// gatsby override so <StaticImage> doesn't fade in, cause I don't like it
+.gatsby-image-wrapper [data-main-image] {
+  transition: none;
+}

@@ -13,6 +13,8 @@ require('dotenv').config({
 module.exports = {
   pathPrefix: process.env.GATSBY_PATH_PREFIX,
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-root-import',
