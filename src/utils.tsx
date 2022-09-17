@@ -1,4 +1,4 @@
-import { withPrefix } from 'gatsby';
+import { withPrefix, navigate } from 'gatsby';
 import { IntlShape } from 'gatsby-plugin-intl';
 import { IntlMessageFormat } from 'intl-messageformat';
 
@@ -67,7 +67,7 @@ export function formatAnchor(intl: IntlShape, type?: NavAnchorT) {
 }
 
 export const anchor = (intl: IntlShape, type?: NavAnchorT) => () => {
-  window.location.href = formatAnchor(intl, type);
+  navigate(formatAnchor(intl, type));
 };
 
 export const breakpoints = {

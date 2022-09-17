@@ -3,7 +3,7 @@
 import React, { MouseEventHandler } from 'react';
 import { Link } from 'gatsby';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
-import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
+import { useIntl, FormattedMessage, navigate } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
 import { airbnbUrl, joinPatreonUrl, PAGES, youtubeUrl } from 'src/constants';
 import { anchor, formatPath, formatAnchor } from 'src/utils';
@@ -38,8 +38,8 @@ const Header: React.FC = () => {
             <Navbar expand="lg" onToggle={setIsNavExpanded} expanded={isNavExpanded}>
               <NavDropdown
                 renderMenuOnMount
-                title={formatMessage({ id: 'citytree' })}
                 id="logo-dropdown"
+                title={formatMessage({ id: 'citytree' })}
                 onClick={anchor(intl, 'top')}
               >
                 <div onClick={stopPropagation}>
@@ -67,9 +67,9 @@ const Header: React.FC = () => {
                 <Nav>
                   <NavDropdown
                     renderMenuOnMount
-                    title={formatMessage({ id: 'nav.tours.title' })}
                     id="tours-dropdown"
-                    onClick={anchor(intl, 'tours')}
+                    title={formatMessage({ id: 'nav.tours.title' })}
+                    onClick={() => navigate(PAGES.tours)}
                   >
                     <div onClick={stopPropagation}>
                       <NavDropdown.Item href={formatPath(intl, PAGES.groupTours)}>
@@ -89,8 +89,8 @@ const Header: React.FC = () => {
 
                   <NavDropdown
                     renderMenuOnMount
-                    title={formatMessage({ id: 'nav.workshops.title' })}
                     id="workshops-dropdown"
+                    title={formatMessage({ id: 'nav.workshops.title' })}
                     onClick={anchor(intl, 'workshops')}
                   >
                     <div onClick={stopPropagation}>
@@ -112,8 +112,8 @@ const Header: React.FC = () => {
 
                   <NavDropdown
                     renderMenuOnMount
-                    title={formatMessage({ id: 'nav.stay.title' })}
                     id="stay-dropdown"
+                    title={formatMessage({ id: 'nav.stay.title' })}
                     onClick={anchor(intl, 'stay')}
                   >
                     <div onClick={stopPropagation}>
@@ -185,8 +185,8 @@ const Header: React.FC = () => {
 
                   <NavDropdown
                     renderMenuOnMount
-                    title={formatMessage({ id: 'nav.vision.title' })}
                     id="vision-dropdown"
+                    title={formatMessage({ id: 'nav.vision.title' })}
                     onClick={anchor(intl, 'vision')}
                   >
                     <NavDropdown.Item onClick={anchor(intl, 'vision')}>

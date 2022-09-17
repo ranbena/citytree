@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
               <FormattedMessage id="nav.main.about" />
             </a>
             <br />
-            <a href={formatAnchor(intl, 'contact')} onClick={anchor(intl, 'contact')}>
+            <a href={formatAnchor(intl, 'contact')}>
               <FormattedMessage id="nav.main.contact" />
             </a>
             <br />
