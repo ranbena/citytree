@@ -18,13 +18,24 @@ const stopPropagation: MouseEventHandler<HTMLDivElement> = (event) => event.stop
 const Header: React.FC = () => {
   const intl = useIntl();
   const { locale, formatMessage } = intl;
+  const [isNavExpanded, setIsNavExpanded] = React.useState(false);
+
+  const onDocumentClick = React.useCallback(() => setIsNavExpanded(false), []);
+
+  React.useEffect(() => {
+    if (isNavExpanded) {
+      document.addEventListener('click', onDocumentClick);
+    }
+
+    return () => document.removeEventListener('click', onDocumentClick);
+  }, [isNavExpanded]);
 
   return (
     <header>
       <Container>
         <ComingSoonModalProvider>
           {(showModal) => (
-            <Navbar expand="lg">
+            <Navbar expand="lg" onToggle={setIsNavExpanded} expanded={isNavExpanded}>
               <NavDropdown
                 renderMenuOnMount
                 title={formatMessage({ id: 'citytree' })}
