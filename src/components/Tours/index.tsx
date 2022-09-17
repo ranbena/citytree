@@ -11,6 +11,7 @@ import PrivateTour from './PrivateTour';
 import GroupTour from './GroupTour';
 import ForageTour from './ForageTour';
 import MagicTour from './MagicTour';
+import Intro from './Intro';
 
 const image = {
   path: ogImage,
@@ -33,6 +34,7 @@ const Page: React.FC<PageProps> = () => {
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
       </Helmet>
+      <Intro />
       <GroupTour />
       <PrivateTour />
       <ForageTour />

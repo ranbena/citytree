@@ -43,7 +43,11 @@ export const Paragraph: React.FC<{
   const intl = useIntl();
 
   if (intlId) {
-    const values1 = { ...values, b: (txt: string) => <strong>{txt}</strong> };
+    const values1 = {
+      ...values,
+      b: (txt: string) => <strong>{txt}</strong>,
+      linebreak: <br />,
+    };
     const messageArr = forEachMessage(intl, intlId, values1);
     return (
       <>
