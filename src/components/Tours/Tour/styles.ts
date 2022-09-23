@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import HeroComponent from 'src/components/Hero';
-import { breakpoints } from 'src/utils';
 
 export const Hero = styled(HeroComponent)`
   padding: 0;
@@ -22,14 +21,13 @@ export const ImageContainer = styled.div`
 
   & > * {
     max-width: 100%;
-    border-radius: 10px;
 
     &:first-child {
       grid-column: 1 / 4;
     }
-  }
 
-  @media ${breakpoints.lg} {
-    --gap: 30px;
+    img {
+      border-radius: 10px;
+    }
   }
 `;
