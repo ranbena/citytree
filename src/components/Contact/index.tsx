@@ -3,7 +3,13 @@ import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
-import { facebookUrl, whatsappGroupInviteLink, calendarUrl } from 'src/constants';
+import {
+  facebookUrl,
+  whatsappGroupInviteLink,
+  calendarUrl,
+  emailLink,
+  homePhoneLink,
+} from 'src/constants';
 import { ReactComponent as GoogleIcon } from 'src/assets/images/icon_google.svg';
 import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
 import Subscribe from './Subscribe';
@@ -20,8 +26,16 @@ function Contact() {
               <Title>
                 <FormattedMessage id="contact.details.title" />
               </Title>
-              <Paragraph intlId="contact.details.text" />
+              <Paragraph>
+                <FormattedMessage id="contact.details.text" />:
+                <span className="contact-details-top">
+                  {emailLink} | {homePhoneLink}
+                </span>
+              </Paragraph>
               <div className="contact-details">
+                <strong className="contact-also">
+                  <FormattedMessage id="contact.details.also" />:
+                </strong>
                 <h4>
                   <FormattedMessage id="contact.details.whatsapp.title" />
                 </h4>
@@ -64,7 +78,7 @@ function Contact() {
               <Title>
                 <FormattedMessage id="contact.newsletter.title" />
               </Title>
-              <Paragraph intlId="contact.newsletter.text" />
+              <Paragraph intlId="contact.newsletter.text" className="newsletter-desc" />
               <Subscribe />
             </BoxInner>
           </Col>

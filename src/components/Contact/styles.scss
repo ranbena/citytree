@@ -3,6 +3,8 @@
 @import 'src/scss/mixins';
 
 .contact {
+  text-align: center;
+
   .container {
     position: relative;
     background-color: $color6;
@@ -10,9 +12,18 @@
     @include container-padding(70px);
   }
 
+  .contact-details-top {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .contact-details {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 
     h4 {
       font-weight: normal;
@@ -23,6 +34,12 @@
     strong {
       font-size: 16px;
       display: block;
+    }
+
+    .contact-also {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 7px;
     }
 
     .box-button {
@@ -49,6 +66,10 @@
         color: white;
       }
     }
+  }
+
+  .side-column .newsletter-desc {
+    padding: 0 50px;
   }
 
   .subscribe {
