@@ -243,6 +243,10 @@ body[dir='rtl'] .dropdown-menu {
     margin-left: -4px;
   }
 
+  span {
+    white-space: nowrap;
+  }
+
   &:hover {
     transform: translateY(-1px);
     background-color: #fff1f1d8;

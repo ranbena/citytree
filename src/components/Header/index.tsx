@@ -221,7 +221,9 @@ const Header: React.FC = () => {
                   </Link>
                   <Button id="PatreonButton" href={joinPatreonUrl} as="a" target="_blank">
                     <img src={patreonLogo} alt={formatMessage({ id: 'donate.patreonTitle' })} />
-                    <FormattedMessage id="nav.patreon" />
+                    <span>
+                      <FormattedMessage id="nav.patreon" />
+                    </span>
                   </Button>
                 </Nav>
               </Navbar.Collapse>
