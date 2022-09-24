@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { Container as BSContainer } from 'react-bootstrap';
-import { BoxInner as BoxInnerComponent, Title as BoxTitle } from 'src/components/Box';
+import {
+  BoxInner as BoxInnerComponent,
+  Title as BoxTitle,
+  Paragraph as BoxParagraph,
+} from 'src/components/Box';
 import BSHero from 'src/components/Hero';
 import { HEADER_HEIGHT } from 'src/components/Header';
 import { breakpoints } from 'src/utils';
@@ -52,4 +56,8 @@ export const Title = styled(BoxTitle)`
     margin-top: -10px;
     margin-bottom: 15px;
   }
+`;
+
+export const Paragraph = styled(BoxParagraph)`
+  margin-bottom: 25px;
 `;

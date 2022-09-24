@@ -1,11 +1,10 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
-import { Paragraph } from 'src/components/Box';
 import topImage from 'src/assets/images/tours/Citytree_PorterTour_19_alex.jpeg';
 import bottomImage from 'src/assets/images/tours/CityTree_Pomegranet_02_tami.jpg';
 import { FormattedMessage } from 'gatsby-plugin-intl';
-import { TopParallaxContent, BoxInner, Container, Hero, Wrapper, Title } from './styles';
+import { TopParallaxContent, BoxInner, Container, Hero, Wrapper, Title, Paragraph } from './styles';
 
 const Content: React.FC<{ offsetY?: number }> = React.memo(({ offsetY = 0 }) => (
   <Container style={{ transform: `translateY(${offsetY}px)` }}>
@@ -16,7 +15,6 @@ const Content: React.FC<{ offsetY?: number }> = React.memo(({ offsetY = 0 }) => 
             <FormattedMessage id="tours.general.fullTitle" />
           </Title>
           <Paragraph intlId="tours.general.fullText" />
-          <br />
         </BoxInner>
       </Col>
     </Row>
@@ -31,7 +29,7 @@ const Intro: React.FC = () => (
     <Parallax
       className="bottomParallax"
       renderLayer={(percentage) => {
-        const offsetY = percentage < 1 ? -175 * (1 - percentage) : 0;
+        const offsetY = percentage < 0.9 ? -175 * (0.9 - percentage) : 0;
         return (
           <Hero image={bottomImage} boxColor="#f2f9cfde" position="left">
             <Content offsetY={offsetY} />
