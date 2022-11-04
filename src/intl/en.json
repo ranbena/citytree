@@ -102,10 +102,16 @@
     ]
   },
   "tours": {
+    "meta": {
+      "title": "Tours of The Tree’s apartment and gardens - a visit into another world",
+      "desc": "הדרך הטובה ביותר להיחשף למחקר וליצירה שמתרחשים בעץבעיר כבר 15 שנים, הוא להגיע לסיור בעץ - כאן ועכשיו, במרכז העיר תל אביב. אנחנו שמחים להנחות סיורים על פי הזמנה, ויש לנו גם שני סיורים קבועים: סיור הליקוט עם אלון וסיור הכישוף עם תמי."
+    },
     "register": "Order a tour",
     "order": "Order a tour",
+    "orderTour": "Order a tour",
     "general": {
       "title": "Tours of The Tree’s apartment and gardens - a visit into another world",
+      "fullTitle": "Tours of The Tree’s apartment and gardens - a visit into another world",
       "text": [
         "The best way to be exposed to the research and creation happening at CityTree for 15 years already, is by joining a real-world tour.",
         "<b>What will you be receiving during the tour?</b> Definitely an experience, as well as lots of knowledge and inspiration for your life. How to compost by different methods? How to get and prepare good food? How to culticate a little paradise over a square meter? How to live togethe? How to free the home of poison? And finally: if it is so good, how come it remains marginal? In other words, the tour covers the entire range between practice and politics. The experience activates all senses and sometimes raises strong emotions.ence acitvates all senses and sometimes raises strong emotions.",
@@ -113,23 +119,56 @@
         "<b>What’s the size of group the house can host?</b> Groups of up to 15 people; larger groups are split into two.",
         "<b>Tour duration:</b> Tours last between half an hour and four hours; the more time you have the more mini workshops we can include.",
         "<b>We fit the contents and price to your needs and possibilities.</b>"
+      ],
+      "fullText": [
+        "הדרך הטובה ביותר להיחשף למחקר וליצירה שמתרחשים בעץבעיר כבר 16 שנים היא להשתתף בסיור בעץ – כאן ועכשיו, במרכז העיר תל-אביב. אנחנו שמחים להנחות סיורים על פי הזמנה, ויש לנו גם שני סיורים קבועים:{linebreak}סיור הליקוט עם אלון וסיור הכישוף עם תמי.",
+        "<b>מה מקבלים בסיור? חוויה.</b>{linebreak}ידע, טעמים וריחות, השראה לחיים וחומר למחשבה. איך מכינים קומפוסט בשיטות שונות? איך משיגים ומכינים מזון מיטיב? איך מגדלות מזון בעיר? מה מלקטים? איך חיים ביחד? איך מנקים את הבית מרעלים? ולבסוף – אם זה טוב כל-כך, למה זה נשאר בשוליים? החוויה מפעילה את כל החושים ומעלה שאלות מהותיות.",
+        "<b>למי מתאים הסיור? לכל מי שחי על הפלנטה.</b>{linebreak}סטודנטיות, תלמידים, מכיניסטים, קבוצות שלומדות קיימות, ימי צוות, דייט אקולוגי או משפחות שחוגגות יום הולדת, אפשר גם להזמין סיור אישי לגמרי – הפתיעו אותנו!",
+        "<b>משך הסיור:</b> בין חצי שעה לארבע שעות. ככל שיש יותר זמן, אפשר לכלול יותר הדגמות מעשיות (מיני-סדנאות).",
+        "<b>דפדפו ותמצאו את סוג הסיור שמתאים לכן...</b>"
       ]
     },
     "groups": {
       "title": "Group tours",
-      "text": "Organized groups from any company or organization… A tour of the home and gardens, fitted to your group’s preferences"
+      "desc": "Organized groups from any company or organization… A tour of the home and gardens, fitted to your group’s preferences",
+      "text": [
+        "סיור בעץבעיר הוא חוויה מעשירה לכל קבוצה שעוסקת בקיימות או שמעוניינת להתחיל תהליך של הטמעת עקרונות אקולוגיים בפעילות שלה או פשוט לעבור חוויה מיוחדת ביחד.",
+        "החוויה כוללת סיור משק בית בין חדרי הדירה האקולוגית, סיור גינון אקולוגי, קומפוסט וליקוט בגינות, כיבוד, והדגמות מעשיות – הכול פתוח להתאמות על בסיס שיחה.",
+        "<b>אנא מלאו את הטופס ונחזור אליכם, או שפשוט תתקשרו: {homePhoneLink} / {mobilePhoneLink} (אפשר גם <whatsapp>בוואטסאפ</whatsapp>).</b>",
+        "בשיחה נתאם את התאריך, השעה, המחיר, משך הסיור והתוכן שלו, על-פי אופי הקבוצה ומטרת הביקור."
+      ]
     },
     "private": {
       "title": "A tour of your own",
-      "text": "A private visit, a group of friends or family, couples… A tour of the home and gardens, fitted to your group’s preferences"
+      "desc": "A private visit, a group of friends or family, couples… A tour of the home and gardens, fitted to your group’s preferences",
+      "text": [
+        "בילוי בעץבעיר, עם החבר, עם הדודה, עם המשפחה, עם החבר'ה מהעבודה, יכול להיות הזדמנות מצוינת להעלות שאלות, להציף פחדים, לצחוק יחד על החיים, לטעום טעמים חדשים, להכיר צמחים ופרחים שלא ידעתם שאפשר לאכול ולגלות מחדש שיש מקום גם לפשטות ולישירות.",
+        "הסיור כולל סיבוב בדירה האקולוגית ובגינות, שיחה, כיבוד קל, הכנת גלידה או קמבוצ'ה, דחיפת ידיים לחומץ או לקומפוסט – הכול פתוח להתאמות על בסיס שיחה.",
+        "<b>אנחנו מתאימים את התוכן ואת המחיר לדרישות וליכולות שלכם – מלאו נא את <a>טופס ההזמנה כאן למטה</a>, ונמשיך בשיחת טלפון.</b>"
+      ]
     },
     "forage": {
       "title": "Urban foraging tour",
-      "text": "Once every few weeks we go out for a foraging tour around the Bialik Square, guided by Dr. Alon Eliran. The tours are usually in Hebrew, but groups of non Hebrew speakers are welcome to order a tour in English."
+      "fullTitle": "סיור ליקוט עם ד״ר אלון אלירן",
+      "buttonLabel": "להרשמה לסיור ליקוט",
+      "desc": "Once every few weeks we go out for a foraging tour around the Bialik Square, guided by Dr. Alon Eliran. The tours are usually in Hebrew, but groups of non Hebrew speakers are welcome to order a tour in English.",
+      "text": [
+        "פעם בכמה שבועות, ביום שישי ב-11:00 בבוקר, אלון מוביל את כל מי שמצטרפת לסיור הליקוט סביב כיכר ביאליק. ההליכה קלה ונינוחה ,והמרחקים קצרים – יש כל-כך הרבה מה לגלות ומה ללמוד בכל פינת רחוב ומסביב לכל בניין.",
+        "בסיור עוברים על המציאות הספונטניות שברחוב וגם על המציאות הספונטניות-למחצה שבגינות-הפרא שאלון מטפח סביב מבני ציבור בכיכר.",
+        "השתתפות בסיור: 100 ₪ / כמה שאתן רוצות",
+        "<b>פרטים נוספים והרשמה, בטופס:</b>"
+      ]
     },
     "magic": {
       "title": "Urban witchcraft tour",
-      "text": "Once every few weeks weeks we invite for a witchcraft tour of the ecological apartment, guided by Witch Tami Zori. The tours are usually in Hebrew, but groups of non Hebrew speakers are welcome to order a tour in English."
+      "buttonLabel": "להרשמה לסיור כישוף",
+      "desc": "Once every few weeks weeks we invite for a witchcraft tour of the ecological apartment, guided by Witch Tami Zori. The tours are usually in Hebrew, but groups of non Hebrew speakers are welcome to order a tour in English.",
+      "text": [
+        "פעם בכמה שבועות, ביום שישי ב-11:00 בבוקר, תמי מובילה סיור ברחבי הדירה האקולוגית. זוהי ההזדמנות לגלות מה יש בבקבוקונים המסתוריים, ואיך מנהלים משק בית יצרני, יצירתי ושופע כל טוב.",
+        "הסיור כולל שיחה עם תמי, הכנת שיקוי קסמים וכיבוד בלתי רגיל.",
+        "השתתפות בסיור: 100 ₪ / כמה שאתן רוצות",
+        "<b>פרטים נוספים והרשמה, בטופס:</b>"
+      ]
     }
   },
   "workshops": {
