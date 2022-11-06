@@ -173,11 +173,11 @@
   },
   "workshops": {
     "general": {
-      "title": "קורסים וסדנאות - ללמוד בעץ",
+      "title": "Courses and Workshops - Studying at the Tree",
       "text": [
-        "יותר מכל דבר אחר, עץבעיר הוא מרכז ידע. את הידע אנחנו מפיצות בערוצים שונים, כאן אנחנו מציעות לכן פורמטים שונים של סדנאות, קורסים ולימוד. תמיד יש משהו שמתבשל בקדירה, ותמיד אפשר להצטרף באמצע למשהו שהתחיל כבר.",
-        "<b>סדנאות באקולוגיה מעשית</b> שנים רבות לימדו תמי ואלון את מלאכתם בעולם האמיתי, תמי לימדה את משק הבית האקולוגי, ואלון הדריך סיורי ליקוט ועבודה בגינות. העלנו הרבה מהידע שלנו לרשת, בסדרת סרטוני ״השיבה הביתה״ (שזמינה לצפיה בערוץ היוטיוב שלנו)  ובסדרת סדנאות הזום הניתנות לרכישה.",
-        "<b>לימוד</b> עם השנים העמיקו תמי ואלון את הלימוד והיום הם מתמקדים באקולוגיה עמוקה והשינוי המערכתי הרדיקלי שנדרש היום. במחקר של תמי ואלון המיתוסים שעליהם גדלנו מתנפצים זה אחר זה ומוחלפים בסיפורים חדשים ומועילים. הם עושים זאת על ידי שילוב בין תחומים שונים ומגוונים - מהיסטוריה עד אקו-פמיניזם, דרך ביקורת המקרא, כלכלה, אנתרופולוגיה, אנרכיזם ופוסטקפיטליזם."
+        "More than anything, CityTree is a knowledge center. We spread the knowledge through various channelsand offer you various formats of workshops, courses and teachings. There is always something getting cooked in our casserole, and you can always join something that has already begun.",
+        "<b>Workshops in practical ecology</b> For many years, Tami and Alon have been teaching their craft in the real world: Tami with the ecological household and Alon with foraging tours and garden work. We have uploaded much of our knowledge to the network in our “homecoming” video series (available on our Youtube channel) and zoom wokshops available for purchase.",
+        "<b>Study</b> With time, Tami and Alon have deepened into the study and focus today on deep ecology and the needed radical system change. In tier research, Tami and Alon smash one by one  the myths on which we grew up, replacing them with new, beneficial stories. They do so by combining different, varied ranges – from history to ecofeminism, going through bible criticism, economics, anthropology, anarchism and postcapitalism."
       ]
     },
     "ecology": {
@@ -198,10 +198,10 @@
     "general": {
       "title": "Staying and learning at CityTree",
       "text": [
-        "עץבעיר הוא גם מרחב פיזי שמאפשר לימוד מתוך שהייה, עבודה והתבוננות. המרחב מזמן מפגש ישיר עם מערכות אקולוגיות פשוטות, תקשורת כנה, תזונה מיטיבה וטבע עירוני עשיר.",
-        "<b>להתארח כמו תייר</b> אנחנו שמחים לארח א'נשים שמטיילים בעיר ומעדיפים ללון במקום שעושה קומפוסט, שומר על המים, שהמטפח שבו טבעוני ושהמרחב נקי מרעלים. יש לנו <airbnb>עמוד ב-Airbnb</airbnb>, אבל כמובן, אפשר פשוט <call>להתקשר ישירות</call>. מחיר ללילה: 150 ₪, כולל אוכל.",
-        "<b>לבוא לריטריט</b> אפשר לתאם ריטריט אישי, לטובת צום מיצים, למשל, ולקבל את מלוא התמיכה של א'נשות העץ, כולל תזונה מיטיבה והרבה זמן שקט, תמורת 300 ₪ ליום, או להצטרף לריטריט שאנחנו מארגנות מדי פעם.",
-        "<b>להתלמד</b> אפשר לבוא ליום אחד של עבודה תמורת אוכל ולמידה – ללא תשלום, יש רק להשאיר את הפרטים, ונתאם זמן."
+        "CityTree is also a physical space that enables studying out of staying, working and observing. The space creates opportunities for direct encounter with simple ecological systems, sincere communications, nourishing food and rich urban nature.",
+        "<b>Staying like a tourist</b> We are happy to host people traveling in Tel Aviv who prefer staying at a place in which composting is done, water is preserved, the kitchen is vegan and the space is free of poisons. We have a page on Airbnb, but of course, you can simply contact us directly. Price per night: NIS150, food included.",
+        "<b>Coming for a retreat</b> You can set a time for a personal retreat, e.g. a juice fast, and receive the full support of the Tree’s inhabitants, including nourishing food and a lot of quiet time, for NIS300 a day, or you can join a retreat we organize from time to time.",
+        "<b>Apprenticeship</b> You can come for a day of work for food and study - no payment required. Just leave your contact details and we’ll set up the time."
       ]
     },
     "airbnb": {
@@ -222,30 +222,30 @@
   },
   "info": {
     "title": "Knowledge center",
-    "text": "לכל מי שרוצה להתעמק בידע שנצבר בעץבעיר, בדעה וברעיונות שאנחנו מייצגים – אנחנו פותחות כאן הרבה ממה שהיה במגירה עד כה, להעמקה בזמנכן ולפי נושאי העניין שלכן.",
+    "text": "For those interested in deepening into the knowledge gathered at CityTree, as well as what we stand for. We're publishing our stash, for further deepening by interest, at your liesure.",
     "posts": {
       "title": "Blog",
-      "text": "הבלוג של א'נשות העץ"
+      "text": "Our writings (in Hebrew)"
     },
     "manifests": {
       "title": "Manifests",
-      "text": "דפים לתיקון עולם"
+      "text": "Pages for making the world a better place"
     },
     "articles": {
       "title": "Articles",
-      "text": "ממשק הבית האקולוגי ועד פוסטקפיטליזם"
+      "text": "From a ecological home to postcapitalism (in Hebrew)"
     },
     "videos": {
       "title": "Videos",
-      "text": "סדרת סרטוני ״השיבה הביתה״ ועוד, בערוץ יוטיוב של העץ"
+      "text": "Coming home series and more, on CityTree’s Youtube channel"
     },
     "glossary": {
       "title": "Glossary",
-      "text": "חידושי מילים והגיגים על שפה"
+      "text": "Putting our twist on the Hebrew language"
     },
     "references": {
       "title": "References",
-      "text": "רשימת הספרים ומקורות הידע המועדפים של העץ"
+      "text": "A list of the Tree’s preferred books and knowledge sources"
     }
   },
   "vision": {
@@ -295,32 +295,16 @@
       "text": "Curious how exactly do we make our living? “What do we live of?” Here is our complete economic story…"
     }
   },
-  "schedule": {
-    "tabTitle": "התרחשויות בעץ",
-    "title": "התרחשויות בעץ",
-    "subtitle": "התרחשיות קבועות:",
-    "text": [
-      "עץבעיר הוא מרחב למידה והתרחשות, הכולל את הדירה האקולוגית שבכיכר ביאליק וסביבה שלוש גינות בשטחי ציבור.",
-      "יש דרכים שונות להתחבר להתרחשות והלימוד בעץבעיר. מתקיימים אירועים קבועים, לצד אירועים עונתיים, ואפשר גם לבוא לימי התלמדות או מנוחה בתיאום אישי, או להזמין סיור אישי או קבוצתי.",
-      "בימי שלישי ושישי מ-15:00 – אפשר להצטרף לעבודה בגינות עם אלון, רצוי בתיאום מראש.",
-      "פעם בחודש וחצי, בחילופי הזמנים, מתקיים מפגש קהילתי ביום שישי בבוקר, מ-11:00, זמן פתוח להיכרות עם הבית ועם הקהילה שסביבו, וגם הזדמנות לרכוש מכל טוב העץ או להביא לו מתנות מהעודפים שלכן.",
-      "אנו מעדכנים על כל ההתרחשות בעלוני דואֿ״ל, בקבוצת וואטסאפ כללית וכן בקבוצות וואטסאפ ייעודיות לכל סוג פעילות.",
-      "להצטרפות לקבוצת הוואטסאפ <whatsapp>דברים שקורים בעץ</whatsapp>",
-      "אפשר להוריד את לוח הזמנים של העץ ללוח הזמנים שלכן! <calendar>הנה הקישורית כאן</calendar>.",
-      "אפשר לתאם איתנו סדנאות וסיורים משלכן, בזמן שנוח לכם."
-    ],
-    "contact": "בטלפון: {phone} או בדוא”ל: {email}."
-  },
   "sponsorship": {
     "join": {
-      "title": "אולי תרצו להצטרף למעגל התמיכה של העץ?",
+      "title": "Would you like to join The Tree’s support circle on Patreon?",
       "text": [
-        "כל העבודה במסגרת משק הבית והגינה, כמו גם חיי השיתוף עם חברינו לדרך (א'נשים וחברים אחרים) תופשים חלק נכבד מזמן העבודה שלנו, במנותק מכלכלת הכסף והדברים האלה הם שהופכים את עץבעיר למרכז ידע חי ורדיקלי.",
-        "בתחילת הדרך, תמי ואלון ממנו את העץ מחסכונותיהם וכשאלה נגמרו, למזלו של העץ, נמצאו הא'נשים שמתרגשים מכך שאנחנו חיות את מה שאנחנו מדברות עליו. הם נעזרים בלימוד שלנו, ונותנים לנו מכספם כדי שנמשיך לחקור ולחדש.",
-        "קבלו את... <b>מעגל המחבקות!</b>",
-        "ההזמנה פתוחה לתמוך ישירות בעץבעיר, ולקבל מתנות מהעץ:",
-        "<em>קבוצת לימוד חודשית עם תמי</em><em> *  מפגשי זום עונתיים</em><em> *  מפגשים קהילתיים</em><em> *  קבוצת פייסבוק פרטית שבה אנחנו חושפות סודות</em><em> *  תרגול כלכלת מתנות</em>",
-        "<b>בהוקרה רבה על כל מי ומה שמאפשר לנו להמשיך בשלנו! תודה שבאתן!</b>"
+        "Extensive homework and gardening, as well as anything that is part of our shared life, take the majority of our time, apart from money economy, and that is what makes CityTree a radical, living knowledge center.",
+        "In the beginning, Tami and Alon financed The Tree out of the savings, and when those were finished (luckily enough), the right people were found who were excited enough by us walking the talk. They have been helped by what they have learned with us and gice us their money in order for us to continue researching and renewing.",
+        "We proudly present… <b>The Huggers circle!</b>",
+        "The invitation is open to directly support The Tree.",
+        "",
+        "<b>We are grateful for anyone and anything enabling us to continue what we do! Thanks for coming!</b>"
       ]
     }
   },

@@ -24,6 +24,10 @@ function InfoCenter() {
               <Paragraph>
                 <FormattedMessage id="info.text" />
                 <span className="inner-links">
+                  <Link to={PAGES.blog} onClick={showModal}>
+                    <FormattedMessage id="info.posts.title" />
+                  </Link>
+                  <br />
                   <Link to={PAGES.manifests} onClick={showModal}>
                     <FormattedMessage id="info.manifests.title" />
                   </Link>
