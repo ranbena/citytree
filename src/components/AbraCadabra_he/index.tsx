@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 
 import Layout from 'src/components/Layout';
-import ogImage from 'src/assets/images/abracadabra-he/og.png';
+import ogImage from 'src/assets/images/abracadabra-he/og.jpg';
 import { getAbsolutePath } from 'src/utils';
 import TopSection from './TopSection';
 import Overview from './Overview';
@@ -19,8 +19,8 @@ import { Navigation, Anchor } from './styles';
 
 const image = {
   path: ogImage,
-  width: '1012',
-  height: '506',
+  width: '1830',
+  height: '1220',
 };
 
 const Page: FC<PageProps> = () => {

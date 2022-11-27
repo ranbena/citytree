@@ -5,7 +5,6 @@ import { useIntl } from 'gatsby-plugin-intl';
 import Layout from 'src/components/Layout';
 import { getAbsolutePath } from 'src/utils';
 
-// import topImage from 'src/assets/images/tours/Citytree_PorterTour_19_alex.jpg';
 import ogImage from 'src/assets/images/tours/citytree_tour_og.jpg';
 import PrivateTour from './PrivateTour';
 import GroupTour from './GroupTour';

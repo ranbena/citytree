@@ -3,7 +3,7 @@ import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import Layout from 'src/components/Layout';
-import ogImageHe from 'src/assets/images/practical-ecology-summer/og-he.jpeg';
+import ogImageHe from 'src/assets/images/practical-ecology-summer/og-he.jpg';
 import { getAbsolutePath } from 'src/utils';
 import { Navigation, Anchor, WinterAnchor } from 'src/components/PracticalEcology__Summer/styles';
 import TopSection from './TopSection';
@@ -16,8 +16,8 @@ import Times from './Times';
 
 const image = {
   path: ogImageHe,
-  width: '1600',
-  height: '800',
+  width: '1920',
+  height: '1280',
 };
 
 const Page: FC<PageProps> = () => {

@@ -4,14 +4,14 @@ import { useIntl } from 'gatsby-plugin-intl';
 import { getAbsolutePath } from 'src/utils';
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
-import ogImage from 'src/assets/images/og.png';
+import ogImage from 'src/assets/images/og.jpg';
 import favicon from 'src/assets/images/favicon.ico';
 import './styles.scss';
 
 const image = {
   path: ogImage,
-  width: '765',
-  height: '765',
+  width: '1830',
+  height: '1091',
 };
 
 const Layout: FC = ({ children }) => {

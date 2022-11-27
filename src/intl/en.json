@@ -36,7 +36,7 @@
   "meta": {
     "locale": "en_US",
     "title": "CityTree - A Living Knowledge Center for Deep Ecology and Climate Resilience.",
-    "description": "A Living Knowledge Center for Deep Ecology and Climate Resilience",
+    "description": "Another world is possible",
     "keywords": "Ecology, Urban Ecology, Green, Nature in the city, Ecological living, Ecological home, Community garden, Green environment, Compost, Guerilla gardening, Ice cream workshop, Healty chocolate, Natural ice cream, sustainability, Ecological tips, Organic community, Environmental thinking, Consideration nutrition, Responsible consumption, Minimalism, Reuse, Recycling, Home agriculture, Patio garden, Sustainable living, Permaculture, Practical ecology, Water recycling, vegetable growing, Health and Environment",
     "author": "Tami Zori and the CityTree team"
   },
@@ -103,8 +103,8 @@
   },
   "tours": {
     "meta": {
-      "title": "Tours of The Tree’s apartment and gardens - a visit into another world",
-      "desc": "הדרך הטובה ביותר להיחשף למחקר וליצירה שמתרחשים בעץבעיר כבר 15 שנים, הוא להגיע לסיור בעץ - כאן ועכשיו, במרכז העיר תל אביב. אנחנו שמחים להנחות סיורים על פי הזמנה, ויש לנו גם שני סיורים קבועים: סיור הליקוט עם אלון וסיור הכישוף עם תמי."
+      "title": "CityTree - Urban ecology, foraging and witchcraft tours.",
+      "desc": "Tours of The Tree’s apartment and gardens at the center of TelAviv"
     },
     "register": "Order a tour",
     "order": "Order a tour",
