@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import ogImage from 'src/assets/images/abracadabra-en/og.jpeg';
 import Layout from 'src/components/Layout';
+import { getAbsolutePath } from 'src/utils';
 import { Navigation, Anchor } from 'src/components/AbraCadabra_en/styles';
 import {
   TopSection,
@@ -16,7 +17,6 @@ import {
   GetInTouch,
 } from 'src/components/AbraCadabra_en';
 
-const siteUrl = process.env.GATSBY_SITE_URL;
 const image = {
   path: ogImage,
   width: '1600',
@@ -34,7 +34,7 @@ const Page: FC<PageProps> = () => (
       <meta property="og:title" content={siteTitle} />
       <meta name="description" content={siteDesc} />
       <meta property="og:description" content={siteDesc} />
-      <meta property="og:image" content={`${siteUrl}${image.path}`} />
+      <meta property="og:image" content={getAbsolutePath(image.path)} />
       <meta property="og:image:width" content={image.width} />
       <meta property="og:image:height" content={image.height} />
     </Helmet>

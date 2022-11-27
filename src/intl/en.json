@@ -8,17 +8,35 @@
   "dates": "Dates",
   "element": "Element",
   "address": "25 Bialik St., apt. 7",
-  "phone": "+97235254196",
   "or": "or",
   "nis": "nis",
+  "season": "season",
+  "more-details": "More details",
+  "details-purchase": "Details and Purchase",
+  "coming-soon": {
+    "title": "This part is under construction.",
+    "text": [
+      "This content totally exists in the real world - in post-its and docs, thoughts and conversations, in the garden or the house!",
+      "Our work on the website is ant-paced - diligent but tiny, likes to rest but busy at home and the garden - just like in life and play.",
+      "We'll get to this on day, or something else entirely will eventually happen."
+    ],
+    "contact": "In the meantime, simply contact us and ask for the information you're after from an actual person (in 3D!) -- {whatsappLink} (Einat, on whatsapp) / {homePhoneLink} (house phone!)",
+    "developer": {
+      "title": "Wait!! Are you a web developer and want to come work with us?",
+      "text": [
+        "The site is <github>open source</github>, and you can contact <ranbena>our lovely coder Ran</ranbena> directly.",
+        "Or mayhaps you wanna read our <a>terms of employment</a> (spoiler: work for stay)"
+      ]
+    }
+  },
   "newsletter": {
-    "formId": "255340",
-    "dataFormId": "255340-fec3f9f7-2196-da60-33e6-b2f5318d3b83-22"
+    "formId": "320972",
+    "dataFormId": "320972-f7e9df9b-57fe-d3e8-79fc-84250bda7b07-22"
   },
   "meta": {
     "locale": "en_US",
-    "title": "CityTree - an eco-social business and community for urban ecology and climate resilience.",
-    "description": "An eco-social business and community for urban ecology and climate resilience",
+    "title": "CityTree - A Living Knowledge Center for Deep Ecology and Climate Resilience.",
+    "description": "A Living Knowledge Center for Deep Ecology and Climate Resilience",
     "keywords": "Ecology, Urban Ecology, Green, Nature in the city, Ecological living, Ecological home, Community garden, Green environment, Compost, Guerilla gardening, Ice cream workshop, Healty chocolate, Natural ice cream, sustainability, Ecological tips, Organic community, Environmental thinking, Consideration nutrition, Responsible consumption, Minimalism, Reuse, Recycling, Home agriculture, Patio garden, Sustainable living, Permaculture, Practical ecology, Water recycling, vegetable growing, Health and Environment",
     "author": "Tami Zori and the CityTree team"
   },
@@ -26,145 +44,308 @@
     "text": "Contact Us",
     "facebook": "CityTree on Facebook",
     "youtube": "CityTree on Youtube",
-    "instagram": "CityTree on Instagram",
+    "whatsapp": "CityTree on WhatsApp",
     "archive": "The Hebrew archived site"
   },
   "nav": {
-    "donate": "Support CityTree",
-    "visit": "How Can I Join?",
-    "schedule": "Event Schedule",
-    "workshops": {
-      "title": "Learn",
-      "all": "All courses, workshops and tours",
-      "cominghome": {
-        "title": "Coming Home",
-        "subtitle": "A seasonal workshop series"
-      },
-      "abracadabra": {
-        "title": "ABRACADABRA",
-        "subtitle": "magic and ecology online course"
-      }
+    "main": {
+      "about": "About us",
+      "people": "People of The Tree",
+      "huggers": "Huggers",
+      "contact": "Contact us",
+      "money": "Money"
     },
-    "vision": "Our Vision",
-    "store": "Shop"
+    "tours": {
+      "title": "Tours",
+      "groups": "Group tours",
+      "private": "A tour of your own",
+      "foraging": "Urban foraging tour",
+      "magic": "Urban witchcraft tour"
+    },
+    "workshops": {
+      "title": "Workshops and courses",
+      "practical-ecology": "Practical Ecology",
+      "magical-economy": "Magical Economy",
+      "abracadabra": "Abracadabra"
+    },
+    "stay": {
+      "title": "Stay",
+      "airbnb": "Airbnb reservation",
+      "retreats": "Retreats",
+      "apprenticeship": "Apprenticeship"
+    },
+    "info": {
+      "title": "Knowledge center",
+      "posts": "Blog",
+      "manifests": "Manifests",
+      "articles": "Articles",
+      "videos": "Videos",
+      "glossary": "CityTree glossary",
+      "references": "References"
+    },
+    "vision": {
+      "title": "Dream",
+      "dream": "Our world dream",
+      "trees": "Tree camaraderie",
+      "forest-city": "Forest-City",
+      "poetry": "Alon's poetry"
+    },
+    "patreon": "Support us on Patreon"
   },
   "top": {
-    "title": "A Tree’s Homecoming",
-    "visual-text": "Thank you",
+    "title": "CityTree - A Living Knowledge Center for Deep Ecology and Climate Resilience",
     "text": [
-      "CityTree is an eco-social business and community for urban ecology and climate resilience.",
-      "As an independent organization at the intersection of environment, health and community, we live and demonstrate what we teach.",
-      "Founder Tami Zori began her journey into the urban climate resilience space three decades ago, by following the little things that do good to our health and environment. She established CityTree in 2006 in order to share the accumulating know-how with more people, eventually finding herself  living  her passion within a community. Dr. Alon Eliran has also followed his own personal track of holistic nutrition, urban nature, ecological gardening, foraging, activism and research and joined Tami in 2008, to further create a space for healthy, ecologically-attuned lifestyles and knowledge-sharing."
+      "Right in the heart of Tel Aviv lies a bald spot of cement, beside it an old house, beside it a huge ficus tree, in its shade an apartment, and inside - people. These people are us: Tami and Alon, and with us also Einat and Avi and as well as other friends, apprentices and guests acting in the ecological space we are creating here.",
+      "It is a unique Bauhaus apartment, communal and, of course, highly ecological. The space also includes several gardens, ecological too, grown by us around the Bialik Square. Our life is an act of research and art, and every detail of our daily routine is a basis to the knowledge we share - in tours, guidance, workshops, courses, in photos, writing and poetry.",
+      "We are redefining the urban lifestyle to manifest “The More Beautiful World Our Hearts Know is Possible”, a healthy world of renewed human-natural harmony.",
+      "Come take a tour and learn from the Tree!"
     ]
   },
-  "about": {
-    "title": "More about CityTree",
-    "tabTitle": "More about CityTree",
-    "text": [
-      "CityTree is a node on the life supporting network called “The Big Movement”. Its friends are active in the Extinction Rebellion and across the environmental movement. The unique present “the Tree” brings to the map is the immediate and accessible possibility for a personal-communal-ecological change. Even for those of us who are active in community gardens, demonstrations or other public activity, there is often a gap between the public and the personal. CityTree turns the home and work in and around it into a subversive, artistic arena of change and discovery and thus complements and enriches any public activity.",
-      "At CityTree we live the utopia as much as we can here and now - a utopia sending us hints on every step - from the history of our beloved city to a grasshopper discovered in the garden.",
-      "The Tree actively researches how to “live well in the city” and spreads knowhow focused on shaping the urban environment as a space vibrating with life and relationships - amongst people and between them and all living creatures, soil, water and all elements. The valuable information gathered at the Tree may have an existential value at times of crisis, and on the daily basis it simply translates to well being: healthy nutrition, food conservation, returning our organic waste to the soil, working properly with water and plants, human ecology, co-interdependence, circular economy, local productivity."
-    ],
-    "whitepaper": "Further reading (in Hebrew): <a>What does CityTree give the city?</a>"
-  },
-  "visit": {
-    "tabTitle": "When and how can I come or participate?",
-    "title": "When and how can I come or participate?",
-    "subtitle": "To set a volunteering day or a personal retreat, or to come for a visit, please contact Einat:",
-    "sub1":"Group visits: ",
-    "sub2":"Private Visits: ",
-    "sub3":"Consultancy: " ,
-    "sub4":"Learning Days: ",
-    "sub5":"Retreats: ",
-    "sub6":"Community Gatherings: ",
-    "sub7":"Howtos: ",
-    "sub8":"Shop: ",  
-    "text": [
-      "Our ecological apartment is a real model of urban, ecological living. You can come to short tours by setting the time with us in advance. It costs NIS25 per person. You can participate in our work and study through volunteering days at times suitable for you and us.",
-      "You can join a scheduled event such as “vinegar day”, “bokashi day” or “sewing day”, full moon gatherings or seasonal community gatherings. We send weekly updates (in Hebrew) in our  newsletters as well as on our Whatsapp group and Facebook pageWe also offer the option to design your own personal retreat. People come here to study, experience practical ecological living, meet companions, rest and heal.",
-      "To be translated soon...",
-      "To be translated soon...",
-      "To be translated soon...",
-      "You can also join us for a longer period of life and learning, be exposed to ecological practice, meet companions, rest and heal, whether in our seasonal retreats or by personal coordination.",
-      "To be translated soon...",
-      "To be translated soon...",
-      "Our crazy little shop is open! You can set a time and come buy vinegar, bokashi, soap or other zero-waste products. Please visit the <shop>online shop</shop> that is gradually being enriched with more products.",
-      "To be translated soon..."
-    ]
+  "tours": {
+    "meta": {
+      "title": "Tours of The Tree’s apartment and gardens - a visit into another world",
+      "desc": "הדרך הטובה ביותר להיחשף למחקר וליצירה שמתרחשים בעץבעיר כבר 15 שנים, הוא להגיע לסיור בעץ - כאן ועכשיו, במרכז העיר תל אביב. אנחנו שמחים להנחות סיורים על פי הזמנה, ויש לנו גם שני סיורים קבועים: סיור הליקוט עם אלון וסיור הכישוף עם תמי."
+    },
+    "register": "Order a tour",
+    "order": "Order a tour",
+    "orderTour": "Order a tour",
+    "general": {
+      "title": "Tours of The Tree’s apartment and gardens - a visit into another world",
+      "fullTitle": "Tours of The Tree’s apartment and gardens - a visit into another world",
+      "text": [
+        "The best way to be exposed to the research and creation happening at CityTree for 15 years already, is by joining a real-world tour.",
+        "<b>What will you be receiving during the tour?</b> Definitely an experience, as well as lots of knowledge and inspiration for your life. How to compost by different methods? How to get and prepare good food? How to culticate a little paradise over a square meter? How to live togethe? How to free the home of poison? And finally: if it is so good, how come it remains marginal? In other words, the tour covers the entire range between practice and politics. The experience activates all senses and sometimes raises strong emotions.ence acitvates all senses and sometimes raises strong emotions.",
+        "<b>To whom is the tour suited?</b> Students, pupils, preparatory programs, permaculture courses, colleagues, government workers, couples or family birthdays - surprise us!",
+        "<b>What’s the size of group the house can host?</b> Groups of up to 15 people; larger groups are split into two.",
+        "<b>Tour duration:</b> Tours last between half an hour and four hours; the more time you have the more mini workshops we can include.",
+        "<b>We fit the contents and price to your needs and possibilities.</b>"
+      ],
+      "fullText": [
+        "הדרך הטובה ביותר להיחשף למחקר וליצירה שמתרחשים בעץבעיר כבר 16 שנים היא להשתתף בסיור בעץ – כאן ועכשיו, במרכז העיר תל-אביב. אנחנו שמחים להנחות סיורים על פי הזמנה, ויש לנו גם שני סיורים קבועים:{linebreak}סיור הליקוט עם אלון וסיור הכישוף עם תמי.",
+        "<b>מה מקבלים בסיור? חוויה.</b>{linebreak}ידע, טעמים וריחות, השראה לחיים וחומר למחשבה. איך מכינים קומפוסט בשיטות שונות? איך משיגים ומכינים מזון מיטיב? איך מגדלות מזון בעיר? מה מלקטים? איך חיים ביחד? איך מנקים את הבית מרעלים? ולבסוף – אם זה טוב כל-כך, למה זה נשאר בשוליים? החוויה מפעילה את כל החושים ומעלה שאלות מהותיות.",
+        "<b>למי מתאים הסיור? לכל מי שחי על הפלנטה.</b>{linebreak}סטודנטיות, תלמידים, מכיניסטים, קבוצות שלומדות קיימות, ימי צוות, דייט אקולוגי או משפחות שחוגגות יום הולדת, אפשר גם להזמין סיור אישי לגמרי – הפתיעו אותנו!",
+        "<b>משך הסיור:</b> בין חצי שעה לארבע שעות. ככל שיש יותר זמן, אפשר לכלול יותר הדגמות מעשיות (מיני-סדנאות).",
+        "<b>דפדפו ותמצאו את סוג הסיור שמתאים לכן...</b>"
+      ]
+    },
+    "groups": {
+      "title": "Group tours",
+      "desc": "Organized groups from any company or organization… A tour of the home and gardens, fitted to your group’s preferences",
+      "text": [
+        "סיור בעץבעיר הוא חוויה מעשירה לכל קבוצה שעוסקת בקיימות או שמעוניינת להתחיל תהליך של הטמעת עקרונות אקולוגיים בפעילות שלה או פשוט לעבור חוויה מיוחדת ביחד.",
+        "החוויה כוללת סיור משק בית בין חדרי הדירה האקולוגית, סיור גינון אקולוגי, קומפוסט וליקוט בגינות, כיבוד, והדגמות מעשיות – הכול פתוח להתאמות על בסיס שיחה.",
+        "<b>אנא מלאו את הטופס ונחזור אליכם, או שפשוט תתקשרו: {homePhoneLink} / {mobilePhoneLink} (אפשר גם <whatsapp>בוואטסאפ</whatsapp>).</b>",
+        "בשיחה נתאם את התאריך, השעה, המחיר, משך הסיור והתוכן שלו, על-פי אופי הקבוצה ומטרת הביקור."
+      ]
+    },
+    "private": {
+      "title": "A tour of your own",
+      "desc": "A private visit, a group of friends or family, couples… A tour of the home and gardens, fitted to your group’s preferences",
+      "text": [
+        "בילוי בעץבעיר, עם החבר, עם הדודה, עם המשפחה, עם החבר'ה מהעבודה, יכול להיות הזדמנות מצוינת להעלות שאלות, להציף פחדים, לצחוק יחד על החיים, לטעום טעמים חדשים, להכיר צמחים ופרחים שלא ידעתם שאפשר לאכול ולגלות מחדש שיש מקום גם לפשטות ולישירות.",
+        "הסיור כולל סיבוב בדירה האקולוגית ובגינות, שיחה, כיבוד קל, הכנת גלידה או קמבוצ'ה, דחיפת ידיים לחומץ או לקומפוסט – הכול פתוח להתאמות על בסיס שיחה.",
+        "<b>אנחנו מתאימים את התוכן ואת המחיר לדרישות וליכולות שלכם – מלאו נא את <a>טופס ההזמנה כאן למטה</a>, ונמשיך בשיחת טלפון.</b>"
+      ]
+    },
+    "forage": {
+      "title": "Urban foraging tour",
+      "fullTitle": "סיור ליקוט עם ד״ר אלון אלירן",
+      "buttonLabel": "להרשמה לסיור ליקוט",
+      "desc": "Once every few weeks we go out for a foraging tour around the Bialik Square, guided by Dr. Alon Eliran. The tours are usually in Hebrew, but groups of non Hebrew speakers are welcome to order a tour in English.",
+      "text": [
+        "פעם בכמה שבועות, ביום שישי ב-11:00 בבוקר, אלון מוביל את כל מי שמצטרפת לסיור הליקוט סביב כיכר ביאליק. ההליכה קלה ונינוחה ,והמרחקים קצרים – יש כל-כך הרבה מה לגלות ומה ללמוד בכל פינת רחוב ומסביב לכל בניין.",
+        "בסיור עוברים על המציאות הספונטניות שברחוב וגם על המציאות הספונטניות-למחצה שבגינות-הפרא שאלון מטפח סביב מבני ציבור בכיכר.",
+        "השתתפות בסיור: 100 ₪ / כמה שאתן רוצות",
+        "<b>פרטים נוספים והרשמה, בטופס:</b>"
+      ]
+    },
+    "magic": {
+      "title": "Urban witchcraft tour",
+      "buttonLabel": "להרשמה לסיור כישוף",
+      "desc": "Once every few weeks weeks we invite for a witchcraft tour of the ecological apartment, guided by Witch Tami Zori. The tours are usually in Hebrew, but groups of non Hebrew speakers are welcome to order a tour in English.",
+      "text": [
+        "פעם בכמה שבועות, ביום שישי ב-11:00 בבוקר, תמי מובילה סיור ברחבי הדירה האקולוגית. זוהי ההזדמנות לגלות מה יש בבקבוקונים המסתוריים, ואיך מנהלים משק בית יצרני, יצירתי ושופע כל טוב.",
+        "הסיור כולל שיחה עם תמי, הכנת שיקוי קסמים וכיבוד בלתי רגיל.",
+        "השתתפות בסיור: 100 ₪ / כמה שאתן רוצות",
+        "<b>פרטים נוספים והרשמה, בטופס:</b>"
+      ]
+    }
   },
   "workshops": {
-    "title": "Private workshops and tours",
-    "tabTitle": "Private workshops and tours",
-    "subtitle": "For details and registration please contact us:",
-    "text": [
-      "Everyday at CityTree combines work, research and study concentrating on the home and gardens. Groups and families come to us for learning  visits in the ecological space of the home and gardens. The tours can include a light, vegan meal, mini workshops or some work in the garden. We fit the content and price to your needs and ability.",
-      "Short tours cost NIS25 - please set the time with us in advance.",
-      "You can also set a workshop out of our wide choice."
-    ],
-    "contact": "Tel.: {phone} | Whatsapp: {whatsapp}"
+    "general": {
+      "title": "Courses and Workshops - Studying at the Tree",
+      "text": [
+        "More than anything, CityTree is a knowledge center. We spread the knowledge through various channelsand offer you various formats of workshops, courses and teachings. There is always something getting cooked in our casserole, and you can always join something that has already begun.",
+        "<b>Workshops in practical ecology</b> For many years, Tami and Alon have been teaching their craft in the real world: Tami with the ecological household and Alon with foraging tours and garden work. We have uploaded much of our knowledge to the network in our “homecoming” video series (available on our Youtube channel) and zoom wokshops available for purchase.",
+        "<b>Study</b> With time, Tami and Alon have deepened into the study and focus today on deep ecology and the needed radical system change. In tier research, Tami and Alon smash one by one  the myths on which we grew up, replacing them with new, beneficial stories. They do so by combining different, varied ranges – from history to ecofeminism, going through bible criticism, economics, anthropology, anarchism and postcapitalism."
+      ]
+    },
+    "ecology": {
+      "title": "סדנאות זום באקולוגיה מעשית",
+      "text": "סדרה של 36 סדנאות זום מוקלטות, כל סדנה באורך של כשעה וחצי, מלווה במצגת ברורה, מתכונים, וכל המידע על משק הבית האקולוגי, כל פעם על נושא אחד ממוקד (מסבון ועד קומפוסט). כל הקלטה עולה 20 ₪.",
+      "button": "לקטלוג הסדנאות ולרכישה"
+    },
+    "magic": {
+      "title": "קורס כישוף, אקולוגיה עמוקה ושובה של האלה",
+      "text": "הקלטת 8 שיעורי זום שפותחים את השער לעולם האקו-פמיניזם, אקולוגיה כמעשה כישוף וניתוץ הפטריארכיה. שילוב של הרוח עם הקרקע בחיי היומיום, כולם מלווים במצגות מרהיבות, בהנחיית תמי."
+    },
+    "economy": {
+      "title": "לימוד בזום: כלכלת קסם",
+      "text": "13 מפגשים בזום, והרבה חומרי לימוד מומלצים בין לבין. תמי משתפת בלימוד שלה על השיטה הקפיטליסטית ובחלומות על כלכלה אחרת."
+    }
   },
-  "schedule": {
-    "title": "Events at the Tree",
-    "tabTitle": "Events at the Tree",
-    "text": [
-      "“The Tree” is a space or learning and happening for all those connected to it and there are different ways to connect. Working in the gardens as well as community gatherings are open for joining.",
-      "Garden session: every Tuesday and Friday from 3 to 6 you can join Alon.",
-      "Once in a month and a half, at time shifts, we hold a community gathering on a Friday morning, starting at 11 - the house is open to come and get to know the house and the community around it as well as purchase from what the Tree has to offer or bring presents from your used stuff or excess products.",
-      "We send updates about such happenings in our weekly newsletters and on Whatsapp.",
-      "You can download our Google Calendar and add it to yours! <calendar>Here is the link</calendar>.",
-      "You can set with us private workshops or tours at your convenient time."
-    ],
-    "contact": "Tel.: {phone} | {email}"
+  "stay": {
+    "general": {
+      "title": "Staying and learning at CityTree",
+      "text": [
+        "CityTree is also a physical space that enables studying out of staying, working and observing. The space creates opportunities for direct encounter with simple ecological systems, sincere communications, nourishing food and rich urban nature.",
+        "<b>Staying like a tourist</b> We are happy to host people traveling in Tel Aviv who prefer staying at a place in which composting is done, water is preserved, the kitchen is vegan and the space is free of poisons. We have a page on Airbnb, but of course, you can simply contact us directly. Price per night: NIS150, food included.",
+        "<b>Coming for a retreat</b> You can set a time for a personal retreat, e.g. a juice fast, and receive the full support of the Tree’s inhabitants, including nourishing food and a lot of quiet time, for NIS300 a day, or you can join a retreat we organize from time to time.",
+        "<b>Apprenticeship</b> You can come for a day of work for food and study - no payment required. Just leave your contact details and we’ll set up the time."
+      ]
+    },
+    "airbnb": {
+      "title": "Airbnb",
+      "text": "Coming to Tel Aviv for several days? Searching for an ecological space to leave your stuff? Looking for interesting people? You are welcome to book through our Airbnb page or by <a>contacting us directly</a>.",
+      "button": "CityTree on Airbnb"
+    },
+    "retreat": {
+      "title": "Retreats - organized and personal",
+      "text": "Looking for a perfectly ecological place, near the beach, next to a huge tree, with knowleldgable people who have already gone through many retreats and fasts? You reched theright place. A day of personal retreat with full attention by Tami and Alon, best food, good sleep and rest: NIS300.",
+      "button": "Ask for a retreat"
+    },
+    "apprenticeship": {
+      "title": "Apprenticeship - live, work and learn",
+      "text": "Want to push your hands deep into the ecological housework and have them stained by mud or vinegar? We’re at your service, no payment is required and excellent food is granted.",
+      "button": "Ask for Apprenticeship"
+    }
   },
-  "invitation": {
-    "title1": "We Invite You To Join  Our Community of Patrons!",
-    "text1": [
-      "CityTree cannot exist without its community - the farmers from whom we buy our food, the teachers from whom we continue to learn over the years, the visitors and residents who come to learn, live and work with us. Our activity is essentially based on the active participation of friends and companions and on multidimensional relationships. Time, resources and money given by friends are crucial to CityTree’s existence.",
-      "We believe that the knowledge we distribute is unique, life-saving and necessary. Not everyone who needs it can pay for it. We wish to continue our creation, learning, research, teaching and distribution on different, widely accessible platforms. Moreover, in creation of our platforms provides an educational experience for the apprentices who join us in working retreats. Each and every contribution supports the creation of our knowledge platforms, as well as extends access to those who cannot afford them and supports our students as they learn and build resilience in an endangered world.",
-      "Help us reach more people, transform more households and change more mindsets. We invite you to join CityTree’s circle of patrons."
-    ],
-    "title2": "In addition to the satisfaction of patronage, you’ll also receive gifts and valuable knowledge",
-    "text2": [
-      "Our patrons receive special gifts, access to online community spaces and early-birds peeks into the development stages of new, sometimes radical, projects. Those are experimental projects that are not yet ready for exposure for a variety of reasons. This is exactly where our friends who believe in our way come in. With our patrons, we feel comfortable sharing works in progress and requesting feedback, whether for a new manifesto or a revolutionary system for treating humanure in the middle of the city",
-      "Join our circle of trusted confidantes with a monthly contribution to CityTree and become a member of the community."
-    ],
-    "patreonText": "Join the CityTree Patreon page!"
+  "info": {
+    "title": "Knowledge center",
+    "text": "For those interested in deepening into the knowledge gathered at CityTree, as well as what we stand for. We're publishing our stash, for further deepening by interest, at your liesure.",
+    "posts": {
+      "title": "Blog",
+      "text": "Our writings (in Hebrew)"
+    },
+    "manifests": {
+      "title": "Manifests",
+      "text": "Pages for making the world a better place"
+    },
+    "articles": {
+      "title": "Articles",
+      "text": "From a ecological home to postcapitalism (in Hebrew)"
+    },
+    "videos": {
+      "title": "Videos",
+      "text": "Coming home series and more, on CityTree’s Youtube channel"
+    },
+    "glossary": {
+      "title": "Glossary",
+      "text": "Putting our twist on the Hebrew language"
+    },
+    "references": {
+      "title": "References",
+      "text": "A list of the Tree’s preferred books and knowledge sources"
+    }
+  },
+  "vision": {
+    "general": {
+      "title": "A Tree dreams another, possible world",
+      "text": [
+        "We imagine a world in which our body,our  home and the entire Planet are again respected and honored as sacred vessels for vital habitats in which life fully thrives. We wish that people found again their place in the world, with the laws of Nature as their guide.",
+        "We see a human culture connected to the elements of Life:  a culture that cherishes the Soil, respects the Water, celebrated Fire and honors the Air. At this time of uncertainty and loss of confidence, we  hope for days in which the feeling of security will stem not out of a money system of but out of abundant love, connection and health. We imagine homes filling up with life again, and us, people, returning home - to the direct connection to everything that nourishes us - to Nature, to healthy food, to community, to all that lives around and inside us. Homecoming means returning to caring for and enriching our environment as well as creating harmony with the Planet. Let us return to our role as Guardians of Life on Earth.",
+        "<b>Let’s return home!</b>"
+      ]
+    },
+    "trees": {
+      "title": "Tree camaraderie",
+      "text": "One of our dreams came to life for a moment. In that moment we learned a lot about trees..."
+    },
+    "forest-city": {
+      "title": "Forest-City",
+      "text": "A vision we share and dream to the most minute detail..."
+    },
+    "poetry": {
+      "title": "Alon's poetry",
+      "text": "Dr. Alon is an eco-poet. An assortment of his poetry along with photos from Tami..."
+    }
+  },
+  "people": {
+    "general": {
+      "title": "Who’s behind The Tree?",
+      "text": [
+        "Or better said: Who is standing around it, hugging it?",
+        "In the heart of CityTree’s activity is Tami Zori who founded it in 2006 and has devoted her life to it since then; Alon Eliran joined her in 2008. They are joined by Avi and Einat, each in her/his way of contributing to the ongoing creation. We live together in the ecological apartment. From time to time we host Huggers as guests.",
+        "So… what is “the Huggers circle”?",
+        "“Huggers” are all those people who have helped and are helping us along the way; without them we wouldn’t be here today and would not be able to continue. Many of them donate to us a monthly sum (throughPatreon or other payment platforms), others donate in different ways and times - whether a one-time donation, whether time, ideas, skills and advice.",
+        "Huggers receive special attention; they enjoy exclusive get togethers and radical contents and are invited to exercise gift economy.",
+        "<b>Let’s return home!</b>"
+      ]
+    },
+    "people": {
+      "title": "People of The Tree",
+      "text": "Tami, Alon, Avi, Einat… Almost everything you wanted to know about us…"
+    },
+    "huggers": {
+      "title": "Huggers",
+      "text": "Several Huggers of The Tree and what they have to say about The Tree…"
+    },
+    "money": {
+      "title": "Money",
+      "text": "Curious how exactly do we make our living? “What do we live of?” Here is our complete economic story…"
+    }
+  },
+  "sponsorship": {
+    "join": {
+      "title": "Would you like to join The Tree’s support circle on Patreon?",
+      "text": [
+        "Extensive homework and gardening, as well as anything that is part of our shared life, take the majority of our time, apart from money economy, and that is what makes CityTree a radical, living knowledge center.",
+        "In the beginning, Tami and Alon financed The Tree out of the savings, and when those were finished (luckily enough), the right people were found who were excited enough by us walking the talk. They have been helped by what they have learned with us and gice us their money in order for us to continue researching and renewing.",
+        "We proudly present… <b>The Huggers circle!</b>",
+        "The invitation is open to directly support The Tree.",
+        "",
+        "<b>We are grateful for anyone and anything enabling us to continue what we do! Thanks for coming!</b>"
+      ]
+    }
   },
   "donate": {
-    "title": "All channels for giving to the Tree",
-    "subtitle": "To pay for a workshop, course, tour, product or just because you feel like it",
-    "patreonTitle": "BECOME A PATRON",
-    "text": "For a monthly donation",
+    "title": "All channels for supporting The Tree",
+    "subtitle": ["One time payment for a tour, study, advice", "or just because:"],
+    "patreonTitle": "Become a Patron",
+    "text": "For a monthly support:",
     "channels": {
       "paypal": "Paypal",
       "bit": "Bit",
       "bitText": "Transfer with Bit to the CityTree mobile number",
-      "ezpay": "EZpay",
-      "cash": "Cash",
+      "paybox": "Paybox",
+      "cash": "Cash, just as it used to be!",
       "cashText": "Come visit us and pay in coins and bills like yesteryear!"
     }
   },
-  "story": {
-    "title": "Story of The Tree",
-    "text": [
-      "In 2006, Tami Zori, an artist who used to be a businesswoman living in New York, built the first “CityTree” website in order to spread the knowledge that was already changing her life - about healthy nutrition, releasing ourselves from reliance on corporations, gardening and compost and about living with respect for the elements and the web of Life.",
-      "From a virtual blog space, CityTree evolved with time into a physical space for experiencing and practicing a lifestyle based on the cultivation of soil and plants as well as an ecological household in the urban environment.  Shortly after Tami moved to Bialik Square, in the heart of Tel Aviv, in 2008, CityTree was already ripe to the foundation of the “Ecological Salon”, together with Alon Eliran, today a Doctor of Environmental Sciences, and already back then, an urban forager, gardener and ecological poet. At this point, the house was often full of people and activities and it’s friends began calling it “The Tree.”",
-      "Since then, The Tree moved twice more, unbelievably within the tiny Bialik Square. In 2013, seven friends moved together into CityTree’s current residence, at #7, 25 Bialik St., and refounded life at CityTree as one based around communal living. Since then, an exploration of  community became a major theme in CityTree’s work and a growing circle of residents come and go and keep returning, echoing the message: a more beautiful humanity in a more beautiful world is a possible and accessible option. We like to think of CityTree also as a school and even a monastery.",
-      "In addition to art and activism in the home and garden, Tami Zori is active  in the art and communications arenas. In 2012, together with Tammy Avihail and a devoted group of partners, Tami performed with an artwork titled “Zero.Home” which envisioned “the end of the world as we know it.” In 2018, an extension of the original piece  “Zero.Home.Soil” was performed on Muslala’s roof on top of the Clal Building in Jerusalem. Through this performance, she suggested a revolutionary treatment technique of the most avoided material - human waste - using unique soil containers she developed together with the soil artist Daphna Yalon.",
-      "Increasing awareness of the severity of the climate crisis in 2018 shocked The Tree’s dwellers. In response, Tami and Alon increased their activism and joined Extinction Rebellion, throwing CityTree into an economic crisis. This is how the “Uncomfortable Noah’s Ark” campaign was born, mobilizing  several dozens of people who helped CityTree climb out of the debt. The next crisis came with COVID-19 which birthed the Coming Home online series, which brings us to the present :)",
-      "By its essence, The Tree undermines existing economic and social structures and sees its lifestyle as an existential necessity. We refuse to let today’s market rules dictate our range and forms of activity, professional expertise and use “the master's tools” with awareness and caution. Our ideology also contributes to our recurring, at times existential, financial struggles in the current environment. Because our work contributes to the expanding circle of awareness and criticism of the  capitalist system in its current form,and focuses on forming the basis for alternatives, we regularly find ourselves struggling to stay afloat."
-    ]
-  },
-  "vision": {
-    "title": "Our Vision for the World",
-    "text1": [
-      "We envision a world in which our bodies, our homes and the whole Planet, are once again honored and respected by humans as sacred vessels for vital environments where Life thrives fully. We wish people to rediscover their place in the world, guided by the laws of Nature.",
-      "We envision a human culture connected to the foundations of Life: a culture that cherishes the soil, respects the water, celebrates the fire and appreciates the air. At these times of insecurity and loss of faith, we hope for days in which the sense of security will stem not from a system of money but out of abundant love, connectedness and health. We envision homes filled with life again and us, humans, returning home - to the direct connection to all that nourishes us - to nature, healthy and enriching food, community, to all that lives around and within us.",
-      "Homecoming means returning to caring, to enriching our environment and to harmony with the Planet. Let us return to our role as Strewards of Life on Earth.",
-      "Let us return home!"
-    ],
-    "manifest": "We have described our concept of Home in our <manifest>Home manifesto</manifest>.",
-    "kikar": "We have a detailed vision for the city of Tel Aviv which can be adapted to any locality. In our vision, the whole city is a forest-city. Cities all around the world become green and their inhabitants turn them into spaces abundant with life and productivity.",
-    "trees": "Tree are the cornerstone of the forest-city. If we honor the trees as sacred partners, it will become easier to bring the rest of the vision into reality around them. Inspired by these ideas, we wrote <trees>the Holy Trees Treaty (in Hebrew)</trees>."
+  "contact": {
+    "details": {
+      "title": "All channels for contacting The Tree",
+      "text": "First off, we're cool with the old skool",
+      "also": "And also",
+      "whatsapp": {
+        "title": "For those wanting only (or also) short messages",
+        "text": "join our Whatsapp group ״דברים שקורים בעץ״",
+        "button": "Join the Whatsapp message group"
+      },
+      "google": {
+        "title": "For the geeks out there (we do love you!)",
+        "text": "add our events to your Google Calendar! Wow!",
+        "button": "Add the Citytree schedule to your calendar"
+      },
+      "facebook": {
+        "title": "For Facebook captives (such as us)",
+        "text": "you can follow us and message us on Facebook",
+        "button": "To the Citytree Facebook page"
+      }
+    },
+    "newsletter": {
+      "title": "Sign Up For Our Mailing List",
+      "text": "Every 6 weeks we send out a bulletin with workshop and event info, tip of the week and updates. We may send out an additional mini-bulletin in between."
+    }
   }
 }

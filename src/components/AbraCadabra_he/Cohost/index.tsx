@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { forEachMessage } from '../../../utils';
+import { forEachMessage } from 'src/utils';
 
+import { whatsappLink } from 'src/constants';
 import { Wrapper, Container, Box, Title } from './styles';
 
 const Cohost: FC = () => {
@@ -14,9 +15,11 @@ const Cohost: FC = () => {
           <Title>
             <FormattedMessage id="abracadabra-he.cohost.title" />
           </Title>
-          {forEachMessage(intl, 'abracadabra-he.cohost.text').map(([txt, key]) => (
-            <p key={key}>{txt}</p>
-          ))}
+          {forEachMessage(intl, 'abracadabra-he.cohost.text', { whatsappLink }).map(
+            ([txt, key]) => (
+              <p key={key}>{txt}</p>
+            ),
+          )}
         </Box>
       </Container>
     </Wrapper>

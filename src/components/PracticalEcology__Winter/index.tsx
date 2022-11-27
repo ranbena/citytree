@@ -5,6 +5,7 @@ import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 
 import { Navigation, Anchor, SummerAnchor } from 'src/components/PracticalEcology__Winter/styles';
 import Layout from 'src/components/Layout';
+import { getAbsolutePath } from 'src/utils';
 import ogImageHe from 'src/assets/images/practical-ecology-winter/og-he.jpeg';
 import TopSection from './TopSection';
 import Overview from './Overview';
@@ -13,17 +14,16 @@ import Investment from './Investment';
 import Summer from './Summer';
 import Times from './Times';
 
-const siteUrl = process.env.GATSBY_SITE_URL;
+const image = {
+  path: ogImageHe,
+  width: '1600',
+  height: '800',
+};
 
 const Page: FC<PageProps> = () => {
   const { formatMessage } = useIntl();
   const siteTitle = formatMessage({ id: 'practical-ecology-winter.metatitle' });
   const siteDesc = formatMessage({ id: 'practical-ecology-winter.subtitle' });
-  const image = {
-    path: ogImageHe,
-    width: '1600',
-    height: '800',
-  };
 
   return (
     <Layout>
@@ -31,7 +31,7 @@ const Page: FC<PageProps> = () => {
         <meta property="og:title" content={siteTitle} />
         <meta name="description" content={siteDesc} />
         <meta property="og:description" content={siteDesc} />
-        <meta property="og:image" content={`${siteUrl}${image.path}`} />
+        <meta property="og:image" content={getAbsolutePath(image.path)} />
         <meta property="og:image:width" content={image.width} />
         <meta property="og:image:height" content={image.height} />
       </Helmet>

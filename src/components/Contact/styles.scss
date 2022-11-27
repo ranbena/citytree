@@ -1,0 +1,129 @@
+@import 'src/scss/breakpoints';
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+.contact {
+  text-align: center;
+
+  .container {
+    position: relative;
+    background-color: $color6;
+    overflow: hidden;
+    @include container-padding(70px);
+  }
+
+  .contact-details-top {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .contact-details {
+    text-align: center;
+    margin-top: 15px;
+
+    h4 {
+      font-weight: normal;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    strong {
+      font-size: 16px;
+      display: block;
+    }
+
+    .contact-also {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    .box-button {
+      background-color: #657054;
+      width: auto;
+      max-width: 100%;
+      margin: 6px auto 0;
+      padding: 6px 0 5px;
+      padding-inline-end: 20px;
+      height: auto;
+      line-height: normal;
+      border-radius: 5px;
+      color: #E6EAD2;
+      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+
+      svg {
+        height: 21px;
+        margin: 0 10px;
+        position: relative;
+        top: -1px;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .side-column .newsletter-desc {
+    padding: 0 50px;
+  }
+
+  .subscribe {
+    .fc_container {
+      background-color: transparent !important;
+      padding: 0 50px !important;
+      min-height: 410px;
+    }
+
+    .fc_button {
+      color: #E6EAD2 !important;
+
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}
+
+.subscribe-tab-wrapper {
+  position: relative;
+}
+
+.subscribe-tab {
+  position: sticky;
+  top: 261px;
+  left: 0px;
+  z-index: 1;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.subscribe-tab-content {
+  width: 50px;
+  padding: 10px 10px 10px 14px;
+  box-sizing: content-box;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background-color: $color1;
+  color: $color2;
+  font-size: 14px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 2px 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-weight: bold;
+
+  body[dir="ltr"] & {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 14px;
+  }
+}

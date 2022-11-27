@@ -13,11 +13,23 @@ require('dotenv').config({
 module.exports = {
   pathPrefix: process.env.GATSBY_PATH_PREFIX,
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-root-import',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-htaccess',
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        prettier: true,
+        svgo: true,
+        svgoConfig: {
+          plugins: [{ removeViewBox: false }, { cleanupIDs: true }],
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { FormattedMessage } from 'gatsby-plugin-intl';
-import { emailLink, phoneLink, whatsappGroupInviteLink, whatsappLink } from 'src/constants';
+import { emailLink, homePhoneLink, whatsappGroupInviteLink, whatsappLink } from 'src/constants';
 import { Wrapper, Title } from './styles';
 import SignUpButton from '../SignUpButton';
 
@@ -10,7 +10,7 @@ const Contact: FC = () => (
       <FormattedMessage id="abracadabra-he.contact.title" />
     </Title>
     <p>
-      {emailLink} | {phoneLink}
+      {emailLink} | {homePhoneLink}
     </p>
     <p>
       <FormattedMessage id="abracadabra-he.contact.whatsapp" /> {whatsappLink}

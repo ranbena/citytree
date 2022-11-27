@@ -3,7 +3,9 @@
 @import '../../scss/variables';
 
 html {
+  background-color: $color1;
   scroll-behavior: smooth;
+  scroll-padding-top: $header-height;
 }
 
 body[dir='rtl'] {
@@ -14,6 +16,7 @@ body[dir='rtl'] {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: $bgcolor;
 
   .content {
     flex-grow: 1;
@@ -23,12 +26,6 @@ body[dir='rtl'] {
 @include media-breakpoint-down(sm) {
   h1 {
     font-size: 1.8rem;
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .leaf {
-    display: none;
   }
 }
 
@@ -76,5 +73,38 @@ p {
   & > * {
     display: inline-block;
     vertical-align: top;
+  }
+}
+
+.side-column {
+  --gap: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+
+  .row {
+    flex: 1;
+  }
+
+  @include media-breakpoint-down(md) {
+    & {
+      margin-top: var(--gap);
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+      }
+    }
+  }
+}
+
+.mockLink {
+  text-decoration: underline;
+  cursor: default;
+
+  &:hover {
+    text-decoration: none;
   }
 }

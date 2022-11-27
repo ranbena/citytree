@@ -13,9 +13,9 @@ $h2-font-size: 1.5rem;
 $h3-font-size: 1.25rem;
 
 /* navbar */
-$navbar-light-color: $color3;
-$navbar-light-hover-color: rgba($color3, 0.75);
-$navbar-light-active-color: $color3;
+$navbar-light-color: $navTextColor;
+$navbar-light-hover-color: rgba($navTextColor, 0.75);
+$navbar-light-active-color: $navTextColor;
 $navbar-nav-link-padding-x: 1.5rem;
 
 /* buttons */

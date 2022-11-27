@@ -1,22 +1,33 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
 
+import Tours from 'src/components/Home/Tours';
+import Stay from 'src/components/Home/Stay';
+import InfoCenter from 'src/components/Home/InfoCenter';
+import Vision from 'src/components/Home/Vision';
+import Contact from 'src/components/Contact';
+import Sponsorship from 'src/components/Sponsorship';
+import SubscribeTab from 'src/components/Contact/SubscribeTab';
 import Layout from '../components/Layout';
 import TopSection from '../components/Home/TopSection';
-import MoreSection from '../components/Home/MoreSection';
-import DonateSection from '../components/Home/DonateSection';
-import OurStory from '../components/Home/OurStory';
-import OurVision from '../components/Home/OurVision';
+import Workshops from '../components/Home/Workshops';
+import People from '../components/Home/People';
 
 import '../scss/index.scss';
 
 const Home: React.FC<PageProps> = () => (
   <Layout>
-    <TopSection />
-    <MoreSection />
-    <DonateSection />
-    <OurStory />
-    <OurVision />
+    <SubscribeTab>
+      <TopSection />
+      <Tours />
+      <Workshops />
+      <Stay />
+      <InfoCenter />
+      <Vision />
+      <People />
+    </SubscribeTab>
+    <Contact />
+    <Sponsorship />
   </Layout>
 );
 
