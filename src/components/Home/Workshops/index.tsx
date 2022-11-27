@@ -35,7 +35,9 @@ function Workshops() {
                     <FormattedMessage id="workshops.ecology.text" />
                   </Paragraph>
                   <div>
-                    <LinkButton href={formatPath(intl, PAGES.practicalEcologySummer)}>
+                    <LinkButton
+                      href={formatPath(intl, PAGES.practicalEcologySummer, intl.defaultLocale)}
+                    >
                       <FormattedMessage id="workshops.ecology.button" />
                     </LinkButton>
                   </div>
@@ -76,7 +78,7 @@ function Workshops() {
                     <FormattedMessage id="workshops.economy.text" />
                   </Paragraph>
                   <div>
-                    <LinkButton href={formatPath(intl, PAGES.hineni)}>
+                    <LinkButton href={formatPath(intl, PAGES.abracadabra)}>
                       <FormattedMessage id="details-purchase" />
                     </LinkButton>
                   </div>

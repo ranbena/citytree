@@ -23,7 +23,7 @@ const image = {
 const Page: FC<PageProps> = () => {
   const { formatMessage } = useIntl();
   const siteTitle = formatMessage({ id: 'practical-ecology-summer.metatitle' });
-  const siteDesc = formatMessage({ id: 'practical-ecology-summer.subtitle' });
+  const siteDesc = formatMessage({ id: 'practical-ecology-summer.metasubtitle' });
 
   return (
     <Layout>

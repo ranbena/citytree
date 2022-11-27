@@ -38,6 +38,7 @@ export const ranbenaPage = 'https://github.com/ranbena/';
 
 export enum PAGES {
   hineni = '/hineni',
+  abracadabra = '/abracadabra',
   practicalEcologySummer = '/practical-ecology-summer',
   practicalEcologyWinter = '/practical-ecology-winter',
 

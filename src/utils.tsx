@@ -45,9 +45,13 @@ export function forEachMessage(
   return ret;
 }
 
-export function formatPath(intl: IntlShape, path: string): string {
-  const { locale, defaultLocale } = intl;
-  const value = locale === defaultLocale ? path : `/${locale}${path}`;
+export function formatPath(
+  intl: IntlShape,
+  path: string,
+  forcedLocale?: IntlShape['locale'],
+): string {
+  const locale = forcedLocale || intl.locale;
+  const value = locale === intl.defaultLocale ? path : `/${locale}${path}`;
   return withPrefix(value);
 }
 
