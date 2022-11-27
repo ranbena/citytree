@@ -15,10 +15,10 @@ Sorry about having two css frameworks - one day I might finalize transitioning t
 
 ## 🚀 Getting started
 
-This project requires node v14.15.4.
+This project requires node v14.15.4 (predefined in .nvmrc).
 
 ```
-nvm use v14.15.4
+nvm use
 ```
 
 Clone the repo to your local machine.
