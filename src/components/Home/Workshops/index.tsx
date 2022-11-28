@@ -6,7 +6,6 @@ import Hero from 'src/components/Hero';
 import image from 'src/assets/images/workshops_bg.jpeg';
 import { PAGES } from 'src/constants';
 import { formatPath } from 'src/utils';
-import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import './styles.scss';
 
 function Workshops() {
@@ -54,16 +53,9 @@ function Workshops() {
                     <FormattedMessage id="workshops.magic.text" />
                   </Paragraph>
                   <div>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <LinkButton
-                          onClick={showModal}
-                          href={formatPath(intl, PAGES.magicalEconomy)}
-                        >
-                          <FormattedMessage id="details-purchase" />
-                        </LinkButton>
-                      )}
-                    </ComingSoonModalProvider>
+                    <LinkButton href={formatPath(intl, PAGES.abracadabra)}>
+                      <FormattedMessage id="details-purchase" />
+                    </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
@@ -78,7 +70,7 @@ function Workshops() {
                     <FormattedMessage id="workshops.economy.text" />
                   </Paragraph>
                   <div>
-                    <LinkButton href={formatPath(intl, PAGES.abracadabra)}>
+                    <LinkButton href={PAGES.magicalEconomy} target="_blank">
                       <FormattedMessage id="details-purchase" />
                     </LinkButton>
                   </div>

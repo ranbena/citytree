@@ -43,7 +43,6 @@ export enum PAGES {
   practicalEcologyWinter = '/practical-ecology-winter',
 
   // non-exsistent (coming soon modal)
-  magicalEconomy = '/magical-economy',
   retreats = '/retreats',
   apprenticeship = '/apprenticeship',
   tours = '/tours',
@@ -65,6 +64,7 @@ export enum PAGES {
   // temp external
   people = 'https://docs.google.com/document/d/e/2PACX-1vTjJy7kZ9ObbIz6E7oHKkxvF50gNUeo0Rapknf99YzxzYixFvLsao20QbhGnZ3LsEmr9e24qkXsHNq-/pub',
   employment = 'https://docs.google.com/document/d/e/2PACX-1vStK7lP26XAvT35LRbUlDs5mrJeniHmSrGHL53g2YYSPnxc00u395MMfjnx7GcbbcBf-pxCxJgqLkfC/pub',
+  magicalEconomy = 'https://docs.google.com/document/d/1ZPso0AjZKwiUz-IHtoe6drc1Nd56SyqiZ2ZeuxZ59sM/preview',
 
   // forms
   groupTourFormHebrew = 'https://docs.google.com/forms/d/e/1FAIpQLSdVWnVO9VQSflBY59tG9s9Wdl8fUKRzpPFzO2mrEZH5sP-37Q/viewform?entry.2087709586=סיור לקבוצה מאורגנת – קבוצה מהעבודה מהלימודים או מארגון',
