@@ -1,7 +1,16 @@
-.workshops .box-button {
-  background-color: #345109e6;
+.workshops {
+  color: #120e34;
 
-  &:active {
-    background-color: #263a06e6;
+  a, a:hover {
+    color: #120e34;
+  }
+}
+
+.workshops .box-button {
+  background-color: #120e34;
+  color: white !important;
+
+  &:hover {
+    background-color: #120e34e6;
   }
 }

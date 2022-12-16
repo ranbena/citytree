@@ -12,7 +12,7 @@ function Workshops() {
   const intl = useIntl();
 
   return (
-    <Hero image={image} boxColor="#f2f9cfd0" anchor="workshops">
+    <Hero image={image} boxColor="#c8dcf0d0" anchor="workshops">
       <Container className="workshops">
         <Row>
           <Col lg={6}>
@@ -20,7 +20,20 @@ function Workshops() {
               <Title>
                 <FormattedMessage id="workshops.general.title" />
               </Title>
-              <Paragraph intlId="workshops.general.text" />
+              <Paragraph
+                intlId="workshops.general.text"
+                values={{
+                  a: (txt: string) => (
+                    <a
+                      href="https://www.youtube.com/playlist?list=PLrFnw7knHerdSveoSHivFNRfUNCBEpEQd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {txt}
+                    </a>
+                  ),
+                }}
+              />
             </BoxInner>
           </Col>
           <Col lg={6} className="side-column">
@@ -54,7 +67,7 @@ function Workshops() {
                   </Paragraph>
                   <div>
                     <LinkButton href={formatPath(intl, PAGES.abracadabra)}>
-                      <FormattedMessage id="details-purchase" />
+                      <FormattedMessage id="workshops.magic.button" />
                     </LinkButton>
                   </div>
                 </BoxInner>
@@ -71,7 +84,7 @@ function Workshops() {
                   </Paragraph>
                   <div>
                     <LinkButton href={PAGES.magicalEconomy} target="_blank">
-                      <FormattedMessage id="details-purchase" />
+                      <FormattedMessage id="workshops.economy.button" />
                     </LinkButton>
                   </div>
                 </BoxInner>

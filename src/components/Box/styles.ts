@@ -50,12 +50,15 @@ const ButtonStyle = css`
   border: none;
   background-color: #424234;
   color: #c6d1be;
-  width: 100%;
-  max-width: 300px;
+  padding: 0 25px;
   font-size: 16px;
   border-radius: 2px;
   height: 26px;
   line-height: 24px;
+
+  @media ${breakpoints.md} {
+    min-width: 50%;
+  }
 
   transition-property: background-color, color;
   transition-duration: 0.2s;
@@ -133,8 +136,8 @@ export const Wrapper = styled.div<{
       padding: 20px 30px;
 
       ${Title} {
-        font-size: 18px;
-        margin-bottom: 5px;
+        font-size: 23px;
+        margin-bottom: 10px;
       }
 
       body[dir='ltr'] & {

@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
+import { Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/tours/CityTreeSite_Tours_01_Alex.jpeg';
 import { formatPath } from 'src/utils';
 import { PAGES } from 'src/constants';
-import './styles.scss';
+import { Title } from './styles';
 
 function Tours() {
   const intl = useIntl();
