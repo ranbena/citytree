@@ -52,7 +52,7 @@ export enum PAGES {
   magicTours = '/tours/#magic',
   glossary = '/glossary',
   blog = '/blog',
-  manifests = '/manifests',
+  manifestos = '/manifestos',
   articles = '/articles',
   references = '/references',
   trees = '/trees',

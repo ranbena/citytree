@@ -152,10 +152,10 @@ const Header: React.FC = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.manifests)}
+                      href={formatPath(intl, PAGES.manifestos)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.info.manifests" />
+                      <FormattedMessage id="nav.info.manifesots" />
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"

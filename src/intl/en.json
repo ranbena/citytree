@@ -77,7 +77,7 @@
     "info": {
       "title": "Knowledge center",
       "posts": "Blog",
-      "manifests": "Manifests",
+      "manifestos": "Manifestos",
       "articles": "Articles",
       "videos": "Videos",
       "glossary": "CityTree glossary",
@@ -230,13 +230,13 @@
       "title": "Blog",
       "text": "Our writings (in Hebrew)"
     },
-    "manifests": {
-      "title": "Manifests",
+    "manifestos": {
+      "title": "Manifestos",
       "text": "Pages for making the world a better place"
     },
     "articles": {
       "title": "Articles",
-      "text": "From a ecological home to postcapitalism (in Hebrew)"
+      "text": "From the ecological household to postcapitalism (in Hebrew)"
     },
     "videos": {
       "title": "Videos",
