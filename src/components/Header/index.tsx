@@ -94,7 +94,7 @@ const Header: React.FC = () => {
                     onClick={anchor(intl, 'workshops')}
                   >
                     <div onClick={stopPropagation}>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.practicalEcologySummer)}>
+                      <NavDropdown.Item href={formatPath(intl, PAGES.practicalEcology)}>
                         <FormattedMessage id="nav.workshops.practical-ecology" />
                       </NavDropdown.Item>
                       <NavDropdown.Item

@@ -47,9 +47,7 @@ function Workshops() {
                     <FormattedMessage id="workshops.ecology.text" />
                   </Paragraph>
                   <div>
-                    <LinkButton
-                      href={formatPath(intl, PAGES.practicalEcologySummer, intl.defaultLocale)}
-                    >
+                    <LinkButton href={formatPath(intl, PAGES.practicalEcology, intl.defaultLocale)}>
                       <FormattedMessage id="workshops.ecology.button" />
                     </LinkButton>
                   </div>
