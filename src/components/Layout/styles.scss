@@ -6,6 +6,7 @@ html {
   background-color: $color1;
   scroll-behavior: smooth;
   scroll-padding-top: $header-height;
+  scroll-snap-type: y proximity;
 }
 
 body[dir='rtl'] {

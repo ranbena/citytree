@@ -40,7 +40,7 @@ export const Hero = styled(BSHero)`
 export const Wrapper = styled.div`
   .bottomParallax {
     overflow: visible !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    scroll-snap-align: start;
   }
 
   .topParallax img {
