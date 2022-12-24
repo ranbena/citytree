@@ -7,6 +7,9 @@ import { getAbsolutePath } from 'src/utils';
 
 import ogImage from 'src/assets/images/workshops/og.jpg';
 import Intro from './Intro';
+import ToxinFree from './ToxinFree';
+import BodyCare from './BodyCare';
+import Compost from './Compost';
 
 const image = {
   path: getAbsolutePath(ogImage),
@@ -30,6 +33,9 @@ const Page: React.FC<PageProps> = () => {
         <meta property="og:image:height" content={image.height} />
       </Helmet>
       <Intro />
+      <ToxinFree />
+      <BodyCare />
+      <Compost />
     </Layout>
   );
 };

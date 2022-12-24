@@ -28,6 +28,7 @@
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
     "no-confusing-arrow": "off",
+    "indent": "off",
     "import/extensions": [
       "error",
       "ignorePackages",

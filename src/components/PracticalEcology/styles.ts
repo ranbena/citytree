@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { BoxInner as BoxInnerComponent, LinkButton } from 'src/components/Box';
-import { Paragraph } from '../Box/styles';
+import { StyledSessions } from './Package/styles';
 
 export const Title = styled.h1``;
 
-export const BoxInner = styled(BoxInnerComponent)`
+export const BoxInner = styled(BoxInnerComponent)<{ textColor?: string }>`
   strong {
     display: block;
     text-align: start;
@@ -16,20 +16,31 @@ export const BoxInner = styled(BoxInnerComponent)`
     line-height: 35px;
     width: auto;
     padding: 0 30px;
-    margin: 0 auto;
     color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
   }
 
-  ${Paragraph} {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 23px;
-    margin-bottom: 20px;
+  &,
+  ${StyledSessions}, ${StyledSessions} a {
+    ${({ textColor }) =>
+      textColor &&
+      css`
+        color: ${textColor};
+      `}
   }
 `;
 
 export const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+`;
+
+export const Paragraph = styled.p`
+  text-align: justify;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 13px;
 `;
