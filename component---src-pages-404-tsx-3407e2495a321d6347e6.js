@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"i6+/":function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),c=t.n(a),i=t("vOnD"),l=t("VXBa"),o=i.b.h1.withConfig({displayName:"sc-404__Text",componentId:"mzqblc-0"})(["text-align:center;margin:100px 0;"]);e.default=function(){return c.a.createElement(l.a,null,c.a.createElement(o,null,"העמוד לא נמצא"))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-3407e2495a321d6347e6.js.map
