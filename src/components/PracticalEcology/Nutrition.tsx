@@ -7,23 +7,34 @@ import { BoxInner, ButtonWrapper, Title, Paragraph } from './styles';
 import Package, { Sessions } from './Package';
 import { ImageContainer, Spacer } from './Package/styles';
 
-const sessions = ['deodorant', 'soap', 'toothpaste', 'hairwash', 'suncare'];
+const sessions = [
+  'breakfast',
+  'lunch',
+  'cooking',
+  'bread',
+  'kombucha',
+  'sweets',
+  'chocolate',
+  'dairy',
+  'preservation',
+  'frozen',
+];
 
 const Box: React.FC = () => (
-  <BoxInner fullHeight color="#E7F9F1d9" textColor="#293E35">
+  <BoxInner fullHeight color="#F9E7F5d9" textColor="#120e34">
     <Title>
-      <FormattedMessage id="practical-ecology.packs.body-care.title" />
+      <FormattedMessage id="practical-ecology.packs.nutrition.title" />
     </Title>
 
     <Paragraph>
-      <FormattedMessage id="practical-ecology.packs.body-care.desc.0" />
+      <FormattedMessage id="practical-ecology.packs.nutrition.desc.0" />
     </Paragraph>
     <Paragraph>
-      <FormattedMessage id="practical-ecology.packs.body-care.desc.1" />
+      <FormattedMessage id="practical-ecology.packs.nutrition.desc.1" />
     </Paragraph>
     <Spacer />
     <Paragraph>
-      <FormattedMessage id="practical-ecology.packs.body-care.desc.2" />
+      <FormattedMessage id="practical-ecology.packs.nutrition.desc.2" />
     </Paragraph>
     <Spacer />
     <Paragraph>
@@ -39,11 +50,11 @@ const Box: React.FC = () => (
     <Paragraph>
       <FormattedMessage
         id="practical-ecology.pack-price"
-        values={{ price: 70, b: (txt: string) => <b>{txt}</b> }}
+        values={{ price: 180, b: (txt: string) => <b>{txt}</b> }}
       />
     </Paragraph>
     <ButtonWrapper>
-      <LinkButton href={PAGES.forageTourFormHebrew} target="_blank" bgcolor="#293E35">
+      <LinkButton href={PAGES.forageTourFormHebrew} target="_blank" bgcolor="#593749">
         <FormattedMessage id="practical-ecology.purchase" />
       </LinkButton>
     </ButtonWrapper>
@@ -86,6 +97,6 @@ const Images: React.FC = () => (
   </ImageContainer>
 );
 
-const BodyCare: React.FC = () => <Package bgcolor="#37594D" box={<Box />} images={<Images />} />;
+const Nutrition: React.FC = () => <Package bgcolor="#593749" box={<Box />} images={<Images />} />;
 
-export default BodyCare;
+export default Nutrition;

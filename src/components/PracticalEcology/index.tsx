@@ -10,6 +10,8 @@ import Intro from './Intro';
 import ToxinFree from './ToxinFree';
 import BodyCare from './BodyCare';
 import Compost from './Compost';
+import Nutrition from './Nutrition';
+import Herbs from './Herbs';
 
 const image = {
   path: getAbsolutePath(ogImage),
@@ -36,6 +38,8 @@ const Page: React.FC<PageProps> = () => {
       <ToxinFree />
       <BodyCare />
       <Compost />
+      <Nutrition />
+      <Herbs />
     </Layout>
   );
 };

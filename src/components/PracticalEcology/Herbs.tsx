@@ -7,23 +7,23 @@ import { BoxInner, ButtonWrapper, Title, Paragraph } from './styles';
 import Package, { Sessions } from './Package';
 import { ImageContainer, Spacer } from './Package/styles';
 
-const sessions = ['deodorant', 'soap', 'toothpaste', 'hairwash', 'suncare'];
+const sessions = ['mornings', 'illness', 'tea', 'aloe', 'water', 'fasting'];
 
 const Box: React.FC = () => (
-  <BoxInner fullHeight color="#E7F9F1d9" textColor="#293E35">
+  <BoxInner fullHeight color="#EEE7F9d9" textColor="#100e33">
     <Title>
-      <FormattedMessage id="practical-ecology.packs.body-care.title" />
+      <FormattedMessage id="practical-ecology.packs.herbs.title" />
     </Title>
 
     <Paragraph>
-      <FormattedMessage id="practical-ecology.packs.body-care.desc.0" />
+      <FormattedMessage id="practical-ecology.packs.herbs.desc.0" />
     </Paragraph>
     <Paragraph>
-      <FormattedMessage id="practical-ecology.packs.body-care.desc.1" />
+      <FormattedMessage id="practical-ecology.packs.herbs.desc.1" />
     </Paragraph>
     <Spacer />
     <Paragraph>
-      <FormattedMessage id="practical-ecology.packs.body-care.desc.2" />
+      <FormattedMessage id="practical-ecology.packs.herbs.desc.2" />
     </Paragraph>
     <Spacer />
     <Paragraph>
@@ -39,11 +39,11 @@ const Box: React.FC = () => (
     <Paragraph>
       <FormattedMessage
         id="practical-ecology.pack-price"
-        values={{ price: 70, b: (txt: string) => <b>{txt}</b> }}
+        values={{ price: 100, b: (txt: string) => <b>{txt}</b> }}
       />
     </Paragraph>
     <ButtonWrapper>
-      <LinkButton href={PAGES.forageTourFormHebrew} target="_blank" bgcolor="#293E35">
+      <LinkButton href={PAGES.forageTourFormHebrew} target="_blank" bgcolor="#46375a">
         <FormattedMessage id="practical-ecology.purchase" />
       </LinkButton>
     </ButtonWrapper>
@@ -86,6 +86,6 @@ const Images: React.FC = () => (
   </ImageContainer>
 );
 
-const BodyCare: React.FC = () => <Package bgcolor="#37594D" box={<Box />} images={<Images />} />;
+const Herbs: React.FC = () => <Package bgcolor="#463759" box={<Box />} images={<Images />} />;
 
-export default BodyCare;
+export default Herbs;
