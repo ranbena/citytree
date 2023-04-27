@@ -69,20 +69,23 @@ const Header: React.FC = () => {
                     renderMenuOnMount
                     id="tours-dropdown"
                     title={formatMessage({ id: 'nav.tours.title' })}
-                    onClick={() => navigate(PAGES.tours)}
+                    onClick={() => navigate(PAGES.lectures)}
                   >
                     <div onClick={stopPropagation}>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.groupTours)}>
-                        <FormattedMessage id="nav.tours.groups" />
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.privateTours)}>
-                        <FormattedMessage id="nav.tours.private" />
-                      </NavDropdown.Item>
                       <NavDropdown.Item href={formatPath(intl, PAGES.forageTours)}>
                         <FormattedMessage id="nav.tours.foraging" />
                       </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.magicTours)}>
-                        <FormattedMessage id="nav.tours.magic" />
+                      <NavDropdown.Item href={formatPath(intl, PAGES.tamiLecture)}>
+                        <FormattedMessage id="nav.tours.tami" />
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href={formatPath(intl, PAGES.einatLecture)}>
+                        <FormattedMessage id="nav.tours.einat" />
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href={formatPath(intl, PAGES.sessions)}>
+                        <FormattedMessage id="nav.tours.sessions" />
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href={formatPath(intl, PAGES.virtual)}>
+                        <FormattedMessage id="nav.tours.virtual" />
                       </NavDropdown.Item>
                     </div>
                   </NavDropdown>
@@ -155,7 +158,7 @@ const Header: React.FC = () => {
                       href={formatPath(intl, PAGES.manifestos)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.info.manifesots" />
+                      <FormattedMessage id="nav.info.manifestos" />
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"

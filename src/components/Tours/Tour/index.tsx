@@ -4,7 +4,7 @@ import LeafContainer from 'src/components/LeafContainer';
 import { Hero } from './styles';
 
 interface IProps {
-  anchor: 'group' | 'private' | 'forage' | 'magic';
+  anchor: 'tami' | 'einat' | 'forage' | 'sessions' | 'virtual';
   box: React.ReactNode;
   images: React.ReactNode;
   bgcolor: string;

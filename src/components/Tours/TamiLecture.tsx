@@ -1,29 +1,21 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FormattedMessage } from 'gatsby-plugin-intl';
-import { homePhoneLink, mobilePhoneLink, PAGES, whatsappUrl } from 'src/constants';
+import { PAGES } from 'src/constants';
 import { LinkButton, Paragraph } from '../Box';
 import { BoxInner, ButtonWrapper, Title } from './styles';
 import Tour from './Tour';
 import { ImageContainer } from './Tour/styles';
 
 const Box: React.FC = () => (
-  <BoxInner fullHeight color="#fff5f1">
+  <BoxInner fullHeight color="#cfe5e3">
     <Title>
-      <FormattedMessage id="tours.groups.title" />
+      <FormattedMessage id="tours.tami.title" />
     </Title>
-    <Paragraph
-      grow
-      intlId="tours.groups.text"
-      values={{
-        mobilePhoneLink,
-        homePhoneLink,
-        whatsapp: (txt: string) => <a href={whatsappUrl}>{txt}</a>,
-      }}
-    />
+    <Paragraph grow intlId="tours.tami.text" />
     <ButtonWrapper>
-      <LinkButton href={PAGES.groupTourFormHebrew} target="_blank" bgcolor="#4a3b35">
-        <FormattedMessage id="tours.orderTour" />
+      <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#385958">
+        <FormattedMessage id="tours.tami.buttonLabel" />
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>
@@ -32,14 +24,14 @@ const Box: React.FC = () => (
 const Images: React.FC = () => (
   <ImageContainer>
     <StaticImage
-      src="../../assets/images/tours/CityTre_VisitTheTree_01_tami.jpg"
+      src="../../assets/images/tours/CityTree_Tami_Lecture_01_B_.jpeg"
       alt=""
       width={720}
       placeholder="none"
       loading="lazy"
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_BialikCircle_Liana.jpg"
+      src="../../assets/images/tours/CityTree_Tami_Lecture_06_Sq_.jpeg"
       alt=""
       width={175}
       height={175}
@@ -47,7 +39,7 @@ const Images: React.FC = () => (
       loading="lazy"
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Sprouts_03_tami.jpg"
+      src="../../assets/images/tours/CityTree_Tami_Lecture_05_Sq_.jpeg"
       alt=""
       width={175}
       height={175}
@@ -55,7 +47,7 @@ const Images: React.FC = () => (
       loading="lazy"
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Pitango_02_tami.jpg"
+      src="../../assets/images/tours/CityTree_Tami_Lecture_01_Sq_.jpeg"
       alt=""
       width={175}
       height={175}
@@ -65,8 +57,8 @@ const Images: React.FC = () => (
   </ImageContainer>
 );
 
-const GroupTour: React.FC = () => (
-  <Tour bgcolor="#4a3b35" anchor="group" box={<Box />} images={<Images />} />
+const TamiLecture: React.FC = () => (
+  <Tour bgcolor="#385958" anchor="tami" box={<Box />} images={<Images />} reverseLayout />
 );
 
-export default GroupTour;
+export default TamiLecture;

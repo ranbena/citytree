@@ -4,6 +4,7 @@ import { Parallax } from 'react-parallax';
 import topImage from 'src/assets/images/tours/Citytree_PorterTour_19_alex.jpeg';
 import bottomImage from 'src/assets/images/tours/CityTree_Pomegranet_02_tami.jpg';
 import { FormattedMessage } from 'gatsby-plugin-intl';
+import { tamiPhoneLink, einatPhoneLink } from 'src/constants';
 import { TopParallaxContent, BoxInner, Container, Hero, Wrapper, Title, Paragraph } from './styles';
 
 const Content: React.FC<{ offsetY?: number }> = React.memo(({ offsetY = 0 }) => (
@@ -14,7 +15,7 @@ const Content: React.FC<{ offsetY?: number }> = React.memo(({ offsetY = 0 }) => 
           <Title>
             <FormattedMessage id="tours.general.fullTitle" />
           </Title>
-          <Paragraph intlId="tours.general.fullText" />
+          <Paragraph intlId="tours.general.fullText" values={{ tamiPhoneLink, einatPhoneLink }} />
         </BoxInner>
       </Col>
     </Row>

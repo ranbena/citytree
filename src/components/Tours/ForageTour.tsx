@@ -14,7 +14,7 @@ const Box: React.FC = () => (
     </Title>
     <Paragraph grow intlId="tours.forage.text" />
     <ButtonWrapper>
-      <LinkButton href={PAGES.forageTourFormHebrew} target="_blank" bgcolor="#3d5937">
+      <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#3d5937">
         <FormattedMessage id="tours.forage.buttonLabel" />
       </LinkButton>
     </ButtonWrapper>
@@ -39,7 +39,7 @@ const Images: React.FC = () => (
       height={175}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Forage_01_tami.jpg"
+      src="../../assets/images/tours/CityTree_Forage_01_tami.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -47,7 +47,7 @@ const Images: React.FC = () => (
       height={175}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_GreenIcecream_01_tami.jpg"
+      src="../../assets/images/tours/CityTree_Alon_Sq_.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"

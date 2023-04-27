@@ -10,22 +10,12 @@ import { ImageContainer } from './Tour/styles';
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#fffcf0">
     <Title>
-      <FormattedMessage id="tours.private.title" />
+      <FormattedMessage id="tours.einat.title" />
     </Title>
-    <Paragraph
-      grow
-      intlId="tours.private.text"
-      values={{
-        a: (txt: string) => (
-          <a href={PAGES.privateTourFormHebrew} target="_blank" rel="noreferrer noopener">
-            {txt}
-          </a>
-        ),
-      }}
-    />
+    <Paragraph grow intlId="tours.einat.text" />
     <ButtonWrapper>
-      <LinkButton href={PAGES.privateTourFormHebrew} target="_blank" bgcolor="#595337">
-        <FormattedMessage id="tours.orderTour" />
+      <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#595337">
+        <FormattedMessage id="tours.einat.buttonLabel" />
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>
@@ -34,14 +24,14 @@ const Box: React.FC = () => (
 const Images: React.FC = () => (
   <ImageContainer>
     <StaticImage
-      src="../../assets/images/tours/Couple_garden.jpg"
+      src="../../assets/images/tours/CityTree_EinatWrites_02_tami.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"
       width={720}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Dates_02_tami.jpg"
+      src="../../assets/images/tours/CityTree_BigTree_02_Tami.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -49,7 +39,7 @@ const Images: React.FC = () => (
       height={175}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_OrangePeels_01_tami.jpg"
+      src="../../assets/images/tours/CityTree_Soil_06_tami.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -67,8 +57,8 @@ const Images: React.FC = () => (
   </ImageContainer>
 );
 
-const PrivateTour: React.FC = () => (
-  <Tour bgcolor="#595337" anchor="private" reverseLayout box={<Box />} images={<Images />} />
+const EinatLecture: React.FC = () => (
+  <Tour bgcolor="#595337" anchor="einat" reverseLayout box={<Box />} images={<Images />} />
 );
 
-export default PrivateTour;
+export default EinatLecture;

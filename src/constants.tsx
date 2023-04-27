@@ -1,21 +1,21 @@
 import React from 'react';
 import { stripPhoneNumber } from './utils';
 
-export const homePhone = '03-525-4196';
-export const mobilePhone = '054-750-5847';
-export const bitPhone = mobilePhone;
-export const whatsappPhone = mobilePhone;
+export const tamiPhone = '058-422-7531';
+export const einatPhone = '054-750-5847';
+export const bitPhone = einatPhone;
+export const whatsappPhone = einatPhone;
 export const email = 'tree@citytree.net';
 
 export const whatsappGroupInviteLink = 'https://chat.whatsapp.com/FsTi2IrNA4uJTjk6k554O0';
-export const homePhoneLink = (
-  <a style={{ whiteSpace: 'nowrap' }} href={`tel:${stripPhoneNumber(homePhone)}`}>
-    {homePhone}
+export const tamiPhoneLink = (
+  <a style={{ whiteSpace: 'nowrap' }} href={`tel:${stripPhoneNumber(tamiPhone)}`}>
+    {tamiPhone}
   </a>
 );
-export const mobilePhoneLink = (
-  <a style={{ whiteSpace: 'nowrap' }} href={`tel:${stripPhoneNumber(mobilePhone)}`}>
-    {mobilePhone}
+export const einatPhoneLink = (
+  <a style={{ whiteSpace: 'nowrap' }} href={`tel:${stripPhoneNumber(einatPhone)}`}>
+    {einatPhone}
   </a>
 );
 export const emailLink = <a href={`mail:${email}`}>{email}</a>;
@@ -29,6 +29,7 @@ export const paypalUrl = 'https://www.paypal.me/citytree';
 export const payboxUrl = 'https://payboxapp.page.link/ecdf8UhBJ6dG25Mu7';
 export const facebookUrl = 'https://facebook.com/citytree';
 export const youtubeUrl = 'https://www.youtube.com/user/citytreenet/';
+export const instagramUrl = 'https://www.instagram.com/citytree/';
 
 export const airbnbUrl = 'https://www.airbnb.co.uk/rooms/3057651';
 export const airbnbForm = '';
@@ -45,11 +46,12 @@ export enum PAGES {
   // non-exsistent (coming soon modal)
   retreats = '/retreats',
   apprenticeship = '/apprenticeship',
-  tours = '/tours',
-  groupTours = '/tours/#group',
-  privateTours = '/tours/#private',
-  forageTours = '/tours/#forage',
-  magicTours = '/tours/#magic',
+  lectures = '/lectures',
+  tamiLecture = '/lectures/#tami',
+  einatLecture = '/lectures/#einat',
+  forageTours = '/lectures/#forage',
+  sessions = '/lectures/#sessions',
+  virtual = '/lectures/#virtual',
   glossary = '/glossary',
   blog = '/blog',
   manifestos = '/manifestos',
@@ -67,8 +69,5 @@ export enum PAGES {
   employment = 'https://docs.google.com/document/d/e/2PACX-1vStK7lP26XAvT35LRbUlDs5mrJeniHmSrGHL53g2YYSPnxc00u395MMfjnx7GcbbcBf-pxCxJgqLkfC/pub',
 
   // forms
-  groupTourFormHebrew = 'https://docs.google.com/forms/d/e/1FAIpQLSdVWnVO9VQSflBY59tG9s9Wdl8fUKRzpPFzO2mrEZH5sP-37Q/viewform?entry.2087709586=סיור לקבוצה מאורגנת – קבוצה מהעבודה מהלימודים או מארגון',
-  privateTourFormHebrew = 'https://docs.google.com/forms/d/e/1FAIpQLSdVWnVO9VQSflBY59tG9s9Wdl8fUKRzpPFzO2mrEZH5sP-37Q/viewform?entry.2087709586=סיור משלכם – לך או לקבוצת חברים/משפחה',
-  forageTourFormHebrew = 'https://bit.ly/FormForage',
-  magicTourFormHebrew = 'https://bit.ly/FormMagic',
+  lecturesForm = 'https://docs.google.com/forms/d/e/1FAIpQLSe5fQf-dTVV4smr82rRXO8RqvZan1ejCB8qwE3w7XeQnElz9Q/viewform',
 }

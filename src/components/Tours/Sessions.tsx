@@ -10,12 +10,12 @@ import { ImageContainer } from './Tour/styles';
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#cfe5e3">
     <Title>
-      <FormattedMessage id="tours.magic.fullTitle" />
+      <FormattedMessage id="tours.sessions.fullTitle" />
     </Title>
-    <Paragraph grow intlId="tours.magic.text" />
+    <Paragraph grow intlId="tours.sessions.text" />
     <ButtonWrapper>
-      <LinkButton href={PAGES.magicTourFormHebrew} target="_blank" bgcolor="#385958">
-        <FormattedMessage id="tours.magic.buttonLabel" />
+      <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#385958">
+        <FormattedMessage id="tours.sessions.buttonLabel" />
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>
@@ -24,14 +24,14 @@ const Box: React.FC = () => (
 const Images: React.FC = () => (
   <ImageContainer>
     <StaticImage
-      src="../../assets/images/tours/CityTree_TamiWitch_01_Inbal.jpg"
+      src="../../assets/images/tours/Z06_0976.jpg"
       alt=""
       placeholder="none"
       loading="lazy"
       width={720}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Sage_tami.jpg"
+      src="../../assets/images/tours/CityTree_Tami_Workshop_07_Sq_.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -39,7 +39,7 @@ const Images: React.FC = () => (
       height={175}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Art_01_tami.jpg"
+      src="../../assets/images/tours/CityTree_Tami_Workshop_03_Sq_.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -47,7 +47,7 @@ const Images: React.FC = () => (
       height={175}
     />
     <StaticImage
-      src="../../assets/images/tours/CityTree_Tinkture_01_tami.jpg"
+      src="../../assets/images/tours/CityTree_Tami_Workshop_01_Sq_.jpeg"
       alt=""
       placeholder="none"
       loading="lazy"
@@ -57,8 +57,8 @@ const Images: React.FC = () => (
   </ImageContainer>
 );
 
-const MagicTour: React.FC = () => (
-  <Tour bgcolor="#385958" anchor="magic" reverseLayout box={<Box />} images={<Images />} />
+const Sessions: React.FC = () => (
+  <Tour bgcolor="#385958" anchor="sessions" box={<Box />} images={<Images />} />
 );
 
-export default MagicTour;
+export default Sessions;

@@ -51,18 +51,23 @@ export const Paragraph: React.FC<{
     const messageArr = forEachMessage(intl, intlId, values1);
     return (
       <>
-        {messageArr.map(([txt, key], idx) => (
-          <StyledParagraph
-            key={key}
-            weight={weight}
-            stretch={stretch}
-            reverseUnderline={reverseUnderline}
-            grow={idx === messageArr.length - 1 && grow}
-            className={className}
-          >
-            {txt}
-          </StyledParagraph>
-        ))}
+        {messageArr.map(([txt, key], idx) => {
+          const content = Array.isArray(txt)
+            ? txt.map((lbl) => <React.Fragment key={`${key}${lbl}`}>{lbl}</React.Fragment>)
+            : txt;
+          return (
+            <StyledParagraph
+              key={key}
+              weight={weight}
+              stretch={stretch}
+              reverseUnderline={reverseUnderline}
+              grow={idx === messageArr.length - 1 && grow}
+              className={className}
+            >
+              {content}
+            </StyledParagraph>
+          );
+        })}
       </>
     );
   }

@@ -6,11 +6,12 @@ import Layout from 'src/components/Layout';
 import { getAbsolutePath } from 'src/utils';
 
 import ogImage from 'src/assets/images/tours/citytree_tour_og.jpg';
-import PrivateTour from './PrivateTour';
-import GroupTour from './GroupTour';
+import EinatLecture from './EinatLecture';
+import TamiTour from './TamiLecture';
 import ForageTour from './ForageTour';
-import MagicTour from './MagicTour';
+import Sessions from './Sessions';
 import Intro from './Intro';
+import VirtualTour from './VirtualTour';
 
 const image = {
   path: ogImage,
@@ -34,10 +35,11 @@ const Page: React.FC<PageProps> = () => {
         <meta property="og:image:height" content={image.height} />
       </Helmet>
       <Intro />
-      <GroupTour />
-      <PrivateTour />
+      <TamiTour />
       <ForageTour />
-      <MagicTour />
+      <EinatLecture />
+      <Sessions />
+      <VirtualTour />
     </Layout>
   );
 };

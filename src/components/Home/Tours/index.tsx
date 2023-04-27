@@ -29,19 +29,19 @@ function Tours() {
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
                   <Title>
-                    <FormattedMessage id="tours.groups.title" />
+                    <FormattedMessage id="tours.tami.title" />
                   </Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.groups.desc" />
+                    <FormattedMessage id="tours.tami.desc" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(intl, PAGES.groupTours)}>
+                    <Link to={formatPath(intl, PAGES.tamiLecture)}>
                       - <FormattedMessage id="more-details" />
                       ...
                     </Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.groupTourFormHebrew} target="_blank">
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
                       <FormattedMessage id="tours.order" />
                     </LinkButton>
                   </div>
@@ -50,19 +50,19 @@ function Tours() {
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
                   <Title>
-                    <FormattedMessage id="tours.private.title" />
+                    <FormattedMessage id="tours.einat.title" />
                   </Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.private.desc" />
+                    <FormattedMessage id="tours.einat.desc" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(intl, PAGES.privateTours)}>
+                    <Link to={formatPath(intl, PAGES.einatLecture)}>
                       - <FormattedMessage id="more-details" />
                       ...
                     </Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.privateTourFormHebrew} target="_blank">
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
                       <FormattedMessage id="tours.order" />
                     </LinkButton>
                   </div>
@@ -85,7 +85,7 @@ function Tours() {
                     </Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.forageTourFormHebrew} target="_blank">
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
                       <FormattedMessage id="tours.register" />
                     </LinkButton>
                   </div>
@@ -94,19 +94,19 @@ function Tours() {
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
                   <Title>
-                    <FormattedMessage id="tours.magic.title" />
+                    <FormattedMessage id="tours.sessions.title" />
                   </Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.magic.desc" />
+                    <FormattedMessage id="tours.sessions.desc" />
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(intl, PAGES.magicTours)}>
+                    <Link to={formatPath(intl, PAGES.sessions)}>
                       - <FormattedMessage id="more-details" />
                       ...
                     </Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.magicTourFormHebrew} target="_blank">
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
                       <FormattedMessage id="tours.register" />
                     </LinkButton>
                   </div>

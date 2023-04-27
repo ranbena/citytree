@@ -6,12 +6,27 @@
     pointer-events: none;
     top: 0;
     bottom: 0;
+
+    &:after {
+      background: #c4cfaf;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -100vw;
+      left: 468px;
+    }
   }
 
   .leftBush {
     background-image: url('../../assets/images/bush-left.png');
     width: 432px;
     left: -150px;
+    
+    &:after {
+      right: 432px;
+      left: -100vw;
+    }
   }
 
   .rightBush {

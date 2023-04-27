@@ -44,9 +44,9 @@ function InfoCenter() {
                     <FormattedMessage id="info.glossary.title" />
                   </Link>
                   <br />
-                  <Link to={youtubeUrl} target="_blank">
+                  <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
                     <FormattedMessage id="info.videos.title" />
-                  </Link>
+                  </a>
                 </span>
               </Paragraph>
             </FloatBox>
@@ -108,7 +108,12 @@ function InfoCenter() {
               </Paragraph>
             </FloatBox>
 
-            <FloatBox position="topLeft" href={youtubeUrl} target="_blank">
+            <FloatBox
+              position="topLeft"
+              href={youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Title>
                 <FormattedMessage id="info.videos.title" />
               </Title>

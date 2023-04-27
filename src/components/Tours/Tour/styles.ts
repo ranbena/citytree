@@ -21,13 +21,10 @@ export const ImageContainer = styled.div`
 
   & > * {
     max-width: 100%;
+    border-radius: 10px;
 
     &:first-child {
       grid-column: 1 / 4;
-    }
-
-    img {
-      border-radius: 10px;
     }
   }
 `;

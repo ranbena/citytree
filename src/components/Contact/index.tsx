@@ -8,7 +8,7 @@ import {
   whatsappGroupInviteLink,
   calendarUrl,
   emailLink,
-  homePhoneLink,
+  tamiPhoneLink,
 } from 'src/constants';
 import { ReactComponent as GoogleIcon } from 'src/assets/images/icon_google.svg';
 import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
@@ -29,7 +29,7 @@ function Contact() {
               <Paragraph>
                 <FormattedMessage id="contact.details.text" />:
                 <span className="contact-details-top">
-                  {emailLink} | {homePhoneLink}
+                  {emailLink} | {tamiPhoneLink}
                 </span>
               </Paragraph>
               <div className="contact-details">

@@ -20,7 +20,7 @@
       "Our work on the website is ant-paced - diligent but tiny, likes to rest but busy at home and the garden - just like in life and play.",
       "We'll get to this on day, or something else entirely will eventually happen."
     ],
-    "contact": "In the meantime, simply contact us and ask for the information you're after from an actual person (in 3D!) -- {whatsappLink} (Einat, on whatsapp) / {homePhoneLink} (house phone!)",
+    "contact": "In the meantime, simply contact us and ask for the information you're after from an actual person (in 3D!) -- {whatsappLink} (Einat, on whatsapp) / {tamiPhoneLink} (Tami)",
     "developer": {
       "title": "Wait!! Are you a web developer and want to come work with us?",
       "text": [
@@ -45,6 +45,7 @@
     "facebook": "CityTree on Facebook",
     "youtube": "CityTree on Youtube",
     "whatsapp": "CityTree on WhatsApp",
+    "instagram": "CityTree on Instagram",
     "archive": "The Hebrew archived site"
   },
   "nav": {
@@ -134,7 +135,7 @@
       "text": [
         "סיור בעץבעיר הוא חוויה מעשירה לכל קבוצה שעוסקת בקיימות או שמעוניינת להתחיל תהליך של הטמעת עקרונות אקולוגיים בפעילות שלה או פשוט לעבור חוויה מיוחדת ביחד.",
         "החוויה כוללת סיור משק בית בין חדרי הדירה האקולוגית, סיור גינון אקולוגי, קומפוסט וליקוט בגינות, כיבוד, והדגמות מעשיות – הכול פתוח להתאמות על בסיס שיחה.",
-        "<b>אנא מלאו את הטופס ונחזור אליכם, או שפשוט תתקשרו: {homePhoneLink} / {mobilePhoneLink} (אפשר גם <whatsapp>בוואטסאפ</whatsapp>).</b>",
+        "<b>אנא מלאו את הטופס ונחזור אליכם, או שפשוט תתקשרו: {tamiPhoneLink} / {einatPhoneLink} (אפשר גם <whatsapp>בוואטסאפ</whatsapp>).</b>",
         "בשיחה נתאם את התאריך, השעה, המחיר, משך הסיור והתוכן שלו, על-פי אופי הקבוצה ומטרת הביקור."
       ]
     },
