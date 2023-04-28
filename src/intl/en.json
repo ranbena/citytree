@@ -58,22 +58,18 @@
     },
     "tours": {
       "title": "Tours",
-      "groups": "Group tours",
-      "private": "A tour of your own",
+      "tami": "Talk by Tami Zori",
+      "einat": "Talk by Einat Last",
       "foraging": "Urban foraging tour",
-      "magic": "Urban witchcraft tour"
+      "sessions": "Mini talk or workshop",
+      "virtual": "CityTree - the talk"
     },
     "workshops": {
       "title": "Workshops and courses",
       "practical-ecology": "Practical Ecology",
       "magical-economy": "Magical Economy",
-      "abracadabra": "Abracadabra"
-    },
-    "stay": {
-      "title": "Stay",
-      "airbnb": "Airbnb reservation",
-      "retreats": "Retreats",
-      "apprenticeship": "Apprenticeship"
+      "abracadabra": "Abracadabra",
+      "homelife": "TBD"
     },
     "info": {
       "title": "Knowledge center",
@@ -110,6 +106,7 @@
     "register": "Order a tour",
     "order": "Order a tour",
     "orderTour": "Order a tour",
+    "orderLecture": "Order a talk",
     "general": {
       "title": "Tours of The Tree’s apartment and gardens - a visit into another world",
       "fullTitle": "Tours of The Tree’s apartment and gardens - a visit into another world",
@@ -129,35 +126,29 @@
         "<b>דפדפו ותמצאו את סוג הסיור שמתאים לכן...</b>"
       ]
     },
-    "groups": {
-      "title": "Group tours",
-      "desc": "Organized groups from any company or organization… A tour of the home and gardens, fitted to your group’s preferences",
+    "tami": {
+      "title": "Talk by Tami Zori",
+      "desc": "TBD",
       "text": [
-        "סיור בעץבעיר הוא חוויה מעשירה לכל קבוצה שעוסקת בקיימות או שמעוניינת להתחיל תהליך של הטמעת עקרונות אקולוגיים בפעילות שלה או פשוט לעבור חוויה מיוחדת ביחד.",
-        "החוויה כוללת סיור משק בית בין חדרי הדירה האקולוגית, סיור גינון אקולוגי, קומפוסט וליקוט בגינות, כיבוד, והדגמות מעשיות – הכול פתוח להתאמות על בסיס שיחה.",
-        "<b>אנא מלאו את הטופס ונחזור אליכם, או שפשוט תתקשרו: {tamiPhoneLink} / {einatPhoneLink} (אפשר גם <whatsapp>בוואטסאפ</whatsapp>).</b>",
-        "בשיחה נתאם את התאריך, השעה, המחיר, משך הסיור והתוכן שלו, על-פי אופי הקבוצה ומטרת הביקור."
-      ]
+        "TBD"
+      ],
+      "buttonLabel": "Order a talk"
     },
-    "private": {
-      "title": "A tour of your own",
-      "desc": "A private visit, a group of friends or family, couples… A tour of the home and gardens, fitted to your group’s preferences",
+    "einat": {
+      "title": "Talk by Einat Last",
+      "desc": "TBD",
       "text": [
-        "בילוי בעץבעיר, עם החבר, עם הדודה, עם המשפחה, עם החבר'ה מהעבודה, יכול להיות הזדמנות מצוינת להעלות שאלות, להציף פחדים, לצחוק יחד על החיים, לטעום טעמים חדשים, להכיר צמחים ופרחים שלא ידעתם שאפשר לאכול ולגלות מחדש שיש מקום גם לפשטות ולישירות.",
-        "הסיור כולל סיבוב בדירה האקולוגית ובגינות, שיחה, כיבוד קל, הכנת גלידה או קמבוצ'ה, דחיפת ידיים לחומץ או לקומפוסט – הכול פתוח להתאמות על בסיס שיחה.",
-        "<b>אנחנו מתאימים את התוכן ואת המחיר לדרישות וליכולות שלכם – מלאו נא את <a>טופס ההזמנה כאן למטה</a>, ונמשיך בשיחת טלפון.</b>"
-      ]
+        "TBD"
+      ],
+      "buttonLabel": "Order a talk"
     },
     "forage": {
       "title": "Urban foraging tour",
-      "fullTitle": "סיור ליקוט עם ד״ר אלון אלירן",
-      "buttonLabel": "להרשמה לסיור ליקוט",
+      "fullTitle": "Urban foraging tour with Dr Alon Eliran",
+      "buttonLabel": "Register for a foraging tour",
       "desc": "Once every few weeks we go out for a foraging tour around the Bialik Square, guided by Dr. Alon Eliran. The tours are usually in Hebrew, but groups of non Hebrew speakers are welcome to order a tour in English.",
       "text": [
-        "פעם בכמה שבועות, ביום שישי ב-11:00 בבוקר, אלון מוביל את כל מי שמצטרפת לסיור הליקוט סביב כיכר ביאליק. ההליכה קלה ונינוחה ,והמרחקים קצרים – יש כל-כך הרבה מה לגלות ומה ללמוד בכל פינת רחוב ומסביב לכל בניין.",
-        "בסיור עוברים על המציאות הספונטניות שברחוב וגם על המציאות הספונטניות-למחצה שבגינות-הפרא שאלון מטפח סביב מבני ציבור בכיכר.",
-        "השתתפות בסיור: 100 ₪ / כמה שאתן רוצות",
-        "<b>פרטים נוספים והרשמה, בטופס:</b>"
+        "TBD"
       ]
     },
     "magic": {
@@ -314,7 +305,9 @@
   },
   "donate": {
     "title": "All channels for supporting The Tree",
-    "subtitle": ["One time payment for a tour, study, advice", "or just because:"],
+    "subtitle": [
+      "One time payment for a tour, study, advice",
+      "or just because:"],
     "patreonTitle": "Become a Patron",
     "text": "For a monthly support:",
     "channels": {

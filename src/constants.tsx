@@ -31,9 +31,6 @@ export const facebookUrl = 'https://facebook.com/citytree';
 export const youtubeUrl = 'https://www.youtube.com/user/citytreenet/';
 export const instagramUrl = 'https://www.instagram.com/citytree/';
 
-export const airbnbUrl = 'https://www.airbnb.co.uk/rooms/3057651';
-export const airbnbForm = '';
-
 export const githubProject = 'https://github.com/ranbena/citytree';
 export const ranbenaPage = 'https://github.com/ranbena/';
 

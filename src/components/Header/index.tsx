@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useIntl, FormattedMessage, navigate } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
-import { airbnbUrl, joinPatreonUrl, PAGES, youtubeUrl } from 'src/constants';
+import { joinPatreonUrl, PAGES, youtubeUrl } from 'src/constants';
 import { anchor, formatPath, formatAnchor } from 'src/utils';
 import { ComingSoonModalProvider } from '../ComingSoonModal';
 import './styles.scss';
@@ -110,32 +110,8 @@ const Header: React.FC = () => {
                       <NavDropdown.Item href={formatPath(intl, PAGES.hineni)}>
                         <FormattedMessage id="nav.workshops.abracadabra" />
                       </NavDropdown.Item>
-                    </div>
-                  </NavDropdown>
-
-                  <NavDropdown
-                    renderMenuOnMount
-                    id="stay-dropdown"
-                    title={formatMessage({ id: 'nav.stay.title' })}
-                    onClick={anchor(intl, 'stay')}
-                  >
-                    <div onClick={stopPropagation}>
-                      <NavDropdown.Item href={airbnbUrl} target="_blank">
-                        <FormattedMessage id="nav.stay.airbnb" />
-                      </NavDropdown.Item>
-                      <NavDropdown.Item
-                        className="disabled"
-                        onClick={showModal}
-                        href={formatPath(intl, PAGES.retreats)}
-                      >
-                        <FormattedMessage id="nav.stay.retreats" />
-                      </NavDropdown.Item>
-                      <NavDropdown.Item
-                        className="disabled"
-                        onClick={showModal}
-                        href={formatPath(intl, PAGES.apprenticeship)}
-                      >
-                        <FormattedMessage id="nav.stay.apprenticeship" />
+                      <NavDropdown.Item className="disabled" onClick={showModal}>
+                        <FormattedMessage id="nav.workshops.homelife" />
                       </NavDropdown.Item>
                     </div>
                   </NavDropdown>

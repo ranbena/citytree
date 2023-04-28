@@ -51,31 +51,25 @@
   },
   "nav": {
     "main": {
-      "about": "מי אנחנו",
       "people": "א'נשי העץ",
       "huggers": "המחבקות",
-      "contact": "צרו קשר",
+      "contact": "להתקשר",
       "money": "כסף"
     },
     "tours": {
-      "title": "סיורים",
+      "title": "לימוד בעולם האמיתי",
       "tami": "הרצאה של תמי צרי",
       "einat": "הרצאה של עינת לסט",
       "foraging": "סיור ליקוט עם אלון",
-      "sessions": "מיני סדנאות והרצאות",
-      "virtual": "סיור וירטואלי"
+      "sessions": "מיני הרצאה או סדנה",
+      "virtual": "עץבעיר - ההרצאה"
     },
     "workshops": {
-      "title": "קורסים וסדנאות",
+      "title": "לימוד מקוון",
       "practical-ecology": "סדנאות אקולוגיה מעשית",
-      "magical-economy": "כלכלת קסם - לימוד",
-      "abracadabra": "קורס כישוף"
-    },
-    "stay": {
-      "title": "שהייה",
-      "airbnb": "התארחות - airbnb",
-      "retreats": "רטריטים",
-      "apprenticeship": "התלמדות"
+      "magical-economy": "כלכלת קסם - לימוד חודשי",
+      "abracadabra": "קורס כישוף ואקולוגיה עמוקה",
+      "homelife": "עושות חיים בבית - מעגל חדש"
     },
     "info": {
       "title": "מרכז ידע",

@@ -112,7 +112,6 @@ function InfoCenter() {
               position="topLeft"
               href={youtubeUrl}
               target="_blank"
-              rel="noopener noreferrer"
             >
               <Title>
                 <FormattedMessage id="info.videos.title" />
