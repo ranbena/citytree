@@ -1,5 +1,4 @@
 import React from 'react';
-import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import {
   emailLink,
   facebookUrl,
@@ -19,11 +18,10 @@ import LeafContainer from '../LeafContainer';
 import { Wrapper, Social, Info, Logo, Content } from './styles';
 
 const Footer: React.FC = () => {
-  const intl = useIntl();
-  const youtube = intl.formatMessage({ id: 'footer.youtube' });
-  const whatsapp = intl.formatMessage({ id: 'footer.whatsapp' });
-  const facebook = intl.formatMessage({ id: 'footer.facebook' });
-  const instagram = intl.formatMessage({ id: 'footer.instagram' });
+  const youtube = 'עץבעיר ביוטיוב';
+  const whatsapp = 'עץבעיר בוואטסאפ';
+  const facebook = 'עץבעיר בפייסבוק';
+  const instagram = 'עץבעיר באינטסגרם';
 
   return (
     <Wrapper>
@@ -32,7 +30,7 @@ const Footer: React.FC = () => {
           <Info>
             <Logo src={logo} alt="CityTree" className="logo" />
             <div>
-              <FormattedMessage id="footer.text" />
+              אנחנו כאן
               <br />
               {tamiPhoneLink} | {emailLink}
             </div>
@@ -59,16 +57,12 @@ const Footer: React.FC = () => {
           </Social>
           <div>
             <a href={PAGES.people} target="_blank" rel="noreferrer noopener">
-              <FormattedMessage id="nav.main.about" />
+              מי אנחנו
             </a>
             <br />
-            <a href={formatAnchor(intl, 'contact')}>
-              <FormattedMessage id="nav.main.contact" />
-            </a>
+            <a href={formatAnchor('contact')}>להתקשר</a>
             <br />
-            <a href="http://archives.citytree.net">
-              <FormattedMessage id="footer.archive" />
-            </a>
+            <a href="http://archives.citytree.net">לאתר הישן נושן והאהוב של העץ</a>
           </div>
         </Content>
       </LeafContainer>

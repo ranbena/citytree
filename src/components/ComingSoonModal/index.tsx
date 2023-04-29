@@ -1,16 +1,12 @@
 import React from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { githubProject, ranbenaPage, whatsappLink, tamiPhoneLink, PAGES } from 'src/constants';
-import { forEachMessage } from 'src/utils';
 import LeafContainer from '../LeafContainer';
 import { Title, SubTitle, StyledModal, Developer, Top, Contact } from './styles';
 
 export const ComingSoonModalProvider: React.FC<{
+  locale?: 'en' | 'he';
   children: (show: (e: React.MouseEvent) => void) => React.ReactNode;
-}> = ({ children }) => {
-  const intl = useIntl();
-  const { locale } = intl;
-
+}> = ({ locale = 'he', children }) => {
   const [isVisible, setVisibility] = React.useState(false);
   const show = React.useCallback((e: React.MouseEvent) => {
     e.preventDefault();
@@ -28,55 +24,40 @@ export const ComingSoonModalProvider: React.FC<{
         >
           <StyledModal.Body>
             <Top>
-              <Title>
-                <FormattedMessage id="coming-soon.title" />
-              </Title>
+              <Title>החלק הזה לא קיים עדיין באתר.</Title>
               <SubTitle>
-                {forEachMessage(intl, 'coming-soon.text').map(([txt, key]) => (
-                  <React.Fragment key={key}>
-                    {txt}
-                    <br />
-                  </React.Fragment>
-                ))}
+                התוכן שעניין אותך לגמרי קיים במציאות שמחוץ לאתר - בפתקים ובמסמכים, במחשבות ובשיחות,
+                בגינה או בבית!
+                <br />
+                על האתר אנחנו עובדות בקצב של נמלה - חרוצה, אבל קטנה קטנה,
+                <br />
+                וגם אוהבת לנוח וגם עסוקה בבית ובגינה, בחיים ובמשחק - ולא רק באתר.
+                <br />
+                יום אחד נגיע גם לדף הזה והוא יעלה. או שמשהו אחר לגמרי יקרה.
               </SubTitle>
               <Contact>
-                <FormattedMessage
-                  id="coming-soon.contact"
-                  values={{ whatsappLink, tamiPhoneLink }}
-                />
+                בינתיים, אתם יכולים פשוט ליצור קשר ולבקש את המידע שעניין אתכן ממישהו אמיתי, (בתלת
+                ממד!) -- {whatsappLink} (עינת, בוואטסאפ) / {tamiPhoneLink} (תמי)
               </Contact>
             </Top>
             <Developer>
-              <h2>
-                <FormattedMessage id="coming-soon.developer.title" />
-              </h2>
+              <h2>רגע!! אולי את/ה מפתח ווב? אולי תרצה/י לבוא לעבוד איתנו?</h2>
               <p>
-                <FormattedMessage
-                  id="coming-soon.developer.text.0"
-                  values={{
-                    github: (txt: string) => (
-                      <a href={githubProject} target="_blank" rel="noopener noreferrer">
-                        {txt}
-                      </a>
-                    ),
-                    ranbena: (txt: string) => (
-                      <a href={ranbenaPage} target="_blank" rel="noopener noreferrer">
-                        {txt}
-                      </a>
-                    ),
-                  }}
-                />
+                האתר כולו{' '}
+                <a href={githubProject} target="_blank" rel="noopener noreferrer">
+                  בקוד פתוח
+                </a>
+                , ואתן/ם יכולות ליצור קשר ישירות עם{' '}
+                <a href={ranbenaPage} target="_blank" rel="noopener noreferrer">
+                  המתכנת המתוק שלנו רן
+                </a>
+                .
                 <br />
-                <FormattedMessage
-                  id="coming-soon.developer.text.1"
-                  values={{
-                    a: (txt: string) => (
-                      <a href={PAGES.employment} target="_blank" rel="noopener noreferrer">
-                        {txt}
-                      </a>
-                    ),
-                  }}
-                />
+                או אולי בא לכן לקרוא על ״תיאור התפקיד״ ו״תנאי ההעסקה״ בעץ, כאן:{' '}
+                <a href={PAGES.employment} target="_blank" rel="noopener noreferrer">
+                  מגורים תמורת עבודה
+                </a>
+                .
               </p>
             </Developer>
           </StyledModal.Body>

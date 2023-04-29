@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { MouseEventHandler } from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
-import { useIntl, FormattedMessage, navigate } from 'gatsby-plugin-intl';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
 import { joinPatreonUrl, PAGES, youtubeUrl } from 'src/constants';
 import { anchor, formatPath, formatAnchor } from 'src/utils';
@@ -16,8 +15,6 @@ export const HEADER_HEIGHT = 90;
 const stopPropagation: MouseEventHandler<HTMLDivElement> = (event) => event.stopPropagation();
 
 const Header: React.FC = () => {
-  const intl = useIntl();
-  const { locale, formatMessage } = intl;
   const [isNavExpanded, setIsNavExpanded] = React.useState(false);
 
   const onDocumentClick = React.useCallback(() => setIsNavExpanded(false), []);
@@ -39,25 +36,19 @@ const Header: React.FC = () => {
               <NavDropdown
                 renderMenuOnMount
                 id="logo-dropdown"
-                title={formatMessage({ id: 'citytree' })}
-                onClick={anchor(intl, 'top')}
+                title="עץבעיר"
+                onClick={anchor('top')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item href={formatPath(intl, PAGES.people)}>
-                    <FormattedMessage id="nav.main.people" />
-                  </NavDropdown.Item>
-                  <NavDropdown.Item className="disabled">
-                    <FormattedMessage id="nav.main.huggers" />
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href={formatAnchor(intl, 'contact')}>
-                    <FormattedMessage id="nav.main.contact" />
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href={formatPath(PAGES.people)}>א'נשי העץ</NavDropdown.Item>
+                  <NavDropdown.Item className="disabled">המחבקות</NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor('contact')}>להתקשר</NavDropdown.Item>
                   <NavDropdown.Item
                     className="disabled"
-                    href={formatPath(intl, PAGES.money)}
+                    href={formatPath(PAGES.money)}
                     onClick={showModal}
                   >
-                    <FormattedMessage id="nav.main.money" />
+                    כסף
                   </NavDropdown.Item>
                 </div>
               </NavDropdown>
@@ -68,24 +59,24 @@ const Header: React.FC = () => {
                   <NavDropdown
                     renderMenuOnMount
                     id="tours-dropdown"
-                    title={formatMessage({ id: 'nav.tours.title' })}
-                    onClick={() => navigate(PAGES.lectures)}
+                    title="לימוד בעולם האמיתי"
+                    href={formatPath(PAGES.lectures)}
                   >
                     <div onClick={stopPropagation}>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.forageTours)}>
-                        <FormattedMessage id="nav.tours.foraging" />
+                      <NavDropdown.Item href={formatPath(PAGES.tamiLecture)}>
+                        הרצאה של תמי צרי
                       </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.tamiLecture)}>
-                        <FormattedMessage id="nav.tours.tami" />
+                      <NavDropdown.Item href={formatPath(PAGES.forageTours)}>
+                        סיור ליקוט עם אלון
                       </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.einatLecture)}>
-                        <FormattedMessage id="nav.tours.einat" />
+                      <NavDropdown.Item href={formatPath(PAGES.einatLecture)}>
+                        הרצאה של עינת לסט
                       </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.sessions)}>
-                        <FormattedMessage id="nav.tours.sessions" />
+                      <NavDropdown.Item href={formatPath(PAGES.sessions)}>
+                        מיני הרצאה או סדנה
                       </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.virtual)}>
-                        <FormattedMessage id="nav.tours.virtual" />
+                      <NavDropdown.Item href={formatPath(PAGES.virtual)}>
+                        עץבעיר - ההרצאה
                       </NavDropdown.Item>
                     </div>
                   </NavDropdown>
@@ -93,116 +84,112 @@ const Header: React.FC = () => {
                   <NavDropdown
                     renderMenuOnMount
                     id="workshops-dropdown"
-                    title={formatMessage({ id: 'nav.workshops.title' })}
-                    onClick={anchor(intl, 'workshops')}
+                    title="לימוד מקוון"
+                    onClick={anchor('workshops')}
                   >
                     <div onClick={stopPropagation}>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.practicalEcologySummer)}>
-                        <FormattedMessage id="nav.workshops.practical-ecology" />
+                      <NavDropdown.Item href={formatPath(PAGES.practicalEcologySummer)}>
+                        סדנאות אקולוגיה מעשית
                       </NavDropdown.Item>
                       <NavDropdown.Item
                         className="disabled"
                         onClick={showModal}
-                        href={formatPath(intl, PAGES.magicalEconomy)}
+                        href={formatPath(PAGES.magicalEconomy)}
                       >
-                        <FormattedMessage id="nav.workshops.magical-economy" />
+                        כלכלת קסם - לימוד חודשי
                       </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(intl, PAGES.hineni)}>
-                        <FormattedMessage id="nav.workshops.abracadabra" />
+                      <NavDropdown.Item href={formatPath(PAGES.hineni)}>
+                        קורס כישוף ואקולוגיה עמוקה
                       </NavDropdown.Item>
                       <NavDropdown.Item className="disabled" onClick={showModal}>
-                        <FormattedMessage id="nav.workshops.homelife" />
+                        עושות חיים בבית - מעגל חדש
                       </NavDropdown.Item>
                     </div>
                   </NavDropdown>
 
                   <NavDropdown
                     renderMenuOnMount
-                    title={formatMessage({ id: 'nav.info.title' })}
+                    title="מרכז ידע"
                     id="info-dropdown"
-                    onClick={anchor(intl, 'info')}
+                    onClick={anchor('info')}
                   >
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.blog)}
+                      href={formatPath(PAGES.blog)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.info.posts" />
+                      רשומות (בלוג)
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.manifestos)}
+                      href={formatPath(PAGES.manifestos)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.info.manifestos" />
+                      מניפסטים
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.articles)}
+                      href={formatPath(PAGES.articles)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.info.articles" />
+                      מאמרים
                     </NavDropdown.Item>
                     <NavDropdown.Item href={youtubeUrl} target="_blank">
-                      <FormattedMessage id="nav.info.videos" />
+                      סרטונים
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.glossary)}
+                      href={formatPath(PAGES.glossary)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.info.glossary" />
+                      מילון עץבעיר
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.references)}
+                      href={formatPath(PAGES.references)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.info.references" />
+                      רשימת מקורות
                     </NavDropdown.Item>
                   </NavDropdown>
 
                   <NavDropdown
                     renderMenuOnMount
                     id="vision-dropdown"
-                    title={formatMessage({ id: 'nav.vision.title' })}
-                    onClick={anchor(intl, 'vision')}
+                    title="חלום"
+                    onClick={anchor('vision')}
                   >
-                    <NavDropdown.Item onClick={anchor(intl, 'vision')}>
-                      <FormattedMessage id="nav.vision.dream" />
+                    <NavDropdown.Item onClick={anchor('vision')}>עץ חולם על העולם</NavDropdown.Item>
+                    <NavDropdown.Item
+                      className="disabled"
+                      href={formatPath(PAGES.trees)}
+                      onClick={showModal}
+                    >
+                      אחוות העצים
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.trees)}
+                      href={formatPath(PAGES.forestCity)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.vision.trees" />
+                      עיר־יער
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       className="disabled"
-                      href={formatPath(intl, PAGES.forestCity)}
+                      href={formatPath(PAGES.poetry)}
                       onClick={showModal}
                     >
-                      <FormattedMessage id="nav.vision.forest-city" />
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      className="disabled"
-                      href={formatPath(intl, PAGES.poetry)}
-                      onClick={showModal}
-                    >
-                      <FormattedMessage id="nav.vision.poetry" />
+                      שירת האלון
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
                 <Nav>
-                  <Link className="nav-link" to={locale === 'en' ? '/' : '/en'}>
+                  {/* <Link className="nav-link" to={locale === 'en' ? '/' : '/en'}>
                     {locale === 'en' ? 'עברית' : 'EN'}
-                  </Link>
+                  </Link> */}
                   <Button id="PatreonButton" href={joinPatreonUrl} as="a" target="_blank">
-                    <img src={patreonLogo} alt={formatMessage({ id: 'donate.patreonTitle' })} />
-                    <span>
-                      <FormattedMessage id="nav.patreon" />
-                    </span>
+                    <img src={patreonLogo} alt="חבקו את העץ בפטראון" />
+                    <span>חבקו את העץ בפטראון</span>
                   </Button>
                 </Nav>
               </Navbar.Collapse>

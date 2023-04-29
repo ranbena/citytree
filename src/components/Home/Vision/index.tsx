@@ -1,5 +1,4 @@
 import React from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, FloatBox } from 'src/components/Box';
 import image from 'src/assets/images/vision_bg.jpeg';
@@ -9,8 +8,6 @@ import { PAGES } from 'src/constants';
 import { VisionHero } from './styles';
 
 function Vision() {
-  const intl = useIntl();
-
   return (
     <ComingSoonModalProvider>
       {(showModal) => (
@@ -19,13 +16,26 @@ function Vision() {
             <Row>
               <Col md={8} lg={7} xl={6}>
                 <BoxInner className="vision-main">
-                  <Title className="vision-title">
-                    <FormattedMessage id="vision.general.title" />
-                  </Title>
-                  <Paragraph
-                    intlId="vision.general.text"
-                    values={{ b: (txt: string) => <strong>{txt}</strong> }}
-                  />
+                  <Title className="vision-title">עץ חולם עולם אחר שאפשרי</Title>
+
+                  <Paragraph>
+                    אנו רואות לנגד עינינו עולם שבו גופנו, ביתנו וכדור-הארץ כולו שבים ומקבלים
+                    מהא'נשים יחס של כבוד וייראה, ככלים מקודשים לסביבות מחיה חיוניות שהחיים משגשגים
+                    בהן במלואם. אנו מאחלות ומאחלים שבני-האדם ימצאו מחדש את מקומם בעולם, כשחוקי הטבע
+                    משמשים להם כמדריך.
+                  </Paragraph>
+                  <Paragraph>
+                    אנו רואות תרבות אנושית מחוברת ליסודות החיים: מוקירה את האדמה, מכבדת את המים,
+                    חוגגת את האש ומעריכה את האוויר. בזמנים אלה של חוסר־ביטחון ואובדן־אמון, אנו
+                    מקווים לימים שבהם תחושת הביטחון תנבע לא ממערכת של כסף אלא משפע של אהבה, חיבור
+                    ובריאות. אנו רואות בעיני־רוחנו את הבתים מתמלאים מחדש בחיים ואותנו, הא'נשים,
+                    חוזרים הביתה – אל החיבור הבלתי־אמצעי לכל מה שמזין אותנו – לטבע, למזון בריא
+                    ומיטיב, לקהילה, לכל מה שחי סביבנו ובתוכנו. השיבה הביתה היא שיבה לאכפתיות, לטיפוח
+                    הסביבה שלנו ולהרמוניה עם הפלנטה. הבה ונחזור לתפקידנו כשומרי החיים עלי אדמות.
+                  </Paragraph>
+                  <Paragraph>
+                    <b>הבה ונשוב הביתה!</b>
+                  </Paragraph>
                 </BoxInner>
               </Col>
               <Col md={4} lg={5} xl={6} className="side-column">
@@ -34,14 +44,12 @@ function Vision() {
                     <FloatBox
                       position="top"
                       staticPosition
-                      href={formatPath(intl, PAGES.trees)}
+                      href={formatPath(PAGES.trees)}
                       onClick={showModal}
                     >
-                      <Title>
-                        <FormattedMessage id="vision.trees.title" />
-                      </Title>
+                      <Title>אחוות העצים</Title>
                       <Paragraph>
-                        <FormattedMessage id="vision.trees.text" />
+                        אחד החלומות של העץ קרם עור וגידים לרגע. ברגע ההוא למדנו המון על עצים...
                       </Paragraph>
                     </FloatBox>
                   </Col>
@@ -51,15 +59,11 @@ function Vision() {
                     <FloatBox
                       position="center"
                       staticPosition
-                      href={formatPath(intl, PAGES.forestCity)}
+                      href={formatPath(PAGES.forestCity)}
                       onClick={showModal}
                     >
-                      <Title>
-                        <FormattedMessage id="vision.forest-city.title" />
-                      </Title>
-                      <Paragraph>
-                        <FormattedMessage id="vision.forest-city.text" />
-                      </Paragraph>
+                      <Title>עיר־יער</Title>
+                      <Paragraph>חזון שאנחנו שותפים לו וחולמים אותו לפרטי פרטים...</Paragraph>
                     </FloatBox>
                   </Col>
                 </Row>
@@ -68,14 +72,13 @@ function Vision() {
                     <FloatBox
                       position="bottom"
                       staticPosition
-                      href={formatPath(intl, PAGES.poetry)}
+                      href={formatPath(PAGES.poetry)}
                       onClick={showModal}
                     >
-                      <Title>
-                        <FormattedMessage id="vision.poetry.title" />
-                      </Title>
+                      <Title>שירת האלון</Title>
                       <Paragraph>
-                        <FormattedMessage id="vision.poetry.text" />
+                        ד״ר אלון הוא גם משורר אקולוגי. מבחר משיריו מובא כאן בליווי צילומים של המכ'
+                        תמי...
                       </Paragraph>
                     </FloatBox>
                   </Col>

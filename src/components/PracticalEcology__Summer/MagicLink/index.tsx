@@ -1,23 +1,16 @@
 import React, { FC } from 'react';
 import { Container } from 'react-bootstrap';
-import { FormattedMessage } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
 import { Wrapper } from './styles';
 
 const Component: FC = () => (
   <Wrapper>
     <Container>
-      <h3>
-        <FormattedMessage id="practical-ecology-summer.magiclink.title" />
-      </h3>
-      <p>
-        <FormattedMessage id="practical-ecology-summer.magiclink.text" />
-      </p>
+      <h3>18 סדנאות - קישורית קסם אחת - ניפגש בזום</h3>
+      <p>בנוסף, כל סדנאות הקיץ מוקלטות וזמינות לנרשמות ולנרשמים לסדרה לצפייה בכל עת</p>
       <br />
       <br />
-      <SignUpButton>
-        <FormattedMessage id="practical-ecology-summer.magiclink.button" />
-      </SignUpButton>
+      <SignUpButton>להרשמה לסדנאות הקיץ</SignUpButton>
     </Container>
   </Wrapper>
 );

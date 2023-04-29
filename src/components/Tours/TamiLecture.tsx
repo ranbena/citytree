@@ -1,6 +1,5 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FormattedMessage } from 'gatsby-plugin-intl';
 import { PAGES } from 'src/constants';
 import { LinkButton, Paragraph } from '../Box';
 import { BoxInner, ButtonWrapper, Title } from './styles';
@@ -9,13 +8,20 @@ import { ImageContainer } from './Tour/styles';
 
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#cfe5e3">
-    <Title>
-      <FormattedMessage id="tours.tami.title" />
-    </Title>
-    <Paragraph grow intlId="tours.tami.text" />
+    <Title>הרצאה של תמי צרי</Title>
+    <Paragraph>
+      תמי צרי חיה בכיכר ביאליק במשך 16 שנים ורקמה שם את החזון שלה לעיר־יער שבה אנחנו מקיימים את
+      החיים היפים יותר שלבבותנו יודעים שאפשריים לנו. היא הביאה את משק הבית של עץבעיר לדרגה גבוהה של
+      יצרנות ויצירתיות בלב העיר הגדולה, בשילוב עם הגינות האקולוגיות שטיפח ד״ר אלון אלירן, ולמדה
+      לחיות עם א׳נשים אחרים; מלבד אלון, מלווים אותה במסעה המתמשך גם אבי ועינת וכל קהילת העץ.
+    </Paragraph>
+    <Paragraph grow>
+      עכשיו היא תשמח לפגוש כל מעגל ולשתף בסיפור שלה, בליווי הדגמות מעשיות של כמה מהטריקים הטובים
+      שהיא פיתחה לחיי קסם מתחת לרדאר הקפיטליסטי.
+    </Paragraph>
     <ButtonWrapper>
       <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#385958">
-        <FormattedMessage id="tours.tami.buttonLabel" />
+        להזמנת הרצאה של תמי צרי
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Popover, OverlayTrigger } from 'react-bootstrap';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { patreonUrl, bitPhone, paypalUrl, payboxUrl } from 'src/constants';
 
 import payboxImage from 'src/assets/images/paybox.png';
@@ -51,59 +50,42 @@ const DonateButton: React.FC<{
   );
 };
 
-const Donate: React.FC = () => {
-  const { formatMessage } = useIntl();
-  return (
-    <div className="donate">
-      <div className="btn-patreon">
-        <Button
-          title={formatMessage({ id: 'donate.patreonTitle' })}
-          as="a"
-          href={patreonUrl}
-          target="_blank"
-        >
-          <img src={patreonImage} alt={formatMessage({ id: 'donate.patreonTitle' })} />
-        </Button>
-      </div>
-      <p>
-        <FormattedMessage id="donate.subtitle.0" />
-        <br />
-        <FormattedMessage id="donate.subtitle.1" />
-      </p>
-      <div className="buttons">
-        <DonateButton
-          title={formatMessage({ id: 'donate.channels.paybox' })}
-          linkUrl={payboxUrl}
-          imageUrl={payboxImage}
-        />
-        <DonateButton
-          title={formatMessage({ id: 'donate.channels.cash' })}
-          text={formatMessage({ id: 'donate.channels.cashText' })}
-        />
-        <DonateButton
-          title={formatMessage({ id: 'donate.channels.paypal' })}
-          linkUrl={paypalUrl}
-          imageUrl={paypalImage}
-          maxHeight={20}
-        />
-        <DonateButton
-          title={formatMessage({ id: 'donate.channels.bit' })}
-          imageUrl={bitpayImage}
-          text={
-            <>
-              <img
-                width="18"
-                height="18"
-                src={bitpayIcon}
-                alt={formatMessage({ id: 'donate.channels.bitText' })}
-              />{' '}
-              <FormattedMessage id="donate.channels.bitText" /> {bitPhone}
-            </>
-          }
-        />
-      </div>
+const Donate: React.FC = () => (
+  <div className="donate">
+    <div className="btn-patreon">
+      <Button title="היו פטרונים" as="a" href={patreonUrl} target="_blank">
+        <img src={patreonImage} alt="היו פטרונים" />
+      </Button>
     </div>
-  );
-};
+    <p>
+      לתשלום חד פעמי עבור סיור, לימוד, ייעוץ,
+      <br />
+      או פשוט כי בא לכן:
+    </p>
+    <div className="buttons">
+      <DonateButton title="פייבוקס" linkUrl={payboxUrl} imageUrl={payboxImage} />
+      <DonateButton
+        title="כמו פעם: מזומן!"
+        text="כסף הוא גם חומר! בואו לבקר ושלמו במטבעות ובניירות כמו פעם!"
+      />
+      <DonateButton title="פייפאל" linkUrl={paypalUrl} imageUrl={paypalImage} maxHeight={20} />
+      <DonateButton
+        title="ביט"
+        imageUrl={bitpayImage}
+        text={
+          <>
+            <img
+              width="18"
+              height="18"
+              src={bitpayIcon}
+              alt="העבירו בביט למספר הסלולרי של עץבעיר"
+            />{' '}
+            העבירו בביט למספר הסלולרי של עץבעיר {bitPhone}
+          </>
+        }
+      />
+    </div>
+  </div>
+);
 
 export default Donate;

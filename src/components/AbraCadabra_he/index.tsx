@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-
 import Layout from 'src/components/Layout';
 import ogImage from 'src/assets/images/abracadabra-he/og.jpg';
 import { getAbsolutePath } from 'src/utils';
@@ -24,9 +22,8 @@ const image = {
 };
 
 const Page: FC<PageProps> = () => {
-  const { formatMessage } = useIntl();
-  const siteTitle = formatMessage({ id: 'abracadabra-he.metatitle' });
-  const siteDesc = formatMessage({ id: 'abracadabra-he.metadesc' });
+  const siteTitle = 'עץבעיר - קורס כישוף ואקולוגיה עמוקה';
+  const siteDesc = 'תיאוריה ופרקטיקה של השבת הקסם אל חיינו - 8 שיעורי בסיס';
 
   return (
     <Layout>
@@ -41,38 +38,26 @@ const Page: FC<PageProps> = () => {
       <TopSection />
       <Navigation>
         <a href="#overview">
-          <span>
-            <FormattedMessage id="abracadabra-he.nav.overview" />
-          </span>
+          <span>שובה של האלה?</span>
         </a>
         <a href="#learn">
-          <span>
-            <FormattedMessage id="abracadabra-he.nav.learn" />
-          </span>
+          <span>מה לומדות</span>
         </a>
         <a href="#receive">
-          <span>
-            <FormattedMessage id="abracadabra-he.nav.receive" />
-          </span>
+          <span>מה מקבלות</span>
         </a>
         <a href="#investment">
-          <span>
-            <FormattedMessage id="abracadabra-he.nav.investment" />
-          </span>
+          <span>מחיר הקורס</span>
         </a>
         <a
           href="https://docs.google.com/document/d/1FXW_Wekv2h4NufrYhCjA28oLwmGLgrqTDiGag88CCBY/preview"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span>
-            <FormattedMessage id="abracadabra-he.nav.sylabus" />
-          </span>
+          <span>סילבוס</span>
         </a>
         <a href="#wheel">
-          <span>
-            <FormattedMessage id="abracadabra-he.nav.wheel" />
-          </span>
+          <span>הגלגל</span>
         </a>
       </Navigation>
       <Anchor id="overview" />

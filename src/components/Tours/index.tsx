@@ -1,7 +1,6 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { useIntl } from 'gatsby-plugin-intl';
 import Layout from 'src/components/Layout';
 import { getAbsolutePath } from 'src/utils';
 
@@ -20,9 +19,8 @@ const image = {
 };
 
 const Page: React.FC<PageProps> = () => {
-  const intl = useIntl();
-  const pageTitle = intl.formatMessage({ id: 'tours.meta.title' });
-  const pageDesc = intl.formatMessage({ id: 'tours.meta.desc' });
+  const pageTitle = 'עץבעיר - סיורי אקולוגיה עירונית, ליקוט עירוני וכישוף עירוני';
+  const pageDesc = 'סיורים בדירה האקולוגית ובגינות האקולוגיות שבלב תל אביב';
 
   return (
     <Layout>

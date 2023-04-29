@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import Layout from 'src/components/Layout';
 import ogImageHe from 'src/assets/images/practical-ecology-summer/og-he.jpg';
 import { getAbsolutePath } from 'src/utils';
@@ -21,9 +20,8 @@ const image = {
 };
 
 const Page: FC<PageProps> = () => {
-  const { formatMessage } = useIntl();
-  const siteTitle = formatMessage({ id: 'practical-ecology-summer.metatitle' });
-  const siteDesc = formatMessage({ id: 'practical-ecology-summer.metasubtitle' });
+  const siteTitle = 'עץבעיר - סדנאות באקולוגיה מעשית';
+  const siteDesc = 'קומפוסט וגינון, ריפוי DIY, נקיון אקולוגי של הבית והגוף ועוד';
 
   return (
     <Layout>
@@ -37,21 +35,11 @@ const Page: FC<PageProps> = () => {
       </Helmet>
       <TopSection />
       <Navigation>
-        <a href="#overview">
-          <FormattedMessage id="practical-ecology-summer.nav.overview" />
-        </a>
-        <a href="#schedule">
-          <FormattedMessage id="practical-ecology-summer.nav.schedule" />
-        </a>
-        <a href="#pricing">
-          <FormattedMessage id="practical-ecology-summer.nav.pricing" />
-        </a>
-        <a href="#times">
-          <FormattedMessage id="practical-ecology-summer.nav.times" />
-        </a>
-        <WinterAnchor href="#winter">
-          <FormattedMessage id="practical-ecology-summer.nav.winter" />
-        </WinterAnchor>
+        <a href="#overview">ברוכות השבות הביתה</a>
+        <a href="#schedule">תכניית הסדנאות</a>
+        <a href="#pricing">מחיר הסדרה</a>
+        <a href="#times">גלגל השנה של עץבעיר</a>
+        <WinterAnchor href="#winter">סדנאות החורף</WinterAnchor>
       </Navigation>
       <Anchor id="overview" />
       <Overview />

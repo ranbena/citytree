@@ -1,44 +1,38 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
-import { forEachMessage } from '../../../utils';
 
 import { Title } from '../styles';
 import { Wrapper, Container, Box } from './styles';
 
-const Overview: FC = () => {
-  const intl = useIntl();
-
-  return (
-    <Wrapper>
-      <Container>
-        <Box xl={7} md={10} sm={12}>
-          <Title>
-            <FormattedMessage id="practical-ecology-summer.overview.title" />
-          </Title>
-          {forEachMessage(intl, 'practical-ecology-summer.overview.text').map(([txt, key]) => (
-            <p key={key}>{txt}</p>
-          ))}
-          <p>
-            <strong>
-              <FormattedMessage id="practical-ecology-summer.overview.date" />
-            </strong>
-          </p>
-          <p>
-            {forEachMessage(intl, 'practical-ecology-summer.overview.bottomText').map(
-              ([txt, key]) => (
-                <p key={key}>{txt}</p>
-              ),
-            )}
-          </p>
-          <br />
-          <SignUpButton>
-            <FormattedMessage id="practical-ecology-summer.signupnow" />
-          </SignUpButton>
-        </Box>
-      </Container>
-    </Wrapper>
-  );
-};
+const Overview: FC = () => (
+  <Wrapper>
+    <Container>
+      <Box xl={7} md={10} sm={12}>
+        <Title>ברוכות השבות הביתה!</Title>
+        <p>
+          שינוי עולם מבקש שינוי תודעה והרגלים. בסדנאות של עץבעיר אנחנו מגלות את ההזדמנות האדירה שיש
+          לנו ביומיום, בכל פעולה, ליצור שינוי ולתרגל אותו. כל סדנה היא מסע סביב הרגל, כל סדנה היא
+          צעד. אנו חושפות אט אט את המחשבות המוטמעות בנו, מגלות איזו מערכת אמונות הן מייצגות, מבחינות
+          מה הפעולות הקטנות שלנו משרתות ולומדות את הפרקטיקה של השינוי הקטן האחד שלו מוקדשת כל סדנה.
+        </p>
+        <p>משיעור לשיעור, מתרווחות בסיפוק שבהתאמה-מחדש לחוקיה של טבע - חוזרות הביתה.</p>
+        <p>
+          ניפגש אחת לשבוע, לשיעור שאורכו כשעה, שמוקדש כל פעם לנושא אחר בעולם הקיימות המעשית של
+          עץבעיר - נכסה אותו מהתיאוריה ועד הפרקטיקה, בליווי במצגת מרהיבה, ובהנחייה הרדיקלית של תמי
+          צרי.
+        </p>
+        <p>לאחר המצגת יש זמן לשאלות ודיון.</p>
+        <p>
+          <strong>הסדנה הראשונה תתקיים ב-4 במאי 2021, יום שלישי, בשעה שבע.</strong>
+        </p>
+        <p>ניפגש כל שבוע באותה שעה, 18 פעמים</p>
+        <p>הסדנאות מוקלטות וזמינות לכל מי שנרשמה לסדרה כולה</p>
+        <p>סדנאות בודדות ניתנות לרכישה</p>
+        <br />
+        <SignUpButton>להרשמה לסדנאות הקיץ</SignUpButton>
+      </Box>
+    </Container>
+  </Wrapper>
+);
 
 export default Overview;

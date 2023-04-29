@@ -50,15 +50,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-intl',
-      options: {
-        path: `${__dirname}/src/intl`, // directory with the strings JSON
-        languages: ['he', 'en'],
-        defaultLanguage: 'he',
-        redirect: false,
-      },
-    },
     'gatsby-plugin-client-side-redirect',
   ],
 };

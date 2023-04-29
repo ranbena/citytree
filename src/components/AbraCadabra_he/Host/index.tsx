@@ -1,26 +1,28 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { forEachMessage } from '../../../utils';
 
 import { Wrapper, Container, Box, Title } from './styles';
 
-const Host: FC = () => {
-  const intl = useIntl();
-
-  return (
-    <Wrapper>
-      <Container>
-        <Box xl={6} lg={7} sm={12}>
-          <Title>
-            <FormattedMessage id="abracadabra-he.host.title" />
-          </Title>
-          {forEachMessage(intl, 'abracadabra-he.host.text').map(([txt, key]) => (
-            <p key={key}>{txt}</p>
-          ))}
-        </Box>
-      </Container>
-    </Wrapper>
-  );
-};
+const Host: FC = () => (
+  <Wrapper>
+    <Container>
+      <Box xl={6} lg={7} sm={12}>
+        <Title>מנחה: תמי צרי</Title>
+        <p>
+          מייסדת ״עץבעיר״ (2006), מרחב המממש הלכה למעשה את החזון האקולוגי בלב תל אביב. בוגרת בצלאל,
+          אמנית מיצג, עמיתת מרכז השל ואשת פרמקלצ'ר, אקולוגית עירונית ומורדת בהכחדה. ממובילות קהילת
+          הקיימות בישראל.
+        </p>
+        <p>
+          תמי קשובה לקריאתה של האדמה ולקריאתם של המדענים לשינוי מערכתי רדיקלי, ומגיבה בלימוד,
+          בהרצאות, במיצגים ובפעולות שיקום במרחב הבית והסביבה הקרובה, תומכת במעבר מדמוקרטיה לממשל
+          בר-קיימא (פוסטקפיטליזם), כותבת ומלמדת במסגרות-תוכן שיצרה יחד עם שותפיה בעץבעיר - ״עושות
+          חיים בבית״, ״השיבה הביתה״ ו״קורס הכישוף״, מעבירה חוגי בית הרצאות וקורסים על משבר האקלים,
+          המרד וחיי העיר הפוסטקפיטליסטית האוטופית.
+        </p>
+        <p>אפשר לפנות לתמי: tami@citytree.net</p>
+      </Box>
+    </Container>
+  </Wrapper>
+);
 
 export default Host;

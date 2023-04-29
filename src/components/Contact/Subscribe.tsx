@@ -1,13 +1,14 @@
 import React from 'react';
-import { useIntl } from 'gatsby-plugin-intl';
 
-const Subscribe: React.FC = () => {
+const Subscribe: React.FC<{ locale?: 'he' | 'en' }> = ({ locale = 'he' }) => {
   const el = React.useRef(null);
-  const { formatMessage } = useIntl();
 
-  const formId = formatMessage({ id: 'newsletter.formId' });
-  const dataFormId = formatMessage({ id: 'newsletter.dataFormId' });
-  const direction = formatMessage({ id: 'direction' });
+  const formId = locale === 'he' ? '319791' : '320972';
+  const dataFormId =
+    locale === 'he'
+      ? '319791-d7566b30-480e-6db7-e9b4-dbabe2e71da9-22'
+      : '320972-f7e9df9b-57fe-d3e8-79fc-84250bda7b07-22';
+  const direction = locale === 'he' ? 'rtl' : 'ltr';
 
   React.useEffect(() => {
     const script = document.createElement('script');

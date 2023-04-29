@@ -1,33 +1,45 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
-import { forEachMessage } from '../../../utils';
 
 import { Wrapper, Container, Box, Title } from './styles';
 
-const Learn: FC = () => {
-  const intl = useIntl();
-
-  return (
-    <Wrapper>
-      <Container>
-        <Box xl={6} lg={7} sm={12}>
-          <Title>
-            <FormattedMessage id="abracadabra-he.learn.title" />
-          </Title>
-          {forEachMessage(intl, 'abracadabra-he.learn.text').map(([txt, key]) => (
-            <p key={key}>{txt}</p>
-          ))}
-          <br />
-          <span>
-            <SignUpButton url="https://docs.google.com/document/d/1FXW_Wekv2h4NufrYhCjA28oLwmGLgrqTDiGag88CCBY/preview">
-              <FormattedMessage id="abracadabra-he.learn.button" />
-            </SignUpButton>
-          </span>
-        </Box>
-      </Container>
-    </Wrapper>
-  );
-};
+const Learn: FC = () => (
+  <Wrapper>
+    <Container>
+      <Box xl={6} lg={7} sm={12}>
+        <Title>מה לומדות?</Title>
+        <p>
+          בהשלמה לעולם הקיימות המעשית של עץבעיר, כאן אנחנו צועדות בשדה שבו האוצרות טמונים מתחת לפני
+          האדמה — בתת המודע האישי והקולקטיבי שלנו, בזיכרונות שלנו, בכתבים וברעיונות שהיו אסורים
+          ונשכחו במשך אלפי שנה.
+        </p>
+        <p>
+          אנחנו חוזרות! אנחנו חוזרות לאמת שלנו כנשים, להיסטוריה הנשכחת של אנושות הרמונית, שואלות מה
+          שבר את ההרמוניה ומגלות סיפורי שיבה אל הדרך. סיפורי דרך חדשה-ישנה, רפואה למשבר הרב ממדי
+          שאנחנו נתונות בו.
+        </p>
+        <p>
+          כל שיעור נפתח במדיטציה סביב מילה אחת מתוך לחש בן שמונה מילים. החלק המרכזי של השיעור מוקדש
+          לנושאים שונים סביב האלה, האקולוגיה, והכלים של המכשפה, בעבר והיום. השיעורים נעים עם
+          היסודות, עם ממד הזמן ועם סמלים ותבניות. נתייחס כמובן גם לאדמה, לצמחים ולשיקויים, לגוף שלנו
+          ולתזונה שהוא מבקש.
+        </p>
+        <p>
+          כל שיעור מלווה במצגת יפה ובסיומו הבמה נפתחת לדיון ושאלות מאת מי שהשתתפה בשיעורים החיים.
+        </p>
+        <p>
+          ניתנות הצעות לתרגול ולמחשבה בין השיעורים, כמו גם גישה לקבוצת פייסבוק שבה ניתן להרחיב את
+          הדיון והיריעה.
+        </p>
+        <br />
+        <span>
+          <SignUpButton url="https://docs.google.com/document/d/1FXW_Wekv2h4NufrYhCjA28oLwmGLgrqTDiGag88CCBY/preview">
+            להורדת הסילבוס...
+          </SignUpButton>
+        </span>
+      </Box>
+    </Container>
+  </Wrapper>
+);
 
 export default Learn;

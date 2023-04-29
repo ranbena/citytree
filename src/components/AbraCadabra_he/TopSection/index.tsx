@@ -1,29 +1,18 @@
 import React, { FC } from 'react';
 
 import { Container } from 'react-bootstrap';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Wrapper, Title, SubTitle } from './styles';
 
-const TopSection: FC = () => {
-  const { locale } = useIntl();
-
-  return (
-    <Wrapper $locale={locale}>
-      <Container>
-        <Title>
-          <strong>
-            <FormattedMessage id="abracadabra-he.name" />
-          </strong>
-          <span>
-            <FormattedMessage id="abracadabra-he.title" />
-          </span>
-        </Title>
-        <SubTitle>
-          <FormattedMessage id="abracadabra-he.subtitle" />
-        </SubTitle>
-      </Container>
-    </Wrapper>
-  );
-};
+const TopSection: FC = () => (
+  <Wrapper $locale="he">
+    <Container>
+      <Title>
+        <strong>הִנְּנִי</strong>
+        <span>קורס כישוף, אקולוגיה עמוקה ושובה של האלה</span>
+      </Title>
+      <SubTitle>8 מפגשי זום ועוד מתנות</SubTitle>
+    </Container>
+  </Wrapper>
+);
 
 export default TopSection;

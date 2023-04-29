@@ -1,6 +1,4 @@
 import { withPrefix, navigate } from 'gatsby';
-import { IntlShape } from 'gatsby-plugin-intl';
-import { IntlMessageFormat } from 'intl-messageformat';
 
 type Sizes = {
   xl?: number;
@@ -29,30 +27,8 @@ export function stripPhoneNumber(number: string, excludeLeadingZero?: 0 | 1): st
   return ret;
 }
 
-export function forEachMessage(
-  intl: IntlShape,
-  key: string,
-  values?: Record<string, any>,
-): [string, string][] {
-  const ret: [string, string][] = [];
-  const { messages, locale } = intl;
-  Object.entries(messages).forEach(([k, v], idx) => {
-    if (k.startsWith(key)) {
-      const formatted = new IntlMessageFormat(v, locale).format(values);
-      ret.push([formatted, `${key}${idx}`]);
-    }
-  });
-  return ret;
-}
-
-export function formatPath(
-  intl: IntlShape,
-  path: string,
-  forcedLocale?: IntlShape['locale'],
-): string {
-  const locale = forcedLocale || intl.locale;
-  const value = locale === intl.defaultLocale ? path : `/${locale}${path}`;
-  return withPrefix(value);
+export function formatPath(path: string): string {
+  return withPrefix(path);
 }
 
 export type NavAnchorT =
@@ -66,12 +42,12 @@ export type NavAnchorT =
   | 'contact'
   | 'sponsor';
 
-export function formatAnchor(intl: IntlShape, type?: NavAnchorT) {
-  return formatPath(intl, type ? `/#${type}` : '/');
+export function formatAnchor(type?: NavAnchorT) {
+  return formatPath(type ? `/#${type}` : '/');
 }
 
-export const anchor = (intl: IntlShape, type?: NavAnchorT) => () => {
-  navigate(formatAnchor(intl, type));
+export const anchor = (type?: NavAnchorT) => () => {
+  navigate(formatAnchor(type));
 };
 
 export const breakpoints = {

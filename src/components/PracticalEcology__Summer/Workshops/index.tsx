@@ -1,6 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Container, Nav, Tab as BSTab } from 'react-bootstrap';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import Table from './Table';
 import events from './events';
 import {
@@ -19,13 +18,50 @@ import {
 const tabKeys = ['usefulness', 'movement', 'satisfaction'] as const;
 export type TabKey = typeof tabKeys[number];
 
-const getId = (...keys: (string | number)[]) =>
-  `practical-ecology-summer.workshops.${keys.join('.')}`;
-const getTitle = (tabKey: TabKey) => <FormattedMessage id={getId(tabKey, 'title')} />;
+const data: Record<TabKey, { title: string; season: string; element: string }> = {
+  usefulness: {
+    title: 'מועילות',
+    season: 'אביב',
+    element: 'אש',
+  },
+  movement: {
+    title: 'תנועה',
+    season: 'קיץ',
+    element: 'אש',
+  },
+  satisfaction: {
+    title: 'הסתפקות',
+    season: 'קיץ',
+    element: 'מים',
+  },
+};
+
+const eventNames: Record<string, string> = {
+  1: 'על המכונה ועל הכביסה – סדנת פתיחה',
+  2: 'זבת חלב – סדנה לשבועות',
+  3: 'צמחים אהובים בקיץ – כותנה, מורינגה ובטטה',
+  4: 'קומפוסט והעיר הגדולה: תולעים אדומות',
+  5: 'הלו אלוורה – צמח הקסם',
+  6: 'הצלת ירוקים ומצעים - הצלת מזון במאה ה-21',
+  7: 'על האוכל ועל הבוקר – על הרעב ועל השובע',
+  8: 'על הזיעה – עושות לעצמנו דאודורנט',
+  9: 'לחם והחיידקים – איך עושות לחם ונשארות בחיים',
+  10: 'התחדשות – על נבטים ונבטוטים',
+  11: 'התיידדות עם החום הגדול',
+  12: 'על אהבה ועל שוקולד – סדנה לט״ו באב',
+  13: 'היציאה מהסופר – על הבריחה ועל הבחירה',
+  14: 'מים מים בששון – חיבור מחודש למים בבית ובגוף',
+  15: 'שינוי ומשחת השיניים – מכינות משחת שיניים',
+  16: 'הסבון בכה מאוד – מה זה סבון ולמה הוא בוכה',
+  17: 'סוד התבשיל הפשוט – המזון המיטיב',
+  18: 'הכול על הצום – סדנה לקראת חגי הסתיו',
+};
+
+const getTitle = (tabKey: TabKey) => data[tabKey].title;
 const getEvents = (tabKey: TabKey) =>
   Object.entries(events[tabKey].eventDates).map(([index, date]) => ({
     index: Number(index),
-    title: <FormattedMessage id={getId('events', index)} />,
+    title: eventNames[index],
     date,
   }));
 const getDefaultTabKey = () => {
@@ -39,7 +75,6 @@ const getDefaultTabKey = () => {
 };
 
 const Component: FC = () => {
-  const { formatMessage } = useIntl();
   const [tabKey, setTabKey] = useState<TabKey>('usefulness');
 
   useEffect(() => {
@@ -50,10 +85,7 @@ const Component: FC = () => {
     const nextKey = tabKey === 'usefulness' ? 'movement' : 'satisfaction';
     return (
       <Next onClick={() => setTabKey(nextKey)} $hidden={tabKey === 'satisfaction'}>
-        <Prefix>
-          <FormattedMessage id="practical-ecology-summer.workshops.next" />:
-        </Prefix>{' '}
-        {getTitle(nextKey)}
+        <Prefix>לזמן הבא:</Prefix> {getTitle(nextKey)}
       </Next>
     );
   };
@@ -62,10 +94,7 @@ const Component: FC = () => {
     const prevKey = tabKey === 'satisfaction' ? 'movement' : 'usefulness';
     return (
       <Prev onClick={() => setTabKey(prevKey)} $hidden={tabKey === 'usefulness'}>
-        <Prefix>
-          <FormattedMessage id="practical-ecology-summer.workshops.prev" />:
-        </Prefix>{' '}
-        {getTitle(prevKey)}
+        <Prefix>לזמן הקודם:</Prefix> {getTitle(prevKey)}
       </Prev>
     );
   };
@@ -73,12 +102,8 @@ const Component: FC = () => {
   return (
     <Wrapper>
       <Container>
-        <Title>
-          <FormattedMessage id="practical-ecology-summer.workshops.title" />
-        </Title>
-        <Subtitle>
-          <FormattedMessage id="practical-ecology-summer.workshops.subtitle" />
-        </Subtitle>
+        <Title>תכניית סדנאות ״השיבה הביתה״ - קיץ 2021</Title>
+        <Subtitle>18 סדנאות ילוו אותנו לאורך שלושה זמנים בהתאמה לגלגל השנה של עץבעיר</Subtitle>
 
         <BSTab.Container transition={false} activeKey={tabKey}>
           <Tabs>
@@ -96,8 +121,8 @@ const Component: FC = () => {
                 <Table
                   tabKey={tabKey}
                   title={getTitle(key)}
-                  season={formatMessage({ id: getId(key, 'season') })}
-                  element={formatMessage({ id: getId(key, 'element') })}
+                  season={data[key].season}
+                  element={data[key].element}
                   dates={[events[key].start, events[key].end]}
                   events={getEvents(key)}
                 />

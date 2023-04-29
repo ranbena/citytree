@@ -1,55 +1,63 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { forEachMessage } from '../../../utils';
 
 import { Wrapper, Container, Box, BoxContainer, Title } from './styles';
 import SignUpButton from '../SignUpButton';
 
-const Receive: FC = () => {
-  const intl = useIntl();
-
-  return (
-    <Wrapper>
-      <Container>
-        <BoxContainer>
-          <Box $green>
-            <Title>
-              <FormattedMessage id="abracadabra-he.receive.box1.title" />
-            </Title>
-            <ul>
-              {forEachMessage(intl, 'abracadabra-he.receive.box1.text').map(([txt, key]) => (
-                <li key={key}>{txt}</li>
-              ))}
-            </ul>
-          </Box>
-          <Box>
-            <Title>
-              <FormattedMessage id="abracadabra-he.receive.box2.title1" />
-            </Title>
-            {forEachMessage(intl, 'abracadabra-he.receive.box2.text1').map(([txt, key]) => (
-              <p key={key}>{txt}</p>
-            ))}
-            <Title>
-              <FormattedMessage id="abracadabra-he.receive.box2.title2" />
-            </Title>
-            {forEachMessage(intl, 'abracadabra-he.receive.box2.text2').map(([txt, key]) => (
-              <p key={key}>{txt}</p>
-            ))}
-            <br />
-            <SignUpButton />
-          </Box>
-        </BoxContainer>
-        <Box xl={12}>
-          <Title>
-            <FormattedMessage id="abracadabra-he.receive.box3.title" />
-          </Title>
-          {forEachMessage(intl, 'abracadabra-he.receive.box3.text').map(([txt, key]) => (
-            <p key={key}>{txt}</p>
-          ))}
+const Receive: FC = () => (
+  <Wrapper>
+    <Container>
+      <BoxContainer>
+        <Box $green>
+          <Title>מה מקבלות?</Title>
+          <ul>
+            <li>
+              8 הקלטות של 8 מפגשי זום, שעה וחצי כל פעם, של מצגת ויזואלית מרהיבה מלווה בהנחיה
+              הייחודית של תמי.
+            </li>
+            <li>
+              גישה לסדרת השיחות על כישוף ואקולוגיה, ״8 שיחות עם 8 מכשפות״, שבה תמי משוחחת כל פעם עם
+              מורה אחרת שלה. עד כה הוקלטו 3 שיחות.
+            </li>
+            <li>8 מילים לחיבור אל כוחות הקסם שלנו.</li>
+            <li>
+              שיתוף בקהילה – הזדמנות להרחיב את היריעה, לשתף במחשבות, בגילויים ובלינקים, בקבוצת
+              הפייסבוק הפרטית של קורס הכישוף.
+            </li>
+            <li>
+              תרגול בבית – הנחיה לצעדים פרקטיים, שיכניסו את הקסם לחיי היום יום שלכן, משיעור לשיעור –
+              בקצב שלכן.
+            </li>
+          </ul>
         </Box>
-      </Container>
-    </Wrapper>
-  );
-};
+        <Box>
+          <Title>איך זה עובד?</Title>
+          <p>
+            הקורס בנוי סביב שמונה מילים, לחש קסם לחיבור-מחדש לעצמנו ולאדמה. כל שיעור הוא מסע מחקר
+            קטן סביב מילה אחת מתוך הלחש. דרך המילים נוצר מפגש עם ארבעת היסודות, עם הזמנים והעונות,
+            עם הסיפורים שלא סיפרו לנו. המשתתפות מגלות כוחות נשכחים לכתוב לחשים, לרקוח שיקויים,
+            ולהביא ריפוי.
+          </p>
+          <p>
+            מידע נוסף ולינקים להרחבות ניתנים בקבוצת הפייסבוק הפרטית של קורס הכישוף. המשימות
+            והתרגולים שניתנים בשיעורים ובקבוצה מכניסים את הקסם לחייכן צעד אחרי צעד.
+          </p>
+          <Title>האם הקורס הזה הוא בשבילך? הקלטות כבר מחכות לך!</Title>
+          <p>אם גם את מרגישה שיש בך ״מכשפה נמה״ שמחכה לנשיקה – ייתכן שהגעת למקום הנכון.</p>
+          <p>אם גם את מרגישה שהקסם נלקח מהעולם, ואת רוצה להחזיר אותו – אולי הגעת למקום הנכון.</p>
+          <br />
+          <SignUpButton />
+        </Box>
+      </BoxContainer>
+      <Box xl={12}>
+        <Title>הערה חשובה</Title>
+        <p>
+          הקורס אכן מוקדש לתחייתה של האישה, האלה, בעולם החומר והרוח, ועוסק רבות בארכיטיפים נשיים,
+          אבל אין הדבר אומר שהוא פתוח לנשים בלבד! אנו מזמינות אתכם'ן, מכל הקשת המגדרית – אם אתם
+          שומעים את הקריאה, הצטרפו אלינו!
+        </p>
+      </Box>
+    </Container>
+  </Wrapper>
+);
 
 export default Receive;

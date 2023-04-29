@@ -1,23 +1,16 @@
 import React, { FC } from 'react';
-import { FormattedMessage } from 'gatsby-plugin-intl';
 import { emailLink, tamiPhoneLink, whatsappGroupInviteLink, whatsappLink } from 'src/constants';
 import { Wrapper, Title } from './styles';
 import SignUpButton from '../SignUpButton';
 
 const Contact: FC = () => (
   <Wrapper>
-    <Title>
-      <FormattedMessage id="abracadabra-he.contact.title" />
-    </Title>
+    <Title>שאלות? בקשות? צרו איתנו קשר!</Title>
     <p>
       {emailLink} | {tamiPhoneLink}
     </p>
-    <p>
-      <FormattedMessage id="abracadabra-he.contact.whatsapp" /> {whatsappLink}
-    </p>
-    <SignUpButton url={whatsappGroupInviteLink}>
-      <FormattedMessage id="abracadabra-he.contact.button" />
-    </SignUpButton>
+    <p>בווטסאפ, עינת: {whatsappLink}</p>
+    <SignUpButton url={whatsappGroupInviteLink}>הצטרפו לקבוצת הווטסאפ של העץ...</SignUpButton>
   </Wrapper>
 );
 

@@ -1,44 +1,35 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
-import { forEachMessage } from '../../../utils';
-
 import { Title } from '../styles';
 import { Wrapper, Container, Box } from './styles';
 
-const Overview: FC = () => {
-  const intl = useIntl();
-
-  return (
-    <Wrapper>
-      <Container>
-        <Box xl={7} md={10} sm={12}>
-          <Title>
-            <FormattedMessage id="practical-ecology-winter.overview.title" />
-          </Title>
-          {forEachMessage(intl, 'practical-ecology-winter.overview.text').map(([txt, key]) => (
-            <p key={key}>{txt}</p>
-          ))}
-          <p>
-            <strong>
-              <FormattedMessage id="practical-ecology-winter.overview.date" />
-            </strong>
-          </p>
-          <p>
-            {forEachMessage(intl, 'practical-ecology-winter.overview.bottomText').map(
-              ([txt, key]) => (
-                <p key={key}>{txt}</p>
-              ),
-            )}
-          </p>
-          <br />
-          <SignUpButton>
-            <FormattedMessage id="practical-ecology-winter.signupnow" />
-          </SignUpButton>
-        </Box>
-      </Container>
-    </Wrapper>
-  );
-};
+const Overview: FC = () => (
+  <Wrapper>
+    <Container>
+      <Box xl={7} md={10} sm={12}>
+        <Title>ברוכות השבות הביתה!</Title>
+        <p>
+          שינוי עולם מבקש שינוי תודעה והרגלים. בסדנאות של עץבעיר אנחנו מגלות את ההזדמנות האדירה שיש
+          לנו ביומיום, בכל פעולה, ליצור שינוי ולתרגל אותו. כל סדנה היא מסע סביב הרגל, כל סדנה היא
+          צעד. אנו חושפות אט אט את המחשבות המוטמעות בנו, מגלות איזו מערכת אמונות הן מייצגות, מבחינות
+          מה הפעולות הקטנות שלנו משרתות ולומדות את הפרקטיקה של השינוי הקטן האחד שלו מוקדשת כל סדנה.
+        </p>
+        <p>משיעור לשיעור, מתרווחות בסיפוק שבהתאמה-מחדש לחוקיה של טבע - חוזרות הביתה.</p>
+        <p>
+          לאורך חורף 2020, בצל הקורונה, נפגשנו אחת לשבוע בזום, ל-18 שיעורים, כל פעם בנושא אחר בעולם
+          הקיימות המעשית של עץבעיר - כיסינו אותו מהתיאוריה ועד הפרקטיקה, בליווי במצגת מרהיבה,
+          ובהנחייה הרדיקלית של תמי צרי.
+        </p>
+        <p>
+          <strong>השיעורים הוקלטו וכעת ניתן לרכוש את ההקלטות</strong>
+        </p>
+        <p>מחיר שיעור בודד: 20 ₪</p>
+        <p>מחיר סדרת השיעורים כולה, 18 הקלטות: 150 ₪</p>
+        <br />
+        <SignUpButton>לרכישת הקלטות סדנאות החורף</SignUpButton>
+      </Box>
+    </Container>
+  </Wrapper>
+);
 
 export default Overview;

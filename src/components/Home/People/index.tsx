@@ -1,5 +1,4 @@
 import React from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, FloatBox } from 'src/components/Box';
 import image from 'src/assets/images/ppl_bg.jpeg';
@@ -9,8 +8,6 @@ import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import { PeopleHero } from './styles';
 
 function People() {
-  const intl = useIntl();
-
   return (
     <ComingSoonModalProvider>
       {(showModal) => (
@@ -21,12 +18,8 @@ function People() {
                 <Row>
                   <Col>
                     <FloatBox position="top" staticPosition href={PAGES.people} target="_blank">
-                      <Title>
-                        <FormattedMessage id="people.people.title" />
-                      </Title>
-                      <Paragraph>
-                        <FormattedMessage id="people.people.text" />
-                      </Paragraph>
+                      <Title>א'נשות העץ</Title>
+                      <Paragraph>תמי, אלון, אבי, עינת... כמעט כל מה שרציתן לדעת עלינו...</Paragraph>
                     </FloatBox>
                   </Col>
                 </Row>
@@ -35,15 +28,11 @@ function People() {
                     <FloatBox
                       position="center"
                       staticPosition
-                      href={formatPath(intl, PAGES.huggers)}
+                      href={formatPath(PAGES.huggers)}
                       onClick={showModal}
                     >
-                      <Title>
-                        <FormattedMessage id="people.huggers.title" />
-                      </Title>
-                      <Paragraph>
-                        <FormattedMessage id="people.huggers.text" />
-                      </Paragraph>
+                      <Title>מחבקות</Title>
+                      <Paragraph>כמה מחבקות נבחרות ומה יש להן להגיד על העץ...</Paragraph>
                     </FloatBox>
                   </Col>
                 </Row>
@@ -52,14 +41,13 @@ function People() {
                     <FloatBox
                       position="bottom"
                       staticPosition
-                      href={formatPath(intl, PAGES.money)}
+                      href={formatPath(PAGES.money)}
                       onClick={showModal}
                     >
-                      <Title>
-                        <FormattedMessage id="people.money.title" />
-                      </Title>
+                      <Title>כסף</Title>
                       <Paragraph>
-                        <FormattedMessage id="people.money.text" />
+                        רוצות להבין איך אנחנו מתפרנסות בדיוק? ״ממה העץ חי?״ הנה כאן כל הסיפור הכלכלי
+                        שלנו...
                       </Paragraph>
                     </FloatBox>
                   </Col>
@@ -67,16 +55,28 @@ function People() {
               </Col>
               <Col md={8} lg={7} xl={6}>
                 <BoxInner className="people-main">
-                  <Title className="people-title">
-                    <FormattedMessage id="people.general.title" />
-                  </Title>
-                  <Paragraph
-                    intlId="people.general.text"
-                    values={{
-                      b: (txt: string) => <strong>{txt}</strong>,
-                      a: (txt: string) => <a href={formatAnchor(intl, 'sponsor')}>{txt}</a>,
-                    }}
-                  />
+                  <Title className="people-title">מי עומד מאחורי העץ?</Title>
+                  <Paragraph>או יותר נכון, מי עומד מסביבו ומחבק אותו?"</Paragraph>
+                  <Paragraph>
+                    במרכז העשייה תמי צרי שהקימה את עץבעיר ומסורה לו מ-2006, ולצידה אלון אלירן שהצטרף
+                    אליה ב-2008. חוברים אליהם אבי ועינת, כל אחת בדרכה, וכל אחת בדרכים שבהן היא תורמת
+                    ליצירה המתמשכת. אנחנו גרים יחדיו בדירה האקולוגית, ואיתנו אורחות פורחות ממעגל
+                    המחבקות.
+                  </Paragraph>
+                  <Paragraph>ובכן... מהו ״מעגל המחבקות״?</Paragraph>
+                  <Paragraph>
+                    ״המחבקות״ הן כל אותם א'נשים שעזרו ועוזרים לנו בדרכינו. שבלעדיהן לא היינו כאן
+                    היום, ובלעדיהן לא נוכל להמשיך. רבות מהן תורמות לנו בסכום חודשי קבוע (
+                    <a href={formatAnchor('sponsor')}>דרך הפטראון או באמצעי תשלום אחרים</a>), ואחרות
+                    תורמות בדרכים אחרות ובזמנים שונים - בתרומות חד פעמיות של כסף, של זמן, של יכולות
+                    ושל רעיונות ועצות.
+                  </Paragraph>
+                  <Paragraph>
+                    המחבקות זוכות ליחס מיוחד: מפגשים, תכנים רדיקליים והתנסות בכלכלת מתנות.
+                  </Paragraph>
+                  <Paragraph>
+                    <b>הבה ונשוב הביתה!</b>
+                  </Paragraph>
                 </BoxInner>
               </Col>
             </Row>

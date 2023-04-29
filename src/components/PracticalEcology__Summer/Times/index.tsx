@@ -1,32 +1,30 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { forEachMessage } from 'src/utils';
 import SignUpButton from '../SignUpButton';
 
 import { Wrapper, Container, Title, Box } from './styles';
 
-const Overview: FC = () => {
-  const intl = useIntl();
-  return (
-    <Wrapper>
-      <Container>
-        <Box xl={7} sm={12} transparent>
-          <Title>
-            <FormattedMessage id="practical-ecology-summer.times.title" />
-          </Title>
-          <p>
-            {forEachMessage(intl, 'practical-ecology-summer.times.text').map(([txt, key]) => (
-              <p key={key}>{txt}</p>
-            ))}
-          </p>
-        </Box>
+const Overview: FC = () => (
+  <Wrapper>
+    <Container>
+      <Box xl={7} sm={12} transparent>
+        <Title>גלגל השנה של עץבעיר</Title>
+        <p>
+          עץבעיר נולד ברוח החיבור המתחדש לטבע ולמקצבים והיסודות שלה. תמי צרי, מייסדת עץבעיר, התחברה
+          לגלגל השנה הראשוני, המשלב את מהות העונות והיסודות עם מחזורי השמש והלבנה, במחזוריות. המטרה
+          היתה להעיר משנתה את ההרמוניה בין היום יום שלנו ומחזורי הטבע. סדרת הסדנאות באקולוגיה מעשית,
+          ״השיבה הביתה״, כחלק מכלל עבודתנו בעץבעיר, מתואמת עם גלגל שנה זה ומביאה בעזרתו רעיונות
+          ופיתוחים חדשים וקדומים לחיינו.
+        </p>
+        <p>
+          סדנאות הקיץ פרוסות לאורך שלושה זמנים מתוך שמונה - מועילות, תנועה והסתפקות, בדרכן הן פוגשות
+          את החגים הקדומים והמקומיים ומתייחסות אליהם, כמו גם לארבעת היסודות - סדרת הקיץ חולפת על פני
+          יסוד האוויר ויסוד האש.
+        </p>
+      </Box>
 
-        <SignUpButton>
-          <FormattedMessage id="practical-ecology-summer.times.button" />
-        </SignUpButton>
-      </Container>
-    </Wrapper>
-  );
-};
+      <SignUpButton>להרשמה לסדנאות קיץ</SignUpButton>
+    </Container>
+  </Wrapper>
+);
 
 export default Overview;
