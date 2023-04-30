@@ -9,10 +9,10 @@ import {
   instagramUrl,
 } from 'src/constants';
 import logo from 'src/assets/images/logo.png';
-import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
-import { ReactComponent as YoutubeIcon } from 'src/assets/images/icon_youtube.svg';
-import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
-import { ReactComponent as InstagramIcon } from 'src/assets/images/icon_instagram.svg';
+import FacebookIcon from 'src/assets/images/icon_facebook.svg';
+import YoutubeIcon from 'src/assets/images/icon_youtube.svg';
+import WhatsappIcon from 'src/assets/images/icon_whatsapp.svg';
+import InstagramIcon from 'src/assets/images/icon_instagram.svg';
 import { formatAnchor } from 'src/utils';
 import LeafContainer from '../LeafContainer';
 import { Wrapper, Social, Info, Logo, Content } from './styles';

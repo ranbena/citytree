@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
-import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
+import WhatsappIcon from 'src/assets/images/icon_whatsapp.svg';
 import {
   facebookUrl,
   whatsappGroupInviteLink,
@@ -9,8 +9,8 @@ import {
   emailLink,
   tamiPhoneLink,
 } from 'src/constants';
-import { ReactComponent as GoogleIcon } from 'src/assets/images/icon_google.svg';
-import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
+import GoogleIcon from 'src/assets/images/icon_google.svg';
+import FacebookIcon from 'src/assets/images/icon_facebook.svg';
 import Subscribe from './Subscribe';
 import LeafContainer from '../LeafContainer';
 import './styles.scss';

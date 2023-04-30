@@ -21,12 +21,10 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-htaccess',
     {
-      resolve: 'gatsby-plugin-svgr',
+      resolve: 'gatsby-plugin-react-svg',
       options: {
-        prettier: true,
-        svgo: true,
-        svgoConfig: {
-          plugins: [{ removeViewBox: false }, { cleanupIDs: true }],
+        rule: {
+          include: /images\/.*\.svg$/,
         },
       },
     },
