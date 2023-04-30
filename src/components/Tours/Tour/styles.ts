@@ -21,10 +21,30 @@ export const ImageContainer = styled.div`
 
   & > * {
     max-width: 100%;
+    background: white;
     border-radius: 10px;
+    overflow: hidden;
 
     &:first-child {
       grid-column: 1 / 4;
     }
+  }
+`;
+
+export const ThumbItem = styled.div`
+  .gatsby-image-wrapper {
+    min-width: 100%;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+`;
+
+export const LightboxItem = styled.div`
+  .gatsby-image-wrapper {
+    max-width: 100%;
+    max-height: 100%;
   }
 `;

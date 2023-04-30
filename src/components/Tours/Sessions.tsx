@@ -4,7 +4,84 @@ import { PAGES } from 'src/constants';
 import { LinkButton, Paragraph } from '../Box';
 import Tour from './Tour';
 import { BoxInner, ButtonWrapper, Title } from './styles';
-import { ImageContainer } from './Tour/styles';
+
+const images = [
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/Z06_0976.jpg"
+        alt=""
+        placeholder="none"
+        width={720}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/Z06_0976.jpg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Tami_Workshop_07_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        width={175}
+        height={175}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Tami_Workshop_07_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Tami_Workshop_03_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        width={175}
+        height={175}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Tami_Workshop_03_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Tami_Workshop_01_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        width={175}
+        height={175}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Tami_Workshop_01_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+];
 
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#cfe5e3">
@@ -25,44 +102,8 @@ const Box: React.FC = () => (
   </BoxInner>
 );
 
-const Images: React.FC = () => (
-  <ImageContainer>
-    <StaticImage
-      src="../../assets/images/tours/Z06_0976.jpg"
-      alt=""
-      placeholder="none"
-      loading="lazy"
-      width={720}
-    />
-    <StaticImage
-      src="../../assets/images/tours/CityTree_Tami_Workshop_07_Sq_.jpeg"
-      alt=""
-      placeholder="none"
-      loading="lazy"
-      width={175}
-      height={175}
-    />
-    <StaticImage
-      src="../../assets/images/tours/CityTree_Tami_Workshop_03_Sq_.jpeg"
-      alt=""
-      placeholder="none"
-      loading="lazy"
-      width={175}
-      height={175}
-    />
-    <StaticImage
-      src="../../assets/images/tours/CityTree_Tami_Workshop_01_Sq_.jpeg"
-      alt=""
-      placeholder="none"
-      loading="lazy"
-      width={175}
-      height={175}
-    />
-  </ImageContainer>
-);
-
 const Sessions: React.FC = () => (
-  <Tour bgcolor="#385958" anchor="sessions" box={<Box />} images={<Images />} />
+  <Tour bgcolor="#385958" anchor="sessions" box={<Box />} images={images} />
 );
 
 export default Sessions;

@@ -24,7 +24,8 @@ const Page: React.FC<PageProps> = () => {
 
   return (
     <Layout>
-      <Helmet title={pageTitle}>
+      <Helmet>
+        <title>{pageTitle}</title>
         <meta property="og:title" content={pageTitle} />
         <meta name="description" content={pageDesc} />
         <meta property="og:description" content={pageDesc} />

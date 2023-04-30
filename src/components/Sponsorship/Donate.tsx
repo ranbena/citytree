@@ -5,7 +5,7 @@ import { patreonUrl, bitPhone, paypalUrl, payboxUrl } from 'src/constants';
 import payboxImage from 'src/assets/images/paybox.png';
 import bitpayImage from 'src/assets/images/bitpay.png';
 import bitpayIcon from 'src/assets/images/bit-transfer.gif';
-import paypalImage from 'src/assets/images/paypal.svg';
+import paypalImage from 'src/assets/images/paypal.png';
 import patreonImage from 'src/assets/images/patreon.png';
 
 const PopoverButton: React.FC<{ text: string | React.ReactNode; children: React.ReactNode }> = ({
@@ -18,7 +18,7 @@ const PopoverButton: React.FC<{ text: string | React.ReactNode; children: React.
       placement="top"
       overlay={
         <Popover id="popover-button">
-          <Popover.Content>{text}</Popover.Content>
+          <Popover.Body className="popover-body">{text}</Popover.Body>
         </Popover>
       }
     >
@@ -32,12 +32,12 @@ const PopoverButton: React.FC<{ text: string | React.ReactNode; children: React.
 const DonateButton: React.FC<{
   linkUrl?: string;
   disabled?: boolean;
-  imageUrl?: string;
+  image?: string;
   title?: string;
   text?: string | React.ReactNode;
   maxHeight?: number;
-}> = ({ linkUrl, disabled = false, imageUrl, title, text, maxHeight }) => {
-  const icon = imageUrl ? <img src={imageUrl} alt={title} style={{ maxHeight }} /> : title;
+}> = ({ linkUrl, disabled = false, image, title, text, maxHeight }) => {
+  const icon = image ? <img src={image} alt={title} style={{ maxHeight }} /> : title;
 
   if (!disabled && !linkUrl && text) {
     return <PopoverButton text={text}>{icon}</PopoverButton>;
@@ -63,15 +63,11 @@ const Donate: React.FC = () => (
       או פשוט כי בא לכן:
     </p>
     <div className="buttons">
-      <DonateButton title="פייבוקס" linkUrl={payboxUrl} imageUrl={payboxImage} />
-      <DonateButton
-        title="כמו פעם: מזומן!"
-        text="כסף הוא גם חומר! בואו לבקר ושלמו במטבעות ובניירות כמו פעם!"
-      />
-      <DonateButton title="פייפאל" linkUrl={paypalUrl} imageUrl={paypalImage} maxHeight={20} />
+      <DonateButton title="פייבוקס" linkUrl={payboxUrl} image={payboxImage} />
+      <DonateButton title="פייפאל" linkUrl={paypalUrl} image={paypalImage} maxHeight={20} />
       <DonateButton
         title="ביט"
-        imageUrl={bitpayImage}
+        image={bitpayImage}
         text={
           <>
             <img
@@ -83,6 +79,18 @@ const Donate: React.FC = () => (
             העבירו בביט למספר הסלולרי של עץבעיר {bitPhone}
           </>
         }
+      />
+      <DonateButton
+        title="כמו פעם: מזומן!"
+        text="כסף הוא גם חומר! בואו לבקר ושלמו במטבעות ובניירות כמו פעם!"
+      />
+      <DonateButton
+        title="העברה בנקאית"
+        text="פרטים של חשבון הבנק:
+        הבינלאומי, סניף דיזנגוף 065
+        ,חשבון 006691,
+        עץבעיר
+        "
       />
     </div>
   </div>

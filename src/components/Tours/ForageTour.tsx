@@ -4,7 +4,84 @@ import { PAGES } from 'src/constants';
 import { LinkButton, Paragraph } from '../Box';
 import { BoxInner, ButtonWrapper, Title } from './styles';
 import Tour from './Tour';
-import { ImageContainer } from './Tour/styles';
+
+const images = [
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_ForageTour_02_Einat.jpg"
+        alt=""
+        placeholder="none"
+        width={720}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_ForageTour_02_Einat.jpg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Hibiscus_01_tami.jpg"
+        alt=""
+        placeholder="none"
+        width={175}
+        height={175}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Hibiscus_01_tami.jpg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Forage_01_tami.jpeg"
+        alt=""
+        placeholder="none"
+        width={175}
+        height={175}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Forage_01_tami.jpeg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+  {
+    thumb: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Alon_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        width={175}
+        height={175}
+      />
+    ),
+    full: (
+      <StaticImage
+        src="../../assets/images/tours/CityTree_Alon_Sq_.jpeg"
+        alt=""
+        placeholder="none"
+        layout="fixed"
+      />
+    ),
+  },
+];
 
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#d0dfcc">
@@ -18,7 +95,7 @@ const Box: React.FC = () => (
       הדוהר? האם קיימת אפשרות מלבד מלצרות או עבודה בשירות לקוחות, תשלום שכר דירה ותכנון הטיול הבא
       לחו״ל?
     </Paragraph>
-    <Paragraph>
+    <Paragraph grow>
       עינת הייתה על המסלול ואז ירדה ממנו לתקופה בלתי מוגדרת מראש, כדי לבדוק מה אפשרי מחוץ לכל מה
       שידעה על מה שהחיים מזמנים לה... בהרצאתה תוכלו לשמוע מה גילתה, ואם תהיו נחמדים במיוחד, היא גם
       תקרא לכן משיריה המהפכניים.
@@ -31,44 +108,8 @@ const Box: React.FC = () => (
   </BoxInner>
 );
 
-const Images: React.FC = () => (
-  <ImageContainer>
-    <StaticImage
-      src="../../assets/images/tours/CityTree_ForageTour_02_Einat.jpg"
-      alt=""
-      width={720}
-      placeholder="none"
-      loading="lazy"
-    />
-    <StaticImage
-      src="../../assets/images/tours/CityTree_Hibiscus_01_tami.jpg"
-      alt=""
-      placeholder="none"
-      loading="lazy"
-      width={175}
-      height={175}
-    />
-    <StaticImage
-      src="../../assets/images/tours/CityTree_Forage_01_tami.jpeg"
-      alt=""
-      placeholder="none"
-      loading="lazy"
-      width={175}
-      height={175}
-    />
-    <StaticImage
-      src="../../assets/images/tours/CityTree_Alon_Sq_.jpeg"
-      alt=""
-      placeholder="none"
-      loading="lazy"
-      width={175}
-      height={175}
-    />
-  </ImageContainer>
-);
-
 const ForageTour: React.FC = () => (
-  <Tour bgcolor="#3d5937" anchor="forage" box={<Box />} images={<Images />} />
+  <Tour bgcolor="#3d5937" anchor="forage" box={<Box />} images={images} />
 );
 
 export default ForageTour;
