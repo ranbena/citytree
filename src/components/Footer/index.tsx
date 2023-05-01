@@ -56,11 +56,11 @@ const Footer: React.FC = () => {
             </a>
           </Social>
           <div>
+            <a href={formatAnchor('contact')}>צרו קשר</a>
+            <br />
             <a href={PAGES.people} target="_blank" rel="noreferrer noopener">
               מי אנחנו
             </a>
-            <br />
-            <a href={formatAnchor('contact')}>להתקשר</a>
             <br />
             <a href="http://archives.citytree.net">לאתר הישן נושן והאהוב של העץ</a>
           </div>
