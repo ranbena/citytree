@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Popover, OverlayTrigger } from 'react-bootstrap';
-import { patreonUrl, bitPhone, paypalUrl, payboxUrl } from 'src/constants';
+import { patreonUrl, bitPhone, paypalUrl, payboxUrl, bankAccount } from 'src/constants';
 
 import payboxImage from 'src/assets/images/paybox.png';
 import bitpayImage from 'src/assets/images/bitpay.png';
@@ -86,11 +86,17 @@ const Donate: React.FC = () => (
       />
       <DonateButton
         title="העברה בנקאית"
-        text="פרטים של חשבון הבנק:
-        הבינלאומי, סניף דיזנגוף 065
-        ,חשבון 006691,
-        עץבעיר
-        "
+        text={
+          <>
+            פרטים של חשבון הבנק:
+            <br />
+            {bankAccount.bank} סניף {bankAccount.branch}
+            <br />
+            חשבון {bankAccount.account}
+            <br />
+            {bankAccount.name}
+          </>
+        }
       />
     </div>
   </div>

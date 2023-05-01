@@ -119,7 +119,7 @@ export const Button = styled.button`
   }
 `;
 
-export const PopoverContent = styled(MSPopover.Content)`
+export const PopoverContent = styled(MSPopover.Body)`
   padding: 1rem;
   color: #3d1b61;
 `;

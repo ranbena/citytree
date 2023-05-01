@@ -26,7 +26,7 @@ function Contact() {
               <Paragraph>
                 קודם כל, אנחנו בעד תקשורת בסגנון הישן:
                 <span className="contact-details-top">
-                  {emailLink} | {tamiPhoneLink}
+                  {tamiPhoneLink} | {emailLink}
                 </span>
               </Paragraph>
               <div className="contact-details">
@@ -48,7 +48,7 @@ function Contact() {
               </div>
               <div className="contact-details">
                 <h4>לשבויים של פייסבוק (כמונו!):</h4>
-                <strong>אפשר לעקוב אחרינו וגם לכתוב אלינו. בפייסבוק:</strong>
+                <strong>אפשר לעקוב אחרינו וגם לכתוב אלינו:</strong>
                 <LinkButton href={facebookUrl} target="_blank">
                   <FacebookIcon />
                   לעמוד של עץבעיר בפייסבוק

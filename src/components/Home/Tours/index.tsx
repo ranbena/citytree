@@ -5,7 +5,7 @@ import { Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/tours/CityTreeSite_Tours_01_Alex.jpeg';
 import { formatPath } from 'src/utils';
-import { PAGES } from 'src/constants';
+import { PAGES, einatPhoneLink, tamiPhoneLink } from 'src/constants';
 import { Title } from './styles';
 
 function Tours() {
@@ -13,49 +13,44 @@ function Tours() {
     <Hero image={image} boxColor="#fff8dedd" anchor="tours" position="right">
       <Container className="tours">
         <Row>
-          <Col xl={7} lg={6}>
+          <Col xl={6}>
             <BoxInner fullHeight>
-              <Title>סיורים בדירה ובגינות העץ - ביקור בעולם אחר</Title>
+              <Title>לימוד בעולם האמיתי – הרצאות, סיורים וסדנאות</Title>
 
               <Paragraph>
-                הדרך הטובה ביותר להיחשף למחקר וליצירה שמתרחשים בעץבעיר כבר 15 שנים, הוא להגיע לסיור
-                בעולם האמיתי."
+                איך מכינים קומפוסט בשיטות שונות? איך משיגים ומכינים מזון מיטיב? איך מטפחות גינה
+                אקולוגית? מה מלקטים בעיר? איך חיים ביחד? איך מנקים את הבית מרעלים? ולבסוף – אם זה
+                טוב כל-כך, מדוע זה נשאר בשוליים?
+              </Paragraph>
+              <Paragraph>הדרך הטובה ביותר להיחשף לידע שלנו היא… לפגוש אותנו!</Paragraph>
+              <Paragraph>
+                במשך 16 שנים חיינו יחדיו בדירה האקולוגית להפליא של עץבעיר, שם חקרנו והתנסינו, ושם
+                פגשנו את מי שרצו להיחשף לידע ולנסיון שצברנו. במרץ 2023 עזבנו את כיכר ביאליק והתחלנו
+                פרק חדש שפותח לנו אפשרויות חדשות למפגש.
               </Paragraph>
               <Paragraph>
-                <b>מה מקבלים בסיור?</b> חוויה, ידע והשראה לחיים. איך מכינים קומפוסט בשיטות שונות,
-                איך משיגים ומכינים מזון מיטיב, איך מטפחות גן עדן על מטר מרובע, איך חיים ביחד, איך
-                מנקים את הבית מרעלים, ובשורה התחתונה - אם זה כל כך טוב למה זה נשאר בשוליים? במילים
-                אחרות הדיון מכסה את כל הטווח שבין הפרקטיקה לפוליטיקה. החוויה מפעילה את כל החושים
-                ומעוררת רגשות עזים לעיתים.
+                במשך 16 שנים חיינו יחדיו בדירה האקולוגית להפליא של עץבעיר, שם חקרנו והתנסינו, ושם
+                פגשנו את מי שרצו להיחשף לידע ולנסיון שצברנו. במרץ 2023 עזבנו את כיכר ביאליק והתחלנו
+                פרק חדש שפותח לנו אפשרויות חדשות למפגש.
               </Paragraph>
               <Paragraph>
-                <b>למי מתאים הסיור?</b> סטודנטיות, תלמידי בתי ספר, מכיניסטים, קורסי פרמקלצ'ר, ימי
-                צוות, עובדות של משרדי ממשלה או תאגידים, זוגות או משפחות שחוגגות יום הולדת – תפתיעו
-                אותנו!
+                נשמח לשמוע מכן, בטלפון/וואטסאפ: {tamiPhoneLink} (תמי) או {einatPhoneLink} (עינת)
               </Paragraph>
               <Paragraph>
-                <b>מה גודל הקבוצה שהבית והגינות יכולים לארח?</b> קבוצות עד 15 אישה ואיש, קבוצה יותר
-                גדולה אנחנו מפצלים לשתיים.
-              </Paragraph>
-              <Paragraph>
-                <b>משך הסיור:</b> הסיורים אורכים בין חצי שעה לארבע שעות, ככל שיש יותר זמן ניתן לכלול
-                יותר הדגמות מעשיות (מיני-סדנאות).
-              </Paragraph>
-              <Paragraph>
-                <b>אנחנו מתאימים את התוכן ואת המחיר לדרישות וליכולות שלכם.</b>
+                <b>דפדפו ותמצאו את ההרצאה או הסיור שמתאים לכן.</b>
               </Paragraph>
             </BoxInner>
           </Col>
-          <Col xl={5} lg={6} className="side-column">
+          <Col xl={6} className="side-column">
             <Row>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>הרצאה של תמי צרי</Title>
+                  <Title>סיור ליקוט</Title>
                   <Paragraph grow>
-                    קבוצות מאורגנות מטעם כל חברה או ארגון... סיור בבית ובגינות תפור למידות הקבוצה
+                    סיור עם ד"ר אלון אלירן על פי הזמנתכן – בגינות ובין הבניינים…
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(PAGES.tamiLecture)}>לפרטים נוספים ...</Link>
+                    <Link to={formatPath(PAGES.forageTours)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
                     <LinkButton href={PAGES.lecturesForm} target="_blank">
@@ -66,12 +61,12 @@ function Tours() {
               </Col>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>הרצאה של עינת לסט</Title>
+                  <Title>הרצאה מאת תמי</Title>
                   <Paragraph grow>
-                    ביקור פרטי, קבוצה של חברים או משפחה, זוגות... סיור בבית ובגינות תפור למידתכן
+                    תמי צרי משתפת מנסיונה והתובנות שלה מהחיים בכיכר ביאליק ובכלל.
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(PAGES.einatLecture)}>- לפרטים נוספים ...</Link>
+                    <Link to={formatPath(PAGES.tamiLecture)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
                     <LinkButton href={PAGES.lecturesForm} target="_blank">
@@ -84,33 +79,32 @@ function Tours() {
             <Row>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>סיור ליקוט עירוני</Title>
+                  <Title>הרצאה של עינת לסט</Title>
                   <Paragraph grow>
-                    כל כמה שבועות אנחנו מוציאים סיור ליקוט סביב כיכר ביאליק בהדרכת ד״ר אלון אלירן.
+                    עינת לסט מספרת על חייה בעץבעיר ועל מסע החיפוש שלה אחרי דרכה.
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(PAGES.forageTours)}>- לפרטים נוספים ...</Link>
+                    <Link to={formatPath(PAGES.einatLecture)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
                     <LinkButton href={PAGES.lecturesForm} target="_blank">
-                      להרשמה
+                      להזמנה
                     </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>מיני-סדנאות והרצאות</Title>
+                  <Title>עץבעיר – ההרצאה</Title>
                   <Paragraph grow>
-                    כל כמה שבועות אנחנו מוציאים סיור כישוף ברחבי הדירה האקולוגית בהנחיית מכ' תמי
-                    צרי.
+                    סיור בחיי עץבעיר, מובא אליכם במצגת – במפגש בחיים האמיתיים או בזום.
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(PAGES.sessions)}>- לפרטים נוספים ...</Link>
+                    <Link to={formatPath(PAGES.virtual)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
                     <LinkButton href={PAGES.lecturesForm} target="_blank">
-                      להרשמה
+                      להזמנה
                     </LinkButton>
                   </div>
                 </BoxInner>

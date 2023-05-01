@@ -71,8 +71,12 @@ header {
       }
     }
 
+    .nav-item:first-child {
+      padding-right: 0;
+    }
+
     .dropdown {
-      padding: 0 1.4rem;
+      padding: 0 1.8rem;
 
       @include media-breakpoint-down(lg) {
         & {
@@ -105,7 +109,7 @@ header {
 
         // hide top shadow
         &:before {
-          content: "";
+          content: '';
           height: 11px;
           width: calc(100% + #{$shadow-width} + #{$shadow-width});
           position: absolute;
@@ -152,7 +156,7 @@ header {
 
         &:not(:last-child) {
           &::after {
-            content: "";
+            content: '';
             height: 2px;
             background: #c4cfb0;
             display: block;

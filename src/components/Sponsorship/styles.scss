@@ -6,9 +6,16 @@
 .sponsorship {
   em {
     display: inline-block;
-    font-size: 14px;
+    font-size: 17px;
     font-style: normal;
     margin-inline-end: 12px;
+    margin-bottom: 7px;
+  }
+
+  .paragraph {
+    max-width: 490px;
+    margin-top: 10px;
+    text-align: justify;
   }
 
   .donate {

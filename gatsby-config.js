@@ -1,11 +1,9 @@
 // select env
 const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
 
-// eslint-disable-next-line no-console
 console.log(`Using environment config: '${activeEnv}'`);
 
 // load .env config
-// eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config({
   path: `.env.${activeEnv}`,
 });

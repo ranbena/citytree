@@ -9,6 +9,17 @@ export const PeopleHero = styled(Hero)`
     text-align: center;
     padding-left: 60px;
     padding-right: 60px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: start;
+
+      li {
+        margin-top: 10px;
+      }
+    }
   }
 
   .people-title {

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { MouseEventHandler } from 'react';
 // import { Link } from 'gatsby';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
@@ -8,8 +6,8 @@ import { joinPatreonUrl, PAGES, youtubeUrl } from 'src/constants';
 import { anchor, formatPath, formatAnchor } from 'src/utils';
 import { ComingSoonModalProvider } from '../ComingSoonModal';
 import './styles.scss';
+import { navigate } from 'gatsby';
 
-// TODO: move this to styles.ts when available
 export const HEADER_HEIGHT = 90;
 
 const stopPropagation: MouseEventHandler<HTMLDivElement> = (event) => event.stopPropagation();
@@ -60,7 +58,7 @@ const Header: React.FC = () => {
                     renderMenuOnMount
                     id="tours-dropdown"
                     title="לימוד בעולם האמיתי"
-                    href={formatPath(PAGES.lectures)}
+                    onClick={() => navigate(formatPath(PAGES.lectures))}
                   >
                     <div onClick={stopPropagation}>
                       <NavDropdown.Item href={formatPath(PAGES.tamiLecture)}>

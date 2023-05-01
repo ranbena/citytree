@@ -30,13 +30,18 @@ export const payboxUrl = 'https://payboxapp.page.link/ecdf8UhBJ6dG25Mu7';
 export const facebookUrl = 'https://facebook.com/citytree';
 export const youtubeUrl = 'https://www.youtube.com/user/citytreenet/';
 export const instagramUrl = 'https://www.instagram.com/citytree/';
+export const bankAccount = {
+  bank: 'הבינלאומי',
+  branch: 'דיזינגוף 065',
+  account: '006691',
+  name: 'עץבעיר',
+};
 
 export const githubProject = 'https://github.com/ranbena/citytree';
 export const ranbenaPage = 'https://github.com/ranbena/';
 
 export enum PAGES {
   hineni = '/hineni',
-  abracadabra = '/abracadabra',
   practicalEcologySummer = '/practical-ecology-summer',
   practicalEcologyWinter = '/practical-ecology-winter',
 

@@ -110,7 +110,6 @@ export const Wrapper = styled.div<{
   flex-direction: column;
 
   ${({ transparent, color }) =>
-    // eslint-disable-next-line operator-linebreak
     !transparent &&
     css`
       background: ${color || 'white'};
@@ -123,14 +122,12 @@ export const Wrapper = styled.div<{
     `}
 
   ${({ fullHeight }) =>
-    // eslint-disable-next-line operator-linebreak
     fullHeight &&
     css`
       height: 100%;
     `}
 
   ${({ size }) =>
-    // eslint-disable-next-line operator-linebreak
     size === 'small' &&
     css`
       padding: 20px 30px;
@@ -146,7 +143,6 @@ export const Wrapper = styled.div<{
     `}
 
   ${({ center }) =>
-    // eslint-disable-next-line operator-linebreak
     center &&
     css`
       text-align: center;
@@ -191,12 +187,12 @@ export const Wrapper = styled.div<{
       cursor: pointer;
       transition-property: backdrop-filter, transform, box-shadow;
       transition-duration: 150ms;
-      box-shadow: 0 0 0 rgba(0,0,0,0.2);
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
 
       &:hover {
         backdrop-filter: blur(3px);
         transform: translateY(-1px);
-        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
       }
 
       &:hover ${Title} {

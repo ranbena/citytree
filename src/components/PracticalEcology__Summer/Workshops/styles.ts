@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import styled, { css } from 'styled-components';
 import { TabContent, Nav } from 'react-bootstrap';
 import ltrBgImage from 'src/assets/images/practical-ecology-summer/SummerMagic_SchedulePic.png';
