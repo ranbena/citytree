@@ -40,7 +40,7 @@ header {
 
       & ~ .dropdown-menu {
         z-index: 1;
-        margin-top: -7px !important;
+        margin-top: -5px !important;
       }
 
       &::after {
@@ -113,7 +113,7 @@ header {
           height: 11px;
           width: calc(100% + #{$shadow-width} + #{$shadow-width});
           position: absolute;
-          top: -$shadow-width;
+          top: calc(-#{$shadow-width} - 2px);
           background: inherit;
           z-index: 2;
           left: -$shadow-width;
