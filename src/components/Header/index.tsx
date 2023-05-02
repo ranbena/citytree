@@ -6,7 +6,7 @@ import { joinPatreonUrl, PAGES, youtubeUrl } from 'src/constants';
 import { anchor, formatPath, formatAnchor } from 'src/utils';
 import { ComingSoonModalProvider } from '../ComingSoonModal';
 import './styles.scss';
-import { navigate, parsePath } from 'gatsby';
+import { navigate } from 'gatsby';
 
 export const HEADER_HEIGHT = 90;
 
