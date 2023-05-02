@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 </div>
               </NavDropdown>
 
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={stopPropagation} />
               <Navbar.Collapse>
                 <Nav>
                   <NavDropdown
