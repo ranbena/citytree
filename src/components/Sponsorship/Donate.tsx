@@ -11,23 +11,28 @@ import patreonImage from 'src/assets/images/patreon.png';
 const PopoverButton: React.FC<{ text: string | React.ReactNode; children: React.ReactNode }> = ({
   text,
   children,
-}) => (
-  <>
-    <OverlayTrigger
-      trigger="click"
-      placement="top"
-      overlay={
-        <Popover id="popover-button">
-          <Popover.Body className="popover-body">{text}</Popover.Body>
-        </Popover>
-      }
-    >
-      <Button variant="light" size="sm">
-        {children}
-      </Button>
-    </OverlayTrigger>
-  </>
-);
+}) => {
+  const buttonRef = React.useRef<HTMLButtonElement>();
+
+  return (
+    <>
+      <OverlayTrigger
+        rootClose
+        trigger="click"
+        placement="top"
+        overlay={
+          <Popover id="popover-button">
+            <Popover.Body className="popover-body">{text}</Popover.Body>
+          </Popover>
+        }
+      >
+        <Button ref={buttonRef} variant="light" size="sm">
+          {children}
+        </Button>
+      </OverlayTrigger>
+    </>
+  );
+};
 
 const DonateButton: React.FC<{
   linkUrl?: string;
