@@ -2,8 +2,8 @@ import React from 'react';
 import { stripPhoneNumber } from './utils';
 
 export const homePhone = '03-525-4196';
-export const mobilePhone = '054-228-6173';
-export const bitPhone = mobilePhone;
+export const mobilePhone = '058-422-7531';
+export const bitPhone = '054-228-6173';
 export const whatsappPhone = mobilePhone;
 export const email = 'tree@citytree.net';
 
