@@ -1,10 +1,12 @@
 import React from 'react';
 import { stripPhoneNumber } from './utils';
 
+export const homePhone = '03-525-4196';
 export const tamiPhone = '058-422-7531';
 export const einatPhone = '054-750-5847';
-export const bitPhone = einatPhone;
-export const whatsappPhone = einatPhone;
+export const alonPhone = '054-228-6173';
+export const bitPhone = alonPhone;
+export const whatsappPhone = tamiPhone;
 export const email = 'tree@citytree.net';
 
 export const whatsappGroupInviteLink = 'https://chat.whatsapp.com/FsTi2IrNA4uJTjk6k554O0';
