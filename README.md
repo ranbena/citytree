@@ -39,7 +39,6 @@ Install all npm dependencies (preinstall `yarn` globally)
 yarn install
 ```
 
-xcode-select --install
 Run the server
 
 ```sh
