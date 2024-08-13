@@ -23,7 +23,7 @@
 
   .contact-details {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
 
     h4 {
       font-weight: normal;
@@ -52,8 +52,8 @@
       height: auto;
       line-height: normal;
       border-radius: 5px;
-      color: #E6EAD2;
-      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+      color: #e6ead2;
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
 
       svg {
         height: 21px;
@@ -80,7 +80,7 @@
     }
 
     .fc_button {
-      color: #E6EAD2 !important;
+      color: #e6ead2 !important;
 
       &:hover {
         color: white !important;
@@ -117,11 +117,11 @@
   font-size: 14px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: 1px 2px 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: bold;
 
-  body[dir="ltr"] & {
+  body[dir='ltr'] & {
     font-size: 12px;
     padding-left: 10px;
     padding-right: 14px;

@@ -19,7 +19,16 @@
     padding-left: 25px;
 
     h1 {
-      font-size: 1.27rem;
+      font-size: 1.56rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 1.35rem;
+      }
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.55rem;
     }
   }
 

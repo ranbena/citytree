@@ -1,32 +1,29 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
-import { forEachMessage } from 'src/utils';
 import SignUpButton from '../SignUpButton';
 
 import { Wrapper, Container, Title, Box } from './styles';
 
-const Overview: FC = () => {
-  const intl = useIntl();
-  return (
-    <Wrapper>
-      <Container>
-        <Box xl={7} sm={12} transparent>
-          <Title>
-            <FormattedMessage id="practical-ecology-winter.times.title" />
-          </Title>
-          <p>
-            {forEachMessage(intl, 'practical-ecology-winter.times.text').map(([txt, key]) => (
-              <p key={key}>{txt}</p>
-            ))}
-          </p>
-        </Box>
-
-        <SignUpButton>
-          <FormattedMessage id="practical-ecology-winter.times.button" />
-        </SignUpButton>
-      </Container>
-    </Wrapper>
-  );
-};
+const Overview: FC = () => (
+  <Wrapper>
+    <Container>
+      <Box xl={7} sm={12} transparent>
+        <Title>גלגל השנה של עץבעיר</Title>
+        <p>
+          עץבעיר נולד ברוח החיבור המתחדש לטבע ולמקצבים והיסודות שלה. תמי צרי, מייסדת עץבעיר, התחברה
+          לגלגל השנה הראשוני, המשלב את מהות העונות והיסודות עם מחזורי השמש והלבנה, במחזוריות. המטרה
+          היתה להעיר משנתה את ההרמוניה בין היום יום שלנו ומחזורי הטבע. סדרת הסדנאות באקולוגיה מעשית,
+          ״השיבה הביתה״, כחלק מכלל עבודתנו בעץבעיר, מתואמת עם גלגל שנה זה ומביאה בעזרתו רעיונות
+          ופיתוחים חדשים וקדומים לחיינו.
+        </p>
+        <p>
+          סדנאות החורף פרוסות לאורך שלושה זמנים מתוך שמונה - שגשגנות, חקלאות, והזנה, בדרכן הן פוגשות
+          את החגים הקדומים והמקומיים ומתייחסות אליהם, כמו גם לארבעת היסודות - סדרת החורף חולפת על
+          פני יסודות האדמה והאוויר.
+        </p>
+      </Box>
+      <SignUpButton>לרכישת הקלטות סדנאות החורף</SignUpButton>
+    </Container>
+  </Wrapper>
+);
 
 export default Overview;

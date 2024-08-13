@@ -1,10 +1,9 @@
 import React, { FC } from 'react';
 import { Button } from './styles';
 
-// eslint-disable-next-line operator-linebreak
 const formUrl = 'https://forms.gle/MSp62MWuE6ZEzPhG6';
 
-const SignUpButton: FC = ({ children }) => (
+const SignUpButton: FC<{ children: React.ReactNode }> = ({ children }) => (
   <Button onClick={() => window.open(formUrl)}>{children}</Button>
 );
 

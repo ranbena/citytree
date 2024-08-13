@@ -1,51 +1,33 @@
 import React, { FC } from 'react';
-import { FormattedMessage } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
 import { Wrapper, Container, Tiers, Tier, Title, TierTitle, Price } from './styles';
 
 const Investment: FC = () => (
   <Wrapper>
     <Container>
-      <Title>
-        <FormattedMessage id="practical-ecology-winter.investment.title" />
-      </Title>
+      <Title>רכישת הקלטות סדנאות החורף</Title>
       <p>
-        <FormattedMessage id="practical-ecology-winter.investment.subtitle" />
+        מלאו את טופס הרכישה ונישלח אליכם את הקישוריות לסדנאות בודדות, או לסדרה כולה, על פי בחירתכן.
+        כמו תמיד, פטרוניות ופטרונים יכולים לשלם פחות, כמו גם מי שמתקשה כלכלית - כל האפשרויות בטופס.
       </p>
       <Tiers>
         <Tier>
-          <TierTitle>
-            <FormattedMessage id="practical-ecology-winter.investment.tiers.single" />
-          </TierTitle>
-          <Price>
-            20 <FormattedMessage id="nis" />
-          </Price>
+          <TierTitle>מחיר להקלטת סדנה בודדת</TierTitle>
+          <Price>20 ₪</Price>
+        </Tier>
+        <Tier>
+          <TierTitle>מחיר להקלטות סדרת החורף כולה</TierTitle>
+          <Price>150 ₪</Price>
         </Tier>
         <Tier>
           <TierTitle>
-            <FormattedMessage id="practical-ecology-winter.investment.tiers.standard" />
+            <strong>מחיר מיוחד לפטרונים</strong>
+            <div>* למחבקות של העץ בפטראון</div>
           </TierTitle>
-          <Price>
-            150 <FormattedMessage id="nis" />
-          </Price>
-        </Tier>
-        <Tier>
-          <TierTitle>
-            <strong>
-              <FormattedMessage id="practical-ecology-winter.investment.tiers.patrons.0" />
-            </strong>
-            <div>
-              * <FormattedMessage id="practical-ecology-winter.investment.tiers.patrons.1" />
-            </div>
-          </TierTitle>
-          <Price>
-            100 <FormattedMessage id="nis" />
-          </Price>
+          <Price>100 ₪</Price>
         </Tier>
       </Tiers>
-      <SignUpButton>
-        <FormattedMessage id="practical-ecology-winter.investment.button" />
-      </SignUpButton>
+      <SignUpButton>לרכישת הקלטות סדנאות החורף</SignUpButton>
     </Container>
   </Wrapper>
 );

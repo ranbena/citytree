@@ -1,42 +1,62 @@
 import React from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/workshops_bg.jpeg';
 import { PAGES } from 'src/constants';
 import { formatPath } from 'src/utils';
-import { ComingSoonModalProvider } from 'src/components/ComingSoonModal';
 import './styles.scss';
 
 function Workshops() {
-  const intl = useIntl();
-
   return (
-    <Hero image={image} boxColor="#f2f9cfd0" anchor="workshops">
+    <Hero image={image} boxColor="#c8dcf0d0" anchor="workshops">
       <Container className="workshops">
         <Row>
           <Col lg={6}>
             <BoxInner>
-              <Title>
-                <FormattedMessage id="workshops.general.title" />
-              </Title>
-              <Paragraph intlId="workshops.general.text" />
+              <Title>לימוד מקוון</Title>
+              <Paragraph>
+                כמרכז ידע, אנחנו לא מפסיקים ללמוד וללמד. בנוסף למפגשים בעולם האמיתי, אנחנו מציעות גם
+                סדנאות, קורסים ולימוד בפורמט דיגיטלי. החומרים שלנו מוקדשים לאקולוגיה עמוקה ולחוסן
+                אקלימי ומחברים בין הרמות השונות של הידע; הרמה המעשית, התיאורטית והרוחנית-פילוסופית.
+              </Paragraph>
+              <Paragraph>
+                <b>אקולוגיה מעשית</b> – שנים רבות תמי ואלון חיים אקולוגיה בעולם האמיתי; תמי מתעמקת
+                במשק הבית האקולוגי, בכלכלה ובכישוף, ואלון מעמיק לעולמם של צמחי הגן והבר, הוא לקט
+                עירוני מקצועי ומטפח מסור של גינות אקולוגיות.
+              </Paragraph>
+              <Paragraph>
+                <b>אקולוגיה עמוקה</b> – עם השנים המחקר המעשי של עץבעיר העמיק לתחומים המערכתיים.
+                התחלנו לשאול שאלות על הכלכלה והחברה שאנו שרויים בהן ולבדוק מחדש את הסיפורים שהן
+                מספרות לנו. החקר שלנו מסתמך על מקורות מתחומי ההיסטוריה, האקו-פמיניזם, ביקורת המקרא,
+                הכלכלה, האנתרופולוגיה, האנרכיזם והפוסטקפיטליזם.
+                <br />
+                תמי היא הדוברת והמגישה הראשית של הלימוד. היא מגישה את הדברים בדרכה הקולחת,
+                האסוציאטיבית והיצירתית, בליווי מצגות ייחודיות. בהצטרפות למעגל התמיכה של העץ בפטראון,
+                תקבלו גישה למפגשי לימוד חודשיים ולכל החומרים הדיגיטליים שאנחנו מציעות כאן לרכישה.
+              </Paragraph>
+              <Paragraph>
+                <b>חוסן אקלימי</b> - אנחנו גם עוקבים אחרי מחקרים ועדכונים סביב המשבר האקלימי-אקולוגי
+                הדוהר, ומגבשים עמדה מורכבת שמתייחסת גם לתיאוריות הקונספירציה למיניהן וקושרת בין
+                המשברים השונים הפוקדים אותנו השכם והערב, כגון הקורונה. עמדה זו מכוונת אותנו בין השאר
+                אל מחוץ לתל-אביב ומשולבת בלימוד ובפרסומים שלנו ברשתות החברתיות. כתבנו לא מעט
+                מניפסטים וניירות עמדה, ואנחנו מקוות להעלות אותם לאתר בקרוב.
+              </Paragraph>
             </BoxInner>
           </Col>
           <Col lg={6} className="side-column">
             <Row>
               <Col>
                 <BoxInner size="small">
-                  <Title>
-                    <FormattedMessage id="workshops.ecology.title" />
-                  </Title>
+                  <Title>סדנאות זום באקולוגיה מעשית</Title>
                   <Paragraph>
-                    <FormattedMessage id="workshops.ecology.text" />
+                    סדנאות זום מוקלטות, כל סדנה באורך של כשעה וחצי, מלווה במצגת ברורה ובהנחיה של
+                    תמי. כל סדנה מוקדשת לנושא אחד, מסבון ועד קומפוסט, ומספקת את כל המידע המעשי בנוסף
+                    להגיגים, ביקורת וצחוקים. כל הקלטה עולה 20 ₪, ויש גם חבילות על-פי נושא.
                   </Paragraph>
                   <div>
-                    <LinkButton href={formatPath(intl, PAGES.practicalEcologySummer)}>
-                      <FormattedMessage id="workshops.ecology.button" />
+                    <LinkButton href={formatPath(PAGES.practicalEcologySummer)}>
+                      לקטלוג הסדנאות ולרכישה
                     </LinkButton>
                   </div>
                 </BoxInner>
@@ -45,23 +65,14 @@ function Workshops() {
             <Row>
               <Col>
                 <BoxInner size="small">
-                  <Title>
-                    <FormattedMessage id="workshops.magic.title" />
-                  </Title>
+                  <Title>קורס כישוף, אקולוגיה עמוקה ושובה של האלה</Title>
                   <Paragraph>
-                    <FormattedMessage id="workshops.magic.text" />
+                    הקלטת 8 שיעורי זום שפותחים את השער לעולם האקו-פמיניזם, אקולוגיה כמעשה כישוף
+                    וניתוץ הפטריארכיה. שילוב של הרוח עם הקרקע בחיי היום-יום, מתכונים והוראות הפעלה
+                    למכשפה שבתוכנו. השיעורים מלווים במצגות מרהיבות, ובהנחיה הסוחפת של תמי.
                   </Paragraph>
                   <div>
-                    <ComingSoonModalProvider>
-                      {(showModal) => (
-                        <LinkButton
-                          onClick={showModal}
-                          href={formatPath(intl, PAGES.magicalEconomy)}
-                        >
-                          <FormattedMessage id="details-purchase" />
-                        </LinkButton>
-                      )}
-                    </ComingSoonModalProvider>
+                    <LinkButton href={formatPath(PAGES.hineni)}>לרכישת הקורס</LinkButton>
                   </div>
                 </BoxInner>
               </Col>
@@ -69,15 +80,17 @@ function Workshops() {
             <Row>
               <Col>
                 <BoxInner size="small">
-                  <Title>
-                    <FormattedMessage id="workshops.economy.title" />
-                  </Title>
+                  <Title>לימוד חודשי עם תמי: כלכלת קסם</Title>
                   <Paragraph>
-                    <FormattedMessage id="workshops.economy.text" />
+                    אי-אפשר להציל את העולם מבלי לדבר על הכלכלה הקפיטליסטית ולשנות אותה מהיסוד. נשמע
+                    אתגרי? תמי יצאה למסע מחקר בכל-זאת. את המחקר שלה היא חושפת למעגל המחבקות, תוך-כדי
+                    התהליך. מחזור הלימוד הראשון הסתיים ולמחבקות יש גישה לכל ההקלטות והפרקים הכתובים.
+                    בימים אלה מתקיים מחזור לימוד 1.5 שבו תמי מעמיקה לנושאים ולמקורות שעלו במחזור
+                    הראשון.
                   </Paragraph>
                   <div>
-                    <LinkButton href={formatPath(intl, PAGES.hineni)}>
-                      <FormattedMessage id="details-purchase" />
+                    <LinkButton href={PAGES.magicalEconomy} target="_blank">
+                      לפרטים
                     </LinkButton>
                   </div>
                 </BoxInner>

@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { FormattedMessage } from 'gatsby-plugin-intl';
 import SignUpButton from '../SignUpButton';
 import { Title } from '../styles';
 import { Wrapper, Container, Tiers, Tier, Title as TierTitle, Price } from './styles';
@@ -7,46 +6,30 @@ import { Wrapper, Container, Tiers, Tier, Title as TierTitle, Price } from './st
 const Investment: FC = () => (
   <Wrapper>
     <Container>
-      <Title>
-        <FormattedMessage id="practical-ecology-summer.investment.title" />
-      </Title>
+      <Title>מחיר סדרת הקיץ</Title>
       <p>
-        <FormattedMessage id="practical-ecology-summer.investment.subtitle" />
+        תשלום חד פעמי מקנה לך את ״קישורית הקסם הקיצית״ שפותחת את הדלת לשיעורי הזום החיים. בנוסף,
+        הנרשמות והנרשמים מקבלים עידכונים במייל ובווטצאפ אחרי כל שיעור, עם לינק להקלטת השיעור, ועוד
+        חומרים תומכים.
       </p>
       <Tiers>
         <Tier>
-          <TierTitle>
-            <FormattedMessage id="practical-ecology-summer.investment.tiers.single" />
-          </TierTitle>
-          <Price>
-            20 <FormattedMessage id="nis" />
-          </Price>
+          <TierTitle>מחיר להקלטת סדנה בודדת</TierTitle>
+          <Price>20 ₪</Price>
+        </Tier>
+        <Tier>
+          <TierTitle>מחיר להשתתפות בסדרה כולה</TierTitle>
+          <Price>250 ₪</Price>
         </Tier>
         <Tier>
           <TierTitle>
-            <FormattedMessage id="practical-ecology-summer.investment.tiers.standard" />
+            <strong>מחיר מיוחד</strong>
+            <div>* למחבקות של העץ בפטראון</div>
           </TierTitle>
-          <Price>
-            250 <FormattedMessage id="nis" />
-          </Price>
-        </Tier>
-        <Tier>
-          <TierTitle>
-            <strong>
-              <FormattedMessage id="practical-ecology-summer.investment.tiers.patrons.0" />
-            </strong>
-            <div>
-              * <FormattedMessage id="practical-ecology-summer.investment.tiers.patrons.1" />
-            </div>
-          </TierTitle>
-          <Price>
-            150 <FormattedMessage id="nis" />
-          </Price>
+          <Price>150 ₪</Price>
         </Tier>
       </Tiers>
-      <SignUpButton>
-        <FormattedMessage id="practical-ecology-summer.investment.button" />
-      </SignUpButton>
+      <SignUpButton>להרשמה לסדנאות הקיץ</SignUpButton>
     </Container>
   </Wrapper>
 );

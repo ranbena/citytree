@@ -2,7 +2,6 @@ import React from 'react';
 import { PageProps } from 'gatsby';
 
 import Tours from 'src/components/Home/Tours';
-import Stay from 'src/components/Home/Stay';
 import InfoCenter from 'src/components/Home/InfoCenter';
 import Vision from 'src/components/Home/Vision';
 import Contact from 'src/components/Contact';
@@ -21,7 +20,6 @@ const Home: React.FC<PageProps> = () => (
       <TopSection />
       <Tours />
       <Workshops />
-      <Stay />
       <InfoCenter />
       <Vision />
       <People />

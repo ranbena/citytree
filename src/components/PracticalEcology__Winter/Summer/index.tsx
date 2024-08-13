@@ -1,32 +1,31 @@
 import React, { FC } from 'react';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { navigate } from 'gatsby';
 import { PAGES } from 'src/constants';
-import { forEachMessage } from '../../../utils';
 import { Wrapper, Container, Box, Button, Title } from './styles';
 
-const Summer: FC = () => {
-  const intl = useIntl();
-
-  return (
-    <Wrapper>
-      <Container>
-        <Box xl={7} sm={12}>
-          <Title>
-            <FormattedMessage id="practical-ecology-winter.summer.title" />
-          </Title>
-          {forEachMessage(intl, 'practical-ecology-winter.summer.text').map(([txt, key]) => (
-            <p key={key}>{txt}</p>
-          ))}
-          <br />
-          <br />
-          <Button onClick={() => navigate(PAGES.practicalEcologySummer)}>
-            <FormattedMessage id="practical-ecology-winter.summer.button" />
-          </Button>
-        </Box>
-      </Container>
-    </Wrapper>
-  );
-};
+const Summer: FC = () => (
+  <Wrapper>
+    <Container>
+      <Box xl={7} sm={12}>
+        <Title>סדרת סדנאות הקיץ מתחילה</Title>
+        <p>סדרת סדנאות הקיץ תתחיל ב-5 באפריל, 2021.</p>
+        <p>
+          18 סדנאות חדשות שילוו אותנו לאורך ״זמן מועילות״, ״זמן תנועה״, ו״זמן הסתפקות״. ההרשמה
+          נפתחה!
+        </p>
+        <p>
+          כמו סדרת החורף, גם סדנאות הקיץ יוקלטו. ההקלטות יהיו זמינות לנרשמות לסדרה, או לרכישה
+          כסדנאות בודדות.
+        </p>
+        <p>לעיון בתוכניית הקיץ ולהרשמה, עיברו לדף סדנאות הקיץ.</p>
+        <br />
+        <br />
+        <Button onClick={() => navigate(PAGES.practicalEcologySummer)}>
+          למידע ולהרשמה לסדנאות הקיץ
+        </Button>
+      </Box>
+    </Container>
+  </Wrapper>
+);
 
 export default Summer;

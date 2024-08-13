@@ -1,17 +1,16 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { useIntl } from 'gatsby-plugin-intl';
 import Layout from 'src/components/Layout';
 import { getAbsolutePath } from 'src/utils';
 
-// import topImage from 'src/assets/images/tours/Citytree_PorterTour_19_alex.jpg';
 import ogImage from 'src/assets/images/tours/citytree_tour_og.jpg';
-import PrivateTour from './PrivateTour';
-import GroupTour from './GroupTour';
+import EinatLecture from './EinatLecture';
+import TamiTour from './TamiLecture';
 import ForageTour from './ForageTour';
-import MagicTour from './MagicTour';
+import Sessions from './Sessions';
 import Intro from './Intro';
+import VirtualTour from './VirtualTour';
 
 const image = {
   path: ogImage,
@@ -20,13 +19,13 @@ const image = {
 };
 
 const Page: React.FC<PageProps> = () => {
-  const intl = useIntl();
-  const pageTitle = intl.formatMessage({ id: 'tours.meta.title' });
-  const pageDesc = intl.formatMessage({ id: 'tours.meta.desc' });
+  const pageTitle = 'עץבעיר - סיורי אקולוגיה עירונית, ליקוט עירוני וכישוף עירוני';
+  const pageDesc = 'סיורים בדירה האקולוגית ובגינות האקולוגיות שבלב תל אביב';
 
   return (
     <Layout>
-      <Helmet title={pageTitle}>
+      <Helmet>
+        <title>{pageTitle}</title>
         <meta property="og:title" content={pageTitle} />
         <meta name="description" content={pageDesc} />
         <meta property="og:description" content={pageDesc} />
@@ -35,10 +34,11 @@ const Page: React.FC<PageProps> = () => {
         <meta property="og:image:height" content={image.height} />
       </Helmet>
       <Intro />
-      <GroupTour />
-      <PrivateTour />
+      <TamiTour />
       <ForageTour />
-      <MagicTour />
+      <EinatLecture />
+      <Sessions />
+      <VirtualTour />
     </Layout>
   );
 };

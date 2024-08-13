@@ -28,7 +28,7 @@ export const Content = styled.div`
   white-space: nowrap;
   gap: 15px;
 
-  @media ${breakpoints.sm} {
+  @media ${breakpoints.md} {
     flex-direction: column-reverse;
 
     & > * {

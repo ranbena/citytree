@@ -1,12 +1,13 @@
 import React, { FC, useEffect, useRef } from 'react';
-import { FormattedMessage, FormattedDate } from 'gatsby-plugin-intl';
+import { format } from 'date-fns';
+import { he } from 'date-fns/locale';
 import { Wrapper, Title, Subtitle, Table, Row, Idx, Name, DateWrapper } from './styles';
 
 const now = Date.now();
 
 interface IProps {
   tabKey: 'usefulness' | 'movement' | 'satisfaction';
-  title: JSX.Element;
+  title: string;
   dates: [string, string];
   element: string;
   season: string;
@@ -15,7 +16,7 @@ interface IProps {
 
 interface IEvent {
   index: number;
-  title: JSX.Element;
+  title: string;
   date: string;
 }
 
@@ -33,23 +34,17 @@ const Component: FC<IProps> = ({ tabKey, title, dates, element, season, events }
 
   return (
     <Wrapper>
-      <Title>
-        <FormattedMessage id="practical-ecology-summer.workshops.timeof" /> {title}
-      </Title>
+      <Title>סדנאות זמן {title}</Title>
       <Subtitle>
-        <FormattedMessage id="dates" />:{' '}
-        <FormattedDate value={dates[0]} month="long" day="numeric" /> -{' '}
-        <FormattedDate value={dates[1]} month="long" day="numeric" /> |{' '}
-        <FormattedMessage id="season" />: {season} | <FormattedMessage id="element" />: {element}
+        תאריכים: {format(new Date(dates[0]), 'dd MMMM', { locale: he })} -{' '}
+        {format(new Date(dates[1]), 'dd MMMM', { locale: he })} | עונה: {season} | יסוד: {element}
       </Subtitle>
       <Table ref={ref} tabKey={tabKey}>
         {events.map((event) => (
           <Row key={event.index} data-time={new Date(event.date).getTime()} tabKey={tabKey}>
             <Idx>{event.index}</Idx>
             <Name tabKey={tabKey}>{event.title}</Name>
-            <DateWrapper>
-              <FormattedDate value={event.date} year="2-digit" month="2-digit" day="2-digit" />
-            </DateWrapper>
+            <DateWrapper>{format(new Date(event.date), 'dd.MM.yy', { locale: he })}</DateWrapper>
           </Row>
         ))}
       </Table>

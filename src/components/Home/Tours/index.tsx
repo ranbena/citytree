@@ -1,69 +1,76 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
+import { Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/tours/CityTreeSite_Tours_01_Alex.jpeg';
 import { formatPath } from 'src/utils';
-import { PAGES } from 'src/constants';
-import './styles.scss';
+import { PAGES, einatPhoneLink, tamiPhoneLink } from 'src/constants';
+import { Title } from './styles';
 
 function Tours() {
-  const intl = useIntl();
-
   return (
     <Hero image={image} boxColor="#fff8dedd" anchor="tours" position="right">
       <Container className="tours">
         <Row>
-          <Col xl={7} lg={6}>
+          <Col xl={6}>
             <BoxInner fullHeight>
-              <Title>
-                <FormattedMessage id="tours.general.title" />
-              </Title>
-              <Paragraph intlId="tours.general.text" />
+              <Title>לימוד בעולם האמיתי – הרצאות, סיורים וסדנאות</Title>
+
+              <Paragraph>
+                איך מכינים קומפוסט בשיטות שונות? איך משיגים ומכינים מזון מיטיב? איך מטפחות גינה
+                אקולוגית? מה מלקטים בעיר? איך חיים ביחד? איך מנקים את הבית מרעלים? ולבסוף – אם זה
+                טוב כל-כך, מדוע זה נשאר בשוליים?
+              </Paragraph>
+              <Paragraph>הדרך הטובה ביותר להיחשף לידע שלנו היא… לפגוש אותנו!</Paragraph>
+              <Paragraph>
+                במשך 16 שנים חיינו יחדיו בדירה האקולוגית להפליא של עץבעיר, שם חקרנו והתנסינו, ושם
+                פגשנו את מי שרצו להיחשף לידע ולנסיון שצברנו. במרץ 2023 עזבנו את כיכר ביאליק והתחלנו
+                פרק חדש שפותח לנו אפשרויות חדשות למפגש.
+              </Paragraph>
+              <Paragraph>
+                במשך 16 שנים חיינו יחדיו בדירה האקולוגית להפליא של עץבעיר, שם חקרנו והתנסינו, ושם
+                פגשנו את מי שרצו להיחשף לידע ולנסיון שצברנו. במרץ 2023 עזבנו את כיכר ביאליק והתחלנו
+                פרק חדש שפותח לנו אפשרויות חדשות למפגש.
+              </Paragraph>
+              <Paragraph>
+                נשמח לשמוע מכן, בטלפון/וואטסאפ: {tamiPhoneLink} (תמי) או {einatPhoneLink} (עינת)
+              </Paragraph>
+              <Paragraph>
+                <b>דפדפו ותמצאו את ההרצאה או הסיור שמתאים לכן.</b>
+              </Paragraph>
             </BoxInner>
           </Col>
-          <Col xl={5} lg={6} className="side-column">
+          <Col xl={6} className="side-column">
             <Row>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>
-                    <FormattedMessage id="tours.groups.title" />
-                  </Title>
+                  <Title>סיור ליקוט</Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.groups.desc" />
+                    סיור עם ד"ר אלון אלירן על פי הזמנתכן – בגינות ובין הבניינים…
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(intl, PAGES.groupTours)}>
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <Link to={formatPath(PAGES.forageTours)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.groupTourFormHebrew} target="_blank">
-                      <FormattedMessage id="tours.order" />
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
+                      להזמנה
                     </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>
-                    <FormattedMessage id="tours.private.title" />
-                  </Title>
+                  <Title>הרצאה מאת תמי</Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.private.desc" />
+                    תמי צרי משתפת מנסיונה והתובנות שלה מהחיים בכיכר ביאליק ובכלל.
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(intl, PAGES.privateTours)}>
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <Link to={formatPath(PAGES.tamiLecture)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.privateTourFormHebrew} target="_blank">
-                      <FormattedMessage id="tours.order" />
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
+                      להזמנה
                     </LinkButton>
                   </div>
                 </BoxInner>
@@ -72,42 +79,32 @@ function Tours() {
             <Row>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>
-                    <FormattedMessage id="tours.forage.title" />
-                  </Title>
+                  <Title>הרצאה של עינת לסט</Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.forage.desc" />
+                    עינת לסט מספרת על חייה בעץבעיר ועל מסע החיפוש שלה אחרי דרכה.
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(intl, PAGES.forageTours)}>
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <Link to={formatPath(PAGES.einatLecture)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.forageTourFormHebrew} target="_blank">
-                      <FormattedMessage id="tours.register" />
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
+                      להזמנה
                     </LinkButton>
                   </div>
                 </BoxInner>
               </Col>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>
-                    <FormattedMessage id="tours.magic.title" />
-                  </Title>
+                  <Title>עץבעיר – ההרצאה</Title>
                   <Paragraph grow>
-                    <FormattedMessage id="tours.magic.desc" />
+                    סיור בחיי עץבעיר, מובא אליכם במצגת – במפגש בחיים האמיתיים או בזום.
                   </Paragraph>
                   <Paragraph weight={600} reverseUnderline>
-                    <Link to={formatPath(intl, PAGES.magicTours)}>
-                      - <FormattedMessage id="more-details" />
-                      ...
-                    </Link>
+                    <Link to={formatPath(PAGES.virtual)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.magicTourFormHebrew} target="_blank">
-                      <FormattedMessage id="tours.register" />
+                    <LinkButton href={PAGES.lecturesForm} target="_blank">
+                      להזמנה
                     </LinkButton>
                   </div>
                 </BoxInner>

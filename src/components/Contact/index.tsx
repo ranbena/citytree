@@ -1,17 +1,16 @@
 import React from 'react';
-import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Col, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
-import { ReactComponent as WhatsappIcon } from 'src/assets/images/icon_whatsapp.svg';
+import WhatsappIcon from 'src/assets/images/icon_whatsapp.svg';
 import {
   facebookUrl,
   whatsappGroupInviteLink,
   calendarUrl,
   emailLink,
-  homePhoneLink,
+  tamiPhoneLink,
 } from 'src/constants';
-import { ReactComponent as GoogleIcon } from 'src/assets/images/icon_google.svg';
-import { ReactComponent as FacebookIcon } from 'src/assets/images/icon_facebook.svg';
+import GoogleIcon from 'src/assets/images/icon_google.svg';
+import FacebookIcon from 'src/assets/images/icon_facebook.svg';
 import Subscribe from './Subscribe';
 import LeafContainer from '../LeafContainer';
 import './styles.scss';
@@ -23,62 +22,47 @@ function Contact() {
         <Row>
           <Col lg={6}>
             <BoxInner fullHeight color="#f7fbe2b3">
-              <Title>
-                <FormattedMessage id="contact.details.title" />
-              </Title>
+              <Title>כל הדרכים להיות בקשר עם העץ</Title>
               <Paragraph>
-                <FormattedMessage id="contact.details.text" />:
+                קודם כל, אנחנו בעד תקשורת בסגנון הישן:
                 <span className="contact-details-top">
-                  {emailLink} | {homePhoneLink}
+                  {tamiPhoneLink} | {emailLink}
                 </span>
               </Paragraph>
               <div className="contact-details">
-                <strong className="contact-also">
-                  <FormattedMessage id="contact.details.also" />:
-                </strong>
-                <h4>
-                  <FormattedMessage id="contact.details.whatsapp.title" />
-                </h4>
-                <strong>
-                  <FormattedMessage id="contact.details.whatsapp.text" />
-                </strong>
+                <strong className="contact-also">וגם:</strong>
+                <h4>לכל מי שרוצה רק (או גם) הודעות קצרות:"</h4>
+                <strong>אפשר להצטרף לקבוצת וואטסאפ ״דברים שקורים בעץ״.</strong>
                 <LinkButton href={whatsappGroupInviteLink} target="_blank">
                   <WhatsappIcon />
-                  <FormattedMessage id="contact.details.whatsapp.button" />
+                  להצטרפות לקבוצת ההודעות בוואטסאפ
                 </LinkButton>
               </div>
               <div className="contact-details">
-                <h4>
-                  <FormattedMessage id="contact.details.google.title" />
-                </h4>
-                <strong>
-                  <FormattedMessage id="contact.details.google.text" />
-                </strong>
+                <h4>לגיקים שבינינו (אנחנו אוהבות אתכם!):</h4>
+                <strong>אפשר להוסיף את יומן האירועים שלנו ליומן שלכם בגוגל! וואו!</strong>
                 <LinkButton href={calendarUrl} target="_blank">
                   <GoogleIcon />
-                  <FormattedMessage id="contact.details.google.button" />
+                  להוספת יומן האירועים ״דברים שקורים בעץ״
                 </LinkButton>
               </div>
               <div className="contact-details">
-                <h4>
-                  <FormattedMessage id="contact.details.facebook.title" />
-                </h4>
-                <strong>
-                  <FormattedMessage id="contact.details.facebook.text" />
-                </strong>
+                <h4>לשבויים של פייסבוק (כמונו!):</h4>
+                <strong>אפשר לעקוב אחרינו וגם לכתוב אלינו:</strong>
                 <LinkButton href={facebookUrl} target="_blank">
                   <FacebookIcon />
-                  <FormattedMessage id="contact.details.facebook.button" />
+                  לעמוד של עץבעיר בפייסבוק
                 </LinkButton>
               </div>
             </BoxInner>
           </Col>
           <Col lg={6} className="side-column">
             <BoxInner fullHeight color="#f7fbe2b3">
-              <Title>
-                <FormattedMessage id="contact.newsletter.title" />
-              </Title>
-              <Paragraph intlId="contact.newsletter.text" className="newsletter-desc" />
+              <Title>הרשמה לרשימת התפוצה</Title>
+              <Paragraph className="newsletter-desc">
+                פעם בחודש וחצי אנחנו שולחות עלון, ובו מידע על כל הסדנאות והאירועים, טיפ שבועי
+                ועדכונים שוטפים. לעתים אנחנו שולחות עוד עלוןצ'יק בין לבין.
+              </Paragraph>
               <Subscribe />
             </BoxInner>
           </Col>

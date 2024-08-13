@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'react-bootstrap';
-import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
 import { Title, Paragraph, FloatBox } from 'src/components/Box';
 import image from 'src/assets/images/info_bg.jpeg';
 import { PAGES, youtubeUrl } from 'src/constants';
@@ -10,107 +9,72 @@ import { formatPath } from 'src/utils';
 import { InfoCenterHero } from './styles';
 
 function InfoCenter() {
-  const intl = useIntl();
-
   return (
     <ComingSoonModalProvider>
       {(showModal) => (
         <InfoCenterHero image={image} boxColor="#c9ddc9cc" anchor="info">
           <Container className="infoCenterContainer">
             <FloatBox position="center">
-              <Title>
-                <FormattedMessage id="info.title" />
-              </Title>
+              <Title>מרכז ידע</Title>
               <Paragraph>
-                <FormattedMessage id="info.text" />
+                לכל מי שרוצה להתעמק בידע שנצבר בעץבעיר, בדעה וברעיונות שאנחנו מייצגים – אנחנו פותחות
+                כאן הרבה ממה שהיה במגירה עד כה, להעמקה בזמנכן ולפי נושאי העניין שלכן.
                 <span className="inner-links">
                   <Link to={PAGES.blog} onClick={showModal}>
-                    <FormattedMessage id="info.posts.title" />
+                    רשומות
                   </Link>
                   <br />
-                  <Link to={PAGES.manifests} onClick={showModal}>
-                    <FormattedMessage id="info.manifests.title" />
+                  <Link to={PAGES.manifestos} onClick={showModal}>
+                    הבלוג של א'נשות העץ
                   </Link>
                   <br />
                   <Link to={PAGES.articles} onClick={showModal}>
-                    <FormattedMessage id="info.articles.title" />
+                    מאמרים
                   </Link>
                   <br />
                   <Link to={PAGES.references} onClick={showModal}>
-                    <FormattedMessage id="info.references.title" />
+                    מקורות
                   </Link>
                   <br />
                   <Link to={PAGES.glossary} onClick={showModal}>
-                    <FormattedMessage id="info.glossary.title" />
+                    מילון
                   </Link>
                   <br />
-                  <Link to={youtubeUrl} target="_blank">
-                    <FormattedMessage id="info.videos.title" />
-                  </Link>
+                  <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
+                    סרטונים
+                  </a>
                 </span>
               </Paragraph>
             </FloatBox>
 
-            <FloatBox position="topRight" href={formatPath(intl, PAGES.blog)} onClick={showModal}>
-              <Title>
-                <FormattedMessage id="info.posts.title" />
-              </Title>
-              <Paragraph>
-                <FormattedMessage id="info.posts.text" />
-              </Paragraph>
+            <FloatBox position="topRight" href={formatPath(PAGES.blog)} onClick={showModal}>
+              <Title>רשומות</Title>
+              <Paragraph>הבלוג של א'נשות העץ</Paragraph>
             </FloatBox>
 
-            <FloatBox position="right" href={formatPath(intl, PAGES.manifests)} onClick={showModal}>
-              <Title>
-                <FormattedMessage id="info.manifests.title" />
-              </Title>
-              <Paragraph>
-                <FormattedMessage id="info.manifests.text" />
-              </Paragraph>
+            <FloatBox position="right" href={formatPath(PAGES.manifestos)} onClick={showModal}>
+              <Title>מניפסטים</Title>
+              <Paragraph>דפים לתיקון עולם</Paragraph>
             </FloatBox>
 
-            <FloatBox
-              position="bottomRight"
-              href={formatPath(intl, PAGES.articles)}
-              onClick={showModal}
-            >
-              <Title>
-                <FormattedMessage id="info.articles.title" />
-              </Title>
-              <Paragraph>
-                <FormattedMessage id="info.articles.text" />
-              </Paragraph>
+            <FloatBox position="bottomRight" href={formatPath(PAGES.articles)} onClick={showModal}>
+              <Title>מאמרים</Title>
+              <Paragraph>ממשק הבית האקולוגי ועד פוסטקפיטליזם</Paragraph>
             </FloatBox>
 
-            <FloatBox
-              position="bottom"
-              href={formatPath(intl, PAGES.references)}
-              onClick={showModal}
-            >
-              <Title>
-                <FormattedMessage id="info.references.title" />
-              </Title>
-              <Paragraph>
-                <FormattedMessage id="info.references.text" />
-              </Paragraph>
+            <FloatBox position="bottom" href={formatPath(PAGES.references)} onClick={showModal}>
+              <Title>מקורות</Title>
+              <Paragraph>רשימת הספרים ומקורות הידע המועדפים של העץ</Paragraph>
             </FloatBox>
 
-            <FloatBox position="left" href={formatPath(intl, PAGES.glossary)} onClick={showModal}>
-              <Title>
-                <FormattedMessage id="info.glossary.title" />
-              </Title>
-              <Paragraph>
-                <FormattedMessage id="info.glossary.text" />
-              </Paragraph>
+            <FloatBox position="left" href={formatPath(PAGES.glossary)} onClick={showModal}>
+              <Title>מילון</Title>
+              <Paragraph>חידושי מילים והגיגים על שפה</Paragraph>
             </FloatBox>
 
             <FloatBox position="topLeft" href={youtubeUrl} target="_blank">
-              <Title>
-                <FormattedMessage id="info.videos.title" />
-              </Title>
-              <Paragraph>
-                <FormattedMessage id="info.videos.text" />
-              </Paragraph>
+              <Title>סרטונים</Title>
+              <Paragraph>סדרת סרטוני ״השיבה הביתה״ ועוד, בערוץ יוטיוב של העץ</Paragraph>
             </FloatBox>
           </Container>
         </InfoCenterHero>

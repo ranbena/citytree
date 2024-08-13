@@ -6,9 +6,16 @@
 .sponsorship {
   em {
     display: inline-block;
-    font-size: 14px;
+    font-size: 17px;
     font-style: normal;
     margin-inline-end: 12px;
+    margin-bottom: 7px;
+  }
+
+  .paragraph {
+    max-width: 490px;
+    margin-top: 10px;
+    text-align: justify;
   }
 
   .donate {
@@ -60,12 +67,8 @@
     }
 
     .buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 20px;
       max-width: 250px;
-      margin: 0 auto;
+      margin: 0 auto -20px auto;
 
       .btn {
         display: inline-flex;
@@ -79,7 +82,9 @@
         background-color: #e7ecd1;
         border: none;
         border-radius: 5px;
-        box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+        margin-inline-end: 15px;
+        margin-bottom: 20px;
 
         img {
           max-height: 30px;
@@ -89,5 +94,3 @@
     }
   }
 }
-
-
