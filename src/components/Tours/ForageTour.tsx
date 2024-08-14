@@ -98,8 +98,8 @@ const Box: React.FC = () => (
     </Paragraph>
     <Paragraph grow>אורך הסיור והמחיר מותאמים לגודל הקבוצה ולצרכיה.</Paragraph>
     <ButtonWrapper>
-      <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#3d5937">
-        להזמנת סיור ליקוט
+      <LinkButton href={PAGES.urbanForagingSeries} target="_blank" bgcolor="#3d5937">
+        לפרטים ולהרשמה
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>

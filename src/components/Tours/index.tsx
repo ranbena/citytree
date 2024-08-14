@@ -34,10 +34,10 @@ const Page: React.FC<PageProps> = () => {
         <meta property="og:image:height" content={image.height} />
       </Helmet>
       <Intro />
-      <TamiTour />
-      <ForageTour />
-      <EinatLecture />
       <Sessions />
+      <ForageTour />
+      <TamiTour />
+      <EinatLecture />
       <VirtualTour />
     </Layout>
   );
