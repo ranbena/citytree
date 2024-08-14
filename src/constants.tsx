@@ -74,4 +74,6 @@ export enum PAGES {
 
   // forms
   lecturesForm = 'https://docs.google.com/forms/d/e/1FAIpQLSe5fQf-dTVV4smr82rRXO8RqvZan1ejCB8qwE3w7XeQnElz9Q/viewform',
+  urbanForagingSeries = 'https://citytree.minisite.ms/UrbanForagingSeries',
+  comingHomeAutumn = 'https://citytree.minisite.ms/ComingHomeAutumn',
 }
