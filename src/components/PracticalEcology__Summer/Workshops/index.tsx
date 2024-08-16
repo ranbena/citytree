@@ -16,7 +16,7 @@ import {
 } from './styles';
 
 const tabKeys = ['usefulness', 'movement', 'satisfaction'] as const;
-export type TabKey = typeof tabKeys[number];
+export type TabKey = (typeof tabKeys)[number];
 
 const data: Record<TabKey, { title: string; season: string; element: string }> = {
   usefulness: {
