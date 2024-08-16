@@ -32,6 +32,8 @@ export const payboxUrl = 'https://payboxapp.page.link/ecdf8UhBJ6dG25Mu7';
 export const facebookUrl = 'https://facebook.com/citytree';
 export const youtubeUrl = 'https://www.youtube.com/user/citytreenet/';
 export const instagramUrl = 'https://www.instagram.com/citytree/';
+export const podcastUrl = 'https://www.patreon.com/collection/274006?view=expanded';
+export const papersUrl = 'https://www.patreon.com/collection/695361?view=expanded';
 export const bankAccount = {
   bank: 'הבינלאומי',
   branch: 'דיזינגוף 065',
