@@ -18,11 +18,11 @@ const Home: React.FC<PageProps> = () => (
   <Layout>
     <SubscribeTab>
       <TopSection />
-      <Tours />
-      <Workshops />
+      <People />
+      {/* <Tours />
+      <Workshops /> */}
       <InfoCenter />
       <Vision />
-      <People />
     </SubscribeTab>
     <Contact />
     <Sponsorship />

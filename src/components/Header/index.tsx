@@ -38,9 +38,9 @@ const Header: React.FC = () => {
                 onClick={() => navigate('/')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item href={formatPath(PAGES.people)}>א'נשי העץ</NavDropdown.Item>
-                  <NavDropdown.Item href={formatAnchor('sponsor')}>המחבקות</NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor('people')}>א'נשי העץ</NavDropdown.Item>
                   <NavDropdown.Item href={formatAnchor('contact')}>לקשור קשר</NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor('sponsor')}>לחבק את העץ</NavDropdown.Item>
                   {/* <NavDropdown.Item
                     className="disabled"
                     href={formatPath(PAGES.money)}
@@ -83,10 +83,10 @@ const Header: React.FC = () => {
                     renderMenuOnMount
                     id="workshops-dropdown"
                     title="לימוד מקוון"
-                    onClick={anchor('workshops')}
+                    onClick={() => navigate(formatPath(PAGES.virtual))}
                   >
                     <div onClick={stopPropagation}>
-                      <NavDropdown.Item href={formatPath(PAGES.practicalEcologySummer)}>
+                      <NavDropdown.Item href={formatPath(PAGES.virtual)}>
                         סדנאות אקולוגיה מעשית
                       </NavDropdown.Item>
                       {/* <NavDropdown.Item
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
                       >
                         כלכלת קסם - לימוד חודשי
                       </NavDropdown.Item> */}
-                      <NavDropdown.Item href={formatPath(PAGES.hineni)}>
+                      <NavDropdown.Item href={formatPath(PAGES.abrakadabra)}>
                         קורס כישוף ואקולוגיה עמוקה
                       </NavDropdown.Item>
                       {/* <NavDropdown.Item className="disabled" onClick={showModal}>

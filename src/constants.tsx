@@ -58,6 +58,7 @@ export enum PAGES {
   forageTours = '/lectures/#forage',
   sessions = '/lectures/#sessions',
   virtual = '/lectures/#virtual',
+  abrakadabra = '/lectures/#abrakadabra',
   glossary = '/glossary',
   blog = '/blog',
   manifestos = '/manifestos',
