@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcitytree=self.webpackChunkcitytree||[]).push([[453],{731:function(e,t,n){n.r(t);var c=n(6540),l=n(2568),a=n(4105);const i=l.default.h1.withConfig({displayName:"sc-404__Text",componentId:"sc-mzqblc-0"})(["text-align:center;margin:100px 0;"]);t.default=()=>c.createElement(a.A,null,c.createElement(i,null,"העמוד לא נמצא"))}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-c016d3a79fcb4e37ebe9.js.map
