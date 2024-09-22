@@ -49,6 +49,14 @@ Then view the site at `http://localhost:8000`.
 
 ## 📺 Deployment
 
+### Deploy to Github Pages
+
+```sh
+yarn deploy
+```
+
+### Deploy to website
+
 Old fashioned FTP. Be very careful not to delete other content within the ftp folders.
 
 - Host: citytree.net
