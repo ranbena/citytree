@@ -16,7 +16,7 @@ import {
 } from './styles';
 
 const tabKeys = ['prosperity', 'agriculture', 'cultivation'] as const;
-export type TabKey = typeof tabKeys[number];
+export type TabKey = (typeof tabKeys)[number];
 
 const data: Record<TabKey, { title: string; season: string; element: string }> = {
   prosperity: {

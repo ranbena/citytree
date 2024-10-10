@@ -85,7 +85,7 @@ const images = [
 
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#cfe5e3">
-    <Title>מיני-סדנאות והרצאות</Title>
+    <Title>עושות חיים בל חובז׳</Title>
     <Paragraph>הזמינו אותנו להשתלב באירוע שלכן עם הרצאה קצרה או סדנה מעשית.</Paragraph>
     <Paragraph>
       תמי מוכנה לעלות על כל במה עם קלשון ולדבר ישירות בענייני כסף, קקי ואוכל או לעמוד מאחורי שולחן

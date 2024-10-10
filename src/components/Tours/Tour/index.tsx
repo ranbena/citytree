@@ -24,9 +24,10 @@ const Tour: React.FC<React.PropsWithChildren<IProps>> = ({
     slide: 1,
   });
   const thumbs = React.useMemo(() => images.map(({ thumb }) => thumb), [images]);
-  const fulls = React.useMemo(() => images.map(({ full }) => <LightboxItem>{full}</LightboxItem>), [
-    images,
-  ]);
+  const fulls = React.useMemo(
+    () => images.map(({ full }) => <LightboxItem>{full}</LightboxItem>),
+    [images],
+  );
 
   return (
     <>
