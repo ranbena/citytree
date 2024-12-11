@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, FloatBox } from 'src/components/Box';
 import image from 'src/assets/images/sponsorship_bg.jpeg';
+import { hugTheTreeUrl } from 'src/constants';
 import Hero from '../Hero';
 import Donate from './Donate';
 import './styles.scss';
@@ -15,17 +16,23 @@ function Sponsorship() {
             <BoxInner fullHeight>
               <Title>לחבק את העץ בפטראון</Title>
               <Paragraph className="paragraph">
-                זה החלק שבו אנחנו מזמינות אתכן ואתכם להצטרף למעגל המחבקות של העץ בתשלום חודשי בעמוד
-                שלנו בפטראון. זה המקום לפתוח דיון שלם על כסף, אבל אין לזה מקום כאן, ולכן תמי חוקרת
-                וחושפת בדרכה שלה את שלל הכזבים של הכלכלה שנקלענו אליה – בין השאר בסדרת הלימוד "כלכלת
-                קסם".
-                <br />
-                המודל של פטראון מתאים לנו. המחבקות משלמות כמה שהן רוצות ויכולות, וזה מתחיל ב-10 ש"ח
-                בחודש. כל תשלום פותח את כל התוכן שאנחנו מעלות לפטראון, את דלת הכניסה לכל שיעורי הזום
-                של תמי וגם את האפשרות לתרגל כלכלת קסם במפגשים שלנו בעולם האמיתי, שבהן המחבקות
-                מוזמנות לשלם כל סכום שהן רוצות.
+                כבר כמעט עשרים שנה שאנחנו חוקרות את האקולוגיה העמוקה של חיי היום-יום, כנגד הזרם,
+                כנגד ההכחדה, כנגד מה שההורים שלנו היו רוצים שנעשה.
+                <br /> אנחנו מזמינות אתכן להיות פטרונים ופטרוניות ("מחבקים ומחבקות") של העבודה
+                הרדיקלית שלנו – בתשלום חודשי בעמוד של עץבעיר בפטראון .
               </Paragraph>
-              <Paragraph className="paragraph">
+              <Paragraph>
+                תקבלו גישה לכל החומרים שאנחנו מעלות לשם, כניסה לכל מפגש זום ובחירה כמה לשלם על
+                מפגשים בעולם האמיתי.
+                <br />
+                את כל הפרטים תוכלו למצוא בעמוד :
+                <a href={hugTheTreeUrl} target="_blank">
+                  כל מה שהמחבקות מקבלות.
+                </a>
+                <br />
+                אפשר להתחיל כ"מחבקת חופשייה" (Free Member) או ב-10 ש"ח בחודש.
+              </Paragraph>
+              {/* <Paragraph className="paragraph">
                 <b>בקיצור, בתשלום חודשי בפטראון תקבלו:</b>
               </Paragraph>
               <Paragraph className="paragraph">
@@ -41,12 +48,12 @@ function Sponsorship() {
                 </em>
                 <em>קבוצת ואטסאפ שקטה לעדכונים ותזכורות</em>
                 <em>אפשרות לשיחה רב-צדדית בתוך הפלטפורמה של הפטראון</em>
-              </Paragraph>
+              </Paragraph> */}
               <Paragraph className="paragraph">
                 <b> בהודיה גדולה לכל מי ומה שמאפשר לנו להמשיך בשלנו!</b>
               </Paragraph>
               <Paragraph>
-                <b>תודה שבאתן!</b>
+                <b>תמי ואלון</b>
               </Paragraph>
             </BoxInner>
           </Col>
