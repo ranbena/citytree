@@ -179,7 +179,6 @@ const Header: React.FC = () => {
                   </Link> */}
                   <Button id="PatreonButton" href={joinPatreonUrl} as="a" target="_blank">
                     <img src={patreonLogo} alt="חבקו את העץ בפטראון" />
-                    <span>חבקו את העץ בפטראון</span>
                   </Button>
                 </Nav>
               </Navbar.Collapse>

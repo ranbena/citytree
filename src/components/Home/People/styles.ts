@@ -33,9 +33,9 @@ export const PeopleHero = styled(Hero)`
   }
 
   .side-column {
-    direction: ltr;
+    direction: rtl;
 
-    body[dir='ltr'] & {
+    body[dir='rtl'] & {
       direction: rtl;
     }
 
