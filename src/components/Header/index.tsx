@@ -41,6 +41,7 @@ const Header: React.FC = () => {
                   <NavDropdown.Item href={formatAnchor('people')}>א'נשי העץ</NavDropdown.Item>
                   <NavDropdown.Item href={formatAnchor('contact')}>לקשור קשר</NavDropdown.Item>
                   <NavDropdown.Item href={formatAnchor('sponsor')}>לחבק את העץ</NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor('onus')}>מציצים עלינו</NavDropdown.Item>
                   {/* <NavDropdown.Item
                     className="disabled"
                     href={formatPath(PAGES.money)}
@@ -118,14 +119,14 @@ const Header: React.FC = () => {
                     >
                       מניפסטים
                     </NavDropdown.Item> */}
-                    <NavDropdown.Item href={papersUrl} target="_blank">
-                      הגות
-                    </NavDropdown.Item>
                     <NavDropdown.Item href={podcastUrl} target="_blank">
                       הסכת במשעול הצר
                     </NavDropdown.Item>
                     <NavDropdown.Item href={youtubeUrl} target="_blank">
                       סרטוני השיבה הביתה
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href={papersUrl} target="_blank">
+                      הגות
                     </NavDropdown.Item>
                     {/* <NavDropdown.Item
                       className="disabled"
@@ -172,7 +173,7 @@ const Header: React.FC = () => {
                       שירת האלון
                     </NavDropdown.Item> */}
                   </NavDropdown>
-                  <NavDropdown
+                  {/* <NavDropdown
                     renderMenuOnMount
                     id="vision-dropdown"
                     title="מציצים עלינו"
@@ -187,7 +188,7 @@ const Header: React.FC = () => {
                     <NavDropdown.Item href={PAGES.shakufArticle} target="_articles">
                       כתבה בשקוף
                     </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
                 </Nav>
                 <Nav>
                   {/* <Link className="nav-link" to={locale === 'en' ? '/' : '/en'}>
