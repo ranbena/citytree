@@ -32,6 +32,10 @@ export const payboxUrl = 'https://payboxapp.page.link/ecdf8UhBJ6dG25Mu7';
 export const facebookUrl = 'https://facebook.com/citytree';
 export const youtubeUrl = 'https://www.youtube.com/user/citytreenet/';
 export const instagramUrl = 'https://www.instagram.com/citytree/';
+export const podcastUrl = 'https://www.patreon.com/collection/274006?view=expanded';
+export const collectionsURL = 'https://www.patreon.com/c/citytree/collections';
+export const papersUrl = 'https://www.patreon.com/collection/695361?view=expanded';
+export const hugTheTreeUrl = 'https://citytree.minisite.ms/HugTheTree';
 export const bankAccount = {
   bank: 'הבינלאומי',
   branch: 'דיזינגוף 065',
@@ -56,14 +60,18 @@ export enum PAGES {
   forageTours = '/lectures/#forage',
   sessions = '/lectures/#sessions',
   virtual = '/lectures/#virtual',
+  abrakadabra = '/lectures/#abrakadabra',
   glossary = '/glossary',
   blog = '/blog',
   manifestos = '/manifestos',
   articles = '/articles',
   references = '/references',
-  trees = '/trees',
+  trees = 'https://www.patreon.com/collection/197538',
   forestCity = '/forest-city',
-  poetry = '/poetry',
+  roniKuban = 'https://youtu.be/ZWVLdQIfRR8?si=wAvBXLLm-pzSk3Sx&t=1142',
+  studentsMovie = 'https://youtu.be/fCDri82ZpmQ?si=SqV3ZejarVsn1eaw',
+  shakufArticle = 'https://shakuf.co.il/40169',
+  poetry = 'https://www.patreon.com/collection/359780',
   huggers = '/huggers',
   money = '/money',
 
@@ -73,6 +81,7 @@ export enum PAGES {
   employment = 'https://docs.google.com/document/d/e/2PACX-1vStK7lP26XAvT35LRbUlDs5mrJeniHmSrGHL53g2YYSPnxc00u395MMfjnx7GcbbcBf-pxCxJgqLkfC/pub',
 
   // forms
+  soilSeriesForm = 'https://citytree.minisite.ms/SoilSeries',
   lecturesForm = 'https://docs.google.com/forms/d/e/1FAIpQLSe5fQf-dTVV4smr82rRXO8RqvZan1ejCB8qwE3w7XeQnElz9Q/viewform',
   urbanForagingSeries = 'https://citytree.minisite.ms/UrbanForagingSeries',
   comingHomeAutumn = 'https://citytree.minisite.ms/ComingHomeAutumn',

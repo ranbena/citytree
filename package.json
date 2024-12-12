@@ -13,6 +13,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "bundle": "gatsby clean && gatsby build && gatsby serve",
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public",
     "tsc": "tsc",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
   },
@@ -62,7 +63,7 @@
     "@types/styled-components": "^5.1.26",
     "babel-plugin-root-import": "^6.6.0",
     "gatsby-plugin-root-import": "^2.0.5",
-    "gh-pages": "^3.0.0",
+    "gh-pages": "^3.2.3",
     "husky": "^4.2.3",
     "lint-staged": "^10.1.2",
     "prettier": "^2.8.8",
