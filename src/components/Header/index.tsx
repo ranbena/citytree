@@ -172,6 +172,22 @@ const Header: React.FC = () => {
                       שירת האלון
                     </NavDropdown.Item> */}
                   </NavDropdown>
+                  <NavDropdown
+                    renderMenuOnMount
+                    id="vision-dropdown"
+                    title="מציצים עלינו"
+                    onClick={anchor('vision')}
+                  >
+                    <NavDropdown.Item href={PAGES.roniKuban} target="_youtube">
+                      אצל רוני קובן
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href={PAGES.studentsMovie} target="_youtube">
+                      סרט סטודנטיות
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href={PAGES.shakufArticle} target="_articles">
+                      כתבה בשקוף
+                    </NavDropdown.Item>
+                  </NavDropdown>
                 </Nav>
                 <Nav>
                   {/* <Link className="nav-link" to={locale === 'en' ? '/' : '/en'}>

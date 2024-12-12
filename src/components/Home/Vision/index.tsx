@@ -45,7 +45,8 @@ function Vision() {
                       position="top"
                       staticPosition
                       href={formatPath(PAGES.trees)}
-                      onClick={showModal}
+                      target="_parteon"
+                      // onClick={showModal}
                     >
                       <Title>אחוות העצים</Title>
                       <Paragraph>
@@ -57,23 +58,11 @@ function Vision() {
                 <Row>
                   <Col>
                     <FloatBox
-                      position="center"
-                      staticPosition
-                      href={formatPath(PAGES.forestCity)}
-                      onClick={showModal}
-                    >
-                      <Title>עיר־יער</Title>
-                      <Paragraph>חזון שאנחנו שותפים לו וחולמים אותו לפרטי פרטים...</Paragraph>
-                    </FloatBox>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col>
-                    <FloatBox
                       position="bottom"
                       staticPosition
                       href={formatPath(PAGES.poetry)}
-                      onClick={showModal}
+                      // onClick={showModal}
+                      target="_parteon"
                     >
                       <Title>שירת האלון</Title>
                       <Paragraph>
