@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/workshops_bg.jpeg';
-import { PAGES } from 'src/constants';
+import { PAGES, magicalEconomyUrl} from 'src/constants';
 import { formatPath } from 'src/utils';
 import './styles.scss';
 
@@ -89,7 +89,7 @@ function Workshops() {
                     הראשון.
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.magicalEconomy} target="_blank">
+                    <LinkButton href={magicalEconomyUrl} target="_blank">
                       לפרטים
                     </LinkButton>
                   </div>
