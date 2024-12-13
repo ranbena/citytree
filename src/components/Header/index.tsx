@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                   <NavDropdown.Item href={formatAnchor('people')}>א'נשי העץ</NavDropdown.Item>
                   <NavDropdown.Item href={formatAnchor('contact')}>לקשור קשר</NavDropdown.Item>
                   <NavDropdown.Item href={formatAnchor('sponsor')}>לחבק את העץ</NavDropdown.Item>
-                  <NavDropdown.Item href={formatAnchor('onus')}>מציצים עלינו</NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor('publicity')}>מציצים עלינו</NavDropdown.Item>
                   {/* <NavDropdown.Item
                     className="disabled"
                     href={formatPath(PAGES.money)}

@@ -40,7 +40,8 @@ export type NavAnchorT =
   | 'vision'
   | 'people'
   | 'contact'
-  | 'sponsor';
+  | 'sponsor'
+  | 'publicity';
 
 export function formatAnchor(type?: NavAnchorT) {
   return formatPath(type ? `/#${type}` : '/');

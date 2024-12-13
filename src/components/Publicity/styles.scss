@@ -3,7 +3,7 @@
 @import 'src/scss/mixins';
 @import 'src/scss/breakpoints';
 
-.sponsorship {
+.publicity {
   em {
     display: inline-block;
     font-size: 17px;
@@ -18,13 +18,13 @@
     text-align: justify;
   }
 
-  .donate {
+  .publicity {
     text-align: center;
     display: flex;
     flex-direction: column;
     height: 100%;
 
-    .donate-subtitle {
+    .publicity-subtitle {
       margin-top: 20px;
       font-weight: 600;
       font-size: 15px;

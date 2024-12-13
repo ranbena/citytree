@@ -34,7 +34,7 @@ const PopoverButton: React.FC<{ text: string | React.ReactNode; children: React.
   );
 };
 
-const DonateButton: React.FC<{
+const PublicityButton: React.FC<{
   linkUrl?: string;
   disabled?: boolean;
   image?: string;
@@ -55,8 +55,8 @@ const DonateButton: React.FC<{
   );
 };
 
-const Donate: React.FC = () => (
-  <div className="donate">
+const Publicity: React.FC = () => (
+  <div className="publicity">
     <div className="btn-patreon">
       <Button title="היו פטרונים" as="a" href={patreonUrl} target="_blank">
         <img src={patreonImage} alt="היו פטרונים" />
@@ -68,9 +68,9 @@ const Donate: React.FC = () => (
       או פשוט כי בא לכן:
     </p>
     <div className="buttons">
-      <DonateButton title="פייבוקס" linkUrl={payboxUrl} image={payboxImage} />
-      <DonateButton title="פייפאל" linkUrl={paypalUrl} image={paypalImage} maxHeight={20} />
-      <DonateButton
+      <PublicityButton title="פייבוקס" linkUrl={payboxUrl} image={payboxImage} />
+      <PublicityButton title="פייפאל" linkUrl={paypalUrl} image={paypalImage} maxHeight={20} />
+      <PublicityButton
         title="ביט"
         image={bitpayImage}
         text={
@@ -85,11 +85,11 @@ const Donate: React.FC = () => (
           </>
         }
       />
-      <DonateButton
+      <PublicityButton
         title="כמו פעם: מזומן!"
         text="כסף הוא גם חומר! בואו לבקר ושלמו במטבעות ובניירות כמו פעם!"
       />
-      <DonateButton
+      <PublicityButton
         title="העברה בנקאית"
         text={
           <>
@@ -107,4 +107,4 @@ const Donate: React.FC = () => (
   </div>
 );
 
-export default Donate;
+export default Publicity;
