@@ -36,6 +36,8 @@ export const podcastUrl = 'https://www.patreon.com/collection/274006?view=expand
 export const collectionsURL = 'https://www.patreon.com/c/citytree/collections';
 export const papersUrl = 'https://www.patreon.com/collection/695361?view=expanded';
 export const hugTheTreeUrl = 'https://citytree.minisite.ms/HugTheTree';
+export const deepEcologyUrl = 'https://www.patreon.com/collection/502736'
+export const magicalEconomyUrl = 'https://www.patreon.com/collection/197548'
 export const bankAccount = {
   bank: 'הבינלאומי',
   branch: 'דיזינגוף 065',
@@ -76,7 +78,7 @@ export enum PAGES {
   money = '/money',
 
   // temp external
-  magicalEconomy = 'https://docs.google.com/document/d/1ZPso0AjZKwiUz-IHtoe6drc1Nd56SyqiZ2ZeuxZ59sM/preview',
+  // magicalEconomy = 'https://docs.google.com/document/d/1ZPso0AjZKwiUz-IHtoe6drc1Nd56SyqiZ2ZeuxZ59sM/preview',
   people = 'https://docs.google.com/document/d/e/2PACX-1vTjJy7kZ9ObbIz6E7oHKkxvF50gNUeo0Rapknf99YzxzYixFvLsao20QbhGnZ3LsEmr9e24qkXsHNq-/pub',
   employment = 'https://docs.google.com/document/d/e/2PACX-1vStK7lP26XAvT35LRbUlDs5mrJeniHmSrGHL53g2YYSPnxc00u395MMfjnx7GcbbcBf-pxCxJgqLkfC/pub',
 

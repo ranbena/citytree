@@ -19,7 +19,7 @@ const Home: React.FC<PageProps> = () => (
   <Layout>
     <SubscribeTab>
       <TopSection />
-      <Tours />
+      {/* <Tours /> */}
       <Workshops />
       <InfoCenter />
       <Vision />
