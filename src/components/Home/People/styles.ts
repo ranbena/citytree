@@ -23,7 +23,7 @@ export const PeopleHero = styled(Hero)`
     }
   }
   p {
-    color: #e6f1d6ff;  
+    color: #e6f1d6ff;
     margin: 0;
     padding: 0;
   }

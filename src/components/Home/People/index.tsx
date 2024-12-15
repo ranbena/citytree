@@ -30,7 +30,13 @@ function People() {
                     </FloatBox> */}
                   </Col>
                 </Row>
-                <Row><Col><center><img src={tami_image} width="50%;" alt="תמי צרי" /></center></Col></Row>
+                <Row>
+                  <Col>
+                    <center>
+                      <img src={tami_image} width="50%;" alt="תמי צרי" />
+                    </center>
+                  </Col>
+                </Row>
                 <BoxInner className="people-main">
                   <Paragraph>
                     הקימה את עץבעיר ב-2006, מורדת סדרתית, אמנית, בוגרת בצלאל, עמיתת מרכז השל ואשת
@@ -54,9 +60,16 @@ function People() {
                     </FloatBox>
                   </Col>
                 </Row> */}
-                <Row><Col><br /><center><img src={alon_image} width="50%;" alt="אלון אלירן" /></center></Col></Row>
+                <Row>
+                  <Col>
+                    <br />
+                    <center>
+                      <img src={alon_image} width="50%;" alt="אלון אלירן" />
+                    </center>
+                  </Col>
+                </Row>
 
-                <BoxInner className="people-main" >
+                <BoxInner className="people-main">
                   <Paragraph>
                     שותף לעשייה וללימוד בעץבעיר מ-2008, חלש על העבודה בגינות הדגם
                     הקהילתיות-אקולוגיות שהעץ טיפח סביב כיכר ביאליק, וממשיך להוביל ללא לאות את סיורי

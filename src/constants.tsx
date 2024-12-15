@@ -36,8 +36,8 @@ export const podcastUrl = 'https://www.patreon.com/collection/274006?view=expand
 export const collectionsURL = 'https://www.patreon.com/c/citytree/collections';
 export const papersUrl = 'https://www.patreon.com/collection/695361?view=expanded';
 export const hugTheTreeUrl = 'https://citytree.minisite.ms/HugTheTree';
-export const deepEcologyUrl = 'https://www.patreon.com/collection/502736'
-export const magicalEconomyUrl = 'https://www.patreon.com/collection/197548'
+export const deepEcologyUrl = 'https://www.patreon.com/collection/502736';
+export const magicalEconomyUrl = 'https://www.patreon.com/collection/197548';
 export const bankAccount = {
   bank: 'הבינלאומי',
   branch: 'דיזינגוף 065',
