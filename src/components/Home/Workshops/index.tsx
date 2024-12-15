@@ -50,14 +50,14 @@ function Workshops() {
             <br />
             <BoxInner>
               <LinkButton href={PAGES.virtual} bgcolor="#c8dcf0d0">
-                <Title>כל הפרטים על תוכנית השיבה הביתה - כאן</Title>
+                <Title>כל הפרטים על התוכנית - כאן</Title>
               </LinkButton>
             </BoxInner>
           </Col>
           <Col lg={6}>
             <BoxInner>
               <a href={PAGES.virtual}>
-                <Title>לימוד בזום</Title>
+                <h3>לימוד בזום</h3>
               </a>
               <Paragraph>
                 זו ההתמחות של תמי מאז ימי הקורונה. היא מגישה את הידע המגוון שאספנו – מתולדות
@@ -68,7 +68,7 @@ function Workshops() {
             <br />
             <BoxInner>
               <a href={PAGES.forageTours}>
-                <Title>לימוד בעולם האמיתי</Title>
+                <h3>לימוד בעולם האמיתי</h3>
               </a>
               <Paragraph>
                 סיורי ליקוט עם אלון מסביב לשנה, סדרת אדמה עם תמי בתל חובז – אנחנו אוהבות לפגוש
@@ -78,7 +78,7 @@ function Workshops() {
             <br />
             <BoxInner>
               <a href={collectionsURL}>
-                <Title>לימוד עצמי</Title>
+                <h3>לימוד עצמי</h3>
               </a>
               <Paragraph>
                 בעמוד שלנו בפטראון תוכלו למצוא את כל חומרי הלימוד, מסודרים ב"אוספים" – תוכלו לרכוש
