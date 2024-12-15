@@ -85,7 +85,7 @@ const images = [
 
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#cfe5e3">
-    <Title>עושות חיים בבית: סדרת אדמה</Title>
+    <Title>עושות חיים בתל חובז׳: סדרת אדמה</Title>
     <Paragraph>משיבות חיים לאדמה - מתחילות ב-8/1 ב-19:00 בתל חובז׳</Paragraph>
     <Paragraph>
       אם גם את כְּמֵהָה, אם גם אתה כָּמֵהַּ לצאת מהמסך אל המטבח, לרדת מהאוויר אל האדמה ולהתחיל להשיב
