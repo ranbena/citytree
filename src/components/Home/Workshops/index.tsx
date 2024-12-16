@@ -9,7 +9,7 @@ import './styles.scss';
 
 function Workshops() {
   return (
-    <Hero image={image} boxColor="#c8dcf0d0" anchor="workshops">
+    <Hero image={image} boxColor="#342e1190" anchor="workshops">
       <Container className="workshops">
         <Row>
           <Col>
@@ -48,39 +48,35 @@ function Workshops() {
               </Paragraph>
             </BoxInner>
             <br />
-            <BoxInner>
-              <LinkButton href={PAGES.virtual} bgcolor="#c8dcf0d0">
+            <BoxInner color="#3f391dff">
+              <LinkButton href={PAGES.virtual}>
                 <Title>כל הפרטים על התוכנית - כאן</Title>
               </LinkButton>
             </BoxInner>
+            <br />
           </Col>
           <Col lg={6}>
-            <BoxInner>
-              <a href={PAGES.virtual}>
-                <h3>לימוד בזום</h3>
-              </a>
+          <BoxInner>
               <Paragraph>
-                זו ההתמחות של תמי מאז ימי הקורונה. היא מגישה את הידע המגוון שאספנו – מתולדות
-                הפטריארכייה והדרכים לפירוקה ועד לקומפוסט (הממ... זה אותו דבר!) תמי לשירותכן אם
-                החלטתן לנסות לעבור לצד השני של המראה.....
-              </Paragraph>
-            </BoxInner>
-            <br />
-            <BoxInner>
-              <a href={PAGES.forageTours}>
-                <h3>לימוד בעולם האמיתי</h3>
-              </a>
-              <Paragraph>
+                <a href={PAGES.forageTours}>לימוד בעולם האמיתי</a> - 
                 סיורי ליקוט עם אלון מסביב לשנה, סדרת אדמה עם תמי בתל חובז – אנחנו אוהבות לפגוש
                 א'נשים בתלת-ממד, ואפשר תמיד גם להזמין אותנו ללמד אצלכן בחצר או בקורס.
               </Paragraph>
             </BoxInner>
             <br />
             <BoxInner>
-              <a href={collectionsURL}>
-                <h3>לימוד עצמי</h3>
-              </a>
               <Paragraph>
+                <a href={PAGES.virtual}>לימוד בזום</a> - 
+                זו ההתמחות של תמי מאז ימי הקורונה. היא מגישה את הידע המגוון שאספנו – מתולדות
+                הפטריארכייה והדרכים לפירוקה ועד לקומפוסט (הממ... זה אותו דבר!) תמי לשירותכן אם
+                החלטתן לנסות לעבור לצד השני של המראה.....
+              </Paragraph>
+            </BoxInner>
+            <br />
+            
+            <BoxInner>
+              <Paragraph>
+                <a href={collectionsURL}>לימוד עצמי</a> - 
                 בעמוד שלנו בפטראון תוכלו למצוא את כל חומרי הלימוד, מסודרים ב"אוספים" – תוכלו לרכוש
                 כל אוסף לכשעצמו, בתשלום חד-פעמי או להצטרף בתשלום חודשי ולפתוח לכן את כל החומרים
                 כולם.
