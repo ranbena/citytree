@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
-import { Title, Paragraph, BoxInner } from 'src/components/Box';
+import { Title, Paragraph, BoxInner, FloatBox } from 'src/components/Box';
 import image from 'src/assets/images/sponsorship_bg.jpeg';
+import { hugTheTreeUrl } from 'src/constants';
 import Hero from '../Hero';
 import Donate from './Donate';
 import './styles.scss';
@@ -13,31 +14,46 @@ function Sponsorship() {
         <Row>
           <Col lg={7}>
             <BoxInner fullHeight>
-              <Title>אולי תרצו להצטרף למעגל התמיכה של העץ?</Title>
+              <Title>לחבק את העץ בפטראון</Title>
               <Paragraph className="paragraph">
-                חיי השיתוף, המחקר והיצירה שלנו הם העבודה שלנו, ורוב-רובה מתרחשת במנותק מכלכלת הכסף.
-                זה מה שהופך את עץבעיר למרכז ידע חי ורדיקלי. בתחילת הדרך, מימנו את עץבעיר
-                מחסכונותינו, וכשאלה נגמרו, נמצאו הא'נשים שמתרגשים מכך שאנחנו חיות את מה שאנחנו
-                מדברות עליו והמשיכו את דרכנו במימון הפעילות.
+                כבר כמעט עשרים שנה שאנחנו חוקרות את האקולוגיה העמוקה של חיי היום-יום, כנגד הזרם,
+                כנגד ההכחדה, כנגד מה שההורים שלנו היו רוצים שנעשה.
+                <br /> אנחנו מזמינות אתכן להיות פטרונים ופטרוניות ("מחבקים ומחבקות") של העבודה
+                הרדיקלית שלנו – בתשלום חודשי בעמוד של עץבעיר בפטראון .
               </Paragraph>
               <Paragraph>
-                קבלו את... <b>מעגל המחבקות!</b>
-              </Paragraph>
-              <Paragraph className="paragraph">
-                <b>ההזמנה היא לתמוך בעץבעיר תמיכה קבועה ולקבל במתנה:</b>
-              </Paragraph>
-              <Paragraph className="paragraph">
-                <em>כל התכנים הדיגיטליים שלנו *</em>
-                <em>לימוד חודשי עם תמי *</em>
+                תקבלו גישה לכל החומרים שאנחנו מעלות לשם, כניסה לכל מפגש זום ובחירה כמה לשלם על
+                מפגשים בעולם האמיתי.
                 <br />
-                <em>מפגשי זום עונתיים *</em>
-                <em>קבוצת פייסבוק פרטית *</em>
+                את כל הפרטים תוכלו למצוא בעמוד :
+                <a href={hugTheTreeUrl} target="_blank">
+                  כל מה שהמחבקות מקבלות.
+                </a>
+                <br />
+                אפשר להתחיל כ"מחבקת חופשייה" (Free Member) או ב-10 ש"ח בחודש.
+              </Paragraph>
+              {/* <Paragraph className="paragraph">
+                <b>בקיצור, בתשלום חודשי בפטראון תקבלו:</b>
               </Paragraph>
               <Paragraph className="paragraph">
-                <b>אנחנו בהודיה גדולה לכל מי ומה שמאפשר לנו להמשיך בשלנו!</b>
+                <em>שמחה שבאה עם חיבוק העץ – החברות במעגל שמאפשר את המשך היצירה שלנו.</em>
+                <em>כניסה ללא תשלום נוסף לשיעורי הזום</em>
+                <em>
+                  פתיחה של כל התוכן הסגור בפטראון – הוא סגור גם מאחר שהוא רדיקלי יותר ושמור לעיניהן
+                  של מי שכבר מחוברות לרדיקליות של עץבעיר.
+                </em>
+                <em>פגישת מחבקות מיוחדת פעמיים בשנה (בזום).</em>
+                <em>
+                  תשלום פתוח על כל מפגש בעולם האמיתי – סיורי הליקוט של אלון, מפגשי לימוד עם תמי.
+                </em>
+                <em>קבוצת ואטסאפ שקטה לעדכונים ותזכורות</em>
+                <em>אפשרות לשיחה רב-צדדית בתוך הפלטפורמה של הפטראון</em>
+              </Paragraph> */}
+              <Paragraph className="paragraph">
+                <b> בהודיה גדולה לכל מי ומה שמאפשר לנו להמשיך בשלנו!</b>
               </Paragraph>
               <Paragraph>
-                <b>תודה שבאתן!</b>
+                <b>תמי ואלון</b>
               </Paragraph>
             </BoxInner>
           </Col>

@@ -11,6 +11,7 @@ import ForageTour from './ForageTour';
 import Sessions from './Sessions';
 import Intro from './Intro';
 import VirtualTour from './VirtualTour';
+import AbraKadabra from './AbraKadabra';
 
 const image = {
   path: ogImage,
@@ -34,11 +35,12 @@ const Page: React.FC<PageProps> = () => {
         <meta property="og:image:height" content={image.height} />
       </Helmet>
       <Intro />
-      <TamiTour />
       <ForageTour />
-      <EinatLecture />
       <Sessions />
+      <TamiTour />
+      <EinatLecture />
       <VirtualTour />
+      <AbraKadabra />
     </Layout>
   );
 };

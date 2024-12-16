@@ -13,6 +13,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "bundle": "gatsby clean && gatsby build && gatsby serve",
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public",
     "tsc": "tsc",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
   },
@@ -45,7 +46,7 @@
     "gatsby-plugin-styled-components": "^6.9.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^5.9.0",
-    "node-sass": "8.0.0",
+    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",

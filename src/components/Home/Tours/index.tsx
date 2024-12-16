@@ -45,7 +45,7 @@ function Tours() {
             <Row>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>סיור ליקוט</Title>
+                  <Title>סיורי ליקוט</Title>
                   <Paragraph grow>
                     סיור עם ד"ר אלון אלירן על פי הזמנתכן – בגינות ובין הבניינים…
                   </Paragraph>
@@ -53,8 +53,8 @@ function Tours() {
                     <Link to={formatPath(PAGES.forageTours)}>לפרטים נוספים...</Link>
                   </Paragraph>
                   <div>
-                    <LinkButton href={PAGES.lecturesForm} target="_blank">
-                      להזמנה
+                    <LinkButton href={PAGES.urbanForagingSeries} target="_blank">
+                      להרשמה
                     </LinkButton>
                   </div>
                 </BoxInner>
@@ -95,17 +95,13 @@ function Tours() {
               </Col>
               <Col lg={6}>
                 <BoxInner size="small" center fullHeight>
-                  <Title>עץבעיר – ההרצאה</Title>
-                  <Paragraph grow>
-                    סיור בחיי עץבעיר, מובא אליכם במצגת – במפגש בחיים האמיתיים או בזום.
-                  </Paragraph>
-                  <Paragraph weight={600} reverseUnderline>
+                  <Title>עושות חיים בתל חובז׳</Title>
+                  <Paragraph grow>סדרת עושות חיים בבית מתארחת בתל חובז׳ בתל אביב</Paragraph>
+                  {/* <Paragraph weight={600} reverseUnderline>
                     <Link to={formatPath(PAGES.virtual)}>לפרטים נוספים...</Link>
-                  </Paragraph>
+                  </Paragraph> */}
                   <div>
-                    <LinkButton href={PAGES.lecturesForm} target="_blank">
-                      להזמנה
-                    </LinkButton>
+                    <LinkButton>בקרוב...</LinkButton>
                   </div>
                 </BoxInner>
               </Col>

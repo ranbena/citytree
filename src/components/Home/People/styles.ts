@@ -6,7 +6,7 @@ import { breakpointsMin, breakpoints } from 'src/utils';
 export const PeopleHero = styled(Hero)`
   .people-main {
     border-radius: 70px;
-    text-align: center;
+    text-align: right;
     padding-left: 60px;
     padding-right: 60px;
 
@@ -33,9 +33,9 @@ export const PeopleHero = styled(Hero)`
   }
 
   .side-column {
-    direction: ltr;
+    direction: rtl;
 
-    body[dir='ltr'] & {
+    body[dir='rtl'] & {
       direction: rtl;
     }
 

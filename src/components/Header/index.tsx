@@ -2,7 +2,7 @@ import React, { MouseEventHandler } from 'react';
 // import { Link } from 'gatsby';
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import patreonLogo from 'src/assets/images/patreon-standalone.png';
-import { joinPatreonUrl, PAGES, youtubeUrl } from 'src/constants';
+import { joinPatreonUrl, PAGES, youtubeUrl, podcastUrl, papersUrl } from 'src/constants';
 import { anchor, formatPath, formatAnchor } from 'src/utils';
 import { ComingSoonModalProvider } from '../ComingSoonModal';
 import './styles.scss';
@@ -38,16 +38,16 @@ const Header: React.FC = () => {
                 onClick={() => navigate('/')}
               >
                 <div onClick={stopPropagation}>
-                  <NavDropdown.Item href={formatPath(PAGES.people)}>א'נשי העץ</NavDropdown.Item>
-                  <NavDropdown.Item className="disabled">המחבקות</NavDropdown.Item>
-                  <NavDropdown.Item href={formatAnchor('contact')}>להתקשר</NavDropdown.Item>
-                  <NavDropdown.Item
+                  <NavDropdown.Item href={formatAnchor('people')}>א'נשי העץ</NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor('contact')}>לקשור קשר</NavDropdown.Item>
+                  <NavDropdown.Item href={formatAnchor('sponsor')}>לחבק את העץ</NavDropdown.Item>
+                  {/* <NavDropdown.Item
                     className="disabled"
                     href={formatPath(PAGES.money)}
                     onClick={showModal}
                   >
                     כסף
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                 </div>
               </NavDropdown>
 
@@ -61,21 +61,21 @@ const Header: React.FC = () => {
                     onClick={() => navigate(formatPath(PAGES.lectures))}
                   >
                     <div onClick={stopPropagation}>
+                      <NavDropdown.Item href={formatPath(PAGES.forageTours)}>
+                        סיורי ליקוט עם אלון
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href={formatPath(PAGES.sessions)}>
+                        עושות חיים בתל חובז
+                      </NavDropdown.Item>
                       <NavDropdown.Item href={formatPath(PAGES.tamiLecture)}>
                         הרצאה של תמי צרי
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(PAGES.forageTours)}>
-                        סיור ליקוט עם אלון
                       </NavDropdown.Item>
                       <NavDropdown.Item href={formatPath(PAGES.einatLecture)}>
                         הרצאה של עינת לסט
                       </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(PAGES.sessions)}>
-                        מיני הרצאה או סדנה
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(PAGES.virtual)}>
+                      {/* <NavDropdown.Item href={formatPath(PAGES.virtual)}>
                         עץבעיר - ההרצאה
-                      </NavDropdown.Item>
+                      </NavDropdown.Item> */}
                     </div>
                   </NavDropdown>
 
@@ -83,25 +83,25 @@ const Header: React.FC = () => {
                     renderMenuOnMount
                     id="workshops-dropdown"
                     title="לימוד מקוון"
-                    onClick={anchor('workshops')}
+                    onClick={() => navigate(formatPath(PAGES.virtual))}
                   >
                     <div onClick={stopPropagation}>
-                      <NavDropdown.Item href={formatPath(PAGES.practicalEcologySummer)}>
+                      <NavDropdown.Item href={formatPath(PAGES.virtual)}>
                         סדנאות אקולוגיה מעשית
                       </NavDropdown.Item>
-                      <NavDropdown.Item
+                      {/* <NavDropdown.Item
                         className="disabled"
                         onClick={showModal}
                         href={formatPath(PAGES.magicalEconomy)}
                       >
                         כלכלת קסם - לימוד חודשי
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href={formatPath(PAGES.hineni)}>
+                      </NavDropdown.Item> */}
+                      <NavDropdown.Item href={formatPath(PAGES.abrakadabra)}>
                         קורס כישוף ואקולוגיה עמוקה
                       </NavDropdown.Item>
-                      <NavDropdown.Item className="disabled" onClick={showModal}>
+                      {/* <NavDropdown.Item className="disabled" onClick={showModal}>
                         עושות חיים בבית - מעגל חדש
-                      </NavDropdown.Item>
+                      </NavDropdown.Item> */}
                     </div>
                   </NavDropdown>
 
@@ -111,31 +111,23 @@ const Header: React.FC = () => {
                     id="info-dropdown"
                     onClick={anchor('info')}
                   >
-                    <NavDropdown.Item
-                      className="disabled"
-                      href={formatPath(PAGES.blog)}
-                      onClick={showModal}
-                    >
-                      רשומות (בלוג)
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
+                    {/* <NavDropdown.Item
                       className="disabled"
                       href={formatPath(PAGES.manifestos)}
                       onClick={showModal}
                     >
                       מניפסטים
+                    </NavDropdown.Item> */}
+                    <NavDropdown.Item href={papersUrl} target="_blank">
+                      הגות
                     </NavDropdown.Item>
-                    <NavDropdown.Item
-                      className="disabled"
-                      href={formatPath(PAGES.articles)}
-                      onClick={showModal}
-                    >
-                      מאמרים
+                    <NavDropdown.Item href={podcastUrl} target="_blank">
+                      הסכת במשעול הצר
                     </NavDropdown.Item>
                     <NavDropdown.Item href={youtubeUrl} target="_blank">
-                      סרטונים
+                      סרטוני השיבה הביתה
                     </NavDropdown.Item>
-                    <NavDropdown.Item
+                    {/* <NavDropdown.Item
                       className="disabled"
                       href={formatPath(PAGES.glossary)}
                       onClick={showModal}
@@ -148,7 +140,7 @@ const Header: React.FC = () => {
                       onClick={showModal}
                     >
                       רשימת מקורות
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                   </NavDropdown>
 
                   <NavDropdown
@@ -158,7 +150,7 @@ const Header: React.FC = () => {
                     onClick={anchor('vision')}
                   >
                     <NavDropdown.Item onClick={anchor('vision')}>עץ חולם על העולם</NavDropdown.Item>
-                    <NavDropdown.Item
+                    {/* <NavDropdown.Item
                       className="disabled"
                       href={formatPath(PAGES.trees)}
                       onClick={showModal}
@@ -178,6 +170,22 @@ const Header: React.FC = () => {
                       onClick={showModal}
                     >
                       שירת האלון
+                    </NavDropdown.Item> */}
+                  </NavDropdown>
+                  <NavDropdown
+                    renderMenuOnMount
+                    id="vision-dropdown"
+                    title="מציצים עלינו"
+                    onClick={anchor('vision')}
+                  >
+                    <NavDropdown.Item href={PAGES.roniKuban} target="_youtube">
+                      אצל רוני קובן
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href={PAGES.studentsMovie} target="_youtube">
+                      סרט סטודנטיות
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href={PAGES.shakufArticle} target="_articles">
+                      כתבה בשקוף
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
@@ -187,7 +195,6 @@ const Header: React.FC = () => {
                   </Link> */}
                   <Button id="PatreonButton" href={joinPatreonUrl} as="a" target="_blank">
                     <img src={patreonLogo} alt="חבקו את העץ בפטראון" />
-                    <span>חבקו את העץ בפטראון</span>
                   </Button>
                 </Nav>
               </Navbar.Collapse>
