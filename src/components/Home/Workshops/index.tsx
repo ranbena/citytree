@@ -4,7 +4,6 @@ import { Title, Paragraph, BoxInner, LinkButton } from 'src/components/Box';
 import Hero from 'src/components/Hero';
 import image from 'src/assets/images/coming_home_bg.jpeg';
 import { PAGES, magicalEconomyUrl, collectionsURL } from 'src/constants';
-import { formatPath } from 'src/utils';
 import './styles.scss';
 
 function Workshops() {
@@ -56,28 +55,29 @@ function Workshops() {
             <br />
           </Col>
           <Col lg={6}>
-          <BoxInner>
+            <BoxInner>
               <Paragraph>
-                <a href={PAGES.forageTours}>לימוד בעולם האמיתי</a> - 
-                סיורי ליקוט עם אלון מסביב לשנה, סדרת אדמה עם תמי בתל חובז – אנחנו אוהבות לפגוש
-                א'נשים בתלת-ממד, ואפשר תמיד גם להזמין אותנו ללמד אצלכן בחצר או בקורס.
+                <a href={PAGES.forageTours}>לימוד בעולם האמיתי</a> - סיורי ליקוט עם אלון מסביב לשנה,
+                סדרת אדמה עם תמי בתל חובז – אנחנו אוהבות לפגוש א'נשים בתלת-ממד, ואפשר תמיד גם להזמין
+                אותנו ללמד אצלכן בחצר או בקורס.
               </Paragraph>
             </BoxInner>
             <br />
             <BoxInner>
               <Paragraph>
-                <a href={PAGES.virtual}>לימוד בזום</a> - 
-                זו ההתמחות של תמי מאז ימי הקורונה. היא מגישה את הידע המגוון שאספנו – מתולדות
-                הפטריארכייה והדרכים לפירוקה ועד לקומפוסט (הממ... זה אותו דבר!) תמי לשירותכן אם
-                החלטתן לנסות לעבור לצד השני של המראה.....
+                <a href={PAGES.virtual}>לימוד בזום</a> - זו ההתמחות של תמי מאז ימי הקורונה. היא
+                מגישה את הידע המגוון שאספנו – מתולדות הפטריארכייה והדרכים לפירוקה ועד לקומפוסט
+                (הממ... זה אותו דבר!) תמי לשירותכן אם החלטתן לנסות לעבור לצד השני של המראה.....
               </Paragraph>
             </BoxInner>
             <br />
-            
+
             <BoxInner>
               <Paragraph>
-                <a href={collectionsURL}>לימוד עצמי</a> - 
-                בעמוד שלנו בפטראון תוכלו למצוא את כל חומרי הלימוד, מסודרים ב"אוספים" – תוכלו לרכוש
+                <a href={collectionsURL} target="_patreon">
+                  לימוד עצמי
+                </a>{' '}
+                - בעמוד שלנו בפטראון תוכלו למצוא את כל חומרי הלימוד, מסודרים ב"אוספים" – תוכלו לרכוש
                 כל אוסף לכשעצמו, בתשלום חד-פעמי או להצטרף בתשלום חודשי ולפתוח לכן את כל החומרים
                 כולם.
               </Paragraph>

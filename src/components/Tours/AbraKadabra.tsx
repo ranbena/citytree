@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { PAGES } from 'src/constants';
+import { deepEcologyUrl } from 'src/constants';
 import { LinkButton, Paragraph } from '../Box';
 import { BoxInner, ButtonWrapper, Title } from './styles';
 import Tour from './Tour';
@@ -85,7 +85,7 @@ const images = [
 
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#fff5f1">
-    <Title>קורס הכישוף - כלכלת קסם</Title>
+    <Title>קורס כישוף ואקולוגיה עמוקה</Title>
     <Paragraph>
       איך נראו החיים בעץבעיר במשך 16 שנים - חיי האקולוגיה העמוקה בעיר, משק הבית והגינות האקולוגיות
       והקשר ביניהם, חדרי הדירה האקולוגית ואופן החיים השיתופיים שקיימנו בהם, שיטות הקומפוסטציה
@@ -99,8 +99,8 @@ const Box: React.FC = () => (
       הרצאה מתובלת בהדגמות מעשיות קטנות והמון טיפים. ניתן לקבל את ההרצאה בזום או במפגש פנים אל פנים.
     </Paragraph>
     <ButtonWrapper>
-      <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#4a3b35">
-        להזמנת הרצאה
+      <LinkButton href={deepEcologyUrl} target="_patreon" bgcolor="#4a3b35">
+לרכישת הסידרה
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>
