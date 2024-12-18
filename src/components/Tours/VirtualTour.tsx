@@ -9,7 +9,7 @@ const images = [
   {
     thumb: (
       <StaticImage
-        src="../../assets/images/tours/CityTre_VisitTheTree_01_tami.jpg"
+        src="../../assets/images/tours/tami_soil_series.jpg"
         alt=""
         placeholder="none"
         width={720}
@@ -17,7 +17,7 @@ const images = [
     ),
     full: (
       <StaticImage
-        src="../../assets/images/tours/CityTre_VisitTheTree_01_tami.jpg"
+        src="../../assets/images/tours/tami_soil_series.jpg"
         alt=""
         placeholder="none"
         layout="fixed"
@@ -85,22 +85,21 @@ const images = [
 
 const Box: React.FC = () => (
   <BoxInner fullHeight color="#fff5f1">
-    <Title>עץבעיר - ההרצאה</Title>
+    <Title>עושות חיים בבית: סדרת אדמה</Title>
+    <Paragraph>משיבות חיים לאדמה - מתחילות ב-8/1 ב-19:00 בתל חובז׳</Paragraph>
     <Paragraph>
-      איך נראו החיים בעץבעיר במשך 16 שנים - חיי האקולוגיה העמוקה בעיר, משק הבית והגינות האקולוגיות
-      והקשר ביניהם, חדרי הדירה האקולוגית ואופן החיים השיתופיים שקיימנו בהם, שיטות הקומפוסטציה
-      המהפכניות שלנו, כולל שירותי קומפוסט בקומה השנייה בלב העיר.
-    </Paragraph>
-    <Paragraph>
-      וגם, איך מתקיים הקשר בינינו כיום, כשאנחנו גרים בבתים שונים (עם ההורים שלנו!), וכמובן מבט אל
-      החזון העתידי האפשרי לעץבעיר ובכלל.
+      אם גם את כְּמֵהָה, אם גם אתה כָּמֵהַּ לצאת מהמסך אל המטבח, לרדת מהאוויר אל האדמה ולהתחיל להשיב
+      לה חיים, אם יש לכן הרגשה שיותר מדי אוכל נזרק לפח, ושיש משהו אחר שקליפת הבננה רוצה לעשות, בוא,
+      בואי למפגשי סדרת האדמה (בזום), שבהם תגלו מהי אקולוגיה עמוקה ומהי אדמה, בחיי היום-יום.
+      <br />
     </Paragraph>
     <Paragraph grow>
-      הרצאה מתובלת בהדגמות מעשיות קטנות והמון טיפים. ניתן לקבל את ההרצאה בזום או במפגש פנים אל פנים.
+      כאן תמצאו את כל הפרטים וגם את טופס ההרשמה לסדרת האדמה שלא תוכלו לעבור אותה בלי להתחיל לעשות
+      קומפוסט. ברוכות השבות.
     </Paragraph>
     <ButtonWrapper>
-      <LinkButton href={PAGES.lecturesForm} target="_blank" bgcolor="#4a3b35">
-        להזמנת הרצאה
+      <LinkButton href={PAGES.soilSeriesForm} target="_blank" bgcolor="#385958">
+        לפרטים והרשמה
       </LinkButton>
     </ButtonWrapper>
   </BoxInner>

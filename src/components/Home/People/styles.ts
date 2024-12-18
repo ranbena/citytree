@@ -5,10 +5,11 @@ import { breakpointsMin, breakpoints } from 'src/utils';
 
 export const PeopleHero = styled(Hero)`
   .people-main {
-    border-radius: 70px;
+    border-radius: 50px;
     text-align: right;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2b4b2580;
 
     ul {
       padding: 0;
@@ -21,7 +22,11 @@ export const PeopleHero = styled(Hero)`
       }
     }
   }
-
+  p {
+    color: #e6f1d6ff;
+    margin: 0;
+    padding: 0;
+  }
   .people-title {
     margin-bottom: 10px;
   }

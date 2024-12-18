@@ -5,7 +5,7 @@ import LeafContainer from 'src/components/LeafContainer';
 import { Hero, ImageContainer, LightboxItem, ThumbItem } from './styles';
 
 interface IProps {
-  anchor: 'tami' | 'einat' | 'forage' | 'sessions' | 'virtual';
+  anchor: 'tami' | 'einat' | 'forage' | 'sessions' | 'virtual' | 'abrakadabra';
   box: React.ReactNode;
   images: { thumb: React.ReactElement; full: React.ReactElement }[];
   bgcolor: string;
